@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ILKTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKTestDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IOView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\CADButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\CADDeLight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\CADDeLine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\CADDevice.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\CADGraphic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\CADSection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\CADSignal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\CADStation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\ColorDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\DevBorder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\DeviceData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\Label.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\NavigableTrack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\RailSwitch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\TurnTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Relay.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SwitchSection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IOItem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCaptionWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IOSocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NetConfigDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SplitterFrame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\CADDoor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPShowDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPSocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\CADAfgDoor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MySever.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILKGraphic\CADSealCount.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SAMProcess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseRoute.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ZcCommRelay.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RSSP\GL_Basic_Type_Definition.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RSSP\GL_Compile_Switch_Definition.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RSSP\parameter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RSSP\Rsp1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RSSP\RSSP1_Interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RSSP\Vcp_File_Interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RSSP\Vcp_Public_Definition.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RSSP\Vcp_Service_Interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RSSP\Vcp_Service_TestInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RSSP\Vcp_Track_Interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RSSP\Vcp_UsrProcess_Entrance.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DumpHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ILKTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKTestDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IOView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\CADButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\CADDeLight.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\CADDeLine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\CADDevice.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\CADGraphic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\CADSection.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\CADSignal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\CADStation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\ColorDef.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\DevBorder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\DeviceData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\Label.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\NavigableTrack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\RailSwitch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\TurnTable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Relay.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SwitchSection.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IOItem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCaptionWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IOSocket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NetConfigDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SplitterFrame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\CADDoor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPSocket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPShowDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\CADAfgDoor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MySever.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ILKGraphic\CADSealCount.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SAMProcess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseRoute.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ZcCommRelay.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RSSP\Rsp1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RSSP\RSSP1_Interface.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DumpHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ILKTest.reg" />
+    <None Include="res\ILKTest.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ILKTest.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ILKTestDoc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ILKTest.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

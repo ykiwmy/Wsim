@@ -1,0 +1,767 @@
+
+// ILKTestDoc.cpp : CILKTestDoc 类的实现
+//
+
+#include "stdafx.h"
+// SHARED_HANDLERS 可以在实现预览、缩略图和搜索筛选器句柄的
+// ATL 项目中进行定义，并允许与该项目共享文档代码。
+#ifndef SHARED_HANDLERS
+#include "ILKTest.h"
+#endif
+
+#include "ILKTestDoc.h"
+#include "ILKGraphic\CADGraphic.h"
+#include "ILKGraphic\CADDevice.h"
+#include "ILKGraphic\CADSection.h"
+#include "ILKGraphic\RailSwitch.h"
+#include "ILKGraphic\CADSignal.h"
+#include "Relay.h"
+#include "SwitchSection.h"
+#include "IOView.h"
+#include "IOCaptionWnd.h"
+#include <propkey.h>
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#endif
+
+// CILKTestDoc
+
+IMPLEMENT_DYNCREATE(CILKTestDoc, CDocument)
+
+BEGIN_MESSAGE_MAP(CILKTestDoc, CDocument)
+END_MESSAGE_MAP()
+
+
+// CILKTestDoc 构造/析构
+
+CILKTestDoc::CILKTestDoc()
+{
+	netAddr_.localIP_ = htonl(inet_addr("127.0.0.1"));
+	netAddr_.remoteIP_ = htonl(inet_addr("127.0.0.1"));
+	
+	netAddr_.localIOPort_		= 6001;
+	netAddr_.localATPPort_		= 6011;
+	netAddr_.localAdCIPort_		= 6021;
+	netAddr_.localCIOutPort_	= 6031;
+	netAddr_.localPlatformPort_	= 6041;
+
+	netAddr_.remoteIOPort_		= 6000;
+	netAddr_.remoteATPPort_		= 6010;
+	netAddr_.remoteAdCIPort_	= 6020;
+	netAddr_.remoteCIOutPort_	= 6030;
+}
+
+CILKTestDoc::~CILKTestDoc()
+{
+	for each (CADDevice* pDevice in vDevice_)
+	{
+		delete pDevice;
+	}
+
+	for each (Relay* pRelay in vRelay_)
+	{
+		delete pRelay;
+	}
+
+	for each (SwitchSection* pSwitchSection in vSwitchSection_)
+	{
+		delete pSwitchSection;
+	}
+}
+
+
+BOOL CILKTestDoc::OnNewDocument()
+{
+	if (!CDocument::OnNewDocument())
+		return FALSE;
+
+	return TRUE;
+}
+
+// CILKTestDoc 序列化
+
+void CILKTestDoc::Serialize(CArchive& ar)
+{
+	if (!ar.IsStoring())
+	{
+		CString strPath = ar.m_strFileName.Left(ar.m_strFileName.ReverseFind(L'\\') + 1); // 文件路径
+
+		loadGraphic(ar);			// 读取图形
+		loadInputRelay(strPath);	// 读取采集继电器
+		loadOutputRelay(strPath);	// 读取驱动继电器
+		loadDoubleSwitch();			// 读取双动道岔中，还没有设置 DCJ，DBJ，SJ，FCJ，FBJ 的继电器
+
+		for each (CADDevice* pDevice in vDevice_)
+		{
+			pDevice->ShowWindow(SW_SHOW); // 要根据继电器状态绘制设备，所以只有所有数据读取完毕后才显示
+			pDevice->loadMenu(); // 根据自己的继电器生成菜单（每种类型的信号机包含的继电器不同，导致每个 CADDevice 要存储自己的 CMenu）
+		}
+
+		createIOBoard();
+		checkIOValid();
+		InitSockets();
+	}
+}
+
+
+// CILKTestDoc 诊断
+
+#ifdef _DEBUG
+void CILKTestDoc::AssertValid() const
+{
+	CDocument::AssertValid();
+}
+
+void CILKTestDoc::Dump(CDumpContext& dc) const
+{
+	CDocument::Dump(dc);
+}
+#endif //_DEBUG
+
+
+// CILKTestDoc 命令
+
+
+int CILKTestDoc::getBoardCount(BOOL bInput)
+{
+	int maxBoardID = 0;
+	for each (Relay* pRelay in vRelay_)
+	{
+		if (bInput)
+		{
+			if (pRelay->bInput_ && pRelay->boardID_[0] > maxBoardID)
+			{
+				maxBoardID = pRelay->boardID_[0];
+			}
+		}
+		else
+		{
+			if (pRelay->bOutput_ && pRelay->boardID_[1] > maxBoardID)
+			{
+				maxBoardID = pRelay->boardID_[1];
+			}
+		}
+	}
+
+	return maxBoardID + 1;
+}
+
+
+void CILKTestDoc::loadGraphic(CArchive& ar)
+{
+	// 读取图形
+	int nGraphic = 0;
+	ar >> nGraphic;
+
+	POSITION pz = GetFirstViewPosition();
+	CView* pView = GetNextView(pz);
+
+	for (int i = 0; i < nGraphic; i++)
+	{
+		CADGraphic* pGraphic = nullptr;
+		CRect wndRect;
+		ar >> pGraphic >> wndRect;
+		pGraphic->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, wndRect, pView, 0);
+		pGraphic->compressWindow();
+
+		if (pGraphic->IsKindOf(RUNTIME_CLASS(CADDevice)))
+		{
+			if (pGraphic->IsKindOf(RUNTIME_CLASS(CADButton)))
+			{
+				delete pGraphic;
+			}
+			else
+			{
+				pGraphic->ShowWindow(SW_HIDE);
+				vDevice_.push_back(static_cast<CADDevice*>(pGraphic));
+				static_cast<CADDevice*>(pGraphic)->name_.pDev_ = (CADDevice*)pGraphic;
+			}
+		}
+		else
+		{
+			delete pGraphic;
+		}
+	}
+}
+
+
+static DeviceInput* CreateSectionInput(void) { return new SectionInput; }
+static DeviceInput* CreateSwitchInput(void)  { return new SwitchInput;  }
+static DeviceInput* CreateSingalInput(void)  { return new SignalInput;  }
+
+
+void CILKTestDoc::loadInputRelay(CString strPath)
+{
+	CString inputFileName[3] = { 
+		strPath + L"\\x86\\Section.ib", 
+		strPath + L"\\x86\\Switch.ib", 
+		strPath + L"\\x86\\Signal.ib" 
+	};
+
+	typedef DeviceInput* (*InputCreator)(void);
+	InputCreator createInput[3] = { // 输入信息的 Creator
+		CreateSectionInput, CreateSwitchInput, CreateSingalInput, };
+	int ioDataSize[3] = { // 每种类型大小
+		sizeof(SectionInput), sizeof(SwitchInput), sizeof(SignalInput) };
+
+	for (size_t i = 0; i < 3; i++)
+	{
+		CFile file;
+		if (file.Open(inputFileName[i], CFile::modeRead|CFile::typeBinary))
+		{
+			int nTotal = 0; // 总数
+			file.Read(&nTotal, sizeof(nTotal));
+
+			for (int j = 0; j < nTotal; j++)
+			{
+				DeviceInput* pInput = createInput[i]();
+				file.Read(pInput, ioDataSize[i]);
+
+				// 干活
+				switch (i)
+				{
+				case 0:
+					setSectionRelay((SectionInput*)pInput);
+					break;
+				case 1:
+					setSwitchRelayIn((SwitchInput*)pInput);
+					break;
+				case 2:
+					setSignalRelayIn((SignalInput*)pInput);
+					break;
+				default:
+					break;
+				}
+
+				delete pInput;
+			}
+
+			file.Close();
+		}
+		else
+		{
+			CString strErr(L"打开文件失败：");
+			strErr.Append(inputFileName[i]);
+			AfxMessageBox(strErr);
+		}
+	}
+}
+
+
+void CILKTestDoc::setSectionRelay(SectionInput* pInput)
+{
+	BOOL bLoadSecess = FALSE;
+
+	if (CADSection* pSection = (CADSection*)findDevcieByAddr(pInput->addr_, RUNTIME_CLASS(CADSection)))
+	{
+		// 无岔区段
+		Relay* pRelay = new Relay(pSection->name_.text_, L"WGJ", TRUE, FALSE, pSection);
+		pRelay->boardID_[0] = boardID(pInput->relayAddr_);
+		pRelay->portID_[0] = portID(pInput->relayAddr_);
+
+		pSection->vRelay_.push_back(pRelay);
+		vRelay_.push_back(pRelay);
+
+		bLoadSecess = TRUE;
+	}
+	else if (loadSwitchSection(pInput))
+	{
+		bLoadSecess = TRUE;
+	}
+	
+	if (!bLoadSecess)
+	{
+		//CString str(L"没有找到输入表中的区段：");
+		//str.Append(CString(pInput->name_));
+		//AfxMessageBox(str);
+	}
+}
+
+
+CADDevice* CILKTestDoc::findDevcieByAddr(int addr, CRuntimeClass* pRuntimeClass)
+{
+	auto it = find_if(vDevice_.begin(), vDevice_.end(), [&addr, &pRuntimeClass](CADDevice* pDevice) {
+		if (pDevice->IsKindOf(pRuntimeClass))
+		{
+			return pDevice->io_.addr_ == addr;
+		}
+		return false;
+	});
+
+	return it == vDevice_.end() ? NULL : (*it);
+}
+
+
+BOOL CILKTestDoc::loadSwitchSection(SectionInput* pInput)
+{
+	BOOL bLoadSuccess = FALSE;
+
+	for each (CADDevice* pDevice in vDevice_)
+	{
+		if (pDevice->IsKindOf(RUNTIME_CLASS(RailSwitch)))
+		{
+			RailSwitch* pSwitch = dynamic_cast<RailSwitch*>(pDevice);
+			if (pSwitch->data_.section_.addr_ == pInput->addr_)
+			{
+				// 找到有岔区段对应的道岔
+				Relay* pRelay = findRelayByAddr(pInput->relayAddr_);
+				if (!pRelay)
+				{
+					// 首次读取该有岔区段，生成有岔区段的继电器，并保存。
+					pRelay = new Relay(CString(pInput->name_), L"GJ", TRUE, FALSE, pSwitch);
+					pRelay->boardID_[0] = boardID(pInput->relayAddr_);
+					pRelay->portID_[0] = portID(pInput->relayAddr_);
+
+					vRelay_.push_back(pRelay);
+
+					// 保存有岔区段
+					SwitchSection* pSwitchSection = new SwitchSection(pInput->name_, pInput->addr_);
+					pSwitchSection->vSwitch_.push_back(pSwitch);
+					vSwitchSection_.push_back(pSwitchSection);
+				}
+				else
+				{
+					// 已经存在有岔区段，找到该有岔区段并保存当前道岔
+					auto it = find_if(vSwitchSection_.begin(), vSwitchSection_.end(), [&pInput](SwitchSection* pSwitchSection) {
+						return pSwitchSection->addr_ == pInput->addr_;
+					});
+
+					if (it != vSwitchSection_.end())
+					{
+						(*it)->vSwitch_.push_back(pSwitch);
+					}
+					else
+					{
+						CString err(L"没有找到有岔区段：");
+						err.Append(CString(pInput->name_));
+						AfxMessageBox(err);
+					}
+				}
+				// 如果该有岔区段已经存在，则在道岔设备中保存这个继电器地址
+				pSwitch->vRelay_.push_back(pRelay);
+				bLoadSuccess = TRUE;
+			}
+		}
+	}
+
+	return bLoadSuccess;
+}
+
+
+Relay* CILKTestDoc::findRelayByAddr(int addr)
+{
+	auto it = find_if(vRelay_.begin(), vRelay_.end(), [&addr](Relay* pRelay) {
+		return ((pRelay->boardID_[0] << 8) | (pRelay->portID_[0])) == addr;
+	});
+
+	return it == vRelay_.end() ? NULL : (*it);
+}
+
+
+void CILKTestDoc::setSwitchRelayIn(SwitchInput* pInput)
+{
+	if (RailSwitch* pSwitch = (RailSwitch*)findDevcieByAddr(pInput->addr_, RUNTIME_CLASS(RailSwitch)))
+	{
+		Relay* pRelay[3] = {
+			new Relay(pSwitch->name_.text_, L"DBJ", TRUE, FALSE, pSwitch),
+			new Relay(pSwitch->name_.text_, L"FBJ", TRUE, FALSE, pSwitch),
+			new Relay(pSwitch->name_.text_, L"SJ",  TRUE, TRUE,  pSwitch),
+		};
+
+		// 道岔默认处于定位
+		pRelay[0]->stat_ = Relay::STAT_UP;
+
+		for (size_t i = 0; i < 3; i++)
+		{
+			pRelay[i]->boardID_[0] = boardID(pInput->relayAddr_[i]);
+			pRelay[i]->portID_[0] = portID(pInput->relayAddr_[i]);
+
+			pSwitch->vRelay_.push_back(pRelay[i]);
+			vRelay_.push_back(pRelay[i]);
+		}
+	}
+	else
+	{
+		CString str(L"没有找到输入表中的道岔：");
+		str.Append(CString(pInput->name_));
+		AfxMessageBox(str);
+	}
+}
+
+
+void CILKTestDoc::setSignalRelayIn(SignalInput* pInput)
+{
+	if (CADSignal* pSignal = (CADSignal*)findDevcieByAddr(pInput->addr_, RUNTIME_CLASS(CADSignal)))
+	{
+		pSignal->ioType_ = pInput->type_;
+
+		WCHAR* relayType[] = {
+			L"LXJ", L"ZXJ", L"DXJ", L"TXJ", L"LUXJ", L"YXJ", L"DJ", L"2DJ"
+		};
+
+		for (size_t i = 0; i < 8; i++)
+		{
+			if (pInput->relayAddr_[i] != 0XFFFF)
+			{
+				Relay* pRelay = new Relay(pSignal->name_.text_, relayType[i], TRUE, i < 6 ? TRUE : FALSE, pSignal);
+				pRelay->boardID_[0] = boardID(pInput->relayAddr_[i]);
+				pRelay->portID_[0] = portID(pInput->relayAddr_[i]);
+
+
+				// 默认灯丝是好的
+				if (i > 5)
+				{
+					pRelay->stat_ = Relay::STAT_UP;
+				}
+
+
+				pSignal->vRelay_.push_back(pRelay);
+				vRelay_.push_back(pRelay);
+			}
+		}
+	}
+}
+
+
+static DeviceOutput* CreateOtherOutput(void) { return new OtherOutput; }
+static DeviceOutput* CreateSwitchOutput(void) { return new SwitchOutput; }
+static DeviceOutput* CreateSignalOutput(void) { return new SignalOutput; }
+
+
+void CILKTestDoc::loadOutputRelay(CString path)
+{
+	CString inputFileName[3] = {
+		path + L"\\x86\\outputSection.ob",
+		path + L"\\x86\\outputSwitch.ob",
+		path + L"\\x86\\outputSignal.ob",
+	};
+
+	typedef DeviceOutput* (*OutputCreator)(void);
+	OutputCreator createOutput[3] = { // 输入信息的 Creator
+		CreateOtherOutput, CreateSwitchOutput, CreateSignalOutput, };
+	int ioDataSize[3] = { // 每种类型大小
+		sizeof(OtherOutput), sizeof(SwitchOutput), sizeof(SignalOutput) };
+
+	for (size_t i = 0; i < 3; i++)
+	{
+		CFile file;
+		if (file.Open(inputFileName[i], CFile::modeRead | CFile::typeBinary))
+		{
+			int nTotal = 0; // 总数
+			file.Read(&nTotal, sizeof(nTotal));
+
+			for (int j = 0; j < nTotal; j++)
+			{
+				DeviceOutput* pOutput = createOutput[i]();
+				file.Read(pOutput, ioDataSize[i]);
+
+				// 干活
+				switch (i)
+				{
+				case 0:
+					setOtherRelayOut((OtherOutput*)pOutput);
+					break;
+				case 1:
+					setSwitchRelayOut((SwitchOutput*)pOutput);
+					break;
+				case 2:
+					setSignalRelayOut((SignalOutput*)pOutput);
+					break;
+				default:
+					break;
+				}
+
+				delete pOutput;
+			}
+
+			file.Close();
+		}
+		else
+		{
+			CString strErr(L"打开文件失败：");
+			strErr.Append(inputFileName[i]);
+			AfxMessageBox(strErr);
+		}
+	}
+}
+
+
+void CILKTestDoc::setOtherRelayOut(OtherOutput* pOutput)
+{
+	// TODO：读取零散驱动类型继电器
+}
+
+
+void CILKTestDoc::setSwitchRelayOut(SwitchOutput* pOutput)
+{
+	if (RailSwitch* pSwitch = (RailSwitch*)findDevcieByAddr(pOutput->addr, RUNTIME_CLASS(RailSwitch)))
+	{
+		// 道岔区段  定表继  反表继  锁闭继 
+		if (Relay* pRelay = findRelay(boardID(pOutput->DCJ), portID(pOutput->DCJ), FALSE))
+		{
+			// 双动道岔的输出表，是两条记录！！ 第二条记录不要了
+			return;
+		}
+		pSwitch->vRelay_[3]->boardID_[1] = boardID(pOutput->SJ);
+		pSwitch->vRelay_[3]->portID_[1] = portID(pOutput->SJ);
+
+		Relay* pRelay[2] = {
+			new Relay(pSwitch->name_.text_, L"DCJ", FALSE, TRUE, pSwitch),
+			new Relay(pSwitch->name_.text_, L"FCJ", FALSE, TRUE, pSwitch),
+		};
+
+		pRelay[0]->boardID_[1] = boardID(pOutput->DCJ);
+		pRelay[0]->portID_[1] = portID(pOutput->DCJ);
+
+		pRelay[1]->boardID_[1] = boardID(pOutput->FCJ);
+		pRelay[1]->portID_[1] = portID(pOutput->FCJ);
+
+		for (size_t i = 0; i < 2; i++)
+		{
+			pSwitch->vRelay_.push_back(pRelay[i]);
+			vRelay_.push_back(pRelay[i]);
+		}
+	}
+}
+
+
+void CILKTestDoc::setSignalRelayOut(SignalOutput* pOutput)
+{
+	if (CADSignal* pSignal = (CADSignal*)findDevcieByAddr(pOutput->addr, RUNTIME_CLASS(CADSignal)))
+	{
+		// L"LXJ", L"ZXJ", L"DXJ", L"TXJ", L"LUXJ", L"YXJ", L"DJ", L"2DJ"
+		//   LXJ;    ZXJ;    DXJ;    TXJ;    LUXJ;    YXJ;
+		
+		UINT16* pPort = &(pOutput->LXJ);
+		int flag = 0;
+		for (size_t i = 0; i < 6; i++)
+		{
+			if (*pPort != 0XFF07) // 输出表中没用的端口号，存的是 0XFF07
+			{
+				pSignal->vRelay_[flag]->boardID_[1] = boardID(*pPort);
+				pSignal->vRelay_[flag]->portID_[1] = portID(*pPort);
+				flag++;
+			}
+			pPort++;
+		}
+	}
+}
+
+
+void CILKTestDoc::loadDoubleSwitch()
+{
+	for each (CADDevice* pDevice in vDevice_)
+	{
+		if (pDevice->IsKindOf(RUNTIME_CLASS(RailSwitch)))
+		{
+			RailSwitch* pSwtich = dynamic_cast<RailSwitch*>(pDevice);
+			if (pSwtich->vRelay_.size() == 1)
+			{
+				// 已经读取了区段信息，还没有读取道岔的继电器配置。
+				if (RailSwitch* pOther = (RailSwitch*)findDevcieByAddr(pSwtich->io_.addr_, RUNTIME_CLASS(RailSwitch)))
+				{
+					// 区段 DBJ FBJ SJ DCJ FCJ
+					auto it = pOther->vRelay_.begin() + 1;
+					while (it != pOther->vRelay_.end())
+					{
+						pSwtich->vRelay_.push_back(*it);
+						it++;
+					}
+
+					// 为道岔添加双动道岔的信息
+					pSwtich->pOtherSwitch_ = pOther;
+					pOther->pOtherSwitch_  = pSwtich;
+				}
+				else
+				{
+					// 处理双动道岔失败，没有找到对应的道岔
+					CString str(L"查找双动道岔失败：没有找到对应的道岔");
+					str.Append(pSwtich->name_.text_);
+					AfxMessageBox(str);
+				}
+			}
+		}
+	}
+}
+
+
+void CILKTestDoc::OnSetSwitchSection(int sectionAddr, RailSwitch* pFrom)
+{
+	auto it = find_if(vSwitchSection_.begin(), vSwitchSection_.end(), [&sectionAddr](SwitchSection* pSection) {
+		return pSection->addr_ == sectionAddr;
+	});
+
+	if (it != vSwitchSection_.end())
+	{
+		for each (RailSwitch* pSwitch in (*it)->vSwitch_)
+		{
+			if (pSwitch != pFrom)
+			{
+				pSwitch->Invalidate();
+			}
+		}
+	}
+	else
+	{
+		CString str(L"设置有岔区段错误，找不到有岔区段：");
+		str.Append(CString(pFrom->data_.section_.name_));
+		AfxMessageBox(str);
+	}
+}
+
+
+void CILKTestDoc::createIOBoard()
+{
+	int nInputBoard = getBoardCount(TRUE);
+	int nOutputBoard = getBoardCount(FALSE);
+
+	// 创建输入板和输出板的内存
+	for (int i = 0; i < nInputBoard; i++)
+	{
+		array<IOItem, 16> ioArray;
+		vInputBoard_.push_back(ioArray);
+	}
+
+	for (int i = 0; i < nOutputBoard; i++)
+	{
+		array<IOItem, 16> ioArray;
+		vOutputBoard_.push_back(ioArray);
+	}
+
+	// 获取 CIOView
+	POSITION pos = GetFirstViewPosition(); // Init pos
+	GetNextView(pos); // CChildView
+	CIOView* pIOView = dynamic_cast<CIOView*>(GetNextView(pos));
+
+	// 获取 CIOView 中的 输入和输出 Group
+	CWnd* pInputGroup = pIOView->GetDlgItem(IDC_STATIC_INPUT_GROUP);
+	CWnd* pOutputGroup = pIOView->GetDlgItem(IDC_STATIC_OUTPUT_GROUP);
+
+	createIOItem(vInputBoard_, pInputGroup, TRUE);
+	createIOItem(vOutputBoard_, pOutputGroup, FALSE);
+
+	// 更新 CIOView 的宽度
+	CRect wndRect;
+	pIOView->GetClientRect(wndRect);
+	CRect groupRect;
+	pInputGroup->GetClientRect(groupRect);
+
+	pIOView->SetScrollSizes(MM_TEXT, CSize(groupRect.Width() + 20, groupRect.Height()));
+}
+
+
+Relay* CILKTestDoc::findRelay(int boardID, int portID, BOOL bInput)
+{
+	auto it = find_if(vRelay_.begin(), vRelay_.end(), [boardID, portID, bInput](Relay* pRelay) {
+		return (pRelay->boardID_[bInput ? 0 : 1] == boardID) && (pRelay->portID_[bInput ? 0 : 1] == portID);
+	});
+
+	return it == vRelay_.end() ? NULL : (*it);
+}
+
+
+void CILKTestDoc::createIOItem(vector<array<IOItem, 16>>& vIOItem_, CWnd* pGroupWnd, BOOL bInput)
+{
+	const int margin = 5; // IOItem 的间距
+	const int width = 15; // CheckBox 宽度
+
+	CRect groupRect;
+	pGroupWnd->GetClientRect(groupRect);
+	pGroupWnd->MapWindowPoints(pGroupWnd->GetParent(), groupRect);
+
+	CRect btnRect(
+		groupRect.left + 32,		 groupRect.top + 42,
+		groupRect.left + 32 + width, groupRect.top + 42 + width);
+
+	int boardID = 0;
+	for (auto it = vIOItem_.begin(); it != vIOItem_.end(); it++)
+	{
+		// 每个IO板
+		// 为每个IO板生成板号
+		CIOView* pIOView = (CIOView*)pGroupWnd->GetParent();
+		CString strBoardID;
+		strBoardID.Format(L"%d", boardID);
+		CRect boardIDRect(btnRect);
+		boardIDRect.OffsetRect(0, -21);
+		pIOView->boardIDLabel_[bInput ? 0 : 1][boardID].Create(strBoardID, WS_CHILD | WS_VISIBLE, boardIDRect, pIOView);
+		pIOView->boardIDLabel_[bInput ? 0 : 1][boardID].SetFont(&pIOView->font_);
+
+		int portID = 0;
+		for (auto jt = (*it).begin(); jt != (*it).end(); jt++)
+		{
+			// 每个端口
+			(*jt).pBtn_ = new CButton();
+			(*jt).pBtn_->Create(L"", WS_CHILD | WS_VISIBLE | BS_AUTOCHECKBOX, btnRect, pGroupWnd->GetParent(), 0);
+
+			CRect captionRect(btnRect);
+			captionRect.OffsetRect(width + margin, 0);
+			captionRect.right = captionRect.left + 60;
+
+			if (Relay* pRelay = findRelay(boardID, portID, bInput))
+			{
+				pRelay->pIoItem_[bInput ? 0 : 1] = &(*jt);
+				(*jt).pCaption_ = new CIOCaptionWnd(pRelay->deviceName_ + L"_" + pRelay->name_, pRelay);
+			}
+			else
+			{
+				CString str;
+				str.Format(L"%d", portID);
+				(*jt).pCaption_ = new CIOCaptionWnd(str, NULL);
+			}
+			(*jt).pCaption_->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, captionRect, pGroupWnd->GetParent(), 0);
+
+			// 纵向移动 btnRect;
+			portID++;
+			btnRect.OffsetRect(0, 21);
+		}
+
+		// 横向移动 btnRect 位置
+		btnRect.OffsetRect(width + margin + 60 + margin, -21 * 16);
+		boardID++;
+	}
+	groupRect.right = btnRect.right;
+	pGroupWnd->MoveWindow(groupRect);
+}
+
+
+void CILKTestDoc::checkIOValid()
+{
+	// 查找 Relay 的 采集接口和驱动接口有没有地址冲突
+	for (auto it = vRelay_.begin(); it != vRelay_.end(); it++)
+	{
+		for (auto jt = it + 1; jt != vRelay_.end(); jt++)
+		{
+			if ((*it)->deviceName_.Compare(L"9")==0 && (*jt)->deviceName_.Compare(L"D11")==0)
+			{
+				int a = 0;
+			}
+
+			if ((*it)->bInput_ && (*jt)->bInput_)
+			{
+				if (((*it)->boardID_[0] == (*jt)->boardID_[0]) && ((*it)->portID_[0] == (*jt)->portID_[0]))
+				{
+					CString str;
+					str.Format(L"输入板位置相等：%s %s (%s %s)", (*it)->deviceName_, (*it)->name_, (*jt)->deviceName_, (*jt)->name_);
+					AfxMessageBox(str);
+				}
+			}
+
+			if ((*it)->bOutput_ && (*jt)->bOutput_)
+			{
+				if (((*it)->boardID_[1] == (*jt)->boardID_[1]) && ((*it)->portID_[1] == (*jt)->portID_[1]))
+				{
+					CString str;
+					str.Format(L"输出板位置相等：%s %s (%s %s)", (*it)->deviceName_, (*it)->name_, (*jt)->deviceName_, (*jt)->name_);
+					AfxMessageBox(str);
+				}
+			}
+		}
+	}
+}
+
+
+void CILKTestDoc::InitSockets()
+{
+	
+}

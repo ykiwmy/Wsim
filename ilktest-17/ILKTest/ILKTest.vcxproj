@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{085310FC-7029-44DB-BE44-5E4BCCF7B296}</ProjectGuid>
+    <RootNamespace>ILKTest</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\;.\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\;.\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseRoute.h" />
+    <ClInclude Include="DumpHelper.h" />
+    <ClInclude Include="ILKGraphic\CADAfgDoor.h" />
+    <ClInclude Include="ILKGraphic\CADButton.h" />
+    <ClInclude Include="ILKGraphic\CADDeLight.h" />
+    <ClInclude Include="ILKGraphic\CADDeLine.h" />
+    <ClInclude Include="ILKGraphic\CADDevice.h" />
+    <ClInclude Include="ILKGraphic\CADDoor.h" />
+    <ClInclude Include="ILKGraphic\CADGraphic.h" />
+    <ClInclude Include="ILKGraphic\CADSealCount.h" />
+    <ClInclude Include="ILKGraphic\CADSection.h" />
+    <ClInclude Include="ILKGraphic\CADSignal.h" />
+    <ClInclude Include="ILKGraphic\CADStation.h" />
+    <ClInclude Include="ILKGraphic\ColorDef.h" />
+    <ClInclude Include="ILKGraphic\DevBorder.h" />
+    <ClInclude Include="ILKGraphic\DeviceData.h" />
+    <ClInclude Include="ILKGraphic\Label.h" />
+    <ClInclude Include="ILKGraphic\NavigableTrack.h" />
+    <ClInclude Include="ILKGraphic\RailSwitch.h" />
+    <ClInclude Include="ILKGraphic\TurnTable.h" />
+    <ClInclude Include="ILKTest.h" />
+    <ClInclude Include="ILKTestDoc.h" />
+    <ClInclude Include="ChildView.h" />
+    <ClInclude Include="IOCaptionWnd.h" />
+    <ClInclude Include="IOItem.h" />
+    <ClInclude Include="IOSocket.h" />
+    <ClInclude Include="IOView.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MySever.h" />
+    <ClInclude Include="NetConfigDialog.h" />
+    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="Relay.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RSSP\GL_Basic_Type_Definition.h" />
+    <ClInclude Include="RSSP\GL_Compile_Switch_Definition.h" />
+    <ClInclude Include="RSSP\parameter.h" />
+    <ClInclude Include="RSSP\Rsp1.h" />
+    <ClInclude Include="RSSP\RSSP1_Interface.h" />
+    <ClInclude Include="RSSP\Vcp_File_Interface.h" />
+    <ClInclude Include="RSSP\Vcp_Public_Definition.h" />
+    <ClInclude Include="RSSP\Vcp_Service_Interface.h" />
+    <ClInclude Include="RSSP\Vcp_Service_TestInterface.h" />
+    <ClInclude Include="RSSP\Vcp_Track_Interface.h" />
+    <ClInclude Include="RSSP\Vcp_UsrProcess_Entrance.h" />
+    <ClInclude Include="SplitterFrame.h" />
+    <ClInclude Include="SwitchSection.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TCPShowDlg.h" />
+    <ClInclude Include="TCPSocket.h" />
+    <ClInclude Include="SAMProcess.h" />
+    <ClInclude Include="ZcCommRelay.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseRoute.cpp" />
+    <ClCompile Include="DumpHelper.cpp" />
+    <ClCompile Include="ILKGraphic\CADAfgDoor.cpp" />
+    <ClCompile Include="ILKGraphic\CADButton.cpp" />
+    <ClCompile Include="ILKGraphic\CADDeLight.cpp" />
+    <ClCompile Include="ILKGraphic\CADDeLine.cpp" />
+    <ClCompile Include="ILKGraphic\CADDevice.cpp" />
+    <ClCompile Include="ILKGraphic\CADDoor.cpp" />
+    <ClCompile Include="ILKGraphic\CADGraphic.cpp" />
+    <ClCompile Include="ILKGraphic\CADSealCount.cpp" />
+    <ClCompile Include="ILKGraphic\CADSection.cpp" />
+    <ClCompile Include="ILKGraphic\CADSignal.cpp" />
+    <ClCompile Include="ILKGraphic\CADStation.cpp" />
+    <ClCompile Include="ILKGraphic\ColorDef.cpp" />
+    <ClCompile Include="ILKGraphic\DevBorder.cpp" />
+    <ClCompile Include="ILKGraphic\DeviceData.cpp" />
+    <ClCompile Include="ILKGraphic\Label.cpp" />
+    <ClCompile Include="ILKGraphic\NavigableTrack.cpp" />
+    <ClCompile Include="ILKGraphic\RailSwitch.cpp" />
+    <ClCompile Include="ILKGraphic\TurnTable.cpp" />
+    <ClCompile Include="ILKTest.cpp" />
+    <ClCompile Include="ILKTestDoc.cpp" />
+    <ClCompile Include="ChildView.cpp" />
+    <ClCompile Include="IOCaptionWnd.cpp" />
+    <ClCompile Include="IOItem.cpp" />
+    <ClCompile Include="IOSocket.cpp" />
+    <ClCompile Include="IOView.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MySever.cpp" />
+    <ClCompile Include="NetConfigDialog.cpp" />
+    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="Relay.cpp" />
+    <ClCompile Include="RSSP\Rsp1.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RSSP\RSSP1_Interface.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SplitterFrame.cpp" />
+    <ClCompile Include="SwitchSection.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TCPShowDlg.cpp" />
+    <ClCompile Include="TCPSocket.cpp" />
+    <ClCompile Include="SAMProcess.cpp" />
+    <ClCompile Include="ZcCommRelay.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ILKTest.reg" />
+    <None Include="res\ILKTest.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ILKTest.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ILKTest.ico" />
+    <Image Include="res\ILKTestDoc.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ILKTest.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
