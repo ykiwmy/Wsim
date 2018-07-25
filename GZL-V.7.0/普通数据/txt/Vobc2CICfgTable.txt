@@ -1,0 +1,251 @@
+/**VobcCfg Number: 62 **/
+    D0000 = 0x00000001 ; // 信号机 (devType)
+    D0001 = 0x00000000 ; // X1805 (ciIndex)
+    D0002 = 0xF0040005 ; // (vobcIndex)
+
+    D0003 = 0x00000001 ; // 信号机 (devType)
+    D0004 = 0x00000001 ; // S1806 (ciIndex)
+    D0005 = 0xF0040011 ; // (vobcIndex)
+
+    D0006 = 0x00000001 ; // 信号机 (devType)
+    D0007 = 0x00000002 ; // X1801 (ciIndex)
+    D0008 = 0xF0040002 ; // (vobcIndex)
+
+    D0009 = 0x00000001 ; // 信号机 (devType)
+    D0010 = 0x00000003 ; // X1803 (ciIndex)
+    D0011 = 0xF0040003 ; // (vobcIndex)
+
+    D0012 = 0x00000001 ; // 信号机 (devType)
+    D0013 = 0x00000004 ; // X1817 (ciIndex)
+    D0014 = 0xF004000A ; // (vobcIndex)
+
+    D0015 = 0x00000001 ; // 信号机 (devType)
+    D0016 = 0x00000005 ; // X1901 (ciIndex)
+    D0017 = 0xF004000B ; // (vobcIndex)
+
+    D0018 = 0x00000001 ; // 信号机 (devType)
+    D0019 = 0x00000006 ; // S1802 (ciIndex)
+    D0020 = 0xF004000E ; // (vobcIndex)
+
+    D0021 = 0x00000001 ; // 信号机 (devType)
+    D0022 = 0x00000007 ; // S1804 (ciIndex)
+    D0023 = 0xF004000F ; // (vobcIndex)
+
+    D0024 = 0x00000001 ; // 信号机 (devType)
+    D0025 = 0x00000008 ; // S1902 (ciIndex)
+    D0026 = 0xF0040016 ; // (vobcIndex)
+
+    D0027 = 0x00000001 ; // 信号机 (devType)
+    D0028 = 0x00000009 ; // S1904 (ciIndex)
+    D0029 = 0xF004001E ; // (vobcIndex)
+
+    D0030 = 0x00000001 ; // 信号机 (devType)
+    D0031 = 0x0000000A ; // X1807 (ciIndex)
+    D0032 = 0xF0040004 ; // (vobcIndex)
+
+    D0033 = 0x00000001 ; // 信号机 (devType)
+    D0034 = 0x0000000B ; // S1808 (ciIndex)
+    D0035 = 0xF0040010 ; // (vobcIndex)
+
+    D0036 = 0x00000001 ; // 信号机 (devType)
+    D0037 = 0x0000000C ; // X1809 (ciIndex)
+    D0038 = 0xF0040006 ; // (vobcIndex)
+
+    D0039 = 0x00000001 ; // 信号机 (devType)
+    D0040 = 0x0000000D ; // X1813 (ciIndex)
+    D0041 = 0xF0040008 ; // (vobcIndex)
+
+    D0042 = 0x00000001 ; // 信号机 (devType)
+    D0043 = 0x0000000E ; // S1810 (ciIndex)
+    D0044 = 0xF0040012 ; // (vobcIndex)
+
+    D0045 = 0x00000001 ; // 信号机 (devType)
+    D0046 = 0x0000000F ; // S1816 (ciIndex)
+    D0047 = 0xF0040015 ; // (vobcIndex)
+
+    D0048 = 0x00000001 ; // 信号机 (devType)
+    D0049 = 0x00000010 ; // X1811 (ciIndex)
+    D0050 = 0xF0040007 ; // (vobcIndex)
+
+    D0051 = 0x00000001 ; // 信号机 (devType)
+    D0052 = 0x00000011 ; // X1815 (ciIndex)
+    D0053 = 0xF0040009 ; // (vobcIndex)
+
+    D0054 = 0x00000001 ; // 信号机 (devType)
+    D0055 = 0x00000012 ; // S1812 (ciIndex)
+    D0056 = 0xF0040013 ; // (vobcIndex)
+
+    D0057 = 0x00000001 ; // 信号机 (devType)
+    D0058 = 0x00000013 ; // S1814 (ciIndex)
+    D0059 = 0xF0040014 ; // (vobcIndex)
+
+    D0060 = 0x00000002 ; // 屏蔽门 (devType)
+    D0061 = 0x00000000 ; // PSD1801 (ciIndex)
+    D0062 = 0xEB040001 ; // (vobcIndex)
+
+    D0063 = 0x00000002 ; // 屏蔽门 (devType)
+    D0064 = 0x00000001 ; // PSD1802 (ciIndex)
+    D0065 = 0xEB040002 ; // (vobcIndex)
+
+    D0066 = 0x00000002 ; // 屏蔽门 (devType)
+    D0067 = 0x00000002 ; // PSD1901 (ciIndex)
+    D0068 = 0xEB040003 ; // (vobcIndex)
+
+    D0069 = 0x00000002 ; // 屏蔽门 (devType)
+    D0070 = 0x00000003 ; // PSD1902 (ciIndex)
+    D0071 = 0xEB040004 ; // (vobcIndex)
+
+    D0072 = 0x00000002 ; // 屏蔽门 (devType)
+    D0073 = 0x00000004 ; // PSD2001 (ciIndex)
+    D0074 = 0xEB040005 ; // (vobcIndex)
+
+    D0075 = 0x00000002 ; // 屏蔽门 (devType)
+    D0076 = 0x00000005 ; // PSD2002 (ciIndex)
+    D0077 = 0xEB040006 ; // (vobcIndex)
+
+    D0078 = 0x00000003 ; // 物理区段 (devType)
+    D0079 = 0x00000000 ; // T1801 (ciIndex)
+    D0080 = 0xE9040001 ; // (vobcIndex)
+
+    D0081 = 0x00000003 ; // 物理区段 (devType)
+    D0082 = 0x00000001 ; // T1803 (ciIndex)
+    D0083 = 0xE9040002 ; // (vobcIndex)
+
+    D0084 = 0x00000003 ; // 物理区段 (devType)
+    D0085 = 0x00000002 ; // T1805 (ciIndex)
+    D0086 = 0xE9040003 ; // (vobcIndex)
+
+    D0087 = 0x00000003 ; // 物理区段 (devType)
+    D0088 = 0x00000003 ; // T1807 (ciIndex)
+    D0089 = 0xE9040004 ; // (vobcIndex)
+
+    D0090 = 0x00000003 ; // 物理区段 (devType)
+    D0091 = 0x00000004 ; // T1809 (ciIndex)
+    D0092 = 0xE9040005 ; // (vobcIndex)
+
+    D0093 = 0x00000003 ; // 物理区段 (devType)
+    D0094 = 0x00000005 ; // T1811 (ciIndex)
+    D0095 = 0xE904000C ; // (vobcIndex)
+
+    D0096 = 0x00000003 ; // 物理区段 (devType)
+    D0097 = 0x00000006 ; // T1813 (ciIndex)
+    D0098 = 0xE9040006 ; // (vobcIndex)
+
+    D0099 = 0x00000003 ; // 物理区段 (devType)
+    D0100 = 0x00000006 ; // T1813 (ciIndex)
+    D0101 = 0xE9040007 ; // (vobcIndex)
+
+    D0102 = 0x00000003 ; // 物理区段 (devType)
+    D0103 = 0x00000006 ; // T1813 (ciIndex)
+    D0104 = 0xE904000A ; // (vobcIndex)
+
+    D0105 = 0x00000003 ; // 物理区段 (devType)
+    D0106 = 0x00000007 ; // T1815 (ciIndex)
+    D0107 = 0xE9040008 ; // (vobcIndex)
+
+    D0108 = 0x00000003 ; // 物理区段 (devType)
+    D0109 = 0x00000007 ; // T1815 (ciIndex)
+    D0110 = 0xE904000D ; // (vobcIndex)
+
+    D0111 = 0x00000003 ; // 物理区段 (devType)
+    D0112 = 0x00000008 ; // T1817 (ciIndex)
+    D0113 = 0xE904000E ; // (vobcIndex)
+
+    D0114 = 0x00000003 ; // 物理区段 (devType)
+    D0115 = 0x00000009 ; // T1819 (ciIndex)
+    D0116 = 0xE904000F ; // (vobcIndex)
+
+    D0117 = 0x00000003 ; // 物理区段 (devType)
+    D0118 = 0x00000009 ; // T1819 (ciIndex)
+    D0119 = 0xE9040011 ; // (vobcIndex)
+
+    D0120 = 0x00000003 ; // 物理区段 (devType)
+    D0121 = 0x0000000A ; // T1821 (ciIndex)
+    D0122 = 0xE9040010 ; // (vobcIndex)
+
+    D0123 = 0x00000003 ; // 物理区段 (devType)
+    D0124 = 0x0000000B ; // T1823 (ciIndex)
+    D0125 = 0xE9040012 ; // (vobcIndex)
+
+    D0126 = 0x00000003 ; // 物理区段 (devType)
+    D0127 = 0x0000000C ; // T1901 (ciIndex)
+    D0128 = 0xE9040013 ; // (vobcIndex)
+
+    D0129 = 0x00000003 ; // 物理区段 (devType)
+    D0130 = 0x0000000D ; // T1903 (ciIndex)
+    D0131 = 0xE9040014 ; // (vobcIndex)
+
+    D0132 = 0x00000003 ; // 物理区段 (devType)
+    D0133 = 0x0000000E ; // T1905 (ciIndex)
+    D0134 = 0xE9040015 ; // (vobcIndex)
+
+    D0135 = 0x00000003 ; // 物理区段 (devType)
+    D0136 = 0x0000000F ; // T1802 (ciIndex)
+    D0137 = 0xE9040017 ; // (vobcIndex)
+
+    D0138 = 0x00000003 ; // 物理区段 (devType)
+    D0139 = 0x00000010 ; // T1804 (ciIndex)
+    D0140 = 0xE9040018 ; // (vobcIndex)
+
+    D0141 = 0x00000003 ; // 物理区段 (devType)
+    D0142 = 0x00000011 ; // T1806 (ciIndex)
+    D0143 = 0xE9040019 ; // (vobcIndex)
+
+    D0144 = 0x00000003 ; // 物理区段 (devType)
+    D0145 = 0x00000012 ; // T1808 (ciIndex)
+    D0146 = 0xE904001A ; // (vobcIndex)
+
+    D0147 = 0x00000003 ; // 物理区段 (devType)
+    D0148 = 0x00000013 ; // T1810 (ciIndex)
+    D0149 = 0xE904001B ; // (vobcIndex)
+
+    D0150 = 0x00000003 ; // 物理区段 (devType)
+    D0151 = 0x00000014 ; // T1812 (ciIndex)
+    D0152 = 0xE9040020 ; // (vobcIndex)
+
+    D0153 = 0x00000003 ; // 物理区段 (devType)
+    D0154 = 0x00000015 ; // T1814 (ciIndex)
+    D0155 = 0xE9040009 ; // (vobcIndex)
+
+    D0156 = 0x00000003 ; // 物理区段 (devType)
+    D0157 = 0x00000015 ; // T1814 (ciIndex)
+    D0158 = 0xE904001C ; // (vobcIndex)
+
+    D0159 = 0x00000003 ; // 物理区段 (devType)
+    D0160 = 0x00000015 ; // T1814 (ciIndex)
+    D0161 = 0xE904001D ; // (vobcIndex)
+
+    D0162 = 0x00000003 ; // 物理区段 (devType)
+    D0163 = 0x00000016 ; // T1816 (ciIndex)
+    D0164 = 0xE904001E ; // (vobcIndex)
+
+    D0165 = 0x00000003 ; // 物理区段 (devType)
+    D0166 = 0x00000016 ; // T1816 (ciIndex)
+    D0167 = 0xE9040021 ; // (vobcIndex)
+
+    D0168 = 0x00000003 ; // 物理区段 (devType)
+    D0169 = 0x00000017 ; // T1818 (ciIndex)
+    D0170 = 0xE9040022 ; // (vobcIndex)
+
+    D0171 = 0x00000003 ; // 物理区段 (devType)
+    D0172 = 0x00000018 ; // T1820 (ciIndex)
+    D0173 = 0xE9040023 ; // (vobcIndex)
+
+    D0174 = 0x00000003 ; // 物理区段 (devType)
+    D0175 = 0x00000018 ; // T1820 (ciIndex)
+    D0176 = 0xE9040024 ; // (vobcIndex)
+
+    D0177 = 0x00000003 ; // 物理区段 (devType)
+    D0178 = 0x00000019 ; // T1902 (ciIndex)
+    D0179 = 0xE9040025 ; // (vobcIndex)
+
+    D0180 = 0x00000003 ; // 物理区段 (devType)
+    D0181 = 0x0000001A ; // T1904 (ciIndex)
+    D0182 = 0xE9040026 ; // (vobcIndex)
+
+    D0183 = 0x00000003 ; // 物理区段 (devType)
+    D0184 = 0x0000001B ; // T1906 (ciIndex)
+    D0185 = 0xE9040027 ; // (vobcIndex)
+
+    D0186 = 0xEEEE ; // (tabEnd)
+

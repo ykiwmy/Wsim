@@ -1,0 +1,33 @@
+/**PtTvsSection Number: 6 **/
+    D0000 = 0x0006 ; // T1813 (tvsIndex)
+    D0001 = 0x0014 ; // T1813A (logicIndex)
+    D0002 = 0x0015 ; // T1813B (logicIndex)
+    D0003 = 0x0016 ; // T1813C (logicIndex)
+
+    D0004 = 0x0007 ; // T1815 (tvsIndex)
+    D0005 = 0x001A ; // T1815A (logicIndex)
+    D0006 = 0x001B ; // T1815B (logicIndex)
+    D0007 = 0xFFFF ; // WJ (**logicIndex)
+
+    D0008 = 0x0009 ; // T1819 (tvsIndex)
+    D0009 = 0x0020 ; // T1819A (logicIndex)
+    D0010 = 0x0021 ; // T1819B (logicIndex)
+    D0011 = 0xFFFF ; // WJ (**logicIndex)
+
+    D0012 = 0x0015 ; // T1814 (tvsIndex)
+    D0013 = 0x0017 ; // T1814A (logicIndex)
+    D0014 = 0x0018 ; // T1814B (logicIndex)
+    D0015 = 0x0019 ; // T1814C (logicIndex)
+
+    D0016 = 0x0016 ; // T1816 (tvsIndex)
+    D0017 = 0x001C ; // T1816A (logicIndex)
+    D0018 = 0x001D ; // T1816B (logicIndex)
+    D0019 = 0xFFFF ; // WJ (**logicIndex)
+
+    D0020 = 0x0018 ; // T1820 (tvsIndex)
+    D0021 = 0x0022 ; // T1820A (logicIndex)
+    D0022 = 0x0023 ; // T1820B (logicIndex)
+    D0023 = 0xFFFF ; // WJ (**logicIndex)
+
+    D0024 = 0xEEEE ; // (tabEnd)
+

@@ -1,0 +1,244 @@
+V.A.0000.000.45
+/**Base RSSPI_Protocol Table Number: 3 **/
+selfRsspID: 15361
+    D0000 = 0x0001 ; // CI (peerType)
+    D0001 = 0x000C ; // (VcpDevType) [10进制表示为: 12]
+    D0002 = 0x3C0C ; // (Peer_RsspID) [10进制表示为: 15372]
+
+    D0003 = 0x0001 ; // CI (peerType)
+    D0004 = 0x000D ; // (VcpDevType) [10进制表示为: 13]
+    D0005 = 0x3C02 ; // (Peer_RsspID) [10进制表示为: 15362]
+
+    D0006 = 0x0002 ; // ZC (peerType)
+    D0007 = 0x0001 ; // (VcpDevType) [10进制表示为: 1]
+    D0008 = 0x1E01 ; // (Peer_RsspID) [10进制表示为: 7681]
+
+    D0009 = 0xEEEE ; // (tabEnd)
+/**Base RSSPII_Protocol Table Number: 49 **/
+    D0000 = 0xE6040001 ; // (iSrcId)
+    D0001 = 0x00000001 ; // (peerVer)
+    D0002 = 0x00000001 ; // (MapVer)
+
+    D0003 = 0x00000004 ; // VOBC (peerType)
+    D0004 = 0x00000001 ; // (VcpAppId)  [10进制表示为: 1]
+    D0005 = 0xE260E007 ; // (Peer_RsspID)
+
+    D0006 = 0x00000004 ; // VOBC (peerType)
+    D0007 = 0x00000002 ; // (VcpAppId)  [10进制表示为: 2]
+    D0008 = 0xE260E00B ; // (Peer_RsspID)
+
+    D0009 = 0x00000004 ; // VOBC (peerType)
+    D0010 = 0x00000003 ; // (VcpAppId)  [10进制表示为: 3]
+    D0011 = 0xE260E00F ; // (Peer_RsspID)
+
+    D0012 = 0x00000004 ; // VOBC (peerType)
+    D0013 = 0x00000004 ; // (VcpAppId)  [10进制表示为: 4]
+    D0014 = 0xE260E013 ; // (Peer_RsspID)
+
+    D0015 = 0x00000004 ; // VOBC (peerType)
+    D0016 = 0x00000005 ; // (VcpAppId)  [10进制表示为: 5]
+    D0017 = 0xE260E017 ; // (Peer_RsspID)
+
+    D0018 = 0x00000004 ; // VOBC (peerType)
+    D0019 = 0x00000006 ; // (VcpAppId)  [10进制表示为: 6]
+    D0020 = 0xE260E01B ; // (Peer_RsspID)
+
+    D0021 = 0x00000004 ; // VOBC (peerType)
+    D0022 = 0x00000007 ; // (VcpAppId)  [10进制表示为: 7]
+    D0023 = 0xE260E01F ; // (Peer_RsspID)
+
+    D0024 = 0x00000004 ; // VOBC (peerType)
+    D0025 = 0x00000008 ; // (VcpAppId)  [10进制表示为: 8]
+    D0026 = 0xE260E023 ; // (Peer_RsspID)
+
+    D0027 = 0x00000004 ; // VOBC (peerType)
+    D0028 = 0x00000009 ; // (VcpAppId)  [10进制表示为: 9]
+    D0029 = 0xE260E027 ; // (Peer_RsspID)
+
+    D0030 = 0x00000004 ; // VOBC (peerType)
+    D0031 = 0x0000000A ; // (VcpAppId)  [10进制表示为: 10]
+    D0032 = 0xE260E02B ; // (Peer_RsspID)
+
+    D0033 = 0x00000004 ; // VOBC (peerType)
+    D0034 = 0x0000000B ; // (VcpAppId)  [10进制表示为: 11]
+    D0035 = 0xE260E02F ; // (Peer_RsspID)
+
+    D0036 = 0x00000004 ; // VOBC (peerType)
+    D0037 = 0x0000000C ; // (VcpAppId)  [10进制表示为: 12]
+    D0038 = 0xE260E033 ; // (Peer_RsspID)
+
+    D0039 = 0x00000004 ; // VOBC (peerType)
+    D0040 = 0x0000000D ; // (VcpAppId)  [10进制表示为: 13]
+    D0041 = 0xE260E037 ; // (Peer_RsspID)
+
+    D0042 = 0x00000004 ; // VOBC (peerType)
+    D0043 = 0x0000000E ; // (VcpAppId)  [10进制表示为: 14]
+    D0044 = 0xE260E03B ; // (Peer_RsspID)
+
+    D0045 = 0x00000004 ; // VOBC (peerType)
+    D0046 = 0x0000000F ; // (VcpAppId)  [10进制表示为: 15]
+    D0047 = 0xE260E03F ; // (Peer_RsspID)
+
+    D0048 = 0x00000004 ; // VOBC (peerType)
+    D0049 = 0x00000010 ; // (VcpAppId)  [10进制表示为: 16]
+    D0050 = 0xE260E043 ; // (Peer_RsspID)
+
+    D0051 = 0x00000004 ; // VOBC (peerType)
+    D0052 = 0x00000011 ; // (VcpAppId)  [10进制表示为: 17]
+    D0053 = 0xE260E047 ; // (Peer_RsspID)
+
+    D0054 = 0x00000004 ; // VOBC (peerType)
+    D0055 = 0x00000012 ; // (VcpAppId)  [10进制表示为: 18]
+    D0056 = 0xE260E04B ; // (Peer_RsspID)
+
+    D0057 = 0x00000004 ; // VOBC (peerType)
+    D0058 = 0x00000013 ; // (VcpAppId)  [10进制表示为: 19]
+    D0059 = 0xE260E04F ; // (Peer_RsspID)
+
+    D0060 = 0x00000004 ; // VOBC (peerType)
+    D0061 = 0x00000014 ; // (VcpAppId)  [10进制表示为: 20]
+    D0062 = 0xE260E053 ; // (Peer_RsspID)
+
+    D0063 = 0x00000004 ; // VOBC (peerType)
+    D0064 = 0x00000015 ; // (VcpAppId)  [10进制表示为: 21]
+    D0065 = 0xE260E057 ; // (Peer_RsspID)
+
+    D0066 = 0x00000004 ; // VOBC (peerType)
+    D0067 = 0x00000016 ; // (VcpAppId)  [10进制表示为: 22]
+    D0068 = 0xE260E05B ; // (Peer_RsspID)
+
+    D0069 = 0x00000004 ; // VOBC (peerType)
+    D0070 = 0x00000017 ; // (VcpAppId)  [10进制表示为: 23]
+    D0071 = 0xE260E05F ; // (Peer_RsspID)
+
+    D0072 = 0x00000004 ; // VOBC (peerType)
+    D0073 = 0x00000018 ; // (VcpAppId)  [10进制表示为: 24]
+    D0074 = 0xE260E063 ; // (Peer_RsspID)
+
+    D0075 = 0x00000004 ; // VOBC (peerType)
+    D0076 = 0x00000019 ; // (VcpAppId)  [10进制表示为: 25]
+    D0077 = 0xE260E067 ; // (Peer_RsspID)
+
+    D0078 = 0x00000004 ; // VOBC (peerType)
+    D0079 = 0x0000001A ; // (VcpAppId)  [10进制表示为: 26]
+    D0080 = 0xE260E06B ; // (Peer_RsspID)
+
+    D0081 = 0x00000004 ; // VOBC (peerType)
+    D0082 = 0x0000001B ; // (VcpAppId)  [10进制表示为: 27]
+    D0083 = 0xE260E06F ; // (Peer_RsspID)
+
+    D0084 = 0x00000004 ; // VOBC (peerType)
+    D0085 = 0x0000001C ; // (VcpAppId)  [10进制表示为: 28]
+    D0086 = 0xE260E073 ; // (Peer_RsspID)
+
+    D0087 = 0x00000004 ; // VOBC (peerType)
+    D0088 = 0x0000001D ; // (VcpAppId)  [10进制表示为: 29]
+    D0089 = 0xE260E077 ; // (Peer_RsspID)
+
+    D0090 = 0x00000004 ; // VOBC (peerType)
+    D0091 = 0x0000001E ; // (VcpAppId)  [10进制表示为: 30]
+    D0092 = 0xE260E07B ; // (Peer_RsspID)
+
+    D0093 = 0x00000004 ; // VOBC (peerType)
+    D0094 = 0x0000001F ; // (VcpAppId)  [10进制表示为: 31]
+    D0095 = 0xE260E07F ; // (Peer_RsspID)
+
+    D0096 = 0x00000004 ; // VOBC (peerType)
+    D0097 = 0x00000020 ; // (VcpAppId)  [10进制表示为: 32]
+    D0098 = 0xE260E083 ; // (Peer_RsspID)
+
+    D0099 = 0x00000004 ; // VOBC (peerType)
+    D0100 = 0x00000021 ; // (VcpAppId)  [10进制表示为: 33]
+    D0101 = 0xE260E087 ; // (Peer_RsspID)
+
+    D0102 = 0x00000004 ; // VOBC (peerType)
+    D0103 = 0x00000022 ; // (VcpAppId)  [10进制表示为: 34]
+    D0104 = 0xE260E08B ; // (Peer_RsspID)
+
+    D0105 = 0x00000004 ; // VOBC (peerType)
+    D0106 = 0x00000023 ; // (VcpAppId)  [10进制表示为: 35]
+    D0107 = 0xE260E08F ; // (Peer_RsspID)
+
+    D0108 = 0x00000004 ; // VOBC (peerType)
+    D0109 = 0x00000024 ; // (VcpAppId)  [10进制表示为: 36]
+    D0110 = 0xE260E093 ; // (Peer_RsspID)
+
+    D0111 = 0x00000004 ; // VOBC (peerType)
+    D0112 = 0x00000025 ; // (VcpAppId)  [10进制表示为: 37]
+    D0113 = 0xE260E097 ; // (Peer_RsspID)
+
+    D0114 = 0x00000004 ; // VOBC (peerType)
+    D0115 = 0x00000026 ; // (VcpAppId)  [10进制表示为: 38]
+    D0116 = 0xE260E09B ; // (Peer_RsspID)
+
+    D0117 = 0x00000004 ; // VOBC (peerType)
+    D0118 = 0x00000027 ; // (VcpAppId)  [10进制表示为: 39]
+    D0119 = 0xE260E09F ; // (Peer_RsspID)
+
+    D0120 = 0x00000004 ; // VOBC (peerType)
+    D0121 = 0x00000028 ; // (VcpAppId)  [10进制表示为: 40]
+    D0122 = 0xE260E0A3 ; // (Peer_RsspID)
+
+    D0123 = 0x00000004 ; // VOBC (peerType)
+    D0124 = 0x00000029 ; // (VcpAppId)  [10进制表示为: 41]
+    D0125 = 0xE260E0A7 ; // (Peer_RsspID)
+
+    D0126 = 0x00000004 ; // VOBC (peerType)
+    D0127 = 0x0000002A ; // (VcpAppId)  [10进制表示为: 42]
+    D0128 = 0xE260E0AB ; // (Peer_RsspID)
+
+    D0129 = 0x00000004 ; // VOBC (peerType)
+    D0130 = 0x0000002B ; // (VcpAppId)  [10进制表示为: 43]
+    D0131 = 0xE260E0AF ; // (Peer_RsspID)
+
+    D0132 = 0x00000004 ; // VOBC (peerType)
+    D0133 = 0x0000002C ; // (VcpAppId)  [10进制表示为: 44]
+    D0134 = 0xE260E0B3 ; // (Peer_RsspID)
+
+    D0135 = 0x00000004 ; // VOBC (peerType)
+    D0136 = 0x0000002D ; // (VcpAppId)  [10进制表示为: 45]
+    D0137 = 0xE260E0B7 ; // (Peer_RsspID)
+
+    D0138 = 0x00000004 ; // VOBC (peerType)
+    D0139 = 0x0000002E ; // (VcpAppId)  [10进制表示为: 46]
+    D0140 = 0xE260E0BB ; // (Peer_RsspID)
+
+    D0141 = 0x00000004 ; // VOBC (peerType)
+    D0142 = 0x0000002F ; // (VcpAppId)  [10进制表示为: 47]
+    D0143 = 0xE260E0BF ; // (Peer_RsspID)
+
+    D0144 = 0x00000004 ; // VOBC (peerType)
+    D0145 = 0x00000030 ; // (VcpAppId)  [10进制表示为: 48]
+    D0146 = 0xE260E0C3 ; // (Peer_RsspID)
+
+    D0147 = 0x00000004 ; // VOBC (peerType)
+    D0148 = 0x00000031 ; // (VcpAppId)  [10进制表示为: 49]
+    D0149 = 0xE260E0C7 ; // (Peer_RsspID)
+
+    D0150 = 0xEEEE ; // (tabEnd)
+
+/**Base All Station Info. **/
+    D0000 = 0x001E ; // (ZcType)
+    D0001 = 0x003C ; // (CiType)
+    D0002 = 0x00000001 ; // (iZcId) [10进制表示为: 1]
+    D0003 = 0x00000001 ; // (iCiId) [10进制表示为: 1]
+
+    D0004 = 0x00003C01 ; // (iSrcId) [10进制表示为: 15361]
+    D0005 = 0x00000000 ; // (**iLinkCiId) [default]
+    D0006 = 0x00000000 ; // (**iLinkCiId) [default]
+    D0007 = 0x00000000 ; // (**iLinkCiId) [default]
+    D0008 = 0x00000000 ; // (**iLinkCiId) [default]
+    D0009 = 0x00000000 ; // (**iLinkCiId) [default]
+    D0010 = 0x00000000 ; // (**iLinkCiId) [default]
+    D0011 = 0x00000000 ; // (**iLinkCiId) [default]
+    D0012 = 0x00000000 ; // (**iLinkCiId) [default]
+    D0013 = 0x00000000 ; // (**iLinkCiId) [default]
+    D0014 = 0x00000000 ; // (**iLinkCiId) [default]
+
+    D0015 = 0xE6040001 ; // (iVobcSrcId)
+    D0016 = 0x00000001 ; // (iMapVer)
+    D0017 = 0x00000001 ; // (iPeerVer)
+
+    D0018 = 0xEEEE ; // (tabEnd)
+
+************************************

@@ -1,0 +1,2348 @@
+/**Base atpInterfaceTable Number: 468 **/
+    D0000 = 0x001E ; // (zcType)
+    D0001 = 0x0001 ; // (zcIndex)  [10进制表示为: 1]
+    D0002 = 0x003C ; // (ciType)
+    D0003 = 0x0001 ; // (ciIndex)  [10进制表示为: 1]
+
+    D0004 = 0x0000 ; // P1801 (devIndex) [10进制表示为: 0]
+    D0005 = 0x0001 ; // DBJ (devType)
+    D0006 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D0007 = 0x0001 ; // (seqIndex) [10进制表示为: 1]
+
+    D0008 = 0x0000 ; // P1801 (devIndex) [10进制表示为: 0]
+    D0009 = 0x0002 ; // FBJ (devType)
+    D0010 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D0011 = 0x0002 ; // (seqIndex) [10进制表示为: 2]
+
+    D0012 = 0x0000 ; // P1801 (devIndex) [10进制表示为: 0]
+    D0013 = 0x0003 ; // DCSB (devType)
+    D0014 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D0015 = 0x0003 ; // (seqIndex) [10进制表示为: 3]
+
+    D0016 = 0x0001 ; // P1803 (devIndex) [10进制表示为: 1]
+    D0017 = 0x0001 ; // DBJ (devType)
+    D0018 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D0019 = 0x0004 ; // (seqIndex) [10进制表示为: 4]
+
+    D0020 = 0x0001 ; // P1803 (devIndex) [10进制表示为: 1]
+    D0021 = 0x0002 ; // FBJ (devType)
+    D0022 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D0023 = 0x0005 ; // (seqIndex) [10进制表示为: 5]
+
+    D0024 = 0x0001 ; // P1803 (devIndex) [10进制表示为: 1]
+    D0025 = 0x0003 ; // DCSB (devType)
+    D0026 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D0027 = 0x0006 ; // (seqIndex) [10进制表示为: 6]
+
+    D0028 = 0x0002 ; // P1805 (devIndex) [10进制表示为: 2]
+    D0029 = 0x0001 ; // DBJ (devType)
+    D0030 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D0031 = 0x0007 ; // (seqIndex) [10进制表示为: 7]
+
+    D0032 = 0x0002 ; // P1805 (devIndex) [10进制表示为: 2]
+    D0033 = 0x0002 ; // FBJ (devType)
+    D0034 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D0035 = 0x0008 ; // (seqIndex) [10进制表示为: 8]
+
+    D0036 = 0x0002 ; // P1805 (devIndex) [10进制表示为: 2]
+    D0037 = 0x0003 ; // DCSB (devType)
+    D0038 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D0039 = 0x0009 ; // (seqIndex) [10进制表示为: 9]
+
+    D0040 = 0x0003 ; // P1807 (devIndex) [10进制表示为: 3]
+    D0041 = 0x0001 ; // DBJ (devType)
+    D0042 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D0043 = 0x000A ; // (seqIndex) [10进制表示为: 10]
+
+    D0044 = 0x0003 ; // P1807 (devIndex) [10进制表示为: 3]
+    D0045 = 0x0002 ; // FBJ (devType)
+    D0046 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D0047 = 0x000B ; // (seqIndex) [10进制表示为: 11]
+
+    D0048 = 0x0003 ; // P1807 (devIndex) [10进制表示为: 3]
+    D0049 = 0x0003 ; // DCSB (devType)
+    D0050 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D0051 = 0x000C ; // (seqIndex) [10进制表示为: 12]
+
+    D0052 = 0x0004 ; // P1802 (devIndex) [10进制表示为: 4]
+    D0053 = 0x0001 ; // DBJ (devType)
+    D0054 = 0x0005 ; // (zcIndex) [10进制表示为: 5]
+    D0055 = 0x0004 ; // (seqIndex) [10进制表示为: 4]
+
+    D0056 = 0x0004 ; // P1802 (devIndex) [10进制表示为: 4]
+    D0057 = 0x0002 ; // FBJ (devType)
+    D0058 = 0x0005 ; // (zcIndex) [10进制表示为: 5]
+    D0059 = 0x0005 ; // (seqIndex) [10进制表示为: 5]
+
+    D0060 = 0x0004 ; // P1802 (devIndex) [10进制表示为: 4]
+    D0061 = 0x0003 ; // DCSB (devType)
+    D0062 = 0x0005 ; // (zcIndex) [10进制表示为: 5]
+    D0063 = 0x0006 ; // (seqIndex) [10进制表示为: 6]
+
+    D0064 = 0x0005 ; // P1804 (devIndex) [10进制表示为: 5]
+    D0065 = 0x0001 ; // DBJ (devType)
+    D0066 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D0067 = 0x0001 ; // (seqIndex) [10进制表示为: 1]
+
+    D0068 = 0x0005 ; // P1804 (devIndex) [10进制表示为: 5]
+    D0069 = 0x0002 ; // FBJ (devType)
+    D0070 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D0071 = 0x0002 ; // (seqIndex) [10进制表示为: 2]
+
+    D0072 = 0x0005 ; // P1804 (devIndex) [10进制表示为: 5]
+    D0073 = 0x0003 ; // DCSB (devType)
+    D0074 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D0075 = 0x0003 ; // (seqIndex) [10进制表示为: 3]
+
+    D0076 = 0x0006 ; // P1806 (devIndex) [10进制表示为: 6]
+    D0077 = 0x0001 ; // DBJ (devType)
+    D0078 = 0x0007 ; // (zcIndex) [10进制表示为: 7]
+    D0079 = 0x000D ; // (seqIndex) [10进制表示为: 13]
+
+    D0080 = 0x0006 ; // P1806 (devIndex) [10进制表示为: 6]
+    D0081 = 0x0002 ; // FBJ (devType)
+    D0082 = 0x0007 ; // (zcIndex) [10进制表示为: 7]
+    D0083 = 0x000E ; // (seqIndex) [10进制表示为: 14]
+
+    D0084 = 0x0006 ; // P1806 (devIndex) [10进制表示为: 6]
+    D0085 = 0x0003 ; // DCSB (devType)
+    D0086 = 0x0007 ; // (zcIndex) [10进制表示为: 7]
+    D0087 = 0x000F ; // (seqIndex) [10进制表示为: 15]
+
+    D0088 = 0x0007 ; // P1808 (devIndex) [10进制表示为: 7]
+    D0089 = 0x0001 ; // DBJ (devType)
+    D0090 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D0091 = 0x000A ; // (seqIndex) [10进制表示为: 10]
+
+    D0092 = 0x0007 ; // P1808 (devIndex) [10进制表示为: 7]
+    D0093 = 0x0002 ; // FBJ (devType)
+    D0094 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D0095 = 0x000B ; // (seqIndex) [10进制表示为: 11]
+
+    D0096 = 0x0007 ; // P1808 (devIndex) [10进制表示为: 7]
+    D0097 = 0x0003 ; // DCSB (devType)
+    D0098 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D0099 = 0x000C ; // (seqIndex) [10进制表示为: 12]
+
+    D0100 = 0x0000 ; // X1805 (devIndex) [10进制表示为: 0]
+    D0101 = 0x0004 ; // SCT-NERCV (devType)
+    D0102 = 0x0005 ; // (zcIndex) [10进制表示为: 5]
+    D0103 = 0xFFFF ; // (seqIndex) [10进制表示为: 65535]
+
+    D0104 = 0x0000 ; // X1805 (devIndex) [10进制表示为: 0]
+    D0105 = 0x0005 ; // DDJ-NERCV (devType)
+    D0106 = 0x0005 ; // (zcIndex) [10进制表示为: 5]
+    D0107 = 0xFFFF ; // (seqIndex) [10进制表示为: 65535]
+
+    D0108 = 0x0000 ; // X1805 (devIndex) [10进制表示为: 0]
+    D0109 = 0x0006 ; // LXJZC (devType)
+    D0110 = 0x0005 ; // (zcIndex) [10进制表示为: 5]
+    D0111 = 0xFFFF ; // (seqIndex) [10进制表示为: 65535]
+
+    D0112 = 0x0001 ; // S1806 (devIndex) [10进制表示为: 1]
+    D0113 = 0x0004 ; // SCT-NERCV (devType)
+    D0114 = 0x0011 ; // (zcIndex) [10进制表示为: 17]
+    D0115 = 0xFFFF ; // (seqIndex) [10进制表示为: 65535]
+
+    D0116 = 0x0001 ; // S1806 (devIndex) [10进制表示为: 1]
+    D0117 = 0x0005 ; // DDJ-NERCV (devType)
+    D0118 = 0x0011 ; // (zcIndex) [10进制表示为: 17]
+    D0119 = 0xFFFF ; // (seqIndex) [10进制表示为: 65535]
+
+    D0120 = 0x0001 ; // S1806 (devIndex) [10进制表示为: 1]
+    D0121 = 0x0006 ; // LXJZC (devType)
+    D0122 = 0x0011 ; // (zcIndex) [10进制表示为: 17]
+    D0123 = 0xFFFF ; // (seqIndex) [10进制表示为: 65535]
+
+    D0124 = 0x0002 ; // X1801 (devIndex) [10进制表示为: 2]
+    D0125 = 0x0004 ; // SCT-NERCV (devType)
+    D0126 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D0127 = 0x0003 ; // (seqIndex) [10进制表示为: 3]
+
+    D0128 = 0x0002 ; // X1801 (devIndex) [10进制表示为: 2]
+    D0129 = 0x0005 ; // DDJ-NERCV (devType)
+    D0130 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D0131 = 0x0004 ; // (seqIndex) [10进制表示为: 4]
+
+    D0132 = 0x0002 ; // X1801 (devIndex) [10进制表示为: 2]
+    D0133 = 0x0006 ; // LXJZC (devType)
+    D0134 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D0135 = 0x0011 ; // (seqIndex) [10进制表示为: 17]
+
+    D0136 = 0x0003 ; // X1803 (devIndex) [10进制表示为: 3]
+    D0137 = 0x0004 ; // SCT-NERCV (devType)
+    D0138 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D0139 = 0x0005 ; // (seqIndex) [10进制表示为: 5]
+
+    D0140 = 0x0003 ; // X1803 (devIndex) [10进制表示为: 3]
+    D0141 = 0x0005 ; // DDJ-NERCV (devType)
+    D0142 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D0143 = 0x0006 ; // (seqIndex) [10进制表示为: 6]
+
+    D0144 = 0x0003 ; // X1803 (devIndex) [10进制表示为: 3]
+    D0145 = 0x0006 ; // LXJZC (devType)
+    D0146 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D0147 = 0x0012 ; // (seqIndex) [10进制表示为: 18]
+
+    D0148 = 0x0004 ; // X1817 (devIndex) [10进制表示为: 4]
+    D0149 = 0x0004 ; // SCT-NERCV (devType)
+    D0150 = 0x000A ; // (zcIndex) [10进制表示为: 10]
+    D0151 = 0x0013 ; // (seqIndex) [10进制表示为: 19]
+
+    D0152 = 0x0004 ; // X1817 (devIndex) [10进制表示为: 4]
+    D0153 = 0x0005 ; // DDJ-NERCV (devType)
+    D0154 = 0x000A ; // (zcIndex) [10进制表示为: 10]
+    D0155 = 0x0014 ; // (seqIndex) [10进制表示为: 20]
+
+    D0156 = 0x0004 ; // X1817 (devIndex) [10进制表示为: 4]
+    D0157 = 0x0006 ; // LXJZC (devType)
+    D0158 = 0x000A ; // (zcIndex) [10进制表示为: 10]
+    D0159 = 0x0019 ; // (seqIndex) [10进制表示为: 25]
+
+    D0160 = 0x0005 ; // X1901 (devIndex) [10进制表示为: 5]
+    D0161 = 0x0004 ; // SCT-NERCV (devType)
+    D0162 = 0x000B ; // (zcIndex) [10进制表示为: 11]
+    D0163 = 0x0015 ; // (seqIndex) [10进制表示为: 21]
+
+    D0164 = 0x0005 ; // X1901 (devIndex) [10进制表示为: 5]
+    D0165 = 0x0005 ; // DDJ-NERCV (devType)
+    D0166 = 0x000B ; // (zcIndex) [10进制表示为: 11]
+    D0167 = 0x0016 ; // (seqIndex) [10进制表示为: 22]
+
+    D0168 = 0x0005 ; // X1901 (devIndex) [10进制表示为: 5]
+    D0169 = 0x0006 ; // LXJZC (devType)
+    D0170 = 0x000B ; // (zcIndex) [10进制表示为: 11]
+    D0171 = 0x001A ; // (seqIndex) [10进制表示为: 26]
+
+    D0172 = 0x0006 ; // S1802 (devIndex) [10进制表示为: 6]
+    D0173 = 0x0004 ; // SCT-NERCV (devType)
+    D0174 = 0x000E ; // (zcIndex) [10进制表示为: 14]
+    D0175 = 0x0019 ; // (seqIndex) [10进制表示为: 25]
+
+    D0176 = 0x0006 ; // S1802 (devIndex) [10进制表示为: 6]
+    D0177 = 0x0005 ; // DDJ-NERCV (devType)
+    D0178 = 0x000E ; // (zcIndex) [10进制表示为: 14]
+    D0179 = 0x001A ; // (seqIndex) [10进制表示为: 26]
+
+    D0180 = 0x0006 ; // S1802 (devIndex) [10进制表示为: 6]
+    D0181 = 0x0006 ; // LXJZC (devType)
+    D0182 = 0x000E ; // (zcIndex) [10进制表示为: 14]
+    D0183 = 0x001C ; // (seqIndex) [10进制表示为: 28]
+
+    D0184 = 0x0007 ; // S1804 (devIndex) [10进制表示为: 7]
+    D0185 = 0x0004 ; // SCT-NERCV (devType)
+    D0186 = 0x000F ; // (zcIndex) [10进制表示为: 15]
+    D0187 = 0x001B ; // (seqIndex) [10进制表示为: 27]
+
+    D0188 = 0x0007 ; // S1804 (devIndex) [10进制表示为: 7]
+    D0189 = 0x0005 ; // DDJ-NERCV (devType)
+    D0190 = 0x000F ; // (zcIndex) [10进制表示为: 15]
+    D0191 = 0x001C ; // (seqIndex) [10进制表示为: 28]
+
+    D0192 = 0x0007 ; // S1804 (devIndex) [10进制表示为: 7]
+    D0193 = 0x0006 ; // LXJZC (devType)
+    D0194 = 0x000F ; // (zcIndex) [10进制表示为: 15]
+    D0195 = 0x001D ; // (seqIndex) [10进制表示为: 29]
+
+    D0196 = 0x0008 ; // S1902 (devIndex) [10进制表示为: 8]
+    D0197 = 0x0004 ; // SCT-NERCV (devType)
+    D0198 = 0x0016 ; // (zcIndex) [10进制表示为: 22]
+    D0199 = 0x0029 ; // (seqIndex) [10进制表示为: 41]
+
+    D0200 = 0x0008 ; // S1902 (devIndex) [10进制表示为: 8]
+    D0201 = 0x0005 ; // DDJ-NERCV (devType)
+    D0202 = 0x0016 ; // (zcIndex) [10进制表示为: 22]
+    D0203 = 0x002A ; // (seqIndex) [10进制表示为: 42]
+
+    D0204 = 0x0008 ; // S1902 (devIndex) [10进制表示为: 8]
+    D0205 = 0x0006 ; // LXJZC (devType)
+    D0206 = 0x0016 ; // (zcIndex) [10进制表示为: 22]
+    D0207 = 0x0024 ; // (seqIndex) [10进制表示为: 36]
+
+    D0208 = 0x0009 ; // S1904 (devIndex) [10进制表示为: 9]
+    D0209 = 0x0004 ; // SCT-NERCV (devType)
+    D0210 = 0x001E ; // (zcIndex) [10进制表示为: 30]
+    D0211 = 0x002B ; // (seqIndex) [10进制表示为: 43]
+
+    D0212 = 0x0009 ; // S1904 (devIndex) [10进制表示为: 9]
+    D0213 = 0x0005 ; // DDJ-NERCV (devType)
+    D0214 = 0x001E ; // (zcIndex) [10进制表示为: 30]
+    D0215 = 0x002C ; // (seqIndex) [10进制表示为: 44]
+
+    D0216 = 0x0009 ; // S1904 (devIndex) [10进制表示为: 9]
+    D0217 = 0x0006 ; // LXJZC (devType)
+    D0218 = 0x001E ; // (zcIndex) [10进制表示为: 30]
+    D0219 = 0x0025 ; // (seqIndex) [10进制表示为: 37]
+
+    D0220 = 0x000A ; // X1807 (devIndex) [10进制表示为: 10]
+    D0221 = 0x0004 ; // SCT-NERCV (devType)
+    D0222 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D0223 = 0x0007 ; // (seqIndex) [10进制表示为: 7]
+
+    D0224 = 0x000A ; // X1807 (devIndex) [10进制表示为: 10]
+    D0225 = 0x0005 ; // DDJ-NERCV (devType)
+    D0226 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D0227 = 0x0008 ; // (seqIndex) [10进制表示为: 8]
+
+    D0228 = 0x000A ; // X1807 (devIndex) [10进制表示为: 10]
+    D0229 = 0x0006 ; // LXJZC (devType)
+    D0230 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D0231 = 0x0013 ; // (seqIndex) [10进制表示为: 19]
+
+    D0232 = 0x000B ; // S1808 (devIndex) [10进制表示为: 11]
+    D0233 = 0x0004 ; // SCT-NERCV (devType)
+    D0234 = 0x0010 ; // (zcIndex) [10进制表示为: 16]
+    D0235 = 0x001D ; // (seqIndex) [10进制表示为: 29]
+
+    D0236 = 0x000B ; // S1808 (devIndex) [10进制表示为: 11]
+    D0237 = 0x0005 ; // DDJ-NERCV (devType)
+    D0238 = 0x0010 ; // (zcIndex) [10进制表示为: 16]
+    D0239 = 0x001E ; // (seqIndex) [10进制表示为: 30]
+
+    D0240 = 0x000B ; // S1808 (devIndex) [10进制表示为: 11]
+    D0241 = 0x0006 ; // LXJZC (devType)
+    D0242 = 0x0010 ; // (zcIndex) [10进制表示为: 16]
+    D0243 = 0x001E ; // (seqIndex) [10进制表示为: 30]
+
+    D0244 = 0x000C ; // X1809 (devIndex) [10进制表示为: 12]
+    D0245 = 0x0004 ; // SCT-NERCV (devType)
+    D0246 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D0247 = 0x000B ; // (seqIndex) [10进制表示为: 11]
+
+    D0248 = 0x000C ; // X1809 (devIndex) [10进制表示为: 12]
+    D0249 = 0x0005 ; // DDJ-NERCV (devType)
+    D0250 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D0251 = 0x000C ; // (seqIndex) [10进制表示为: 12]
+
+    D0252 = 0x000C ; // X1809 (devIndex) [10进制表示为: 12]
+    D0253 = 0x0006 ; // LXJZC (devType)
+    D0254 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D0255 = 0x0015 ; // (seqIndex) [10进制表示为: 21]
+
+    D0256 = 0x000D ; // X1813 (devIndex) [10进制表示为: 13]
+    D0257 = 0x0004 ; // SCT-NERCV (devType)
+    D0258 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D0259 = 0x000F ; // (seqIndex) [10进制表示为: 15]
+
+    D0260 = 0x000D ; // X1813 (devIndex) [10进制表示为: 13]
+    D0261 = 0x0005 ; // DDJ-NERCV (devType)
+    D0262 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D0263 = 0x0010 ; // (seqIndex) [10进制表示为: 16]
+
+    D0264 = 0x000D ; // X1813 (devIndex) [10进制表示为: 13]
+    D0265 = 0x0006 ; // LXJZC (devType)
+    D0266 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D0267 = 0x0017 ; // (seqIndex) [10进制表示为: 23]
+
+    D0268 = 0x000E ; // S1810 (devIndex) [10进制表示为: 14]
+    D0269 = 0x0004 ; // SCT-NERCV (devType)
+    D0270 = 0x0012 ; // (zcIndex) [10进制表示为: 18]
+    D0271 = 0x0021 ; // (seqIndex) [10进制表示为: 33]
+
+    D0272 = 0x000E ; // S1810 (devIndex) [10进制表示为: 14]
+    D0273 = 0x0005 ; // DDJ-NERCV (devType)
+    D0274 = 0x0012 ; // (zcIndex) [10进制表示为: 18]
+    D0275 = 0x0022 ; // (seqIndex) [10进制表示为: 34]
+
+    D0276 = 0x000E ; // S1810 (devIndex) [10进制表示为: 14]
+    D0277 = 0x0006 ; // LXJZC (devType)
+    D0278 = 0x0012 ; // (zcIndex) [10进制表示为: 18]
+    D0279 = 0x0020 ; // (seqIndex) [10进制表示为: 32]
+
+    D0280 = 0x000F ; // S1816 (devIndex) [10进制表示为: 15]
+    D0281 = 0x0004 ; // SCT-NERCV (devType)
+    D0282 = 0x0015 ; // (zcIndex) [10进制表示为: 21]
+    D0283 = 0x0027 ; // (seqIndex) [10进制表示为: 39]
+
+    D0284 = 0x000F ; // S1816 (devIndex) [10进制表示为: 15]
+    D0285 = 0x0005 ; // DDJ-NERCV (devType)
+    D0286 = 0x0015 ; // (zcIndex) [10进制表示为: 21]
+    D0287 = 0x0028 ; // (seqIndex) [10进制表示为: 40]
+
+    D0288 = 0x000F ; // S1816 (devIndex) [10进制表示为: 15]
+    D0289 = 0x0006 ; // LXJZC (devType)
+    D0290 = 0x0015 ; // (zcIndex) [10进制表示为: 21]
+    D0291 = 0x0023 ; // (seqIndex) [10进制表示为: 35]
+
+    D0292 = 0x0010 ; // X1811 (devIndex) [10进制表示为: 16]
+    D0293 = 0x0004 ; // SCT-NERCV (devType)
+    D0294 = 0x0007 ; // (zcIndex) [10进制表示为: 7]
+    D0295 = 0x000D ; // (seqIndex) [10进制表示为: 13]
+
+    D0296 = 0x0010 ; // X1811 (devIndex) [10进制表示为: 16]
+    D0297 = 0x0005 ; // DDJ-NERCV (devType)
+    D0298 = 0x0007 ; // (zcIndex) [10进制表示为: 7]
+    D0299 = 0x000E ; // (seqIndex) [10进制表示为: 14]
+
+    D0300 = 0x0010 ; // X1811 (devIndex) [10进制表示为: 16]
+    D0301 = 0x0006 ; // LXJZC (devType)
+    D0302 = 0x0007 ; // (zcIndex) [10进制表示为: 7]
+    D0303 = 0x0016 ; // (seqIndex) [10进制表示为: 22]
+
+    D0304 = 0x0011 ; // X1815 (devIndex) [10进制表示为: 17]
+    D0305 = 0x0004 ; // SCT-NERCV (devType)
+    D0306 = 0x0009 ; // (zcIndex) [10进制表示为: 9]
+    D0307 = 0x0011 ; // (seqIndex) [10进制表示为: 17]
+
+    D0308 = 0x0011 ; // X1815 (devIndex) [10进制表示为: 17]
+    D0309 = 0x0005 ; // DDJ-NERCV (devType)
+    D0310 = 0x0009 ; // (zcIndex) [10进制表示为: 9]
+    D0311 = 0x0012 ; // (seqIndex) [10进制表示为: 18]
+
+    D0312 = 0x0011 ; // X1815 (devIndex) [10进制表示为: 17]
+    D0313 = 0x0006 ; // LXJZC (devType)
+    D0314 = 0x0009 ; // (zcIndex) [10进制表示为: 9]
+    D0315 = 0x0018 ; // (seqIndex) [10进制表示为: 24]
+
+    D0316 = 0x0012 ; // S1812 (devIndex) [10进制表示为: 18]
+    D0317 = 0x0004 ; // SCT-NERCV (devType)
+    D0318 = 0x0013 ; // (zcIndex) [10进制表示为: 19]
+    D0319 = 0x0023 ; // (seqIndex) [10进制表示为: 35]
+
+    D0320 = 0x0012 ; // S1812 (devIndex) [10进制表示为: 18]
+    D0321 = 0x0005 ; // DDJ-NERCV (devType)
+    D0322 = 0x0013 ; // (zcIndex) [10进制表示为: 19]
+    D0323 = 0x0024 ; // (seqIndex) [10进制表示为: 36]
+
+    D0324 = 0x0012 ; // S1812 (devIndex) [10进制表示为: 18]
+    D0325 = 0x0006 ; // LXJZC (devType)
+    D0326 = 0x0013 ; // (zcIndex) [10进制表示为: 19]
+    D0327 = 0x0021 ; // (seqIndex) [10进制表示为: 33]
+
+    D0328 = 0x0013 ; // S1814 (devIndex) [10进制表示为: 19]
+    D0329 = 0x0004 ; // SCT-NERCV (devType)
+    D0330 = 0x0014 ; // (zcIndex) [10进制表示为: 20]
+    D0331 = 0x0025 ; // (seqIndex) [10进制表示为: 37]
+
+    D0332 = 0x0013 ; // S1814 (devIndex) [10进制表示为: 19]
+    D0333 = 0x0005 ; // DDJ-NERCV (devType)
+    D0334 = 0x0014 ; // (zcIndex) [10进制表示为: 20]
+    D0335 = 0x0026 ; // (seqIndex) [10进制表示为: 38]
+
+    D0336 = 0x0013 ; // S1814 (devIndex) [10进制表示为: 19]
+    D0337 = 0x0006 ; // LXJZC (devType)
+    D0338 = 0x0014 ; // (zcIndex) [10进制表示为: 20]
+    D0339 = 0x0022 ; // (seqIndex) [10进制表示为: 34]
+
+    D0340 = 0x0000 ; // T1801 (devIndex) [10进制表示为: 0]
+    D0341 = 0x0007 ; // SDO-NERCV (devType)
+    D0342 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D0343 = 0x002D ; // (seqIndex) [10进制表示为: 45]
+
+    D0344 = 0x0000 ; // T1801 (devIndex) [10进制表示为: 0]
+    D0345 = 0x0008 ; // TIO-NERCV (devType)
+    D0346 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D0347 = 0x002E ; // (seqIndex) [10进制表示为: 46]
+
+    D0348 = 0x0000 ; // T1801 (devIndex) [10进制表示为: 0]
+    D0349 = 0x0009 ; // STD (devType)
+    D0350 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D0351 = 0x002E ; // (seqIndex) [10进制表示为: 46]
+
+    D0352 = 0x0000 ; // T1801 (devIndex) [10进制表示为: 0]
+    D0353 = 0x000A ; // XTD (devType)
+    D0354 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D0355 = 0x002F ; // (seqIndex) [10进制表示为: 47]
+
+    D0356 = 0x0000 ; // T1801 (devIndex) [10进制表示为: 0]
+    D0357 = 0x000B ; // DGJ-GENR (devType)
+    D0358 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D0359 = 0x0030 ; // (seqIndex) [10进制表示为: 48]
+
+    D0360 = 0x0000 ; // T1801 (devIndex) [10进制表示为: 0]
+    D0361 = 0x000C ; // JZSB (devType)
+    D0362 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D0363 = 0x0031 ; // (seqIndex) [10进制表示为: 49]
+
+    D0364 = 0x0001 ; // T1803 (devIndex) [10进制表示为: 1]
+    D0365 = 0x0007 ; // SDO-NERCV (devType)
+    D0366 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D0367 = 0x002F ; // (seqIndex) [10进制表示为: 47]
+
+    D0368 = 0x0001 ; // T1803 (devIndex) [10进制表示为: 1]
+    D0369 = 0x0008 ; // TIO-NERCV (devType)
+    D0370 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D0371 = 0x0030 ; // (seqIndex) [10进制表示为: 48]
+
+    D0372 = 0x0001 ; // T1803 (devIndex) [10进制表示为: 1]
+    D0373 = 0x0009 ; // STD (devType)
+    D0374 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D0375 = 0x0032 ; // (seqIndex) [10进制表示为: 50]
+
+    D0376 = 0x0001 ; // T1803 (devIndex) [10进制表示为: 1]
+    D0377 = 0x000A ; // XTD (devType)
+    D0378 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D0379 = 0x0033 ; // (seqIndex) [10进制表示为: 51]
+
+    D0380 = 0x0001 ; // T1803 (devIndex) [10进制表示为: 1]
+    D0381 = 0x000B ; // DGJ-GENR (devType)
+    D0382 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D0383 = 0x0034 ; // (seqIndex) [10进制表示为: 52]
+
+    D0384 = 0x0001 ; // T1803 (devIndex) [10进制表示为: 1]
+    D0385 = 0x000C ; // JZSB (devType)
+    D0386 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D0387 = 0x0035 ; // (seqIndex) [10进制表示为: 53]
+
+    D0388 = 0x0002 ; // T1805 (devIndex) [10进制表示为: 2]
+    D0389 = 0x0007 ; // SDO-NERCV (devType)
+    D0390 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D0391 = 0x0031 ; // (seqIndex) [10进制表示为: 49]
+
+    D0392 = 0x0002 ; // T1805 (devIndex) [10进制表示为: 2]
+    D0393 = 0x0008 ; // TIO-NERCV (devType)
+    D0394 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D0395 = 0x0032 ; // (seqIndex) [10进制表示为: 50]
+
+    D0396 = 0x0002 ; // T1805 (devIndex) [10进制表示为: 2]
+    D0397 = 0x0009 ; // STD (devType)
+    D0398 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D0399 = 0x0036 ; // (seqIndex) [10进制表示为: 54]
+
+    D0400 = 0x0002 ; // T1805 (devIndex) [10进制表示为: 2]
+    D0401 = 0x000A ; // XTD (devType)
+    D0402 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D0403 = 0x0037 ; // (seqIndex) [10进制表示为: 55]
+
+    D0404 = 0x0002 ; // T1805 (devIndex) [10进制表示为: 2]
+    D0405 = 0x000B ; // DGJ-GENR (devType)
+    D0406 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D0407 = 0x0038 ; // (seqIndex) [10进制表示为: 56]
+
+    D0408 = 0x0002 ; // T1805 (devIndex) [10进制表示为: 2]
+    D0409 = 0x000C ; // JZSB (devType)
+    D0410 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D0411 = 0x0039 ; // (seqIndex) [10进制表示为: 57]
+
+    D0412 = 0x0003 ; // T1807 (devIndex) [10进制表示为: 3]
+    D0413 = 0x0007 ; // SDO-NERCV (devType)
+    D0414 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D0415 = 0x0033 ; // (seqIndex) [10进制表示为: 51]
+
+    D0416 = 0x0003 ; // T1807 (devIndex) [10进制表示为: 3]
+    D0417 = 0x0008 ; // TIO-NERCV (devType)
+    D0418 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D0419 = 0x0034 ; // (seqIndex) [10进制表示为: 52]
+
+    D0420 = 0x0003 ; // T1807 (devIndex) [10进制表示为: 3]
+    D0421 = 0x0009 ; // STD (devType)
+    D0422 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D0423 = 0x003A ; // (seqIndex) [10进制表示为: 58]
+
+    D0424 = 0x0003 ; // T1807 (devIndex) [10进制表示为: 3]
+    D0425 = 0x000A ; // XTD (devType)
+    D0426 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D0427 = 0x003B ; // (seqIndex) [10进制表示为: 59]
+
+    D0428 = 0x0003 ; // T1807 (devIndex) [10进制表示为: 3]
+    D0429 = 0x000B ; // DGJ-GENR (devType)
+    D0430 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D0431 = 0x003C ; // (seqIndex) [10进制表示为: 60]
+
+    D0432 = 0x0003 ; // T1807 (devIndex) [10进制表示为: 3]
+    D0433 = 0x000C ; // JZSB (devType)
+    D0434 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D0435 = 0x003D ; // (seqIndex) [10进制表示为: 61]
+
+    D0436 = 0x0004 ; // T1809 (devIndex) [10进制表示为: 4]
+    D0437 = 0x0007 ; // SDO-NERCV (devType)
+    D0438 = 0x0005 ; // (zcIndex) [10进制表示为: 5]
+    D0439 = 0x0035 ; // (seqIndex) [10进制表示为: 53]
+
+    D0440 = 0x0004 ; // T1809 (devIndex) [10进制表示为: 4]
+    D0441 = 0x0008 ; // TIO-NERCV (devType)
+    D0442 = 0x0005 ; // (zcIndex) [10进制表示为: 5]
+    D0443 = 0x0036 ; // (seqIndex) [10进制表示为: 54]
+
+    D0444 = 0x0004 ; // T1809 (devIndex) [10进制表示为: 4]
+    D0445 = 0x0009 ; // STD (devType)
+    D0446 = 0x0005 ; // (zcIndex) [10进制表示为: 5]
+    D0447 = 0x003E ; // (seqIndex) [10进制表示为: 62]
+
+    D0448 = 0x0004 ; // T1809 (devIndex) [10进制表示为: 4]
+    D0449 = 0x000A ; // XTD (devType)
+    D0450 = 0x0005 ; // (zcIndex) [10进制表示为: 5]
+    D0451 = 0x003F ; // (seqIndex) [10进制表示为: 63]
+
+    D0452 = 0x0004 ; // T1809 (devIndex) [10进制表示为: 4]
+    D0453 = 0x000B ; // DGJ-GENR (devType)
+    D0454 = 0x0005 ; // (zcIndex) [10进制表示为: 5]
+    D0455 = 0x0040 ; // (seqIndex) [10进制表示为: 64]
+
+    D0456 = 0x0004 ; // T1809 (devIndex) [10进制表示为: 4]
+    D0457 = 0x000C ; // JZSB (devType)
+    D0458 = 0x0005 ; // (zcIndex) [10进制表示为: 5]
+    D0459 = 0x0041 ; // (seqIndex) [10进制表示为: 65]
+
+    D0460 = 0x0005 ; // T1811 (devIndex) [10进制表示为: 5]
+    D0461 = 0x0007 ; // SDO-NERCV (devType)
+    D0462 = 0x000A ; // (zcIndex) [10进制表示为: 10]
+    D0463 = 0x003D ; // (seqIndex) [10进制表示为: 61]
+
+    D0464 = 0x0005 ; // T1811 (devIndex) [10进制表示为: 5]
+    D0465 = 0x0008 ; // TIO-NERCV (devType)
+    D0466 = 0x000A ; // (zcIndex) [10进制表示为: 10]
+    D0467 = 0x003E ; // (seqIndex) [10进制表示为: 62]
+
+    D0468 = 0x0005 ; // T1811 (devIndex) [10进制表示为: 5]
+    D0469 = 0x0009 ; // STD (devType)
+    D0470 = 0x000A ; // (zcIndex) [10进制表示为: 10]
+    D0471 = 0x004E ; // (seqIndex) [10进制表示为: 78]
+
+    D0472 = 0x0005 ; // T1811 (devIndex) [10进制表示为: 5]
+    D0473 = 0x000A ; // XTD (devType)
+    D0474 = 0x000A ; // (zcIndex) [10进制表示为: 10]
+    D0475 = 0x004F ; // (seqIndex) [10进制表示为: 79]
+
+    D0476 = 0x0005 ; // T1811 (devIndex) [10进制表示为: 5]
+    D0477 = 0x000B ; // DGJ-GENR (devType)
+    D0478 = 0x000A ; // (zcIndex) [10进制表示为: 10]
+    D0479 = 0x0050 ; // (seqIndex) [10进制表示为: 80]
+
+    D0480 = 0x0005 ; // T1811 (devIndex) [10进制表示为: 5]
+    D0481 = 0x000C ; // JZSB (devType)
+    D0482 = 0x000A ; // (zcIndex) [10进制表示为: 10]
+    D0483 = 0x0051 ; // (seqIndex) [10进制表示为: 81]
+
+    D0484 = 0x0006 ; // T1813 (devIndex) [10进制表示为: 6]
+    D0485 = 0x0007 ; // SDO-NERCV (devType)
+    D0486 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D0487 = 0x0037 ; // (seqIndex) [10进制表示为: 55]
+
+    D0488 = 0x0006 ; // T1813 (devIndex) [10进制表示为: 6]
+    D0489 = 0x0008 ; // TIO-NERCV (devType)
+    D0490 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D0491 = 0x0038 ; // (seqIndex) [10进制表示为: 56]
+
+    D0492 = 0x0006 ; // T1813 (devIndex) [10进制表示为: 6]
+    D0493 = 0x0009 ; // STD (devType)
+    D0494 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D0495 = 0x0042 ; // (seqIndex) [10进制表示为: 66]
+
+    D0496 = 0x0006 ; // T1813 (devIndex) [10进制表示为: 6]
+    D0497 = 0x000A ; // XTD (devType)
+    D0498 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D0499 = 0x0043 ; // (seqIndex) [10进制表示为: 67]
+
+    D0500 = 0x0006 ; // T1813 (devIndex) [10进制表示为: 6]
+    D0501 = 0x000B ; // DGJ-GENR (devType)
+    D0502 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D0503 = 0x0044 ; // (seqIndex) [10进制表示为: 68]
+
+    D0504 = 0x0006 ; // T1813 (devIndex) [10进制表示为: 6]
+    D0505 = 0x000C ; // JZSB (devType)
+    D0506 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D0507 = 0x0045 ; // (seqIndex) [10进制表示为: 69]
+
+    D0508 = 0x0007 ; // T1815 (devIndex) [10进制表示为: 7]
+    D0509 = 0x0007 ; // SDO-NERCV (devType)
+    D0510 = 0x0007 ; // (zcIndex) [10进制表示为: 7]
+    D0511 = 0x0039 ; // (seqIndex) [10进制表示为: 57]
+
+    D0512 = 0x0007 ; // T1815 (devIndex) [10进制表示为: 7]
+    D0513 = 0x0008 ; // TIO-NERCV (devType)
+    D0514 = 0x0007 ; // (zcIndex) [10进制表示为: 7]
+    D0515 = 0x003A ; // (seqIndex) [10进制表示为: 58]
+
+    D0516 = 0x0007 ; // T1815 (devIndex) [10进制表示为: 7]
+    D0517 = 0x0009 ; // STD (devType)
+    D0518 = 0x0007 ; // (zcIndex) [10进制表示为: 7]
+    D0519 = 0x0046 ; // (seqIndex) [10进制表示为: 70]
+
+    D0520 = 0x0007 ; // T1815 (devIndex) [10进制表示为: 7]
+    D0521 = 0x000A ; // XTD (devType)
+    D0522 = 0x0007 ; // (zcIndex) [10进制表示为: 7]
+    D0523 = 0x0047 ; // (seqIndex) [10进制表示为: 71]
+
+    D0524 = 0x0007 ; // T1815 (devIndex) [10进制表示为: 7]
+    D0525 = 0x000B ; // DGJ-GENR (devType)
+    D0526 = 0x0007 ; // (zcIndex) [10进制表示为: 7]
+    D0527 = 0x0048 ; // (seqIndex) [10进制表示为: 72]
+
+    D0528 = 0x0007 ; // T1815 (devIndex) [10进制表示为: 7]
+    D0529 = 0x000C ; // JZSB (devType)
+    D0530 = 0x0007 ; // (zcIndex) [10进制表示为: 7]
+    D0531 = 0x0049 ; // (seqIndex) [10进制表示为: 73]
+
+    D0532 = 0x0008 ; // T1817 (devIndex) [10进制表示为: 8]
+    D0533 = 0x0007 ; // SDO-NERCV (devType)
+    D0534 = 0x000B ; // (zcIndex) [10进制表示为: 11]
+    D0535 = 0x003F ; // (seqIndex) [10进制表示为: 63]
+
+    D0536 = 0x0008 ; // T1817 (devIndex) [10进制表示为: 8]
+    D0537 = 0x0008 ; // TIO-NERCV (devType)
+    D0538 = 0x000B ; // (zcIndex) [10进制表示为: 11]
+    D0539 = 0x0040 ; // (seqIndex) [10进制表示为: 64]
+
+    D0540 = 0x0008 ; // T1817 (devIndex) [10进制表示为: 8]
+    D0541 = 0x0009 ; // STD (devType)
+    D0542 = 0x000B ; // (zcIndex) [10进制表示为: 11]
+    D0543 = 0x0052 ; // (seqIndex) [10进制表示为: 82]
+
+    D0544 = 0x0008 ; // T1817 (devIndex) [10进制表示为: 8]
+    D0545 = 0x000A ; // XTD (devType)
+    D0546 = 0x000B ; // (zcIndex) [10进制表示为: 11]
+    D0547 = 0x0053 ; // (seqIndex) [10进制表示为: 83]
+
+    D0548 = 0x0008 ; // T1817 (devIndex) [10进制表示为: 8]
+    D0549 = 0x000B ; // DGJ-GENR (devType)
+    D0550 = 0x000B ; // (zcIndex) [10进制表示为: 11]
+    D0551 = 0x0054 ; // (seqIndex) [10进制表示为: 84]
+
+    D0552 = 0x0008 ; // T1817 (devIndex) [10进制表示为: 8]
+    D0553 = 0x000C ; // JZSB (devType)
+    D0554 = 0x000B ; // (zcIndex) [10进制表示为: 11]
+    D0555 = 0x0055 ; // (seqIndex) [10进制表示为: 85]
+
+    D0556 = 0x0009 ; // T1819 (devIndex) [10进制表示为: 9]
+    D0557 = 0x0007 ; // SDO-NERCV (devType)
+    D0558 = 0x000C ; // (zcIndex) [10进制表示为: 12]
+    D0559 = 0x0041 ; // (seqIndex) [10进制表示为: 65]
+
+    D0560 = 0x0009 ; // T1819 (devIndex) [10进制表示为: 9]
+    D0561 = 0x0008 ; // TIO-NERCV (devType)
+    D0562 = 0x000C ; // (zcIndex) [10进制表示为: 12]
+    D0563 = 0x0042 ; // (seqIndex) [10进制表示为: 66]
+
+    D0564 = 0x0009 ; // T1819 (devIndex) [10进制表示为: 9]
+    D0565 = 0x0009 ; // STD (devType)
+    D0566 = 0x000C ; // (zcIndex) [10进制表示为: 12]
+    D0567 = 0x0056 ; // (seqIndex) [10进制表示为: 86]
+
+    D0568 = 0x0009 ; // T1819 (devIndex) [10进制表示为: 9]
+    D0569 = 0x000A ; // XTD (devType)
+    D0570 = 0x000C ; // (zcIndex) [10进制表示为: 12]
+    D0571 = 0x0057 ; // (seqIndex) [10进制表示为: 87]
+
+    D0572 = 0x0009 ; // T1819 (devIndex) [10进制表示为: 9]
+    D0573 = 0x000B ; // DGJ-GENR (devType)
+    D0574 = 0x000C ; // (zcIndex) [10进制表示为: 12]
+    D0575 = 0x0058 ; // (seqIndex) [10进制表示为: 88]
+
+    D0576 = 0x0009 ; // T1819 (devIndex) [10进制表示为: 9]
+    D0577 = 0x000C ; // JZSB (devType)
+    D0578 = 0x000C ; // (zcIndex) [10进制表示为: 12]
+    D0579 = 0x0059 ; // (seqIndex) [10进制表示为: 89]
+
+    D0580 = 0x000A ; // T1821 (devIndex) [10进制表示为: 10]
+    D0581 = 0x0007 ; // SDO-NERCV (devType)
+    D0582 = 0x000D ; // (zcIndex) [10进制表示为: 13]
+    D0583 = 0x0043 ; // (seqIndex) [10进制表示为: 67]
+
+    D0584 = 0x000A ; // T1821 (devIndex) [10进制表示为: 10]
+    D0585 = 0x0008 ; // TIO-NERCV (devType)
+    D0586 = 0x000D ; // (zcIndex) [10进制表示为: 13]
+    D0587 = 0x0044 ; // (seqIndex) [10进制表示为: 68]
+
+    D0588 = 0x000A ; // T1821 (devIndex) [10进制表示为: 10]
+    D0589 = 0x0009 ; // STD (devType)
+    D0590 = 0x000D ; // (zcIndex) [10进制表示为: 13]
+    D0591 = 0x005A ; // (seqIndex) [10进制表示为: 90]
+
+    D0592 = 0x000A ; // T1821 (devIndex) [10进制表示为: 10]
+    D0593 = 0x000A ; // XTD (devType)
+    D0594 = 0x000D ; // (zcIndex) [10进制表示为: 13]
+    D0595 = 0x005B ; // (seqIndex) [10进制表示为: 91]
+
+    D0596 = 0x000A ; // T1821 (devIndex) [10进制表示为: 10]
+    D0597 = 0x000B ; // DGJ-GENR (devType)
+    D0598 = 0x000D ; // (zcIndex) [10进制表示为: 13]
+    D0599 = 0x005C ; // (seqIndex) [10进制表示为: 92]
+
+    D0600 = 0x000A ; // T1821 (devIndex) [10进制表示为: 10]
+    D0601 = 0x000C ; // JZSB (devType)
+    D0602 = 0x000D ; // (zcIndex) [10进制表示为: 13]
+    D0603 = 0x005D ; // (seqIndex) [10进制表示为: 93]
+
+    D0604 = 0x000B ; // T1823 (devIndex) [10进制表示为: 11]
+    D0605 = 0x0007 ; // SDO-NERCV (devType)
+    D0606 = 0x000E ; // (zcIndex) [10进制表示为: 14]
+    D0607 = 0x0045 ; // (seqIndex) [10进制表示为: 69]
+
+    D0608 = 0x000B ; // T1823 (devIndex) [10进制表示为: 11]
+    D0609 = 0x0008 ; // TIO-NERCV (devType)
+    D0610 = 0x000E ; // (zcIndex) [10进制表示为: 14]
+    D0611 = 0x0046 ; // (seqIndex) [10进制表示为: 70]
+
+    D0612 = 0x000B ; // T1823 (devIndex) [10进制表示为: 11]
+    D0613 = 0x0009 ; // STD (devType)
+    D0614 = 0x000E ; // (zcIndex) [10进制表示为: 14]
+    D0615 = 0x005E ; // (seqIndex) [10进制表示为: 94]
+
+    D0616 = 0x000B ; // T1823 (devIndex) [10进制表示为: 11]
+    D0617 = 0x000A ; // XTD (devType)
+    D0618 = 0x000E ; // (zcIndex) [10进制表示为: 14]
+    D0619 = 0x005F ; // (seqIndex) [10进制表示为: 95]
+
+    D0620 = 0x000B ; // T1823 (devIndex) [10进制表示为: 11]
+    D0621 = 0x000B ; // DGJ-GENR (devType)
+    D0622 = 0x000E ; // (zcIndex) [10进制表示为: 14]
+    D0623 = 0x0060 ; // (seqIndex) [10进制表示为: 96]
+
+    D0624 = 0x000B ; // T1823 (devIndex) [10进制表示为: 11]
+    D0625 = 0x000C ; // JZSB (devType)
+    D0626 = 0x000E ; // (zcIndex) [10进制表示为: 14]
+    D0627 = 0x0061 ; // (seqIndex) [10进制表示为: 97]
+
+    D0628 = 0x000C ; // T1901 (devIndex) [10进制表示为: 12]
+    D0629 = 0x0007 ; // SDO-NERCV (devType)
+    D0630 = 0x000F ; // (zcIndex) [10进制表示为: 15]
+    D0631 = 0x0047 ; // (seqIndex) [10进制表示为: 71]
+
+    D0632 = 0x000C ; // T1901 (devIndex) [10进制表示为: 12]
+    D0633 = 0x0008 ; // TIO-NERCV (devType)
+    D0634 = 0x000F ; // (zcIndex) [10进制表示为: 15]
+    D0635 = 0x0048 ; // (seqIndex) [10进制表示为: 72]
+
+    D0636 = 0x000C ; // T1901 (devIndex) [10进制表示为: 12]
+    D0637 = 0x0009 ; // STD (devType)
+    D0638 = 0x000F ; // (zcIndex) [10进制表示为: 15]
+    D0639 = 0x0062 ; // (seqIndex) [10进制表示为: 98]
+
+    D0640 = 0x000C ; // T1901 (devIndex) [10进制表示为: 12]
+    D0641 = 0x000A ; // XTD (devType)
+    D0642 = 0x000F ; // (zcIndex) [10进制表示为: 15]
+    D0643 = 0x0063 ; // (seqIndex) [10进制表示为: 99]
+
+    D0644 = 0x000C ; // T1901 (devIndex) [10进制表示为: 12]
+    D0645 = 0x000B ; // DGJ-GENR (devType)
+    D0646 = 0x000F ; // (zcIndex) [10进制表示为: 15]
+    D0647 = 0x0064 ; // (seqIndex) [10进制表示为: 100]
+
+    D0648 = 0x000C ; // T1901 (devIndex) [10进制表示为: 12]
+    D0649 = 0x000C ; // JZSB (devType)
+    D0650 = 0x000F ; // (zcIndex) [10进制表示为: 15]
+    D0651 = 0x0065 ; // (seqIndex) [10进制表示为: 101]
+
+    D0652 = 0x000D ; // T1903 (devIndex) [10进制表示为: 13]
+    D0653 = 0x0007 ; // SDO-NERCV (devType)
+    D0654 = 0x0010 ; // (zcIndex) [10进制表示为: 16]
+    D0655 = 0x0049 ; // (seqIndex) [10进制表示为: 73]
+
+    D0656 = 0x000D ; // T1903 (devIndex) [10进制表示为: 13]
+    D0657 = 0x0008 ; // TIO-NERCV (devType)
+    D0658 = 0x0010 ; // (zcIndex) [10进制表示为: 16]
+    D0659 = 0x004A ; // (seqIndex) [10进制表示为: 74]
+
+    D0660 = 0x000D ; // T1903 (devIndex) [10进制表示为: 13]
+    D0661 = 0x0009 ; // STD (devType)
+    D0662 = 0x0010 ; // (zcIndex) [10进制表示为: 16]
+    D0663 = 0x0066 ; // (seqIndex) [10进制表示为: 102]
+
+    D0664 = 0x000D ; // T1903 (devIndex) [10进制表示为: 13]
+    D0665 = 0x000A ; // XTD (devType)
+    D0666 = 0x0010 ; // (zcIndex) [10进制表示为: 16]
+    D0667 = 0x0067 ; // (seqIndex) [10进制表示为: 103]
+
+    D0668 = 0x000D ; // T1903 (devIndex) [10进制表示为: 13]
+    D0669 = 0x000B ; // DGJ-GENR (devType)
+    D0670 = 0x0010 ; // (zcIndex) [10进制表示为: 16]
+    D0671 = 0x0068 ; // (seqIndex) [10进制表示为: 104]
+
+    D0672 = 0x000D ; // T1903 (devIndex) [10进制表示为: 13]
+    D0673 = 0x000C ; // JZSB (devType)
+    D0674 = 0x0010 ; // (zcIndex) [10进制表示为: 16]
+    D0675 = 0x0069 ; // (seqIndex) [10进制表示为: 105]
+
+    D0676 = 0x000E ; // T1905 (devIndex) [10进制表示为: 14]
+    D0677 = 0x0007 ; // SDO-NERCV (devType)
+    D0678 = 0x0011 ; // (zcIndex) [10进制表示为: 17]
+    D0679 = 0x004B ; // (seqIndex) [10进制表示为: 75]
+
+    D0680 = 0x000E ; // T1905 (devIndex) [10进制表示为: 14]
+    D0681 = 0x0008 ; // TIO-NERCV (devType)
+    D0682 = 0x0011 ; // (zcIndex) [10进制表示为: 17]
+    D0683 = 0x004C ; // (seqIndex) [10进制表示为: 76]
+
+    D0684 = 0x000E ; // T1905 (devIndex) [10进制表示为: 14]
+    D0685 = 0x0009 ; // STD (devType)
+    D0686 = 0x0011 ; // (zcIndex) [10进制表示为: 17]
+    D0687 = 0x006A ; // (seqIndex) [10进制表示为: 106]
+
+    D0688 = 0x000E ; // T1905 (devIndex) [10进制表示为: 14]
+    D0689 = 0x000A ; // XTD (devType)
+    D0690 = 0x0011 ; // (zcIndex) [10进制表示为: 17]
+    D0691 = 0x006B ; // (seqIndex) [10进制表示为: 107]
+
+    D0692 = 0x000E ; // T1905 (devIndex) [10进制表示为: 14]
+    D0693 = 0x000B ; // DGJ-GENR (devType)
+    D0694 = 0x0011 ; // (zcIndex) [10进制表示为: 17]
+    D0695 = 0x006C ; // (seqIndex) [10进制表示为: 108]
+
+    D0696 = 0x000E ; // T1905 (devIndex) [10进制表示为: 14]
+    D0697 = 0x000C ; // JZSB (devType)
+    D0698 = 0x0011 ; // (zcIndex) [10进制表示为: 17]
+    D0699 = 0x006D ; // (seqIndex) [10进制表示为: 109]
+
+    D0700 = 0x000F ; // T1802 (devIndex) [10进制表示为: 15]
+    D0701 = 0x0007 ; // SDO-NERCV (devType)
+    D0702 = 0x0013 ; // (zcIndex) [10进制表示为: 19]
+    D0703 = 0x004D ; // (seqIndex) [10进制表示为: 77]
+
+    D0704 = 0x000F ; // T1802 (devIndex) [10进制表示为: 15]
+    D0705 = 0x0008 ; // TIO-NERCV (devType)
+    D0706 = 0x0013 ; // (zcIndex) [10进制表示为: 19]
+    D0707 = 0x004E ; // (seqIndex) [10进制表示为: 78]
+
+    D0708 = 0x000F ; // T1802 (devIndex) [10进制表示为: 15]
+    D0709 = 0x0009 ; // STD (devType)
+    D0710 = 0x0013 ; // (zcIndex) [10进制表示为: 19]
+    D0711 = 0x006E ; // (seqIndex) [10进制表示为: 110]
+
+    D0712 = 0x000F ; // T1802 (devIndex) [10进制表示为: 15]
+    D0713 = 0x000A ; // XTD (devType)
+    D0714 = 0x0013 ; // (zcIndex) [10进制表示为: 19]
+    D0715 = 0x006F ; // (seqIndex) [10进制表示为: 111]
+
+    D0716 = 0x000F ; // T1802 (devIndex) [10进制表示为: 15]
+    D0717 = 0x000B ; // DGJ-GENR (devType)
+    D0718 = 0x0013 ; // (zcIndex) [10进制表示为: 19]
+    D0719 = 0x0070 ; // (seqIndex) [10进制表示为: 112]
+
+    D0720 = 0x000F ; // T1802 (devIndex) [10进制表示为: 15]
+    D0721 = 0x000C ; // JZSB (devType)
+    D0722 = 0x0013 ; // (zcIndex) [10进制表示为: 19]
+    D0723 = 0x0071 ; // (seqIndex) [10进制表示为: 113]
+
+    D0724 = 0x0010 ; // T1804 (devIndex) [10进制表示为: 16]
+    D0725 = 0x0007 ; // SDO-NERCV (devType)
+    D0726 = 0x0014 ; // (zcIndex) [10进制表示为: 20]
+    D0727 = 0x004F ; // (seqIndex) [10进制表示为: 79]
+
+    D0728 = 0x0010 ; // T1804 (devIndex) [10进制表示为: 16]
+    D0729 = 0x0008 ; // TIO-NERCV (devType)
+    D0730 = 0x0014 ; // (zcIndex) [10进制表示为: 20]
+    D0731 = 0x0050 ; // (seqIndex) [10进制表示为: 80]
+
+    D0732 = 0x0010 ; // T1804 (devIndex) [10进制表示为: 16]
+    D0733 = 0x0009 ; // STD (devType)
+    D0734 = 0x0014 ; // (zcIndex) [10进制表示为: 20]
+    D0735 = 0x0072 ; // (seqIndex) [10进制表示为: 114]
+
+    D0736 = 0x0010 ; // T1804 (devIndex) [10进制表示为: 16]
+    D0737 = 0x000A ; // XTD (devType)
+    D0738 = 0x0014 ; // (zcIndex) [10进制表示为: 20]
+    D0739 = 0x0073 ; // (seqIndex) [10进制表示为: 115]
+
+    D0740 = 0x0010 ; // T1804 (devIndex) [10进制表示为: 16]
+    D0741 = 0x000B ; // DGJ-GENR (devType)
+    D0742 = 0x0014 ; // (zcIndex) [10进制表示为: 20]
+    D0743 = 0x0074 ; // (seqIndex) [10进制表示为: 116]
+
+    D0744 = 0x0010 ; // T1804 (devIndex) [10进制表示为: 16]
+    D0745 = 0x000C ; // JZSB (devType)
+    D0746 = 0x0014 ; // (zcIndex) [10进制表示为: 20]
+    D0747 = 0x0075 ; // (seqIndex) [10进制表示为: 117]
+
+    D0748 = 0x0011 ; // T1806 (devIndex) [10进制表示为: 17]
+    D0749 = 0x0007 ; // SDO-NERCV (devType)
+    D0750 = 0x0015 ; // (zcIndex) [10进制表示为: 21]
+    D0751 = 0x0051 ; // (seqIndex) [10进制表示为: 81]
+
+    D0752 = 0x0011 ; // T1806 (devIndex) [10进制表示为: 17]
+    D0753 = 0x0008 ; // TIO-NERCV (devType)
+    D0754 = 0x0015 ; // (zcIndex) [10进制表示为: 21]
+    D0755 = 0x0052 ; // (seqIndex) [10进制表示为: 82]
+
+    D0756 = 0x0011 ; // T1806 (devIndex) [10进制表示为: 17]
+    D0757 = 0x0009 ; // STD (devType)
+    D0758 = 0x0015 ; // (zcIndex) [10进制表示为: 21]
+    D0759 = 0x0076 ; // (seqIndex) [10进制表示为: 118]
+
+    D0760 = 0x0011 ; // T1806 (devIndex) [10进制表示为: 17]
+    D0761 = 0x000A ; // XTD (devType)
+    D0762 = 0x0015 ; // (zcIndex) [10进制表示为: 21]
+    D0763 = 0x0077 ; // (seqIndex) [10进制表示为: 119]
+
+    D0764 = 0x0011 ; // T1806 (devIndex) [10进制表示为: 17]
+    D0765 = 0x000B ; // DGJ-GENR (devType)
+    D0766 = 0x0015 ; // (zcIndex) [10进制表示为: 21]
+    D0767 = 0x0078 ; // (seqIndex) [10进制表示为: 120]
+
+    D0768 = 0x0011 ; // T1806 (devIndex) [10进制表示为: 17]
+    D0769 = 0x000C ; // JZSB (devType)
+    D0770 = 0x0015 ; // (zcIndex) [10进制表示为: 21]
+    D0771 = 0x0079 ; // (seqIndex) [10进制表示为: 121]
+
+    D0772 = 0x0012 ; // T1808 (devIndex) [10进制表示为: 18]
+    D0773 = 0x0007 ; // SDO-NERCV (devType)
+    D0774 = 0x0016 ; // (zcIndex) [10进制表示为: 22]
+    D0775 = 0x0053 ; // (seqIndex) [10进制表示为: 83]
+
+    D0776 = 0x0012 ; // T1808 (devIndex) [10进制表示为: 18]
+    D0777 = 0x0008 ; // TIO-NERCV (devType)
+    D0778 = 0x0016 ; // (zcIndex) [10进制表示为: 22]
+    D0779 = 0x0054 ; // (seqIndex) [10进制表示为: 84]
+
+    D0780 = 0x0012 ; // T1808 (devIndex) [10进制表示为: 18]
+    D0781 = 0x0009 ; // STD (devType)
+    D0782 = 0x0016 ; // (zcIndex) [10进制表示为: 22]
+    D0783 = 0x007A ; // (seqIndex) [10进制表示为: 122]
+
+    D0784 = 0x0012 ; // T1808 (devIndex) [10进制表示为: 18]
+    D0785 = 0x000A ; // XTD (devType)
+    D0786 = 0x0016 ; // (zcIndex) [10进制表示为: 22]
+    D0787 = 0x007B ; // (seqIndex) [10进制表示为: 123]
+
+    D0788 = 0x0012 ; // T1808 (devIndex) [10进制表示为: 18]
+    D0789 = 0x000B ; // DGJ-GENR (devType)
+    D0790 = 0x0016 ; // (zcIndex) [10进制表示为: 22]
+    D0791 = 0x007C ; // (seqIndex) [10进制表示为: 124]
+
+    D0792 = 0x0012 ; // T1808 (devIndex) [10进制表示为: 18]
+    D0793 = 0x000C ; // JZSB (devType)
+    D0794 = 0x0016 ; // (zcIndex) [10进制表示为: 22]
+    D0795 = 0x007D ; // (seqIndex) [10进制表示为: 125]
+
+    D0796 = 0x0013 ; // T1810 (devIndex) [10进制表示为: 19]
+    D0797 = 0x0007 ; // SDO-NERCV (devType)
+    D0798 = 0x0017 ; // (zcIndex) [10进制表示为: 23]
+    D0799 = 0x0055 ; // (seqIndex) [10进制表示为: 85]
+
+    D0800 = 0x0013 ; // T1810 (devIndex) [10进制表示为: 19]
+    D0801 = 0x0008 ; // TIO-NERCV (devType)
+    D0802 = 0x0017 ; // (zcIndex) [10进制表示为: 23]
+    D0803 = 0x0056 ; // (seqIndex) [10进制表示为: 86]
+
+    D0804 = 0x0013 ; // T1810 (devIndex) [10进制表示为: 19]
+    D0805 = 0x0009 ; // STD (devType)
+    D0806 = 0x0017 ; // (zcIndex) [10进制表示为: 23]
+    D0807 = 0x007E ; // (seqIndex) [10进制表示为: 126]
+
+    D0808 = 0x0013 ; // T1810 (devIndex) [10进制表示为: 19]
+    D0809 = 0x000A ; // XTD (devType)
+    D0810 = 0x0017 ; // (zcIndex) [10进制表示为: 23]
+    D0811 = 0x007F ; // (seqIndex) [10进制表示为: 127]
+
+    D0812 = 0x0013 ; // T1810 (devIndex) [10进制表示为: 19]
+    D0813 = 0x000B ; // DGJ-GENR (devType)
+    D0814 = 0x0017 ; // (zcIndex) [10进制表示为: 23]
+    D0815 = 0x0080 ; // (seqIndex) [10进制表示为: 128]
+
+    D0816 = 0x0013 ; // T1810 (devIndex) [10进制表示为: 19]
+    D0817 = 0x000C ; // JZSB (devType)
+    D0818 = 0x0017 ; // (zcIndex) [10进制表示为: 23]
+    D0819 = 0x0081 ; // (seqIndex) [10进制表示为: 129]
+
+    D0820 = 0x0014 ; // T1812 (devIndex) [10进制表示为: 20]
+    D0821 = 0x0007 ; // SDO-NERCV (devType)
+    D0822 = 0x001A ; // (zcIndex) [10进制表示为: 26]
+    D0823 = 0x0059 ; // (seqIndex) [10进制表示为: 89]
+
+    D0824 = 0x0014 ; // T1812 (devIndex) [10进制表示为: 20]
+    D0825 = 0x0008 ; // TIO-NERCV (devType)
+    D0826 = 0x001A ; // (zcIndex) [10进制表示为: 26]
+    D0827 = 0x005A ; // (seqIndex) [10进制表示为: 90]
+
+    D0828 = 0x0014 ; // T1812 (devIndex) [10进制表示为: 20]
+    D0829 = 0x0009 ; // STD (devType)
+    D0830 = 0x001A ; // (zcIndex) [10进制表示为: 26]
+    D0831 = 0x0086 ; // (seqIndex) [10进制表示为: 134]
+
+    D0832 = 0x0014 ; // T1812 (devIndex) [10进制表示为: 20]
+    D0833 = 0x000A ; // XTD (devType)
+    D0834 = 0x001A ; // (zcIndex) [10进制表示为: 26]
+    D0835 = 0x0087 ; // (seqIndex) [10进制表示为: 135]
+
+    D0836 = 0x0014 ; // T1812 (devIndex) [10进制表示为: 20]
+    D0837 = 0x000B ; // DGJ-GENR (devType)
+    D0838 = 0x001A ; // (zcIndex) [10进制表示为: 26]
+    D0839 = 0x0088 ; // (seqIndex) [10进制表示为: 136]
+
+    D0840 = 0x0014 ; // T1812 (devIndex) [10进制表示为: 20]
+    D0841 = 0x000C ; // JZSB (devType)
+    D0842 = 0x001A ; // (zcIndex) [10进制表示为: 26]
+    D0843 = 0x0089 ; // (seqIndex) [10进制表示为: 137]
+
+    D0844 = 0x0015 ; // T1814 (devIndex) [10进制表示为: 21]
+    D0845 = 0x0007 ; // SDO-NERCV (devType)
+    D0846 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D0847 = 0x003B ; // (seqIndex) [10进制表示为: 59]
+
+    D0848 = 0x0015 ; // T1814 (devIndex) [10进制表示为: 21]
+    D0849 = 0x0008 ; // TIO-NERCV (devType)
+    D0850 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D0851 = 0x003C ; // (seqIndex) [10进制表示为: 60]
+
+    D0852 = 0x0015 ; // T1814 (devIndex) [10进制表示为: 21]
+    D0853 = 0x0009 ; // STD (devType)
+    D0854 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D0855 = 0x004A ; // (seqIndex) [10进制表示为: 74]
+
+    D0856 = 0x0015 ; // T1814 (devIndex) [10进制表示为: 21]
+    D0857 = 0x000A ; // XTD (devType)
+    D0858 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D0859 = 0x004B ; // (seqIndex) [10进制表示为: 75]
+
+    D0860 = 0x0015 ; // T1814 (devIndex) [10进制表示为: 21]
+    D0861 = 0x000B ; // DGJ-GENR (devType)
+    D0862 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D0863 = 0x004C ; // (seqIndex) [10进制表示为: 76]
+
+    D0864 = 0x0015 ; // T1814 (devIndex) [10进制表示为: 21]
+    D0865 = 0x000C ; // JZSB (devType)
+    D0866 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D0867 = 0x004D ; // (seqIndex) [10进制表示为: 77]
+
+    D0868 = 0x0016 ; // T1816 (devIndex) [10进制表示为: 22]
+    D0869 = 0x0007 ; // SDO-NERCV (devType)
+    D0870 = 0x0018 ; // (zcIndex) [10进制表示为: 24]
+    D0871 = 0x0057 ; // (seqIndex) [10进制表示为: 87]
+
+    D0872 = 0x0016 ; // T1816 (devIndex) [10进制表示为: 22]
+    D0873 = 0x0008 ; // TIO-NERCV (devType)
+    D0874 = 0x0018 ; // (zcIndex) [10进制表示为: 24]
+    D0875 = 0x0058 ; // (seqIndex) [10进制表示为: 88]
+
+    D0876 = 0x0016 ; // T1816 (devIndex) [10进制表示为: 22]
+    D0877 = 0x0009 ; // STD (devType)
+    D0878 = 0x0018 ; // (zcIndex) [10进制表示为: 24]
+    D0879 = 0x0082 ; // (seqIndex) [10进制表示为: 130]
+
+    D0880 = 0x0016 ; // T1816 (devIndex) [10进制表示为: 22]
+    D0881 = 0x000A ; // XTD (devType)
+    D0882 = 0x0018 ; // (zcIndex) [10进制表示为: 24]
+    D0883 = 0x0083 ; // (seqIndex) [10进制表示为: 131]
+
+    D0884 = 0x0016 ; // T1816 (devIndex) [10进制表示为: 22]
+    D0885 = 0x000B ; // DGJ-GENR (devType)
+    D0886 = 0x0018 ; // (zcIndex) [10进制表示为: 24]
+    D0887 = 0x0084 ; // (seqIndex) [10进制表示为: 132]
+
+    D0888 = 0x0016 ; // T1816 (devIndex) [10进制表示为: 22]
+    D0889 = 0x000C ; // JZSB (devType)
+    D0890 = 0x0018 ; // (zcIndex) [10进制表示为: 24]
+    D0891 = 0x0085 ; // (seqIndex) [10进制表示为: 133]
+
+    D0892 = 0x0017 ; // T1818 (devIndex) [10进制表示为: 23]
+    D0893 = 0x0007 ; // SDO-NERCV (devType)
+    D0894 = 0x001B ; // (zcIndex) [10进制表示为: 27]
+    D0895 = 0x005B ; // (seqIndex) [10进制表示为: 91]
+
+    D0896 = 0x0017 ; // T1818 (devIndex) [10进制表示为: 23]
+    D0897 = 0x0008 ; // TIO-NERCV (devType)
+    D0898 = 0x001B ; // (zcIndex) [10进制表示为: 27]
+    D0899 = 0x005C ; // (seqIndex) [10进制表示为: 92]
+
+    D0900 = 0x0017 ; // T1818 (devIndex) [10进制表示为: 23]
+    D0901 = 0x0009 ; // STD (devType)
+    D0902 = 0x001B ; // (zcIndex) [10进制表示为: 27]
+    D0903 = 0x008A ; // (seqIndex) [10进制表示为: 138]
+
+    D0904 = 0x0017 ; // T1818 (devIndex) [10进制表示为: 23]
+    D0905 = 0x000A ; // XTD (devType)
+    D0906 = 0x001B ; // (zcIndex) [10进制表示为: 27]
+    D0907 = 0x008B ; // (seqIndex) [10进制表示为: 139]
+
+    D0908 = 0x0017 ; // T1818 (devIndex) [10进制表示为: 23]
+    D0909 = 0x000B ; // DGJ-GENR (devType)
+    D0910 = 0x001B ; // (zcIndex) [10进制表示为: 27]
+    D0911 = 0x008C ; // (seqIndex) [10进制表示为: 140]
+
+    D0912 = 0x0017 ; // T1818 (devIndex) [10进制表示为: 23]
+    D0913 = 0x000C ; // JZSB (devType)
+    D0914 = 0x001B ; // (zcIndex) [10进制表示为: 27]
+    D0915 = 0x008D ; // (seqIndex) [10进制表示为: 141]
+
+    D0916 = 0x0018 ; // T1820 (devIndex) [10进制表示为: 24]
+    D0917 = 0x0007 ; // SDO-NERCV (devType)
+    D0918 = 0x001C ; // (zcIndex) [10进制表示为: 28]
+    D0919 = 0x005D ; // (seqIndex) [10进制表示为: 93]
+
+    D0920 = 0x0018 ; // T1820 (devIndex) [10进制表示为: 24]
+    D0921 = 0x0008 ; // TIO-NERCV (devType)
+    D0922 = 0x001C ; // (zcIndex) [10进制表示为: 28]
+    D0923 = 0x005E ; // (seqIndex) [10进制表示为: 94]
+
+    D0924 = 0x0018 ; // T1820 (devIndex) [10进制表示为: 24]
+    D0925 = 0x0009 ; // STD (devType)
+    D0926 = 0x001C ; // (zcIndex) [10进制表示为: 28]
+    D0927 = 0x008E ; // (seqIndex) [10进制表示为: 142]
+
+    D0928 = 0x0018 ; // T1820 (devIndex) [10进制表示为: 24]
+    D0929 = 0x000A ; // XTD (devType)
+    D0930 = 0x001C ; // (zcIndex) [10进制表示为: 28]
+    D0931 = 0x008F ; // (seqIndex) [10进制表示为: 143]
+
+    D0932 = 0x0018 ; // T1820 (devIndex) [10进制表示为: 24]
+    D0933 = 0x000B ; // DGJ-GENR (devType)
+    D0934 = 0x001C ; // (zcIndex) [10进制表示为: 28]
+    D0935 = 0x0090 ; // (seqIndex) [10进制表示为: 144]
+
+    D0936 = 0x0018 ; // T1820 (devIndex) [10进制表示为: 24]
+    D0937 = 0x000C ; // JZSB (devType)
+    D0938 = 0x001C ; // (zcIndex) [10进制表示为: 28]
+    D0939 = 0x0091 ; // (seqIndex) [10进制表示为: 145]
+
+    D0940 = 0x0019 ; // T1902 (devIndex) [10进制表示为: 25]
+    D0941 = 0x0007 ; // SDO-NERCV (devType)
+    D0942 = 0x001D ; // (zcIndex) [10进制表示为: 29]
+    D0943 = 0x005F ; // (seqIndex) [10进制表示为: 95]
+
+    D0944 = 0x0019 ; // T1902 (devIndex) [10进制表示为: 25]
+    D0945 = 0x0008 ; // TIO-NERCV (devType)
+    D0946 = 0x001D ; // (zcIndex) [10进制表示为: 29]
+    D0947 = 0x0060 ; // (seqIndex) [10进制表示为: 96]
+
+    D0948 = 0x0019 ; // T1902 (devIndex) [10进制表示为: 25]
+    D0949 = 0x0009 ; // STD (devType)
+    D0950 = 0x001D ; // (zcIndex) [10进制表示为: 29]
+    D0951 = 0x0092 ; // (seqIndex) [10进制表示为: 146]
+
+    D0952 = 0x0019 ; // T1902 (devIndex) [10进制表示为: 25]
+    D0953 = 0x000A ; // XTD (devType)
+    D0954 = 0x001D ; // (zcIndex) [10进制表示为: 29]
+    D0955 = 0x0093 ; // (seqIndex) [10进制表示为: 147]
+
+    D0956 = 0x0019 ; // T1902 (devIndex) [10进制表示为: 25]
+    D0957 = 0x000B ; // DGJ-GENR (devType)
+    D0958 = 0x001D ; // (zcIndex) [10进制表示为: 29]
+    D0959 = 0x0094 ; // (seqIndex) [10进制表示为: 148]
+
+    D0960 = 0x0019 ; // T1902 (devIndex) [10进制表示为: 25]
+    D0961 = 0x000C ; // JZSB (devType)
+    D0962 = 0x001D ; // (zcIndex) [10进制表示为: 29]
+    D0963 = 0x0095 ; // (seqIndex) [10进制表示为: 149]
+
+    D0964 = 0x001A ; // T1904 (devIndex) [10进制表示为: 26]
+    D0965 = 0x0007 ; // SDO-NERCV (devType)
+    D0966 = 0x001E ; // (zcIndex) [10进制表示为: 30]
+    D0967 = 0x0061 ; // (seqIndex) [10进制表示为: 97]
+
+    D0968 = 0x001A ; // T1904 (devIndex) [10进制表示为: 26]
+    D0969 = 0x0008 ; // TIO-NERCV (devType)
+    D0970 = 0x001E ; // (zcIndex) [10进制表示为: 30]
+    D0971 = 0x0062 ; // (seqIndex) [10进制表示为: 98]
+
+    D0972 = 0x001A ; // T1904 (devIndex) [10进制表示为: 26]
+    D0973 = 0x0009 ; // STD (devType)
+    D0974 = 0x001E ; // (zcIndex) [10进制表示为: 30]
+    D0975 = 0x0096 ; // (seqIndex) [10进制表示为: 150]
+
+    D0976 = 0x001A ; // T1904 (devIndex) [10进制表示为: 26]
+    D0977 = 0x000A ; // XTD (devType)
+    D0978 = 0x001E ; // (zcIndex) [10进制表示为: 30]
+    D0979 = 0x0097 ; // (seqIndex) [10进制表示为: 151]
+
+    D0980 = 0x001A ; // T1904 (devIndex) [10进制表示为: 26]
+    D0981 = 0x000B ; // DGJ-GENR (devType)
+    D0982 = 0x001E ; // (zcIndex) [10进制表示为: 30]
+    D0983 = 0x0098 ; // (seqIndex) [10进制表示为: 152]
+
+    D0984 = 0x001A ; // T1904 (devIndex) [10进制表示为: 26]
+    D0985 = 0x000C ; // JZSB (devType)
+    D0986 = 0x001E ; // (zcIndex) [10进制表示为: 30]
+    D0987 = 0x0099 ; // (seqIndex) [10进制表示为: 153]
+
+    D0988 = 0x001B ; // T1906 (devIndex) [10进制表示为: 27]
+    D0989 = 0x0007 ; // SDO-NERCV (devType)
+    D0990 = 0x001F ; // (zcIndex) [10进制表示为: 31]
+    D0991 = 0x0063 ; // (seqIndex) [10进制表示为: 99]
+
+    D0992 = 0x001B ; // T1906 (devIndex) [10进制表示为: 27]
+    D0993 = 0x0008 ; // TIO-NERCV (devType)
+    D0994 = 0x001F ; // (zcIndex) [10进制表示为: 31]
+    D0995 = 0x0064 ; // (seqIndex) [10进制表示为: 100]
+
+    D0996 = 0x001B ; // T1906 (devIndex) [10进制表示为: 27]
+    D0997 = 0x0009 ; // STD (devType)
+    D0998 = 0x001F ; // (zcIndex) [10进制表示为: 31]
+    D0999 = 0x009A ; // (seqIndex) [10进制表示为: 154]
+
+    D1000 = 0x001B ; // T1906 (devIndex) [10进制表示为: 27]
+    D1001 = 0x000A ; // XTD (devType)
+    D1002 = 0x001F ; // (zcIndex) [10进制表示为: 31]
+    D1003 = 0x009B ; // (seqIndex) [10进制表示为: 155]
+
+    D1004 = 0x001B ; // T1906 (devIndex) [10进制表示为: 27]
+    D1005 = 0x000B ; // DGJ-GENR (devType)
+    D1006 = 0x001F ; // (zcIndex) [10进制表示为: 31]
+    D1007 = 0x009C ; // (seqIndex) [10进制表示为: 156]
+
+    D1008 = 0x001B ; // T1906 (devIndex) [10进制表示为: 27]
+    D1009 = 0x000C ; // JZSB (devType)
+    D1010 = 0x001F ; // (zcIndex) [10进制表示为: 31]
+    D1011 = 0x009D ; // (seqIndex) [10进制表示为: 157]
+
+    D1012 = 0x0000 ; // T1801A (devIndex) [10进制表示为: 0]
+    D1013 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1014 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D1015 = 0x0065 ; // (seqIndex) [10进制表示为: 101]
+
+    D1016 = 0x0000 ; // T1801A (devIndex) [10进制表示为: 0]
+    D1017 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1018 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D1019 = 0x0066 ; // (seqIndex) [10进制表示为: 102]
+
+    D1020 = 0x0001 ; // T1802A (devIndex) [10进制表示为: 1]
+    D1021 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1022 = 0x001F ; // (zcIndex) [10进制表示为: 31]
+    D1023 = 0x009D ; // (seqIndex) [10进制表示为: 157]
+
+    D1024 = 0x0001 ; // T1802A (devIndex) [10进制表示为: 1]
+    D1025 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1026 = 0x001F ; // (zcIndex) [10进制表示为: 31]
+    D1027 = 0x009E ; // (seqIndex) [10进制表示为: 158]
+
+    D1028 = 0x0002 ; // T1803A (devIndex) [10进制表示为: 2]
+    D1029 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1030 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D1031 = 0x0067 ; // (seqIndex) [10进制表示为: 103]
+
+    D1032 = 0x0002 ; // T1803A (devIndex) [10进制表示为: 2]
+    D1033 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1034 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D1035 = 0x0068 ; // (seqIndex) [10进制表示为: 104]
+
+    D1036 = 0x0003 ; // T1804A (devIndex) [10进制表示为: 3]
+    D1037 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1038 = 0x0020 ; // (zcIndex) [10进制表示为: 32]
+    D1039 = 0x009F ; // (seqIndex) [10进制表示为: 159]
+
+    D1040 = 0x0003 ; // T1804A (devIndex) [10进制表示为: 3]
+    D1041 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1042 = 0x0020 ; // (zcIndex) [10进制表示为: 32]
+    D1043 = 0x00A0 ; // (seqIndex) [10进制表示为: 160]
+
+    D1044 = 0x0004 ; // T1805A (devIndex) [10进制表示为: 4]
+    D1045 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1046 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D1047 = 0x0069 ; // (seqIndex) [10进制表示为: 105]
+
+    D1048 = 0x0004 ; // T1805A (devIndex) [10进制表示为: 4]
+    D1049 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1050 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D1051 = 0x006A ; // (seqIndex) [10进制表示为: 106]
+
+    D1052 = 0x0005 ; // T1805B (devIndex) [10进制表示为: 5]
+    D1053 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1054 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D1055 = 0x006B ; // (seqIndex) [10进制表示为: 107]
+
+    D1056 = 0x0005 ; // T1805B (devIndex) [10进制表示为: 5]
+    D1057 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1058 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D1059 = 0x006C ; // (seqIndex) [10进制表示为: 108]
+
+    D1060 = 0x0006 ; // T1805C (devIndex) [10进制表示为: 6]
+    D1061 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1062 = 0x0005 ; // (zcIndex) [10进制表示为: 5]
+    D1063 = 0x006D ; // (seqIndex) [10进制表示为: 109]
+
+    D1064 = 0x0006 ; // T1805C (devIndex) [10进制表示为: 6]
+    D1065 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1066 = 0x0005 ; // (zcIndex) [10进制表示为: 5]
+    D1067 = 0x006E ; // (seqIndex) [10进制表示为: 110]
+
+    D1068 = 0x0007 ; // T1806A (devIndex) [10进制表示为: 7]
+    D1069 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1070 = 0x0021 ; // (zcIndex) [10进制表示为: 33]
+    D1071 = 0x00A1 ; // (seqIndex) [10进制表示为: 161]
+
+    D1072 = 0x0007 ; // T1806A (devIndex) [10进制表示为: 7]
+    D1073 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1074 = 0x0021 ; // (zcIndex) [10进制表示为: 33]
+    D1075 = 0x00A2 ; // (seqIndex) [10进制表示为: 162]
+
+    D1076 = 0x0008 ; // T1806B (devIndex) [10进制表示为: 8]
+    D1077 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1078 = 0x0022 ; // (zcIndex) [10进制表示为: 34]
+    D1079 = 0x00A3 ; // (seqIndex) [10进制表示为: 163]
+
+    D1080 = 0x0008 ; // T1806B (devIndex) [10进制表示为: 8]
+    D1081 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1082 = 0x0022 ; // (zcIndex) [10进制表示为: 34]
+    D1083 = 0x00A4 ; // (seqIndex) [10进制表示为: 164]
+
+    D1084 = 0x0009 ; // T1806C (devIndex) [10进制表示为: 9]
+    D1085 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1086 = 0x0023 ; // (zcIndex) [10进制表示为: 35]
+    D1087 = 0x00A5 ; // (seqIndex) [10进制表示为: 165]
+
+    D1088 = 0x0009 ; // T1806C (devIndex) [10进制表示为: 9]
+    D1089 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1090 = 0x0023 ; // (zcIndex) [10进制表示为: 35]
+    D1091 = 0x00A6 ; // (seqIndex) [10进制表示为: 166]
+
+    D1092 = 0x000A ; // T1807A (devIndex) [10进制表示为: 10]
+    D1093 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1094 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D1095 = 0x006F ; // (seqIndex) [10进制表示为: 111]
+
+    D1096 = 0x000A ; // T1807A (devIndex) [10进制表示为: 10]
+    D1097 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1098 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D1099 = 0x0070 ; // (seqIndex) [10进制表示为: 112]
+
+    D1100 = 0x000B ; // T1807B (devIndex) [10进制表示为: 11]
+    D1101 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1102 = 0x0007 ; // (zcIndex) [10进制表示为: 7]
+    D1103 = 0x0071 ; // (seqIndex) [10进制表示为: 113]
+
+    D1104 = 0x000B ; // T1807B (devIndex) [10进制表示为: 11]
+    D1105 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1106 = 0x0007 ; // (zcIndex) [10进制表示为: 7]
+    D1107 = 0x0072 ; // (seqIndex) [10进制表示为: 114]
+
+    D1108 = 0x000C ; // T1807C (devIndex) [10进制表示为: 12]
+    D1109 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1110 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D1111 = 0x0073 ; // (seqIndex) [10进制表示为: 115]
+
+    D1112 = 0x000C ; // T1807C (devIndex) [10进制表示为: 12]
+    D1113 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1114 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D1115 = 0x0074 ; // (seqIndex) [10进制表示为: 116]
+
+    D1116 = 0x000D ; // T1808A (devIndex) [10进制表示为: 13]
+    D1117 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1118 = 0x0024 ; // (zcIndex) [10进制表示为: 36]
+    D1119 = 0x00A7 ; // (seqIndex) [10进制表示为: 167]
+
+    D1120 = 0x000D ; // T1808A (devIndex) [10进制表示为: 13]
+    D1121 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1122 = 0x0024 ; // (zcIndex) [10进制表示为: 36]
+    D1123 = 0x00A8 ; // (seqIndex) [10进制表示为: 168]
+
+    D1124 = 0x000E ; // T1808B (devIndex) [10进制表示为: 14]
+    D1125 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1126 = 0x0025 ; // (zcIndex) [10进制表示为: 37]
+    D1127 = 0x00A9 ; // (seqIndex) [10进制表示为: 169]
+
+    D1128 = 0x000E ; // T1808B (devIndex) [10进制表示为: 14]
+    D1129 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1130 = 0x0025 ; // (zcIndex) [10进制表示为: 37]
+    D1131 = 0x00AA ; // (seqIndex) [10进制表示为: 170]
+
+    D1132 = 0x000F ; // T1808C (devIndex) [10进制表示为: 15]
+    D1133 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1134 = 0x0026 ; // (zcIndex) [10进制表示为: 38]
+    D1135 = 0x00AB ; // (seqIndex) [10进制表示为: 171]
+
+    D1136 = 0x000F ; // T1808C (devIndex) [10进制表示为: 15]
+    D1137 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1138 = 0x0026 ; // (zcIndex) [10进制表示为: 38]
+    D1139 = 0x00AC ; // (seqIndex) [10进制表示为: 172]
+
+    D1140 = 0x0010 ; // T1809A (devIndex) [10进制表示为: 16]
+    D1141 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1142 = 0x0009 ; // (zcIndex) [10进制表示为: 9]
+    D1143 = 0x0075 ; // (seqIndex) [10进制表示为: 117]
+
+    D1144 = 0x0010 ; // T1809A (devIndex) [10进制表示为: 16]
+    D1145 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1146 = 0x0009 ; // (zcIndex) [10进制表示为: 9]
+    D1147 = 0x0076 ; // (seqIndex) [10进制表示为: 118]
+
+    D1148 = 0x0011 ; // T1810A (devIndex) [10进制表示为: 17]
+    D1149 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1150 = 0x0027 ; // (zcIndex) [10进制表示为: 39]
+    D1151 = 0x00AD ; // (seqIndex) [10进制表示为: 173]
+
+    D1152 = 0x0011 ; // T1810A (devIndex) [10进制表示为: 17]
+    D1153 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1154 = 0x0027 ; // (zcIndex) [10进制表示为: 39]
+    D1155 = 0x00AE ; // (seqIndex) [10进制表示为: 174]
+
+    D1156 = 0x0012 ; // T1811A (devIndex) [10进制表示为: 18]
+    D1157 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1158 = 0x0010 ; // (zcIndex) [10进制表示为: 16]
+    D1159 = 0x0081 ; // (seqIndex) [10进制表示为: 129]
+
+    D1160 = 0x0012 ; // T1811A (devIndex) [10进制表示为: 18]
+    D1161 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1162 = 0x0010 ; // (zcIndex) [10进制表示为: 16]
+    D1163 = 0x0082 ; // (seqIndex) [10进制表示为: 130]
+
+    D1164 = 0x0013 ; // T1812A (devIndex) [10进制表示为: 19]
+    D1165 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1166 = 0x002C ; // (zcIndex) [10进制表示为: 44]
+    D1167 = 0x00B5 ; // (seqIndex) [10进制表示为: 181]
+
+    D1168 = 0x0013 ; // T1812A (devIndex) [10进制表示为: 19]
+    D1169 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1170 = 0x002C ; // (zcIndex) [10进制表示为: 44]
+    D1171 = 0x00B6 ; // (seqIndex) [10进制表示为: 182]
+
+    D1172 = 0x0014 ; // T1813A (devIndex) [10进制表示为: 20]
+    D1173 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1174 = 0x000A ; // (zcIndex) [10进制表示为: 10]
+    D1175 = 0x0077 ; // (seqIndex) [10进制表示为: 119]
+
+    D1176 = 0x0014 ; // T1813A (devIndex) [10进制表示为: 20]
+    D1177 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1178 = 0x000A ; // (zcIndex) [10进制表示为: 10]
+    D1179 = 0x0078 ; // (seqIndex) [10进制表示为: 120]
+
+    D1180 = 0x0015 ; // T1813B (devIndex) [10进制表示为: 21]
+    D1181 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1182 = 0x000B ; // (zcIndex) [10进制表示为: 11]
+    D1183 = 0x0079 ; // (seqIndex) [10进制表示为: 121]
+
+    D1184 = 0x0015 ; // T1813B (devIndex) [10进制表示为: 21]
+    D1185 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1186 = 0x000B ; // (zcIndex) [10进制表示为: 11]
+    D1187 = 0x007A ; // (seqIndex) [10进制表示为: 122]
+
+    D1188 = 0x0016 ; // T1813C (devIndex) [10进制表示为: 22]
+    D1189 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1190 = 0x000E ; // (zcIndex) [10进制表示为: 14]
+    D1191 = 0x007F ; // (seqIndex) [10进制表示为: 127]
+
+    D1192 = 0x0016 ; // T1813C (devIndex) [10进制表示为: 22]
+    D1193 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1194 = 0x000E ; // (zcIndex) [10进制表示为: 14]
+    D1195 = 0x0080 ; // (seqIndex) [10进制表示为: 128]
+
+    D1196 = 0x0017 ; // T1814A (devIndex) [10进制表示为: 23]
+    D1197 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1198 = 0x0028 ; // (zcIndex) [10进制表示为: 40]
+    D1199 = 0x00AF ; // (seqIndex) [10进制表示为: 175]
+
+    D1200 = 0x0017 ; // T1814A (devIndex) [10进制表示为: 23]
+    D1201 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1202 = 0x0028 ; // (zcIndex) [10进制表示为: 40]
+    D1203 = 0x00B0 ; // (seqIndex) [10进制表示为: 176]
+
+    D1204 = 0x0018 ; // T1814B (devIndex) [10进制表示为: 24]
+    D1205 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1206 = 0x0029 ; // (zcIndex) [10进制表示为: 41]
+    D1207 = 0x00B1 ; // (seqIndex) [10进制表示为: 177]
+
+    D1208 = 0x0018 ; // T1814B (devIndex) [10进制表示为: 24]
+    D1209 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1210 = 0x0029 ; // (zcIndex) [10进制表示为: 41]
+    D1211 = 0x00B2 ; // (seqIndex) [10进制表示为: 178]
+
+    D1212 = 0x0019 ; // T1814C (devIndex) [10进制表示为: 25]
+    D1213 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1214 = 0x000D ; // (zcIndex) [10进制表示为: 13]
+    D1215 = 0x007D ; // (seqIndex) [10进制表示为: 125]
+
+    D1216 = 0x0019 ; // T1814C (devIndex) [10进制表示为: 25]
+    D1217 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1218 = 0x000D ; // (zcIndex) [10进制表示为: 13]
+    D1219 = 0x007E ; // (seqIndex) [10进制表示为: 126]
+
+    D1220 = 0x001A ; // T1815A (devIndex) [10进制表示为: 26]
+    D1221 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1222 = 0x0011 ; // (zcIndex) [10进制表示为: 17]
+    D1223 = 0x0083 ; // (seqIndex) [10进制表示为: 131]
+
+    D1224 = 0x001A ; // T1815A (devIndex) [10进制表示为: 26]
+    D1225 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1226 = 0x0011 ; // (zcIndex) [10进制表示为: 17]
+    D1227 = 0x0084 ; // (seqIndex) [10进制表示为: 132]
+
+    D1228 = 0x001B ; // T1815B (devIndex) [10进制表示为: 27]
+    D1229 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1230 = 0x000C ; // (zcIndex) [10进制表示为: 12]
+    D1231 = 0x007B ; // (seqIndex) [10进制表示为: 123]
+
+    D1232 = 0x001B ; // T1815B (devIndex) [10进制表示为: 27]
+    D1233 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1234 = 0x000C ; // (zcIndex) [10进制表示为: 12]
+    D1235 = 0x007C ; // (seqIndex) [10进制表示为: 124]
+
+    D1236 = 0x001C ; // T1816A (devIndex) [10进制表示为: 28]
+    D1237 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1238 = 0x002D ; // (zcIndex) [10进制表示为: 45]
+    D1239 = 0x00B7 ; // (seqIndex) [10进制表示为: 183]
+
+    D1240 = 0x001C ; // T1816A (devIndex) [10进制表示为: 28]
+    D1241 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1242 = 0x002D ; // (zcIndex) [10进制表示为: 45]
+    D1243 = 0x00B8 ; // (seqIndex) [10进制表示为: 184]
+
+    D1244 = 0x001D ; // T1816B (devIndex) [10进制表示为: 29]
+    D1245 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1246 = 0x002A ; // (zcIndex) [10进制表示为: 42]
+    D1247 = 0x00B3 ; // (seqIndex) [10进制表示为: 179]
+
+    D1248 = 0x001D ; // T1816B (devIndex) [10进制表示为: 29]
+    D1249 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1250 = 0x002A ; // (zcIndex) [10进制表示为: 42]
+    D1251 = 0x00B4 ; // (seqIndex) [10进制表示为: 180]
+
+    D1252 = 0x001E ; // T1817A (devIndex) [10进制表示为: 30]
+    D1253 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1254 = 0x0012 ; // (zcIndex) [10进制表示为: 18]
+    D1255 = 0x0085 ; // (seqIndex) [10进制表示为: 133]
+
+    D1256 = 0x001E ; // T1817A (devIndex) [10进制表示为: 30]
+    D1257 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1258 = 0x0012 ; // (zcIndex) [10进制表示为: 18]
+    D1259 = 0x0086 ; // (seqIndex) [10进制表示为: 134]
+
+    D1260 = 0x001F ; // T1818A (devIndex) [10进制表示为: 31]
+    D1261 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1262 = 0x002E ; // (zcIndex) [10进制表示为: 46]
+    D1263 = 0x00B9 ; // (seqIndex) [10进制表示为: 185]
+
+    D1264 = 0x001F ; // T1818A (devIndex) [10进制表示为: 31]
+    D1265 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1266 = 0x002E ; // (zcIndex) [10进制表示为: 46]
+    D1267 = 0x00BA ; // (seqIndex) [10进制表示为: 186]
+
+    D1268 = 0x0020 ; // T1819A (devIndex) [10进制表示为: 32]
+    D1269 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1270 = 0x0013 ; // (zcIndex) [10进制表示为: 19]
+    D1271 = 0x0087 ; // (seqIndex) [10进制表示为: 135]
+
+    D1272 = 0x0020 ; // T1819A (devIndex) [10进制表示为: 32]
+    D1273 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1274 = 0x0013 ; // (zcIndex) [10进制表示为: 19]
+    D1275 = 0x0088 ; // (seqIndex) [10进制表示为: 136]
+
+    D1276 = 0x0021 ; // T1819B (devIndex) [10进制表示为: 33]
+    D1277 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1278 = 0x0015 ; // (zcIndex) [10进制表示为: 21]
+    D1279 = 0x008B ; // (seqIndex) [10进制表示为: 139]
+
+    D1280 = 0x0021 ; // T1819B (devIndex) [10进制表示为: 33]
+    D1281 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1282 = 0x0015 ; // (zcIndex) [10进制表示为: 21]
+    D1283 = 0x008C ; // (seqIndex) [10进制表示为: 140]
+
+    D1284 = 0x0022 ; // T1820A (devIndex) [10进制表示为: 34]
+    D1285 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1286 = 0x002F ; // (zcIndex) [10进制表示为: 47]
+    D1287 = 0x00BB ; // (seqIndex) [10进制表示为: 187]
+
+    D1288 = 0x0022 ; // T1820A (devIndex) [10进制表示为: 34]
+    D1289 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1290 = 0x002F ; // (zcIndex) [10进制表示为: 47]
+    D1291 = 0x00BC ; // (seqIndex) [10进制表示为: 188]
+
+    D1292 = 0x0023 ; // T1820B (devIndex) [10进制表示为: 35]
+    D1293 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1294 = 0x0030 ; // (zcIndex) [10进制表示为: 48]
+    D1295 = 0x00BD ; // (seqIndex) [10进制表示为: 189]
+
+    D1296 = 0x0023 ; // T1820B (devIndex) [10进制表示为: 35]
+    D1297 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1298 = 0x0030 ; // (zcIndex) [10进制表示为: 48]
+    D1299 = 0x00BE ; // (seqIndex) [10进制表示为: 190]
+
+    D1300 = 0x0024 ; // T1821A (devIndex) [10进制表示为: 36]
+    D1301 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1302 = 0x0014 ; // (zcIndex) [10进制表示为: 20]
+    D1303 = 0x0089 ; // (seqIndex) [10进制表示为: 137]
+
+    D1304 = 0x0024 ; // T1821A (devIndex) [10进制表示为: 36]
+    D1305 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1306 = 0x0014 ; // (zcIndex) [10进制表示为: 20]
+    D1307 = 0x008A ; // (seqIndex) [10进制表示为: 138]
+
+    D1308 = 0x0025 ; // T1823A (devIndex) [10进制表示为: 37]
+    D1309 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1310 = 0x0016 ; // (zcIndex) [10进制表示为: 22]
+    D1311 = 0x008D ; // (seqIndex) [10进制表示为: 141]
+
+    D1312 = 0x0025 ; // T1823A (devIndex) [10进制表示为: 37]
+    D1313 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1314 = 0x0016 ; // (zcIndex) [10进制表示为: 22]
+    D1315 = 0x008E ; // (seqIndex) [10进制表示为: 142]
+
+    D1316 = 0x0026 ; // T1823B (devIndex) [10进制表示为: 38]
+    D1317 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1318 = 0x0017 ; // (zcIndex) [10进制表示为: 23]
+    D1319 = 0x008F ; // (seqIndex) [10进制表示为: 143]
+
+    D1320 = 0x0026 ; // T1823B (devIndex) [10进制表示为: 38]
+    D1321 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1322 = 0x0017 ; // (zcIndex) [10进制表示为: 23]
+    D1323 = 0x0090 ; // (seqIndex) [10进制表示为: 144]
+
+    D1324 = 0x0027 ; // T1823C (devIndex) [10进制表示为: 39]
+    D1325 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1326 = 0x0018 ; // (zcIndex) [10进制表示为: 24]
+    D1327 = 0x0091 ; // (seqIndex) [10进制表示为: 145]
+
+    D1328 = 0x0027 ; // T1823C (devIndex) [10进制表示为: 39]
+    D1329 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1330 = 0x0018 ; // (zcIndex) [10进制表示为: 24]
+    D1331 = 0x0092 ; // (seqIndex) [10进制表示为: 146]
+
+    D1332 = 0x0028 ; // T1901A (devIndex) [10进制表示为: 40]
+    D1333 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1334 = 0x0019 ; // (zcIndex) [10进制表示为: 25]
+    D1335 = 0x0093 ; // (seqIndex) [10进制表示为: 147]
+
+    D1336 = 0x0028 ; // T1901A (devIndex) [10进制表示为: 40]
+    D1337 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1338 = 0x0019 ; // (zcIndex) [10进制表示为: 25]
+    D1339 = 0x0094 ; // (seqIndex) [10进制表示为: 148]
+
+    D1340 = 0x0029 ; // T1902A (devIndex) [10进制表示为: 41]
+    D1341 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1342 = 0x0031 ; // (zcIndex) [10进制表示为: 49]
+    D1343 = 0x00BF ; // (seqIndex) [10进制表示为: 191]
+
+    D1344 = 0x0029 ; // T1902A (devIndex) [10进制表示为: 41]
+    D1345 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1346 = 0x0031 ; // (zcIndex) [10进制表示为: 49]
+    D1347 = 0x00C0 ; // (seqIndex) [10进制表示为: 192]
+
+    D1348 = 0x002A ; // T1902B (devIndex) [10进制表示为: 42]
+    D1349 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1350 = 0x0032 ; // (zcIndex) [10进制表示为: 50]
+    D1351 = 0x00C1 ; // (seqIndex) [10进制表示为: 193]
+
+    D1352 = 0x002A ; // T1902B (devIndex) [10进制表示为: 42]
+    D1353 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1354 = 0x0032 ; // (zcIndex) [10进制表示为: 50]
+    D1355 = 0x00C2 ; // (seqIndex) [10进制表示为: 194]
+
+    D1356 = 0x002B ; // T1902C (devIndex) [10进制表示为: 43]
+    D1357 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1358 = 0x0033 ; // (zcIndex) [10进制表示为: 51]
+    D1359 = 0x00C3 ; // (seqIndex) [10进制表示为: 195]
+
+    D1360 = 0x002B ; // T1902C (devIndex) [10进制表示为: 43]
+    D1361 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1362 = 0x0033 ; // (zcIndex) [10进制表示为: 51]
+    D1363 = 0x00C4 ; // (seqIndex) [10进制表示为: 196]
+
+    D1364 = 0x002C ; // T1902D (devIndex) [10进制表示为: 44]
+    D1365 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1366 = 0x0034 ; // (zcIndex) [10进制表示为: 52]
+    D1367 = 0x00C5 ; // (seqIndex) [10进制表示为: 197]
+
+    D1368 = 0x002C ; // T1902D (devIndex) [10进制表示为: 44]
+    D1369 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1370 = 0x0034 ; // (zcIndex) [10进制表示为: 52]
+    D1371 = 0x00C6 ; // (seqIndex) [10进制表示为: 198]
+
+    D1372 = 0x002D ; // T1903A (devIndex) [10进制表示为: 45]
+    D1373 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1374 = 0x001A ; // (zcIndex) [10进制表示为: 26]
+    D1375 = 0x0095 ; // (seqIndex) [10进制表示为: 149]
+
+    D1376 = 0x002D ; // T1903A (devIndex) [10进制表示为: 45]
+    D1377 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1378 = 0x001A ; // (zcIndex) [10进制表示为: 26]
+    D1379 = 0x0096 ; // (seqIndex) [10进制表示为: 150]
+
+    D1380 = 0x002E ; // T1904A (devIndex) [10进制表示为: 46]
+    D1381 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1382 = 0x0035 ; // (zcIndex) [10进制表示为: 53]
+    D1383 = 0x00C7 ; // (seqIndex) [10进制表示为: 199]
+
+    D1384 = 0x002E ; // T1904A (devIndex) [10进制表示为: 46]
+    D1385 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1386 = 0x0035 ; // (zcIndex) [10进制表示为: 53]
+    D1387 = 0x00C8 ; // (seqIndex) [10进制表示为: 200]
+
+    D1388 = 0x002F ; // T1905A (devIndex) [10进制表示为: 47]
+    D1389 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1390 = 0x001B ; // (zcIndex) [10进制表示为: 27]
+    D1391 = 0x0097 ; // (seqIndex) [10进制表示为: 151]
+
+    D1392 = 0x002F ; // T1905A (devIndex) [10进制表示为: 47]
+    D1393 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1394 = 0x001B ; // (zcIndex) [10进制表示为: 27]
+    D1395 = 0x0098 ; // (seqIndex) [10进制表示为: 152]
+
+    D1396 = 0x0030 ; // T1905B (devIndex) [10进制表示为: 48]
+    D1397 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1398 = 0x001C ; // (zcIndex) [10进制表示为: 28]
+    D1399 = 0x0099 ; // (seqIndex) [10进制表示为: 153]
+
+    D1400 = 0x0030 ; // T1905B (devIndex) [10进制表示为: 48]
+    D1401 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1402 = 0x001C ; // (zcIndex) [10进制表示为: 28]
+    D1403 = 0x009A ; // (seqIndex) [10进制表示为: 154]
+
+    D1404 = 0x0031 ; // T1905C (devIndex) [10进制表示为: 49]
+    D1405 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1406 = 0x001D ; // (zcIndex) [10进制表示为: 29]
+    D1407 = 0x009B ; // (seqIndex) [10进制表示为: 155]
+
+    D1408 = 0x0031 ; // T1905C (devIndex) [10进制表示为: 49]
+    D1409 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1410 = 0x001D ; // (zcIndex) [10进制表示为: 29]
+    D1411 = 0x009C ; // (seqIndex) [10进制表示为: 156]
+
+    D1412 = 0x0032 ; // T1906A (devIndex) [10进制表示为: 50]
+    D1413 = 0x000D ; // DGJ-CT-NERCV (devType)
+    D1414 = 0x0036 ; // (zcIndex) [10进制表示为: 54]
+    D1415 = 0x00C9 ; // (seqIndex) [10进制表示为: 201]
+
+    D1416 = 0x0032 ; // T1906A (devIndex) [10进制表示为: 50]
+    D1417 = 0x000E ; // DGJ-UT-NERCV (devType)
+    D1418 = 0x0036 ; // (zcIndex) [10进制表示为: 54]
+    D1419 = 0x00CA ; // (seqIndex) [10进制表示为: 202]
+
+    D1420 = 0x0000 ; // PSD1801 (devIndex) [10进制表示为: 0]
+    D1421 = 0x000F ; // PDKJ (devType)
+    D1422 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D1423 = 0x0026 ; // (seqIndex) [10进制表示为: 38]
+
+    D1424 = 0x0001 ; // PSD1802 (devIndex) [10进制表示为: 1]
+    D1425 = 0x000F ; // PDKJ (devType)
+    D1426 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D1427 = 0x0027 ; // (seqIndex) [10进制表示为: 39]
+
+    D1428 = 0x0002 ; // PSD1901 (devIndex) [10进制表示为: 2]
+    D1429 = 0x000F ; // PDKJ (devType)
+    D1430 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D1431 = 0x0028 ; // (seqIndex) [10进制表示为: 40]
+
+    D1432 = 0x0003 ; // PSD1902 (devIndex) [10进制表示为: 3]
+    D1433 = 0x000F ; // PDKJ (devType)
+    D1434 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D1435 = 0x0029 ; // (seqIndex) [10进制表示为: 41]
+
+    D1436 = 0x0010 ; // ESB1801/3-ESBJ (devIndex) [10进制表示为: 16]
+    D1437 = 0x0010 ; // ESB (devType)
+    D1438 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D1439 = 0x002A ; // (seqIndex) [10进制表示为: 42]
+
+    D1440 = 0x0011 ; // ESB1802/4-ESBJ (devIndex) [10进制表示为: 17]
+    D1441 = 0x0010 ; // ESB (devType)
+    D1442 = 0x0002 ; // (zcIndex) [10进制表示为: 2]
+    D1443 = 0x002B ; // (seqIndex) [10进制表示为: 43]
+
+    D1444 = 0x0012 ; // ESB1901/3-ESBJ (devIndex) [10进制表示为: 18]
+    D1445 = 0x0010 ; // ESB (devType)
+    D1446 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D1447 = 0x002C ; // (seqIndex) [10进制表示为: 44]
+
+    D1448 = 0x0013 ; // ESB1902/4-ESBJ (devIndex) [10进制表示为: 19]
+    D1449 = 0x0010 ; // ESB (devType)
+    D1450 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D1451 = 0x002D ; // (seqIndex) [10进制表示为: 45]
+
+    D1452 = 0x000A ; // DRB1801-SDJ (devIndex) [10进制表示为: 10]
+    D1453 = 0x0011 ; // SDJ-NERCV (devType)
+    D1454 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D1455 = 0x00F7 ; // (seqIndex) [10进制表示为: 247]
+
+    D1456 = 0x0009 ; // DRB1801-WDJ (devIndex) [10进制表示为: 9]
+    D1457 = 0x0012 ; // WDJ-NERCV (devType)
+    D1458 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D1459 = 0x00F8 ; // (seqIndex) [10进制表示为: 248]
+
+    D1460 = 0x0014 ; // DRB1801-DRBJ (devIndex) [10进制表示为: 20]
+    D1461 = 0x0013 ; // ZTZFAJ (devType)
+    D1462 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D1463 = 0x0110 ; // (seqIndex) [10进制表示为: 272]
+
+    D1464 = 0x0000 ; // X1807-X1813 (devIndex) [10进制表示为: 0]
+    D1465 = 0x0015 ; // JBTCBZH (devType)
+    D1466 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D1467 = 0x00CE ; // (seqIndex) [10进制表示为: 206]
+
+    D1468 = 0x0000 ; // X1807-X1813 (devIndex) [10进制表示为: 0]
+    D1469 = 0x0017 ; // JBBL (devType)
+    D1470 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D1471 = 0x00A4 ; // (seqIndex) [10进制表示为: 164]
+
+    D1472 = 0x0000 ; // X1807-X1813 (devIndex) [10进制表示为: 0]
+    D1473 = 0x0019 ; // JBTCBZS (devType)
+    D1474 = 0x0004 ; // (zcIndex) [10进制表示为: 4]
+    D1475 = 0x00A5 ; // (seqIndex) [10进制表示为: 165]
+
+    D1476 = 0x0001 ; // X1807-S1814 (devIndex) [10进制表示为: 1]
+    D1477 = 0x0015 ; // JBTCBZH (devType)
+    D1478 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D1479 = 0x00D0 ; // (seqIndex) [10进制表示为: 208]
+
+    D1480 = 0x0001 ; // X1807-S1814 (devIndex) [10进制表示为: 1]
+    D1481 = 0x0017 ; // JBBL (devType)
+    D1482 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D1483 = 0x00A8 ; // (seqIndex) [10进制表示为: 168]
+
+    D1484 = 0x0001 ; // X1807-S1814 (devIndex) [10进制表示为: 1]
+    D1485 = 0x0019 ; // JBTCBZS (devType)
+    D1486 = 0x0006 ; // (zcIndex) [10进制表示为: 6]
+    D1487 = 0x00A9 ; // (seqIndex) [10进制表示为: 169]
+
+    D1488 = 0x0002 ; // X1809-X1813 (devIndex) [10进制表示为: 2]
+    D1489 = 0x0015 ; // JBTCBZH (devType)
+    D1490 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D1491 = 0x00D2 ; // (seqIndex) [10进制表示为: 210]
+
+    D1492 = 0x0002 ; // X1809-X1813 (devIndex) [10进制表示为: 2]
+    D1493 = 0x0017 ; // JBBL (devType)
+    D1494 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D1495 = 0x00AC ; // (seqIndex) [10进制表示为: 172]
+
+    D1496 = 0x0002 ; // X1809-X1813 (devIndex) [10进制表示为: 2]
+    D1497 = 0x0019 ; // JBTCBZS (devType)
+    D1498 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D1499 = 0x00AD ; // (seqIndex) [10进制表示为: 173]
+
+    D1500 = 0x0003 ; // X1811-X1805 (devIndex) [10进制表示为: 3]
+    D1501 = 0x0015 ; // JBTCBZH (devType)
+    D1502 = 0x000A ; // (zcIndex) [10进制表示为: 10]
+    D1503 = 0x00D4 ; // (seqIndex) [10进制表示为: 212]
+
+    D1504 = 0x0003 ; // X1811-X1805 (devIndex) [10进制表示为: 3]
+    D1505 = 0x0017 ; // JBBL (devType)
+    D1506 = 0x000A ; // (zcIndex) [10进制表示为: 10]
+    D1507 = 0x00B0 ; // (seqIndex) [10进制表示为: 176]
+
+    D1508 = 0x0003 ; // X1811-X1805 (devIndex) [10进制表示为: 3]
+    D1509 = 0x0019 ; // JBTCBZS (devType)
+    D1510 = 0x000A ; // (zcIndex) [10进制表示为: 10]
+    D1511 = 0x00B1 ; // (seqIndex) [10进制表示为: 177]
+
+    D1512 = 0x0004 ; // X1811-X1803 (devIndex) [10进制表示为: 4]
+    D1513 = 0x0015 ; // JBTCBZH (devType)
+    D1514 = 0x000B ; // (zcIndex) [10进制表示为: 11]
+    D1515 = 0x00D5 ; // (seqIndex) [10进制表示为: 213]
+
+    D1516 = 0x0004 ; // X1811-X1803 (devIndex) [10进制表示为: 4]
+    D1517 = 0x0017 ; // JBBL (devType)
+    D1518 = 0x000B ; // (zcIndex) [10进制表示为: 11]
+    D1519 = 0x00B2 ; // (seqIndex) [10进制表示为: 178]
+
+    D1520 = 0x0004 ; // X1811-X1803 (devIndex) [10进制表示为: 4]
+    D1521 = 0x0019 ; // JBTCBZS (devType)
+    D1522 = 0x000B ; // (zcIndex) [10进制表示为: 11]
+    D1523 = 0x00B3 ; // (seqIndex) [10进制表示为: 179]
+
+    D1524 = 0x0005 ; // X1811-X1807 (devIndex) [10进制表示为: 5]
+    D1525 = 0x0016 ; // ZFTCBZH (devType)
+    D1526 = 0x000C ; // (zcIndex) [10进制表示为: 12]
+    D1527 = 0x00D6 ; // (seqIndex) [10进制表示为: 214]
+
+    D1528 = 0x0005 ; // X1811-X1807 (devIndex) [10进制表示为: 5]
+    D1529 = 0x0018 ; // ZFBL (devType)
+    D1530 = 0x000C ; // (zcIndex) [10进制表示为: 12]
+    D1531 = 0x00B4 ; // (seqIndex) [10进制表示为: 180]
+
+    D1532 = 0x0005 ; // X1811-X1807 (devIndex) [10进制表示为: 5]
+    D1533 = 0x001A ; // ZFTCBZS (devType)
+    D1534 = 0x000C ; // (zcIndex) [10进制表示为: 12]
+    D1535 = 0x00B5 ; // (seqIndex) [10进制表示为: 181]
+
+    D1536 = 0x0006 ; // X1811-S1804 (devIndex) [10进制表示为: 6]
+    D1537 = 0x0015 ; // JBTCBZH (devType)
+    D1538 = 0x000D ; // (zcIndex) [10进制表示为: 13]
+    D1539 = 0x00D7 ; // (seqIndex) [10进制表示为: 215]
+
+    D1540 = 0x0006 ; // X1811-S1804 (devIndex) [10进制表示为: 6]
+    D1541 = 0x0017 ; // JBBL (devType)
+    D1542 = 0x000D ; // (zcIndex) [10进制表示为: 13]
+    D1543 = 0x00B6 ; // (seqIndex) [10进制表示为: 182]
+
+    D1544 = 0x0006 ; // X1811-S1804 (devIndex) [10进制表示为: 6]
+    D1545 = 0x0019 ; // JBTCBZS (devType)
+    D1546 = 0x000D ; // (zcIndex) [10进制表示为: 13]
+    D1547 = 0x00B7 ; // (seqIndex) [10进制表示为: 183]
+
+    D1548 = 0x0007 ; // X1811-S1808 (devIndex) [10进制表示为: 7]
+    D1549 = 0x0016 ; // ZFTCBZH (devType)
+    D1550 = 0x000E ; // (zcIndex) [10进制表示为: 14]
+    D1551 = 0x00D8 ; // (seqIndex) [10进制表示为: 216]
+
+    D1552 = 0x0007 ; // X1811-S1808 (devIndex) [10进制表示为: 7]
+    D1553 = 0x0018 ; // ZFBL (devType)
+    D1554 = 0x000E ; // (zcIndex) [10进制表示为: 14]
+    D1555 = 0x00B8 ; // (seqIndex) [10进制表示为: 184]
+
+    D1556 = 0x0007 ; // X1811-S1808 (devIndex) [10进制表示为: 7]
+    D1557 = 0x001A ; // ZFTCBZS (devType)
+    D1558 = 0x000E ; // (zcIndex) [10进制表示为: 14]
+    D1559 = 0x00B9 ; // (seqIndex) [10进制表示为: 185]
+
+    D1560 = 0x0008 ; // X1813-X1817 (devIndex) [10进制表示为: 8]
+    D1561 = 0x0015 ; // JBTCBZH (devType)
+    D1562 = 0x000F ; // (zcIndex) [10进制表示为: 15]
+    D1563 = 0x00D9 ; // (seqIndex) [10进制表示为: 217]
+
+    D1564 = 0x0008 ; // X1813-X1817 (devIndex) [10进制表示为: 8]
+    D1565 = 0x0017 ; // JBBL (devType)
+    D1566 = 0x000F ; // (zcIndex) [10进制表示为: 15]
+    D1567 = 0x00BA ; // (seqIndex) [10进制表示为: 186]
+
+    D1568 = 0x0008 ; // X1813-X1817 (devIndex) [10进制表示为: 8]
+    D1569 = 0x0019 ; // JBTCBZS (devType)
+    D1570 = 0x000F ; // (zcIndex) [10进制表示为: 15]
+    D1571 = 0x00BB ; // (seqIndex) [10进制表示为: 187]
+
+    D1572 = 0x0009 ; // X1815-X1811 (devIndex) [10进制表示为: 9]
+    D1573 = 0x0015 ; // JBTCBZH (devType)
+    D1574 = 0x0011 ; // (zcIndex) [10进制表示为: 17]
+    D1575 = 0x00DB ; // (seqIndex) [10进制表示为: 219]
+
+    D1576 = 0x0009 ; // X1815-X1811 (devIndex) [10进制表示为: 9]
+    D1577 = 0x0017 ; // JBBL (devType)
+    D1578 = 0x0011 ; // (zcIndex) [10进制表示为: 17]
+    D1579 = 0x00BE ; // (seqIndex) [10进制表示为: 190]
+
+    D1580 = 0x0009 ; // X1815-X1811 (devIndex) [10进制表示为: 9]
+    D1581 = 0x0019 ; // JBTCBZS (devType)
+    D1582 = 0x0011 ; // (zcIndex) [10进制表示为: 17]
+    D1583 = 0x00BF ; // (seqIndex) [10进制表示为: 191]
+
+    D1584 = 0x000A ; // X1815-S1812 (devIndex) [10进制表示为: 10]
+    D1585 = 0x0015 ; // JBTCBZH (devType)
+    D1586 = 0x0013 ; // (zcIndex) [10进制表示为: 19]
+    D1587 = 0x00DD ; // (seqIndex) [10进制表示为: 221]
+
+    D1588 = 0x000A ; // X1815-S1812 (devIndex) [10进制表示为: 10]
+    D1589 = 0x0017 ; // JBBL (devType)
+    D1590 = 0x0013 ; // (zcIndex) [10进制表示为: 19]
+    D1591 = 0x00C2 ; // (seqIndex) [10进制表示为: 194]
+
+    D1592 = 0x000A ; // X1815-S1812 (devIndex) [10进制表示为: 10]
+    D1593 = 0x0019 ; // JBTCBZS (devType)
+    D1594 = 0x0013 ; // (zcIndex) [10进制表示为: 19]
+    D1595 = 0x00C3 ; // (seqIndex) [10进制表示为: 195]
+
+    D1596 = 0x000B ; // X1815-S1814 (devIndex) [10进制表示为: 11]
+    D1597 = 0x0016 ; // ZFTCBZH (devType)
+    D1598 = 0x0014 ; // (zcIndex) [10进制表示为: 20]
+    D1599 = 0x00DE ; // (seqIndex) [10进制表示为: 222]
+
+    D1600 = 0x000B ; // X1815-S1814 (devIndex) [10进制表示为: 11]
+    D1601 = 0x0018 ; // ZFBL (devType)
+    D1602 = 0x0014 ; // (zcIndex) [10进制表示为: 20]
+    D1603 = 0x00C4 ; // (seqIndex) [10进制表示为: 196]
+
+    D1604 = 0x000B ; // X1815-S1814 (devIndex) [10进制表示为: 11]
+    D1605 = 0x001A ; // ZFTCBZS (devType)
+    D1606 = 0x0014 ; // (zcIndex) [10进制表示为: 20]
+    D1607 = 0x00C5 ; // (seqIndex) [10进制表示为: 197]
+
+    D1608 = 0x000C ; // X1817-X2001F (devIndex) [10进制表示为: 12]
+    D1609 = 0x0015 ; // JBTCBZH (devType)
+    D1610 = 0x0015 ; // (zcIndex) [10进制表示为: 21]
+    D1611 = 0x00DF ; // (seqIndex) [10进制表示为: 223]
+
+    D1612 = 0x000C ; // X1817-X2001F (devIndex) [10进制表示为: 12]
+    D1613 = 0x0017 ; // JBBL (devType)
+    D1614 = 0x0015 ; // (zcIndex) [10进制表示为: 21]
+    D1615 = 0x00C6 ; // (seqIndex) [10进制表示为: 198]
+
+    D1616 = 0x000C ; // X1817-X2001F (devIndex) [10进制表示为: 12]
+    D1617 = 0x0019 ; // JBTCBZS (devType)
+    D1618 = 0x0015 ; // (zcIndex) [10进制表示为: 21]
+    D1619 = 0x00C7 ; // (seqIndex) [10进制表示为: 199]
+
+    D1620 = 0x000D ; // X1901-X1815 (devIndex) [10进制表示为: 13]
+    D1621 = 0x0015 ; // JBTCBZH (devType)
+    D1622 = 0x0016 ; // (zcIndex) [10进制表示为: 22]
+    D1623 = 0x00E0 ; // (seqIndex) [10进制表示为: 224]
+
+    D1624 = 0x000D ; // X1901-X1815 (devIndex) [10进制表示为: 13]
+    D1625 = 0x0017 ; // JBBL (devType)
+    D1626 = 0x0016 ; // (zcIndex) [10进制表示为: 22]
+    D1627 = 0x00C8 ; // (seqIndex) [10进制表示为: 200]
+
+    D1628 = 0x000D ; // X1901-X1815 (devIndex) [10进制表示为: 13]
+    D1629 = 0x0019 ; // JBTCBZS (devType)
+    D1630 = 0x0016 ; // (zcIndex) [10进制表示为: 22]
+    D1631 = 0x00C9 ; // (seqIndex) [10进制表示为: 201]
+
+    D1632 = 0x000E ; // S1808-X1813 (devIndex) [10进制表示为: 14]
+    D1633 = 0x0015 ; // JBTCBZH (devType)
+    D1634 = 0x001F ; // (zcIndex) [10进制表示为: 31]
+    D1635 = 0x00E7 ; // (seqIndex) [10进制表示为: 231]
+
+    D1636 = 0x000E ; // S1808-X1813 (devIndex) [10进制表示为: 14]
+    D1637 = 0x0017 ; // JBBL (devType)
+    D1638 = 0x001F ; // (zcIndex) [10进制表示为: 31]
+    D1639 = 0x00D6 ; // (seqIndex) [10进制表示为: 214]
+
+    D1640 = 0x000E ; // S1808-X1813 (devIndex) [10进制表示为: 14]
+    D1641 = 0x0019 ; // JBTCBZS (devType)
+    D1642 = 0x001F ; // (zcIndex) [10进制表示为: 31]
+    D1643 = 0x00D7 ; // (seqIndex) [10进制表示为: 215]
+
+    D1644 = 0x000F ; // S1808-S1814 (devIndex) [10进制表示为: 15]
+    D1645 = 0x0015 ; // JBTCBZH (devType)
+    D1646 = 0x001D ; // (zcIndex) [10进制表示为: 29]
+    D1647 = 0x00E5 ; // (seqIndex) [10进制表示为: 229]
+
+    D1648 = 0x000F ; // S1808-S1814 (devIndex) [10进制表示为: 15]
+    D1649 = 0x0017 ; // JBBL (devType)
+    D1650 = 0x001D ; // (zcIndex) [10进制表示为: 29]
+    D1651 = 0x00D2 ; // (seqIndex) [10进制表示为: 210]
+
+    D1652 = 0x000F ; // S1808-S1814 (devIndex) [10进制表示为: 15]
+    D1653 = 0x0019 ; // JBTCBZS (devType)
+    D1654 = 0x001D ; // (zcIndex) [10进制表示为: 29]
+    D1655 = 0x00D3 ; // (seqIndex) [10进制表示为: 211]
+
+    D1656 = 0x0010 ; // S1810-S1814 (devIndex) [10进制表示为: 16]
+    D1657 = 0x0015 ; // JBTCBZH (devType)
+    D1658 = 0x0021 ; // (zcIndex) [10进制表示为: 33]
+    D1659 = 0x00E9 ; // (seqIndex) [10进制表示为: 233]
+
+    D1660 = 0x0010 ; // S1810-S1814 (devIndex) [10进制表示为: 16]
+    D1661 = 0x0017 ; // JBBL (devType)
+    D1662 = 0x0021 ; // (zcIndex) [10进制表示为: 33]
+    D1663 = 0x00DA ; // (seqIndex) [10进制表示为: 218]
+
+    D1664 = 0x0010 ; // S1810-S1814 (devIndex) [10进制表示为: 16]
+    D1665 = 0x0019 ; // JBTCBZS (devType)
+    D1666 = 0x0021 ; // (zcIndex) [10进制表示为: 33]
+    D1667 = 0x00DB ; // (seqIndex) [10进制表示为: 219]
+
+    D1668 = 0x0011 ; // S1812-S1806 (devIndex) [10进制表示为: 17]
+    D1669 = 0x0015 ; // JBTCBZH (devType)
+    D1670 = 0x0023 ; // (zcIndex) [10进制表示为: 35]
+    D1671 = 0x00EB ; // (seqIndex) [10进制表示为: 235]
+
+    D1672 = 0x0011 ; // S1812-S1806 (devIndex) [10进制表示为: 17]
+    D1673 = 0x0017 ; // JBBL (devType)
+    D1674 = 0x0023 ; // (zcIndex) [10进制表示为: 35]
+    D1675 = 0x00DE ; // (seqIndex) [10进制表示为: 222]
+
+    D1676 = 0x0011 ; // S1812-S1806 (devIndex) [10进制表示为: 17]
+    D1677 = 0x0019 ; // JBTCBZS (devType)
+    D1678 = 0x0023 ; // (zcIndex) [10进制表示为: 35]
+    D1679 = 0x00DF ; // (seqIndex) [10进制表示为: 223]
+
+    D1680 = 0x0012 ; // S1812-S1804 (devIndex) [10进制表示为: 18]
+    D1681 = 0x0015 ; // JBTCBZH (devType)
+    D1682 = 0x0024 ; // (zcIndex) [10进制表示为: 36]
+    D1683 = 0x00EC ; // (seqIndex) [10进制表示为: 236]
+
+    D1684 = 0x0012 ; // S1812-S1804 (devIndex) [10进制表示为: 18]
+    D1685 = 0x0017 ; // JBBL (devType)
+    D1686 = 0x0024 ; // (zcIndex) [10进制表示为: 36]
+    D1687 = 0x00E0 ; // (seqIndex) [10进制表示为: 224]
+
+    D1688 = 0x0012 ; // S1812-S1804 (devIndex) [10进制表示为: 18]
+    D1689 = 0x0019 ; // JBTCBZS (devType)
+    D1690 = 0x0024 ; // (zcIndex) [10进制表示为: 36]
+    D1691 = 0x00E1 ; // (seqIndex) [10进制表示为: 225]
+
+    D1692 = 0x0013 ; // S1812-X1803 (devIndex) [10进制表示为: 19]
+    D1693 = 0x0015 ; // JBTCBZH (devType)
+    D1694 = 0x0026 ; // (zcIndex) [10进制表示为: 38]
+    D1695 = 0x00EE ; // (seqIndex) [10进制表示为: 238]
+
+    D1696 = 0x0013 ; // S1812-X1803 (devIndex) [10进制表示为: 19]
+    D1697 = 0x0017 ; // JBBL (devType)
+    D1698 = 0x0026 ; // (zcIndex) [10进制表示为: 38]
+    D1699 = 0x00E4 ; // (seqIndex) [10进制表示为: 228]
+
+    D1700 = 0x0013 ; // S1812-X1803 (devIndex) [10进制表示为: 19]
+    D1701 = 0x0019 ; // JBTCBZS (devType)
+    D1702 = 0x0026 ; // (zcIndex) [10进制表示为: 38]
+    D1703 = 0x00E5 ; // (seqIndex) [10进制表示为: 229]
+
+    D1704 = 0x0014 ; // S1814-S1902 (devIndex) [10进制表示为: 20]
+    D1705 = 0x0015 ; // JBTCBZH (devType)
+    D1706 = 0x0028 ; // (zcIndex) [10进制表示为: 40]
+    D1707 = 0x00F0 ; // (seqIndex) [10进制表示为: 240]
+
+    D1708 = 0x0014 ; // S1814-S1902 (devIndex) [10进制表示为: 20]
+    D1709 = 0x0017 ; // JBBL (devType)
+    D1710 = 0x0028 ; // (zcIndex) [10进制表示为: 40]
+    D1711 = 0x00E8 ; // (seqIndex) [10进制表示为: 232]
+
+    D1712 = 0x0014 ; // S1814-S1902 (devIndex) [10进制表示为: 20]
+    D1713 = 0x0019 ; // JBTCBZS (devType)
+    D1714 = 0x0028 ; // (zcIndex) [10进制表示为: 40]
+    D1715 = 0x00E9 ; // (seqIndex) [10进制表示为: 233]
+
+    D1716 = 0x0015 ; // S1814-X1817 (devIndex) [10进制表示为: 21]
+    D1717 = 0x0015 ; // JBTCBZH (devType)
+    D1718 = 0x0029 ; // (zcIndex) [10进制表示为: 41]
+    D1719 = 0x00F1 ; // (seqIndex) [10进制表示为: 241]
+
+    D1720 = 0x0015 ; // S1814-X1817 (devIndex) [10进制表示为: 21]
+    D1721 = 0x0017 ; // JBBL (devType)
+    D1722 = 0x0029 ; // (zcIndex) [10进制表示为: 41]
+    D1723 = 0x00EA ; // (seqIndex) [10进制表示为: 234]
+
+    D1724 = 0x0015 ; // S1814-X1817 (devIndex) [10进制表示为: 21]
+    D1725 = 0x0019 ; // JBTCBZS (devType)
+    D1726 = 0x0029 ; // (zcIndex) [10进制表示为: 41]
+    D1727 = 0x00EB ; // (seqIndex) [10进制表示为: 235]
+
+    D1728 = 0x0016 ; // S1814-X1815 (devIndex) [10进制表示为: 22]
+    D1729 = 0x0016 ; // ZFTCBZH (devType)
+    D1730 = 0x002A ; // (zcIndex) [10进制表示为: 42]
+    D1731 = 0x00F2 ; // (seqIndex) [10进制表示为: 242]
+
+    D1732 = 0x0016 ; // S1814-X1815 (devIndex) [10进制表示为: 22]
+    D1733 = 0x0018 ; // ZFBL (devType)
+    D1734 = 0x002A ; // (zcIndex) [10进制表示为: 42]
+    D1735 = 0x00EC ; // (seqIndex) [10进制表示为: 236]
+
+    D1736 = 0x0016 ; // S1814-X1815 (devIndex) [10进制表示为: 22]
+    D1737 = 0x001A ; // ZFTCBZS (devType)
+    D1738 = 0x002A ; // (zcIndex) [10进制表示为: 42]
+    D1739 = 0x00ED ; // (seqIndex) [10进制表示为: 237]
+
+    D1740 = 0x0017 ; // S1816-S1812 (devIndex) [10进制表示为: 23]
+    D1741 = 0x0015 ; // JBTCBZH (devType)
+    D1742 = 0x002B ; // (zcIndex) [10进制表示为: 43]
+    D1743 = 0x00F3 ; // (seqIndex) [10进制表示为: 243]
+
+    D1744 = 0x0017 ; // S1816-S1812 (devIndex) [10进制表示为: 23]
+    D1745 = 0x0017 ; // JBBL (devType)
+    D1746 = 0x002B ; // (zcIndex) [10进制表示为: 43]
+    D1747 = 0x00EE ; // (seqIndex) [10进制表示为: 238]
+
+    D1748 = 0x0017 ; // S1816-S1812 (devIndex) [10进制表示为: 23]
+    D1749 = 0x0019 ; // JBTCBZS (devType)
+    D1750 = 0x002B ; // (zcIndex) [10进制表示为: 43]
+    D1751 = 0x00EF ; // (seqIndex) [10进制表示为: 239]
+
+    D1752 = 0x0018 ; // S1902-S2002F (devIndex) [10进制表示为: 24]
+    D1753 = 0x0015 ; // JBTCBZH (devType)
+    D1754 = 0x002D ; // (zcIndex) [10进制表示为: 45]
+    D1755 = 0x00F5 ; // (seqIndex) [10进制表示为: 245]
+
+    D1756 = 0x0018 ; // S1902-S2002F (devIndex) [10进制表示为: 24]
+    D1757 = 0x0017 ; // JBBL (devType)
+    D1758 = 0x002D ; // (zcIndex) [10进制表示为: 45]
+    D1759 = 0x00F2 ; // (seqIndex) [10进制表示为: 242]
+
+    D1760 = 0x0018 ; // S1902-S2002F (devIndex) [10进制表示为: 24]
+    D1761 = 0x0019 ; // JBTCBZS (devType)
+    D1762 = 0x002D ; // (zcIndex) [10进制表示为: 45]
+    D1763 = 0x00F3 ; // (seqIndex) [10进制表示为: 243]
+
+    D1764 = 0x0019 ; // S1904-S1816 (devIndex) [10进制表示为: 25]
+    D1765 = 0x0015 ; // JBTCBZH (devType)
+    D1766 = 0x003B ; // (zcIndex) [10进制表示为: 59]
+    D1767 = 0x00F6 ; // (seqIndex) [10进制表示为: 246]
+
+    D1768 = 0x0019 ; // S1904-S1816 (devIndex) [10进制表示为: 25]
+    D1769 = 0x0017 ; // JBBL (devType)
+    D1770 = 0x003B ; // (zcIndex) [10进制表示为: 59]
+    D1771 = 0x00F4 ; // (seqIndex) [10进制表示为: 244]
+
+    D1772 = 0x0019 ; // S1904-S1816 (devIndex) [10进制表示为: 25]
+    D1773 = 0x0019 ; // JBTCBZS (devType)
+    D1774 = 0x003B ; // (zcIndex) [10进制表示为: 59]
+    D1775 = 0x00F5 ; // (seqIndex) [10进制表示为: 245]
+
+    D1776 = 0x001A ; // X1801-X1807 (devIndex) [10进制表示为: 26]
+    D1777 = 0x0015 ; // JBTCBZH (devType)
+    D1778 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D1779 = 0x00CB ; // (seqIndex) [10进制表示为: 203]
+
+    D1780 = 0x001A ; // X1801-X1807 (devIndex) [10进制表示为: 26]
+    D1781 = 0x0017 ; // JBBL (devType)
+    D1782 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D1783 = 0x009E ; // (seqIndex) [10进制表示为: 158]
+
+    D1784 = 0x001A ; // X1801-X1807 (devIndex) [10进制表示为: 26]
+    D1785 = 0x0019 ; // JBTCBZS (devType)
+    D1786 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D1787 = 0x009F ; // (seqIndex) [10进制表示为: 159]
+
+    D1788 = 0x001B ; // X1803-XR-XCDF (devIndex) [10进制表示为: 27]
+    D1789 = 0x0015 ; // JBTCBZH (devType)
+    D1790 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D1791 = 0x00CD ; // (seqIndex) [10进制表示为: 205]
+
+    D1792 = 0x001B ; // X1803-XR-XCDF (devIndex) [10进制表示为: 27]
+    D1793 = 0x0017 ; // JBBL (devType)
+    D1794 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D1795 = 0x00A2 ; // (seqIndex) [10进制表示为: 162]
+
+    D1796 = 0x001B ; // X1803-XR-XCDF (devIndex) [10进制表示为: 27]
+    D1797 = 0x0019 ; // JBTCBZS (devType)
+    D1798 = 0x0003 ; // (zcIndex) [10进制表示为: 3]
+    D1799 = 0x00A3 ; // (seqIndex) [10进制表示为: 163]
+
+    D1800 = 0x001C ; // S1802-S1808 (devIndex) [10进制表示为: 28]
+    D1801 = 0x0015 ; // JBTCBZH (devType)
+    D1802 = 0x001A ; // (zcIndex) [10进制表示为: 26]
+    D1803 = 0x00E2 ; // (seqIndex) [10进制表示为: 226]
+
+    D1804 = 0x001C ; // S1802-S1808 (devIndex) [10进制表示为: 28]
+    D1805 = 0x0017 ; // JBBL (devType)
+    D1806 = 0x001A ; // (zcIndex) [10进制表示为: 26]
+    D1807 = 0x00CC ; // (seqIndex) [10进制表示为: 204]
+
+    D1808 = 0x001C ; // S1802-S1808 (devIndex) [10进制表示为: 28]
+    D1809 = 0x0019 ; // JBTCBZS (devType)
+    D1810 = 0x001A ; // (zcIndex) [10进制表示为: 26]
+    D1811 = 0x00CD ; // (seqIndex) [10进制表示为: 205]
+
+    D1812 = 0x001D ; // S1804-XC-XCDF (devIndex) [10进制表示为: 29]
+    D1813 = 0x0015 ; // JBTCBZH (devType)
+    D1814 = 0x001C ; // (zcIndex) [10进制表示为: 28]
+    D1815 = 0x00E4 ; // (seqIndex) [10进制表示为: 228]
+
+    D1816 = 0x001D ; // S1804-XC-XCDF (devIndex) [10进制表示为: 29]
+    D1817 = 0x0017 ; // JBBL (devType)
+    D1818 = 0x001C ; // (zcIndex) [10进制表示为: 28]
+    D1819 = 0x00D0 ; // (seqIndex) [10进制表示为: 208]
+
+    D1820 = 0x001D ; // S1804-XC-XCDF (devIndex) [10进制表示为: 29]
+    D1821 = 0x0019 ; // JBTCBZS (devType)
+    D1822 = 0x001C ; // (zcIndex) [10进制表示为: 28]
+    D1823 = 0x00D1 ; // (seqIndex) [10进制表示为: 209]
+
+    D1824 = 0x0002 ; // X1801_OLP (devIndex) [10进制表示为: 2]
+    D1825 = 0x001B ; // OLSET (devType)
+    D1826 = 0x0001 ; // (zcIndex) [10进制表示为: 1]
+    D1827 = 0x00F6 ; // (seqIndex) [10进制表示为: 246]
+
+    D1828 = 0x0003 ; // S1802_OLP (devIndex) [10进制表示为: 3]
+    D1829 = 0x001B ; // OLSET (devType)
+    D1830 = 0x0010 ; // (zcIndex) [10进制表示为: 16]
+    D1831 = 0x0103 ; // (seqIndex) [10进制表示为: 259]
+
+    D1832 = 0x0004 ; // X1811_OLP (devIndex) [10进制表示为: 4]
+    D1833 = 0x001B ; // OLSET (devType)
+    D1834 = 0x0009 ; // (zcIndex) [10进制表示为: 9]
+    D1835 = 0x00FD ; // (seqIndex) [10进制表示为: 253]
+
+    D1836 = 0x0005 ; // X1811_OLP (devIndex) [10进制表示为: 5]
+    D1837 = 0x001B ; // OLSET (devType)
+    D1838 = 0x0007 ; // (zcIndex) [10进制表示为: 7]
+    D1839 = 0x00FB ; // (seqIndex) [10进制表示为: 251]
+
+    D1840 = 0x0006 ; // X1811_OLP (devIndex) [10进制表示为: 6]
+    D1841 = 0x001B ; // OLSET (devType)
+    D1842 = 0x0008 ; // (zcIndex) [10进制表示为: 8]
+    D1843 = 0x00FC ; // (seqIndex) [10进制表示为: 252]
+
+    D1844 = 0x0007 ; // S1812_OLP (devIndex) [10进制表示为: 7]
+    D1845 = 0x001B ; // OLSET (devType)
+    D1846 = 0x0018 ; // (zcIndex) [10进制表示为: 24]
+    D1847 = 0x010A ; // (seqIndex) [10进制表示为: 266]
+
+    D1848 = 0x0008 ; // S1812_OLP (devIndex) [10进制表示为: 8]
+    D1849 = 0x001B ; // OLSET (devType)
+    D1850 = 0x0016 ; // (zcIndex) [10进制表示为: 22]
+    D1851 = 0x0108 ; // (seqIndex) [10进制表示为: 264]
+
+    D1852 = 0x0009 ; // S1812_OLP (devIndex) [10进制表示为: 9]
+    D1853 = 0x001B ; // OLSET (devType)
+    D1854 = 0x0017 ; // (zcIndex) [10进制表示为: 23]
+    D1855 = 0x0109 ; // (seqIndex) [10进制表示为: 265]
+
+    D1856 = 0x000A ; // X1813_OLP (devIndex) [10进制表示为: 10]
+    D1857 = 0x001B ; // OLSET (devType)
+    D1858 = 0x000A ; // (zcIndex) [10进制表示为: 10]
+    D1859 = 0x00FE ; // (seqIndex) [10进制表示为: 254]
+
+    D1860 = 0x000B ; // S1814_OLP (devIndex) [10进制表示为: 11]
+    D1861 = 0x001B ; // OLSET (devType)
+    D1862 = 0x0019 ; // (zcIndex) [10进制表示为: 25]
+    D1863 = 0x010B ; // (seqIndex) [10进制表示为: 267]
+
+    D1864 = 0x000C ; // S1814_OLP (devIndex) [10进制表示为: 12]
+    D1865 = 0x001B ; // OLSET (devType)
+    D1866 = 0x001A ; // (zcIndex) [10进制表示为: 26]
+    D1867 = 0x010C ; // (seqIndex) [10进制表示为: 268]
+
+    D1868 = 0x000D ; // X1901_OLP (devIndex) [10进制表示为: 13]
+    D1869 = 0x001B ; // OLSET (devType)
+    D1870 = 0x000E ; // (zcIndex) [10进制表示为: 14]
+    D1871 = 0x0102 ; // (seqIndex) [10进制表示为: 258]
+
+    D1872 = 0x000E ; // S1902_OLP (devIndex) [10进制表示为: 14]
+    D1873 = 0x001B ; // OLSET (devType)
+    D1874 = 0x001C ; // (zcIndex) [10进制表示为: 28]
+    D1875 = 0x010E ; // (seqIndex) [10进制表示为: 270]
+
+    D1876 = 0xEEEE ; // (tabEnd)
+

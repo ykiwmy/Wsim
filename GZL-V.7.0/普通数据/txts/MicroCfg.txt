@@ -1,0 +1,2004 @@
+V.A.0000.000.45
+
+固定配置:不随站场配置而改变且不随数据升级而改变
+
+/**基本进路表“点灯驱灯色”配置宏**/
+#define 绿灯 0x00aa
+#define 黄灯 0x00a5
+#define 白灯 0x003c
+#define 二绿 0x00c3
+#define 双黄 0x0069
+#define 绿黄 0x0096
+#define 红黄 0x0066
+#define 红白 0x0099
+#define 四显示可变 0x00bb
+#define 三显示可变 0x00dd
+#define 根据阻挡信号可变显示 0x00ee
+
+/**基本进路表“进路区段”配置宏**/
+#define 离去区段标志 0x0800 // 离去区段标志
+#define 接近区段标志 0x1000 // 接近区段标志
+#define 道岔区段标志 0x0400 // 道岔区段标志
+#define 无岔区段标志 0x0000 // 无岔区段标志
+#define 监控区段标志 0x2000 // 监控区段标志
+#define 延时解锁区段标志 0x4000 // 延时解锁区段标志
+#define 区段占用不检查标志 0x8000 // 区段占用不检查标志
+
+/**基本进路表“进路道岔”配置宏**/
+#define 道岔定位标志 0x0000 // 道岔定位标志
+#define 道岔反位标志 0x1000 // 道岔反位标志
+#define 道岔三位标志 0x2000 // 道岔三位标志
+#define 带动道岔标志 0x0200 // 带动道岔标志
+#define 防护道岔标志 0x0400 // 防护道岔标志
+#define 保护道岔标志 0x0800 // 保护道岔标志
+#define 接近道岔标志 0x8000 // 接近道岔标志
+
+/**检查条件“其他条件”配置宏**/
+#define 超限条件 0x0000 // 超限条件
+#define 场联条件 0x1000 // 场联条件
+#define 同意条件 0x2000 // 同意条件
+#define ESB条件 0x3000 // ESB条件
+#define AFG条件 0x4000 // 防淹门条件
+#define PSD条件 0x5000 // 屏蔽门条件
+#define 扣车条件 0x6000 // 扣车条件
+#define 敌对信号 0xa000 // 敌对信号条件
+#define 封锁敌对 0xb000 // 信号封锁敌对条件
+#define 区段敌对 0xc000 // 区段敌对条件
+#define 阻挡信号开放条件 0xe000 // 阻挡信号开放条件
+#define 邻站灯位组合条件 0xf000 // 邻站灯位组合条件[照查邻站LXJ、YXJ组合]
+#define 闭塞条件 0x7000 // 64D条件
+#define 自动重开 0x0400 // 进路信号可自动重开
+#define 可排列 0x0800 // 进路可排不可开放信号
+#define CBTC模式不检查条件 0x0200 // CBTC进路不检查条件
+
+/**基本进路表“特殊位置字节含义”配置宏**/
+#define CBTC地址_n n // 基本进路表中对应的“CBTC地址” :0xH为16进制数
+#define CBTC地址_0xH 0xH // 基本进路表中对应的“CBTC地址” :0xH为16进制数
+#define 进路设置_n n // 基本进路表中对应的“进路设置”值 :n为具体的10进制数
+#define 进路设置_0xH 0xH // 基本进路表中对应的“进路设置”值 :0xH为16进制数
+#define delay_n n // n为具体的10进制数
+#define delay_0xH 0xH // 0xH为16进制数
+#define RTID_n n // 进路在基本进路表中的序号 :n为具体的10进制数
+#define RTID_0xH 0xH // 进路在基本进路表中的序号 :0xH为16进制数
+
+/**数据“特殊段符”配置宏**/
+#define WJ 0xff07 // WJ 缺省配置项
+#define ZD 0xfff0 // ZD 缺省按钮号
+#define WDF 0xff02 // WDF
+#define GDF 0xff04 // GDF
+#define CDF 0xff03 // CDF
+#define WDFC 0xff08 // WDFC
+#define GDFC 0xff0a // GDFC
+#define CDFC 0xff09 // CDFC
+#define RTEND 0xffff // RTEND 基本进路单元结束符或缺省项
+#define TabEnd 0xeeee // TabEnd 表结束符
+#define WY 0xffee // WY 填充符
+#define WC 0xff06 // WC 检查条件分割符
+
+/**信号机“设备类型”配置宏**/
+#define 一显示 0x0000
+#define 二显(蓝白) 0x0001
+#define 二显(红白) 0x0002
+#define 二显(红黄) 0x0003
+#define 二显(红绿) 0x0004
+#define 三显(绿白) 0x0005
+#define 三显(绿引) 0x0006
+#define 三显(黄引) 0x0007
+#define 三显(黄白) 0x0008
+#define 四显(调) 0x0009
+#define 四显(引) 0x000a
+#define 红绿2黄白引导 0x000b
+#define 六显(绿黄) 0x000d
+#define 六显(双黄) 0x000e
+#define 七显 0x000f
+#define 三方向兼调 0x0010
+#define 虚拟信号机 0x0011
+
+/**区段“设备类型”配置宏**/
+#define 无岔区段 0x0000
+#define 道岔区段 0x0001
+
+/**零散设备“设备类型”配置宏**/
+#define 零散设备 0x0000
+
+/**照查信息配置表“设备类型”配置宏【根据站场不同而不同】**/
+虚拟 1 // 照查设备为虚拟照查类型
+真实 0 // 照查设备为真实照查类型
+虚拟 0x0001 // 照查设备为虚拟照查类型
+真实 0x0000 // 照查设备为真实照查类型
+
+/**自动化区域设备“自动化区域属性”配置宏【根据站场不同而不同】**/
+是 1 // 表示设备是自动化区域设备
+否 0 // 表示设备非自动化区域设备
+是 0x0001 // 表示设备是自动化区域设备
+否 0x0000 // 表示设备非自动化区域设备
+
+可变配置:因站场配置不同而改变
+
+/**信号机“输入项”配置宏【根据站场不同而不同】**/
+#define X1805          0x0000 // 信号机 X1805 地址
+#define X1805ADDR      0x0000 // 信号机 X1805 地址
+#define X1805BTN       0x0010 // 信号机 X1805 按钮号
+#define X1805BYTE      0x0000 // 信号机 X1805 字号
+#define X1805BIT       0x0000 // 信号机 X1805 位号
+#define X1805STAID     0x0000 // 信号机 X1805 对应的站号
+#define X1805BTN2      0x8010 // 信号机 X1805 按钮号2
+#define X1805LXJ_DEFAULT  0xffff // 信号机 X1805 LXJ 输入继电器地址
+#define X1805ZXJ_DEFAULT  0xffff // 信号机 X1805 ZXJ 输入继电器地址
+#define X1805DXJ_DEFAULT  0xffff // 信号机 X1805 DXJ 输入继电器地址
+#define X1805TXJ_DEFAULT  0xffff // 信号机 X1805 TXJ 输入继电器地址
+#define X1805LUXJ_DEFAULT  0xffff // 信号机 X1805 LUXJ 输入继电器地址
+#define X1805YXJ_DEFAULT  0xffff // 信号机 X1805 YXJ 输入继电器地址
+#define X1805DJ          0x0400 // 信号机 X1805 DJ 输入继电器地址
+#define X18052DJ_DEFAULT  0xffff // 信号机 X1805 2DJ 输入继电器地址
+#define X1805DDJ_DEFAULT  0xffff // 信号机 X1805 DDJ 输入继电器地址
+#define X1805SGJ_DEFAULT  0xffff // 信号机 X1805 SGJ 输入继电器地址
+
+#define S1806          0x0001 // 信号机 S1806 地址
+#define S1806ADDR      0x0001 // 信号机 S1806 地址
+#define S1806BTN       0x0110 // 信号机 S1806 按钮号
+#define S1806BYTE      0x0001 // 信号机 S1806 字号
+#define S1806BIT       0x0000 // 信号机 S1806 位号
+#define S1806STAID     0x0000 // 信号机 S1806 对应的站号
+#define S1806BTN2      0x8110 // 信号机 S1806 按钮号2
+#define S1806LXJ_DEFAULT  0xffff // 信号机 S1806 LXJ 输入继电器地址
+#define S1806ZXJ_DEFAULT  0xffff // 信号机 S1806 ZXJ 输入继电器地址
+#define S1806DXJ_DEFAULT  0xffff // 信号机 S1806 DXJ 输入继电器地址
+#define S1806TXJ_DEFAULT  0xffff // 信号机 S1806 TXJ 输入继电器地址
+#define S1806LUXJ_DEFAULT  0xffff // 信号机 S1806 LUXJ 输入继电器地址
+#define S1806YXJ_DEFAULT  0xffff // 信号机 S1806 YXJ 输入继电器地址
+#define S1806DJ          0x0401 // 信号机 S1806 DJ 输入继电器地址
+#define S18062DJ_DEFAULT  0xffff // 信号机 S1806 2DJ 输入继电器地址
+#define S1806DDJ_DEFAULT  0xffff // 信号机 S1806 DDJ 输入继电器地址
+#define S1806SGJ_DEFAULT  0xffff // 信号机 S1806 SGJ 输入继电器地址
+
+#define X1801          0x0002 // 信号机 X1801 地址
+#define X1801ADDR      0x0002 // 信号机 X1801 地址
+#define X1801BTN       0x0210 // 信号机 X1801 按钮号
+#define X1801BYTE      0x0002 // 信号机 X1801 字号
+#define X1801BIT       0x0000 // 信号机 X1801 位号
+#define X1801STAID     0x0000 // 信号机 X1801 对应的站号
+#define X1801BTN2      0x8210 // 信号机 X1801 按钮号2
+#define X1801LXJ          0x0404 // 信号机 X1801 LXJ 输入继电器地址
+#define X1801ZXJ_DEFAULT  0xffff // 信号机 X1801 ZXJ 输入继电器地址
+#define X1801DXJ_DEFAULT  0xffff // 信号机 X1801 DXJ 输入继电器地址
+#define X1801TXJ_DEFAULT  0xffff // 信号机 X1801 TXJ 输入继电器地址
+#define X1801LUXJ_DEFAULT  0xffff // 信号机 X1801 LUXJ 输入继电器地址
+#define X1801YXJ_DEFAULT  0xffff // 信号机 X1801 YXJ 输入继电器地址
+#define X1801DJ          0x0403 // 信号机 X1801 DJ 输入继电器地址
+#define X18012DJ_DEFAULT  0xffff // 信号机 X1801 2DJ 输入继电器地址
+#define X1801DDJ          0x0402 // 信号机 X1801 DDJ 输入继电器地址
+#define X1801SGJ_DEFAULT  0xffff // 信号机 X1801 SGJ 输入继电器地址
+
+#define X1803          0x0003 // 信号机 X1803 地址
+#define X1803ADDR      0x0003 // 信号机 X1803 地址
+#define X1803BTN       0x0310 // 信号机 X1803 按钮号
+#define X1803BYTE      0x0003 // 信号机 X1803 字号
+#define X1803BIT       0x0000 // 信号机 X1803 位号
+#define X1803STAID     0x0000 // 信号机 X1803 对应的站号
+#define X1803BTN2      0x8310 // 信号机 X1803 按钮号2
+#define X1803LXJ          0x0407 // 信号机 X1803 LXJ 输入继电器地址
+#define X1803ZXJ_DEFAULT  0xffff // 信号机 X1803 ZXJ 输入继电器地址
+#define X1803DXJ_DEFAULT  0xffff // 信号机 X1803 DXJ 输入继电器地址
+#define X1803TXJ_DEFAULT  0xffff // 信号机 X1803 TXJ 输入继电器地址
+#define X1803LUXJ_DEFAULT  0xffff // 信号机 X1803 LUXJ 输入继电器地址
+#define X1803YXJ_DEFAULT  0xffff // 信号机 X1803 YXJ 输入继电器地址
+#define X1803DJ          0x0406 // 信号机 X1803 DJ 输入继电器地址
+#define X18032DJ_DEFAULT  0xffff // 信号机 X1803 2DJ 输入继电器地址
+#define X1803DDJ          0x0405 // 信号机 X1803 DDJ 输入继电器地址
+#define X1803SGJ_DEFAULT  0xffff // 信号机 X1803 SGJ 输入继电器地址
+
+#define X1817          0x0004 // 信号机 X1817 地址
+#define X1817ADDR      0x0004 // 信号机 X1817 地址
+#define X1817BTN       0x0410 // 信号机 X1817 按钮号
+#define X1817BYTE      0x0004 // 信号机 X1817 字号
+#define X1817BIT       0x0000 // 信号机 X1817 位号
+#define X1817STAID     0x0000 // 信号机 X1817 对应的站号
+#define X1817BTN2      0x8410 // 信号机 X1817 按钮号2
+#define X1817LXJ          0x040a // 信号机 X1817 LXJ 输入继电器地址
+#define X1817ZXJ_DEFAULT  0xffff // 信号机 X1817 ZXJ 输入继电器地址
+#define X1817DXJ_DEFAULT  0xffff // 信号机 X1817 DXJ 输入继电器地址
+#define X1817TXJ_DEFAULT  0xffff // 信号机 X1817 TXJ 输入继电器地址
+#define X1817LUXJ_DEFAULT  0xffff // 信号机 X1817 LUXJ 输入继电器地址
+#define X1817YXJ_DEFAULT  0xffff // 信号机 X1817 YXJ 输入继电器地址
+#define X1817DJ          0x0409 // 信号机 X1817 DJ 输入继电器地址
+#define X18172DJ_DEFAULT  0xffff // 信号机 X1817 2DJ 输入继电器地址
+#define X1817DDJ          0x0408 // 信号机 X1817 DDJ 输入继电器地址
+#define X1817SGJ_DEFAULT  0xffff // 信号机 X1817 SGJ 输入继电器地址
+
+#define X1901          0x0005 // 信号机 X1901 地址
+#define X1901ADDR      0x0005 // 信号机 X1901 地址
+#define X1901BTN       0x0510 // 信号机 X1901 按钮号
+#define X1901BYTE      0x0005 // 信号机 X1901 字号
+#define X1901BIT       0x0000 // 信号机 X1901 位号
+#define X1901STAID     0x0000 // 信号机 X1901 对应的站号
+#define X1901BTN2      0x8510 // 信号机 X1901 按钮号2
+#define X1901LXJ          0x040d // 信号机 X1901 LXJ 输入继电器地址
+#define X1901ZXJ_DEFAULT  0xffff // 信号机 X1901 ZXJ 输入继电器地址
+#define X1901DXJ_DEFAULT  0xffff // 信号机 X1901 DXJ 输入继电器地址
+#define X1901TXJ_DEFAULT  0xffff // 信号机 X1901 TXJ 输入继电器地址
+#define X1901LUXJ_DEFAULT  0xffff // 信号机 X1901 LUXJ 输入继电器地址
+#define X1901YXJ_DEFAULT  0xffff // 信号机 X1901 YXJ 输入继电器地址
+#define X1901DJ          0x040c // 信号机 X1901 DJ 输入继电器地址
+#define X19012DJ_DEFAULT  0xffff // 信号机 X1901 2DJ 输入继电器地址
+#define X1901DDJ          0x040b // 信号机 X1901 DDJ 输入继电器地址
+#define X1901SGJ_DEFAULT  0xffff // 信号机 X1901 SGJ 输入继电器地址
+
+#define S1802          0x0006 // 信号机 S1802 地址
+#define S1802ADDR      0x0006 // 信号机 S1802 地址
+#define S1802BTN       0x0610 // 信号机 S1802 按钮号
+#define S1802BYTE      0x0006 // 信号机 S1802 字号
+#define S1802BIT       0x0000 // 信号机 S1802 位号
+#define S1802STAID     0x0000 // 信号机 S1802 对应的站号
+#define S1802BTN2      0x8610 // 信号机 S1802 按钮号2
+#define S1802LXJ          0x0502 // 信号机 S1802 LXJ 输入继电器地址
+#define S1802ZXJ_DEFAULT  0xffff // 信号机 S1802 ZXJ 输入继电器地址
+#define S1802DXJ_DEFAULT  0xffff // 信号机 S1802 DXJ 输入继电器地址
+#define S1802TXJ_DEFAULT  0xffff // 信号机 S1802 TXJ 输入继电器地址
+#define S1802LUXJ_DEFAULT  0xffff // 信号机 S1802 LUXJ 输入继电器地址
+#define S1802YXJ_DEFAULT  0xffff // 信号机 S1802 YXJ 输入继电器地址
+#define S1802DJ          0x0501 // 信号机 S1802 DJ 输入继电器地址
+#define S18022DJ_DEFAULT  0xffff // 信号机 S1802 2DJ 输入继电器地址
+#define S1802DDJ          0x0500 // 信号机 S1802 DDJ 输入继电器地址
+#define S1802SGJ_DEFAULT  0xffff // 信号机 S1802 SGJ 输入继电器地址
+
+#define S1804          0x0007 // 信号机 S1804 地址
+#define S1804ADDR      0x0007 // 信号机 S1804 地址
+#define S1804BTN       0x0710 // 信号机 S1804 按钮号
+#define S1804BYTE      0x0007 // 信号机 S1804 字号
+#define S1804BIT       0x0000 // 信号机 S1804 位号
+#define S1804STAID     0x0000 // 信号机 S1804 对应的站号
+#define S1804BTN2      0x8710 // 信号机 S1804 按钮号2
+#define S1804LXJ          0x0505 // 信号机 S1804 LXJ 输入继电器地址
+#define S1804ZXJ_DEFAULT  0xffff // 信号机 S1804 ZXJ 输入继电器地址
+#define S1804DXJ_DEFAULT  0xffff // 信号机 S1804 DXJ 输入继电器地址
+#define S1804TXJ_DEFAULT  0xffff // 信号机 S1804 TXJ 输入继电器地址
+#define S1804LUXJ_DEFAULT  0xffff // 信号机 S1804 LUXJ 输入继电器地址
+#define S1804YXJ_DEFAULT  0xffff // 信号机 S1804 YXJ 输入继电器地址
+#define S1804DJ          0x0504 // 信号机 S1804 DJ 输入继电器地址
+#define S18042DJ_DEFAULT  0xffff // 信号机 S1804 2DJ 输入继电器地址
+#define S1804DDJ          0x0503 // 信号机 S1804 DDJ 输入继电器地址
+#define S1804SGJ_DEFAULT  0xffff // 信号机 S1804 SGJ 输入继电器地址
+
+#define S1902          0x0008 // 信号机 S1902 地址
+#define S1902ADDR      0x0008 // 信号机 S1902 地址
+#define S1902BTN       0x0810 // 信号机 S1902 按钮号
+#define S1902BYTE      0x0008 // 信号机 S1902 字号
+#define S1902BIT       0x0000 // 信号机 S1902 位号
+#define S1902STAID     0x0000 // 信号机 S1902 对应的站号
+#define S1902BTN2      0x8810 // 信号机 S1902 按钮号2
+#define S1902LXJ          0x0508 // 信号机 S1902 LXJ 输入继电器地址
+#define S1902ZXJ_DEFAULT  0xffff // 信号机 S1902 ZXJ 输入继电器地址
+#define S1902DXJ_DEFAULT  0xffff // 信号机 S1902 DXJ 输入继电器地址
+#define S1902TXJ_DEFAULT  0xffff // 信号机 S1902 TXJ 输入继电器地址
+#define S1902LUXJ_DEFAULT  0xffff // 信号机 S1902 LUXJ 输入继电器地址
+#define S1902YXJ_DEFAULT  0xffff // 信号机 S1902 YXJ 输入继电器地址
+#define S1902DJ          0x0507 // 信号机 S1902 DJ 输入继电器地址
+#define S19022DJ_DEFAULT  0xffff // 信号机 S1902 2DJ 输入继电器地址
+#define S1902DDJ          0x0506 // 信号机 S1902 DDJ 输入继电器地址
+#define S1902SGJ_DEFAULT  0xffff // 信号机 S1902 SGJ 输入继电器地址
+
+#define S1904          0x0009 // 信号机 S1904 地址
+#define S1904ADDR      0x0009 // 信号机 S1904 地址
+#define S1904BTN       0x0910 // 信号机 S1904 按钮号
+#define S1904BYTE      0x0009 // 信号机 S1904 字号
+#define S1904BIT       0x0000 // 信号机 S1904 位号
+#define S1904STAID     0x0000 // 信号机 S1904 对应的站号
+#define S1904BTN2      0x8910 // 信号机 S1904 按钮号2
+#define S1904LXJ          0x050b // 信号机 S1904 LXJ 输入继电器地址
+#define S1904ZXJ_DEFAULT  0xffff // 信号机 S1904 ZXJ 输入继电器地址
+#define S1904DXJ_DEFAULT  0xffff // 信号机 S1904 DXJ 输入继电器地址
+#define S1904TXJ_DEFAULT  0xffff // 信号机 S1904 TXJ 输入继电器地址
+#define S1904LUXJ_DEFAULT  0xffff // 信号机 S1904 LUXJ 输入继电器地址
+#define S1904YXJ_DEFAULT  0xffff // 信号机 S1904 YXJ 输入继电器地址
+#define S1904DJ          0x050a // 信号机 S1904 DJ 输入继电器地址
+#define S19042DJ_DEFAULT  0xffff // 信号机 S1904 2DJ 输入继电器地址
+#define S1904DDJ          0x0509 // 信号机 S1904 DDJ 输入继电器地址
+#define S1904SGJ_DEFAULT  0xffff // 信号机 S1904 SGJ 输入继电器地址
+
+#define X1807          0x000a // 信号机 X1807 地址
+#define X1807ADDR      0x000a // 信号机 X1807 地址
+#define X1807BTN       0x0a10 // 信号机 X1807 按钮号
+#define X1807BYTE      0x000a // 信号机 X1807 字号
+#define X1807BIT       0x0000 // 信号机 X1807 位号
+#define X1807STAID     0x0000 // 信号机 X1807 对应的站号
+#define X1807BTN2      0x8a10 // 信号机 X1807 按钮号2
+#define X1807LXJ          0x0603 // 信号机 X1807 LXJ 输入继电器地址
+#define X1807ZXJ_DEFAULT  0xffff // 信号机 X1807 ZXJ 输入继电器地址
+#define X1807DXJ_DEFAULT  0xffff // 信号机 X1807 DXJ 输入继电器地址
+#define X1807TXJ_DEFAULT  0xffff // 信号机 X1807 TXJ 输入继电器地址
+#define X1807LUXJ_DEFAULT  0xffff // 信号机 X1807 LUXJ 输入继电器地址
+#define X1807YXJ          0x0604 // 信号机 X1807 YXJ 输入继电器地址
+#define X1807DJ          0x0601 // 信号机 X1807 DJ 输入继电器地址
+#define X18072DJ          0x0602 // 信号机 X1807 2DJ 输入继电器地址
+#define X1807DDJ          0x0600 // 信号机 X1807 DDJ 输入继电器地址
+#define X1807SGJ_DEFAULT  0xffff // 信号机 X1807 SGJ 输入继电器地址
+
+#define S1808          0x000b // 信号机 S1808 地址
+#define S1808ADDR      0x000b // 信号机 S1808 地址
+#define S1808BTN       0x0b10 // 信号机 S1808 按钮号
+#define S1808BYTE      0x000b // 信号机 S1808 字号
+#define S1808BIT       0x0000 // 信号机 S1808 位号
+#define S1808STAID     0x0000 // 信号机 S1808 对应的站号
+#define S1808BTN2      0x8b10 // 信号机 S1808 按钮号2
+#define S1808LXJ          0x0608 // 信号机 S1808 LXJ 输入继电器地址
+#define S1808ZXJ_DEFAULT  0xffff // 信号机 S1808 ZXJ 输入继电器地址
+#define S1808DXJ_DEFAULT  0xffff // 信号机 S1808 DXJ 输入继电器地址
+#define S1808TXJ_DEFAULT  0xffff // 信号机 S1808 TXJ 输入继电器地址
+#define S1808LUXJ_DEFAULT  0xffff // 信号机 S1808 LUXJ 输入继电器地址
+#define S1808YXJ          0x0609 // 信号机 S1808 YXJ 输入继电器地址
+#define S1808DJ          0x0606 // 信号机 S1808 DJ 输入继电器地址
+#define S18082DJ          0x0607 // 信号机 S1808 2DJ 输入继电器地址
+#define S1808DDJ          0x0605 // 信号机 S1808 DDJ 输入继电器地址
+#define S1808SGJ_DEFAULT  0xffff // 信号机 S1808 SGJ 输入继电器地址
+
+#define X1809          0x000c // 信号机 X1809 地址
+#define X1809ADDR      0x000c // 信号机 X1809 地址
+#define X1809BTN       0x0c10 // 信号机 X1809 按钮号
+#define X1809BYTE      0x000c // 信号机 X1809 字号
+#define X1809BIT       0x0000 // 信号机 X1809 位号
+#define X1809STAID     0x0000 // 信号机 X1809 对应的站号
+#define X1809BTN2      0x8c10 // 信号机 X1809 按钮号2
+#define X1809LXJ          0x0703 // 信号机 X1809 LXJ 输入继电器地址
+#define X1809ZXJ_DEFAULT  0xffff // 信号机 X1809 ZXJ 输入继电器地址
+#define X1809DXJ_DEFAULT  0xffff // 信号机 X1809 DXJ 输入继电器地址
+#define X1809TXJ_DEFAULT  0xffff // 信号机 X1809 TXJ 输入继电器地址
+#define X1809LUXJ_DEFAULT  0xffff // 信号机 X1809 LUXJ 输入继电器地址
+#define X1809YXJ          0x0704 // 信号机 X1809 YXJ 输入继电器地址
+#define X1809DJ          0x0701 // 信号机 X1809 DJ 输入继电器地址
+#define X18092DJ          0x0702 // 信号机 X1809 2DJ 输入继电器地址
+#define X1809DDJ          0x0700 // 信号机 X1809 DDJ 输入继电器地址
+#define X1809SGJ_DEFAULT  0xffff // 信号机 X1809 SGJ 输入继电器地址
+
+#define X1813          0x000d // 信号机 X1813 地址
+#define X1813ADDR      0x000d // 信号机 X1813 地址
+#define X1813BTN       0x0d10 // 信号机 X1813 按钮号
+#define X1813BYTE      0x000d // 信号机 X1813 字号
+#define X1813BIT       0x0000 // 信号机 X1813 位号
+#define X1813STAID     0x0000 // 信号机 X1813 对应的站号
+#define X1813BTN2      0x8d10 // 信号机 X1813 按钮号2
+#define X1813LXJ          0x0708 // 信号机 X1813 LXJ 输入继电器地址
+#define X1813ZXJ_DEFAULT  0xffff // 信号机 X1813 ZXJ 输入继电器地址
+#define X1813DXJ_DEFAULT  0xffff // 信号机 X1813 DXJ 输入继电器地址
+#define X1813TXJ_DEFAULT  0xffff // 信号机 X1813 TXJ 输入继电器地址
+#define X1813LUXJ_DEFAULT  0xffff // 信号机 X1813 LUXJ 输入继电器地址
+#define X1813YXJ          0x0709 // 信号机 X1813 YXJ 输入继电器地址
+#define X1813DJ          0x0706 // 信号机 X1813 DJ 输入继电器地址
+#define X18132DJ          0x0707 // 信号机 X1813 2DJ 输入继电器地址
+#define X1813DDJ          0x0705 // 信号机 X1813 DDJ 输入继电器地址
+#define X1813SGJ_DEFAULT  0xffff // 信号机 X1813 SGJ 输入继电器地址
+
+#define S1810          0x000e // 信号机 S1810 地址
+#define S1810ADDR      0x000e // 信号机 S1810 地址
+#define S1810BTN       0x0e10 // 信号机 S1810 按钮号
+#define S1810BYTE      0x000e // 信号机 S1810 字号
+#define S1810BIT       0x0000 // 信号机 S1810 位号
+#define S1810STAID     0x0000 // 信号机 S1810 对应的站号
+#define S1810BTN2      0x8e10 // 信号机 S1810 按钮号2
+#define S1810LXJ          0x0803 // 信号机 S1810 LXJ 输入继电器地址
+#define S1810ZXJ_DEFAULT  0xffff // 信号机 S1810 ZXJ 输入继电器地址
+#define S1810DXJ_DEFAULT  0xffff // 信号机 S1810 DXJ 输入继电器地址
+#define S1810TXJ_DEFAULT  0xffff // 信号机 S1810 TXJ 输入继电器地址
+#define S1810LUXJ_DEFAULT  0xffff // 信号机 S1810 LUXJ 输入继电器地址
+#define S1810YXJ          0x0804 // 信号机 S1810 YXJ 输入继电器地址
+#define S1810DJ          0x0801 // 信号机 S1810 DJ 输入继电器地址
+#define S18102DJ          0x0802 // 信号机 S1810 2DJ 输入继电器地址
+#define S1810DDJ          0x0800 // 信号机 S1810 DDJ 输入继电器地址
+#define S1810SGJ_DEFAULT  0xffff // 信号机 S1810 SGJ 输入继电器地址
+
+#define S1816          0x000f // 信号机 S1816 地址
+#define S1816ADDR      0x000f // 信号机 S1816 地址
+#define S1816BTN       0x0f10 // 信号机 S1816 按钮号
+#define S1816BYTE      0x000f // 信号机 S1816 字号
+#define S1816BIT       0x0000 // 信号机 S1816 位号
+#define S1816STAID     0x0000 // 信号机 S1816 对应的站号
+#define S1816BTN2      0x8f10 // 信号机 S1816 按钮号2
+#define S1816LXJ          0x0808 // 信号机 S1816 LXJ 输入继电器地址
+#define S1816ZXJ_DEFAULT  0xffff // 信号机 S1816 ZXJ 输入继电器地址
+#define S1816DXJ_DEFAULT  0xffff // 信号机 S1816 DXJ 输入继电器地址
+#define S1816TXJ_DEFAULT  0xffff // 信号机 S1816 TXJ 输入继电器地址
+#define S1816LUXJ_DEFAULT  0xffff // 信号机 S1816 LUXJ 输入继电器地址
+#define S1816YXJ          0x0809 // 信号机 S1816 YXJ 输入继电器地址
+#define S1816DJ          0x0806 // 信号机 S1816 DJ 输入继电器地址
+#define S18162DJ          0x0807 // 信号机 S1816 2DJ 输入继电器地址
+#define S1816DDJ          0x0805 // 信号机 S1816 DDJ 输入继电器地址
+#define S1816SGJ_DEFAULT  0xffff // 信号机 S1816 SGJ 输入继电器地址
+
+#define X1811          0x0010 // 信号机 X1811 地址
+#define X1811ADDR      0x0010 // 信号机 X1811 地址
+#define X1811BTN       0x0011 // 信号机 X1811 按钮号
+#define X1811BYTE      0x0010 // 信号机 X1811 字号
+#define X1811BIT       0x0000 // 信号机 X1811 位号
+#define X1811STAID     0x0000 // 信号机 X1811 对应的站号
+#define X1811BTN2      0x8011 // 信号机 X1811 按钮号2
+#define X1811LXJ          0x0903 // 信号机 X1811 LXJ 输入继电器地址
+#define X1811ZXJ          0x0904 // 信号机 X1811 ZXJ 输入继电器地址
+#define X1811DXJ_DEFAULT  0xffff // 信号机 X1811 DXJ 输入继电器地址
+#define X1811TXJ_DEFAULT  0xffff // 信号机 X1811 TXJ 输入继电器地址
+#define X1811LUXJ_DEFAULT  0xffff // 信号机 X1811 LUXJ 输入继电器地址
+#define X1811YXJ          0x0905 // 信号机 X1811 YXJ 输入继电器地址
+#define X1811DJ          0x0901 // 信号机 X1811 DJ 输入继电器地址
+#define X18112DJ          0x0902 // 信号机 X1811 2DJ 输入继电器地址
+#define X1811DDJ          0x0900 // 信号机 X1811 DDJ 输入继电器地址
+#define X1811SGJ_DEFAULT  0xffff // 信号机 X1811 SGJ 输入继电器地址
+
+#define X1815          0x0011 // 信号机 X1815 地址
+#define X1815ADDR      0x0011 // 信号机 X1815 地址
+#define X1815BTN       0x0111 // 信号机 X1815 按钮号
+#define X1815BYTE      0x0011 // 信号机 X1815 字号
+#define X1815BIT       0x0000 // 信号机 X1815 位号
+#define X1815STAID     0x0000 // 信号机 X1815 对应的站号
+#define X1815BTN2      0x8111 // 信号机 X1815 按钮号2
+#define X1815LXJ          0x0909 // 信号机 X1815 LXJ 输入继电器地址
+#define X1815ZXJ          0x090a // 信号机 X1815 ZXJ 输入继电器地址
+#define X1815DXJ_DEFAULT  0xffff // 信号机 X1815 DXJ 输入继电器地址
+#define X1815TXJ_DEFAULT  0xffff // 信号机 X1815 TXJ 输入继电器地址
+#define X1815LUXJ_DEFAULT  0xffff // 信号机 X1815 LUXJ 输入继电器地址
+#define X1815YXJ          0x090b // 信号机 X1815 YXJ 输入继电器地址
+#define X1815DJ          0x0907 // 信号机 X1815 DJ 输入继电器地址
+#define X18152DJ          0x0908 // 信号机 X1815 2DJ 输入继电器地址
+#define X1815DDJ          0x0906 // 信号机 X1815 DDJ 输入继电器地址
+#define X1815SGJ_DEFAULT  0xffff // 信号机 X1815 SGJ 输入继电器地址
+
+#define S1812          0x0012 // 信号机 S1812 地址
+#define S1812ADDR      0x0012 // 信号机 S1812 地址
+#define S1812BTN       0x0211 // 信号机 S1812 按钮号
+#define S1812BYTE      0x0012 // 信号机 S1812 字号
+#define S1812BIT       0x0000 // 信号机 S1812 位号
+#define S1812STAID     0x0000 // 信号机 S1812 对应的站号
+#define S1812BTN2      0x8211 // 信号机 S1812 按钮号2
+#define S1812LXJ          0x0a03 // 信号机 S1812 LXJ 输入继电器地址
+#define S1812ZXJ          0x0a04 // 信号机 S1812 ZXJ 输入继电器地址
+#define S1812DXJ_DEFAULT  0xffff // 信号机 S1812 DXJ 输入继电器地址
+#define S1812TXJ_DEFAULT  0xffff // 信号机 S1812 TXJ 输入继电器地址
+#define S1812LUXJ_DEFAULT  0xffff // 信号机 S1812 LUXJ 输入继电器地址
+#define S1812YXJ          0x0a05 // 信号机 S1812 YXJ 输入继电器地址
+#define S1812DJ          0x0a01 // 信号机 S1812 DJ 输入继电器地址
+#define S18122DJ          0x0a02 // 信号机 S1812 2DJ 输入继电器地址
+#define S1812DDJ          0x0a00 // 信号机 S1812 DDJ 输入继电器地址
+#define S1812SGJ_DEFAULT  0xffff // 信号机 S1812 SGJ 输入继电器地址
+
+#define S1814          0x0013 // 信号机 S1814 地址
+#define S1814ADDR      0x0013 // 信号机 S1814 地址
+#define S1814BTN       0x0311 // 信号机 S1814 按钮号
+#define S1814BYTE      0x0013 // 信号机 S1814 字号
+#define S1814BIT       0x0000 // 信号机 S1814 位号
+#define S1814STAID     0x0000 // 信号机 S1814 对应的站号
+#define S1814BTN2      0x8311 // 信号机 S1814 按钮号2
+#define S1814LXJ          0x0a09 // 信号机 S1814 LXJ 输入继电器地址
+#define S1814ZXJ          0x0a0a // 信号机 S1814 ZXJ 输入继电器地址
+#define S1814DXJ_DEFAULT  0xffff // 信号机 S1814 DXJ 输入继电器地址
+#define S1814TXJ_DEFAULT  0xffff // 信号机 S1814 TXJ 输入继电器地址
+#define S1814LUXJ_DEFAULT  0xffff // 信号机 S1814 LUXJ 输入继电器地址
+#define S1814YXJ          0x0a0b // 信号机 S1814 YXJ 输入继电器地址
+#define S1814DJ          0x0a07 // 信号机 S1814 DJ 输入继电器地址
+#define S18142DJ          0x0a08 // 信号机 S1814 2DJ 输入继电器地址
+#define S1814DDJ          0x0a06 // 信号机 S1814 DDJ 输入继电器地址
+#define S1814SGJ_DEFAULT  0xffff // 信号机 S1814 SGJ 输入继电器地址
+
+#define XR-XCDF          0x0014 // 信号机 XR-XCDF 地址
+#define XR-XCDFADDR      0x0014 // 信号机 XR-XCDF 地址
+#define XR-XCDFBTN       0x0411 // 信号机 XR-XCDF 按钮号
+#define XR-XCDFBYTE      0x0014 // 信号机 XR-XCDF 字号
+#define XR-XCDFBIT       0x0000 // 信号机 XR-XCDF 位号
+#define XR-XCDFSTAID     0x0000 // 信号机 XR-XCDF 对应的站号
+#define XR-XCDFBTN2      0x8411 // 信号机 XR-XCDF 按钮号2
+#define XR-XCDFLXJ_DEFAULT  0xffff // 信号机 XR-XCDF LXJ 输入继电器地址
+#define XR-XCDFZXJ_DEFAULT  0xffff // 信号机 XR-XCDF ZXJ 输入继电器地址
+#define XR-XCDFDXJ_DEFAULT  0xffff // 信号机 XR-XCDF DXJ 输入继电器地址
+#define XR-XCDFTXJ_DEFAULT  0xffff // 信号机 XR-XCDF TXJ 输入继电器地址
+#define XR-XCDFLUXJ_DEFAULT  0xffff // 信号机 XR-XCDF LUXJ 输入继电器地址
+#define XR-XCDFYXJ_DEFAULT  0xffff // 信号机 XR-XCDF YXJ 输入继电器地址
+#define XR-XCDFDJ_DEFAULT  0xffff // 信号机 XR-XCDF DJ 输入继电器地址
+#define XR-XCDF2DJ_DEFAULT  0xffff // 信号机 XR-XCDF 2DJ 输入继电器地址
+#define XR-XCDFDDJ_DEFAULT  0xffff // 信号机 XR-XCDF DDJ 输入继电器地址
+#define XR-XCDFSGJ_DEFAULT  0xffff // 信号机 XR-XCDF SGJ 输入继电器地址
+
+#define XC-XCDF          0x0015 // 信号机 XC-XCDF 地址
+#define XC-XCDFADDR      0x0015 // 信号机 XC-XCDF 地址
+#define XC-XCDFBTN       0x0511 // 信号机 XC-XCDF 按钮号
+#define XC-XCDFBYTE      0x0015 // 信号机 XC-XCDF 字号
+#define XC-XCDFBIT       0x0000 // 信号机 XC-XCDF 位号
+#define XC-XCDFSTAID     0x0000 // 信号机 XC-XCDF 对应的站号
+#define XC-XCDFBTN2      0x8511 // 信号机 XC-XCDF 按钮号2
+#define XC-XCDFLXJ_DEFAULT  0xffff // 信号机 XC-XCDF LXJ 输入继电器地址
+#define XC-XCDFZXJ_DEFAULT  0xffff // 信号机 XC-XCDF ZXJ 输入继电器地址
+#define XC-XCDFDXJ_DEFAULT  0xffff // 信号机 XC-XCDF DXJ 输入继电器地址
+#define XC-XCDFTXJ_DEFAULT  0xffff // 信号机 XC-XCDF TXJ 输入继电器地址
+#define XC-XCDFLUXJ_DEFAULT  0xffff // 信号机 XC-XCDF LUXJ 输入继电器地址
+#define XC-XCDFYXJ_DEFAULT  0xffff // 信号机 XC-XCDF YXJ 输入继电器地址
+#define XC-XCDFDJ_DEFAULT  0xffff // 信号机 XC-XCDF DJ 输入继电器地址
+#define XC-XCDF2DJ_DEFAULT  0xffff // 信号机 XC-XCDF 2DJ 输入继电器地址
+#define XC-XCDFDDJ_DEFAULT  0xffff // 信号机 XC-XCDF DDJ 输入继电器地址
+#define XC-XCDFSGJ_DEFAULT  0xffff // 信号机 XC-XCDF SGJ 输入继电器地址
+
+#define X2001F          0x0016 // 信号机 X2001F 地址
+#define X2001FADDR      0x0016 // 信号机 X2001F 地址
+#define X2001FBTN       0x0611 // 信号机 X2001F 按钮号
+#define X2001FBYTE      0x0016 // 信号机 X2001F 字号
+#define X2001FBIT       0x0000 // 信号机 X2001F 位号
+#define X2001FSTAID     0x0000 // 信号机 X2001F 对应的站号
+#define X2001FBTN2      0x8611 // 信号机 X2001F 按钮号2
+#define X2001FLXJ_DEFAULT  0xffff // 信号机 X2001F LXJ 输入继电器地址
+#define X2001FZXJ_DEFAULT  0xffff // 信号机 X2001F ZXJ 输入继电器地址
+#define X2001FDXJ_DEFAULT  0xffff // 信号机 X2001F DXJ 输入继电器地址
+#define X2001FTXJ_DEFAULT  0xffff // 信号机 X2001F TXJ 输入继电器地址
+#define X2001FLUXJ_DEFAULT  0xffff // 信号机 X2001F LUXJ 输入继电器地址
+#define X2001FYXJ_DEFAULT  0xffff // 信号机 X2001F YXJ 输入继电器地址
+#define X2001FDJ_DEFAULT  0xffff // 信号机 X2001F DJ 输入继电器地址
+#define X2001F2DJ_DEFAULT  0xffff // 信号机 X2001F 2DJ 输入继电器地址
+#define X2001FDDJ_DEFAULT  0xffff // 信号机 X2001F DDJ 输入继电器地址
+#define X2001FSGJ_DEFAULT  0xffff // 信号机 X2001F SGJ 输入继电器地址
+
+#define X2003F          0x0017 // 信号机 X2003F 地址
+#define X2003FADDR      0x0017 // 信号机 X2003F 地址
+#define X2003FBTN       0x0711 // 信号机 X2003F 按钮号
+#define X2003FBYTE      0x0017 // 信号机 X2003F 字号
+#define X2003FBIT       0x0000 // 信号机 X2003F 位号
+#define X2003FSTAID     0x0000 // 信号机 X2003F 对应的站号
+#define X2003FBTN2      0x8711 // 信号机 X2003F 按钮号2
+#define X2003FLXJ_DEFAULT  0xffff // 信号机 X2003F LXJ 输入继电器地址
+#define X2003FZXJ_DEFAULT  0xffff // 信号机 X2003F ZXJ 输入继电器地址
+#define X2003FDXJ_DEFAULT  0xffff // 信号机 X2003F DXJ 输入继电器地址
+#define X2003FTXJ_DEFAULT  0xffff // 信号机 X2003F TXJ 输入继电器地址
+#define X2003FLUXJ_DEFAULT  0xffff // 信号机 X2003F LUXJ 输入继电器地址
+#define X2003FYXJ_DEFAULT  0xffff // 信号机 X2003F YXJ 输入继电器地址
+#define X2003FDJ_DEFAULT  0xffff // 信号机 X2003F DJ 输入继电器地址
+#define X2003F2DJ_DEFAULT  0xffff // 信号机 X2003F 2DJ 输入继电器地址
+#define X2003FDDJ_DEFAULT  0xffff // 信号机 X2003F DDJ 输入继电器地址
+#define X2003FSGJ_DEFAULT  0xffff // 信号机 X2003F SGJ 输入继电器地址
+
+#define S2002F          0x0018 // 信号机 S2002F 地址
+#define S2002FADDR      0x0018 // 信号机 S2002F 地址
+#define S2002FBTN       0x0811 // 信号机 S2002F 按钮号
+#define S2002FBYTE      0x0018 // 信号机 S2002F 字号
+#define S2002FBIT       0x0000 // 信号机 S2002F 位号
+#define S2002FSTAID     0x0000 // 信号机 S2002F 对应的站号
+#define S2002FBTN2      0x8811 // 信号机 S2002F 按钮号2
+#define S2002FLXJ_DEFAULT  0xffff // 信号机 S2002F LXJ 输入继电器地址
+#define S2002FZXJ_DEFAULT  0xffff // 信号机 S2002F ZXJ 输入继电器地址
+#define S2002FDXJ_DEFAULT  0xffff // 信号机 S2002F DXJ 输入继电器地址
+#define S2002FTXJ_DEFAULT  0xffff // 信号机 S2002F TXJ 输入继电器地址
+#define S2002FLUXJ_DEFAULT  0xffff // 信号机 S2002F LUXJ 输入继电器地址
+#define S2002FYXJ_DEFAULT  0xffff // 信号机 S2002F YXJ 输入继电器地址
+#define S2002FDJ_DEFAULT  0xffff // 信号机 S2002F DJ 输入继电器地址
+#define S2002F2DJ_DEFAULT  0xffff // 信号机 S2002F 2DJ 输入继电器地址
+#define S2002FDDJ_DEFAULT  0xffff // 信号机 S2002F DDJ 输入继电器地址
+#define S2002FSGJ_DEFAULT  0xffff // 信号机 S2002F SGJ 输入继电器地址
+
+
+/**道岔设备“输入项”配置宏【根据站场不同而不同】**/
+#define P1801          0x0000 // 道岔 P1801 地址
+#define P1801ADDR      0x0000 // 道岔 P1801 地址
+#define P1801BTN       0x0023 // 道岔 P1801 按钮号
+#define P1801BYTE      0x0000 // 道岔 P1801 字号
+#define P1801BIT       0x0000 // 道岔 P1801 位号
+#define P1801STAID     0x0000 // 道岔 P1801 对应的站号
+#define P1801DBJ          0x0200 // 道岔 P1801 DBJ 输入继电器地址
+#define P1801FBJ          0x0201 // 道岔 P1801 FBJ 输入继电器地址
+#define P1801SJ          0x0202 // 道岔 P1801 SJ 输入继电器地址
+
+#define P1803          0x0001 // 道岔 P1803 地址
+#define P1803ADDR      0x0001 // 道岔 P1803 地址
+#define P1803BTN       0x0123 // 道岔 P1803 按钮号
+#define P1803BYTE      0x0000 // 道岔 P1803 字号
+#define P1803BIT       0x0002 // 道岔 P1803 位号
+#define P1803STAID     0x0000 // 道岔 P1803 对应的站号
+#define P1803DBJ          0x0203 // 道岔 P1803 DBJ 输入继电器地址
+#define P1803FBJ          0x0204 // 道岔 P1803 FBJ 输入继电器地址
+#define P1803SJ          0x0205 // 道岔 P1803 SJ 输入继电器地址
+
+#define P1805          0x0002 // 道岔 P1805 地址
+#define P1805ADDR      0x0002 // 道岔 P1805 地址
+#define P1805BTN       0x0223 // 道岔 P1805 按钮号
+#define P1805BYTE      0x0000 // 道岔 P1805 字号
+#define P1805BIT       0x0004 // 道岔 P1805 位号
+#define P1805STAID     0x0000 // 道岔 P1805 对应的站号
+#define P1805DBJ          0x0206 // 道岔 P1805 DBJ 输入继电器地址
+#define P1805FBJ          0x0207 // 道岔 P1805 FBJ 输入继电器地址
+#define P1805SJ          0x0208 // 道岔 P1805 SJ 输入继电器地址
+
+#define P1807          0x0003 // 道岔 P1807 地址
+#define P1807ADDR      0x0003 // 道岔 P1807 地址
+#define P1807BTN       0x0323 // 道岔 P1807 按钮号
+#define P1807BYTE      0x0000 // 道岔 P1807 字号
+#define P1807BIT       0x0006 // 道岔 P1807 位号
+#define P1807STAID     0x0000 // 道岔 P1807 对应的站号
+#define P1807DBJ          0x0209 // 道岔 P1807 DBJ 输入继电器地址
+#define P1807FBJ          0x020a // 道岔 P1807 FBJ 输入继电器地址
+#define P1807SJ          0x020b // 道岔 P1807 SJ 输入继电器地址
+
+#define P1802          0x0004 // 道岔 P1802 地址
+#define P1802ADDR      0x0004 // 道岔 P1802 地址
+#define P1802BTN       0x0423 // 道岔 P1802 按钮号
+#define P1802BYTE      0x0000 // 道岔 P1802 字号
+#define P1802BIT       0x0008 // 道岔 P1802 位号
+#define P1802STAID     0x0000 // 道岔 P1802 对应的站号
+#define P1802DBJ          0x0300 // 道岔 P1802 DBJ 输入继电器地址
+#define P1802FBJ          0x0301 // 道岔 P1802 FBJ 输入继电器地址
+#define P1802SJ          0x0302 // 道岔 P1802 SJ 输入继电器地址
+
+#define P1804          0x0005 // 道岔 P1804 地址
+#define P1804ADDR      0x0005 // 道岔 P1804 地址
+#define P1804BTN       0x0523 // 道岔 P1804 按钮号
+#define P1804BYTE      0x0000 // 道岔 P1804 字号
+#define P1804BIT       0x000a // 道岔 P1804 位号
+#define P1804STAID     0x0000 // 道岔 P1804 对应的站号
+#define P1804DBJ          0x0303 // 道岔 P1804 DBJ 输入继电器地址
+#define P1804FBJ          0x0304 // 道岔 P1804 FBJ 输入继电器地址
+#define P1804SJ          0x0305 // 道岔 P1804 SJ 输入继电器地址
+
+#define P1806          0x0006 // 道岔 P1806 地址
+#define P1806ADDR      0x0006 // 道岔 P1806 地址
+#define P1806BTN       0x0623 // 道岔 P1806 按钮号
+#define P1806BYTE      0x0000 // 道岔 P1806 字号
+#define P1806BIT       0x000c // 道岔 P1806 位号
+#define P1806STAID     0x0000 // 道岔 P1806 对应的站号
+#define P1806DBJ          0x0306 // 道岔 P1806 DBJ 输入继电器地址
+#define P1806FBJ          0x0307 // 道岔 P1806 FBJ 输入继电器地址
+#define P1806SJ          0x0308 // 道岔 P1806 SJ 输入继电器地址
+
+#define P1808          0x0007 // 道岔 P1808 地址
+#define P1808ADDR      0x0007 // 道岔 P1808 地址
+#define P1808BTN       0x0723 // 道岔 P1808 按钮号
+#define P1808BYTE      0x0000 // 道岔 P1808 字号
+#define P1808BIT       0x000e // 道岔 P1808 位号
+#define P1808STAID     0x0000 // 道岔 P1808 对应的站号
+#define P1808DBJ          0x0309 // 道岔 P1808 DBJ 输入继电器地址
+#define P1808FBJ          0x030a // 道岔 P1808 FBJ 输入继电器地址
+#define P1808SJ          0x030b // 道岔 P1808 SJ 输入继电器地址
+
+
+/**区段设备“输入项”配置宏【根据站场不同而不同】**/
+#define T1801          0x0000 // 区段 T1801 地址
+#define T1801ADDR      0x0000 // 区段 T1801 地址
+#define T1801BTN       0x0030 // 区段 T1801 按钮号
+#define T1801BYTE      0x0000 // 区段 T1801 字号
+#define T1801BIT       0x0000 // 区段 T1801 位号
+#define T1801STAID     0x0000 // 区段 T1801 对应的站号
+#define T1801GJ          0x0b00 // 道岔 T1801 GJ 输入继电器地址
+#define T1801FWJ          0x0d00 // 道岔 T1801 FWJ 输入继电器地址
+
+#define T1803          0x0001 // 区段 T1803 地址
+#define T1803ADDR      0x0001 // 区段 T1803 地址
+#define T1803BTN       0x0130 // 区段 T1803 按钮号
+#define T1803BYTE      0x0000 // 区段 T1803 字号
+#define T1803BIT       0x0002 // 区段 T1803 位号
+#define T1803STAID     0x0000 // 区段 T1803 对应的站号
+#define T1803GJ          0x0b01 // 道岔 T1803 GJ 输入继电器地址
+#define T1803FWJ          0x0d01 // 道岔 T1803 FWJ 输入继电器地址
+
+#define T1805          0x0002 // 区段 T1805 地址
+#define T1805ADDR      0x0002 // 区段 T1805 地址
+#define T1805BTN       0x0230 // 区段 T1805 按钮号
+#define T1805BYTE      0x0000 // 区段 T1805 字号
+#define T1805BIT       0x0004 // 区段 T1805 位号
+#define T1805STAID     0x0000 // 区段 T1805 对应的站号
+#define T1805GJ          0x0b02 // 道岔 T1805 GJ 输入继电器地址
+#define T1805FWJ          0x0d02 // 道岔 T1805 FWJ 输入继电器地址
+
+#define T1807          0x0003 // 区段 T1807 地址
+#define T1807ADDR      0x0003 // 区段 T1807 地址
+#define T1807BTN       0x0330 // 区段 T1807 按钮号
+#define T1807BYTE      0x0000 // 区段 T1807 字号
+#define T1807BIT       0x0006 // 区段 T1807 位号
+#define T1807STAID     0x0000 // 区段 T1807 对应的站号
+#define T1807GJ          0x0b03 // 道岔 T1807 GJ 输入继电器地址
+#define T1807FWJ          0x0d03 // 道岔 T1807 FWJ 输入继电器地址
+
+#define T1809          0x0004 // 区段 T1809 地址
+#define T1809ADDR      0x0004 // 区段 T1809 地址
+#define T1809BTN       0x0430 // 区段 T1809 按钮号
+#define T1809BYTE      0x0000 // 区段 T1809 字号
+#define T1809BIT       0x0008 // 区段 T1809 位号
+#define T1809STAID     0x0000 // 区段 T1809 对应的站号
+#define T1809GJ          0x0b04 // 道岔 T1809 GJ 输入继电器地址
+#define T1809FWJ          0x0d04 // 道岔 T1809 FWJ 输入继电器地址
+
+#define T1811          0x0005 // 区段 T1811 地址
+#define T1811ADDR      0x0005 // 区段 T1811 地址
+#define T1811BTN       0x0530 // 区段 T1811 按钮号
+#define T1811BYTE      0x0000 // 区段 T1811 字号
+#define T1811BIT       0x000a // 区段 T1811 位号
+#define T1811STAID     0x0000 // 区段 T1811 对应的站号
+#define T1811GJ          0x0b05 // 道岔 T1811 GJ 输入继电器地址
+#define T1811FWJ          0x0d05 // 道岔 T1811 FWJ 输入继电器地址
+
+#define T1813          0x0006 // 区段 T1813 地址
+#define T1813ADDR      0x0006 // 区段 T1813 地址
+#define T1813BTN       0x0630 // 区段 T1813 按钮号
+#define T1813BYTE      0x0000 // 区段 T1813 字号
+#define T1813BIT       0x000c // 区段 T1813 位号
+#define T1813STAID     0x0000 // 区段 T1813 对应的站号
+#define T1813GJ          0x0b06 // 道岔 T1813 GJ 输入继电器地址
+#define T1813FWJ          0x0d06 // 道岔 T1813 FWJ 输入继电器地址
+
+#define T1815          0x0007 // 区段 T1815 地址
+#define T1815ADDR      0x0007 // 区段 T1815 地址
+#define T1815BTN       0x0730 // 区段 T1815 按钮号
+#define T1815BYTE      0x0000 // 区段 T1815 字号
+#define T1815BIT       0x000e // 区段 T1815 位号
+#define T1815STAID     0x0000 // 区段 T1815 对应的站号
+#define T1815GJ          0x0b07 // 道岔 T1815 GJ 输入继电器地址
+#define T1815FWJ          0x0d07 // 道岔 T1815 FWJ 输入继电器地址
+
+#define T1817          0x0008 // 区段 T1817 地址
+#define T1817ADDR      0x0008 // 区段 T1817 地址
+#define T1817BTN       0x0830 // 区段 T1817 按钮号
+#define T1817BYTE      0x0001 // 区段 T1817 字号
+#define T1817BIT       0x0000 // 区段 T1817 位号
+#define T1817STAID     0x0000 // 区段 T1817 对应的站号
+#define T1817GJ          0x0b08 // 道岔 T1817 GJ 输入继电器地址
+#define T1817FWJ          0x0d08 // 道岔 T1817 FWJ 输入继电器地址
+
+#define T1819          0x0009 // 区段 T1819 地址
+#define T1819ADDR      0x0009 // 区段 T1819 地址
+#define T1819BTN       0x0930 // 区段 T1819 按钮号
+#define T1819BYTE      0x0001 // 区段 T1819 字号
+#define T1819BIT       0x0002 // 区段 T1819 位号
+#define T1819STAID     0x0000 // 区段 T1819 对应的站号
+#define T1819GJ          0x0b09 // 道岔 T1819 GJ 输入继电器地址
+#define T1819FWJ          0x0d09 // 道岔 T1819 FWJ 输入继电器地址
+
+#define T1821          0x000a // 区段 T1821 地址
+#define T1821ADDR      0x000a // 区段 T1821 地址
+#define T1821BTN       0x0a30 // 区段 T1821 按钮号
+#define T1821BYTE      0x0001 // 区段 T1821 字号
+#define T1821BIT       0x0004 // 区段 T1821 位号
+#define T1821STAID     0x0000 // 区段 T1821 对应的站号
+#define T1821GJ          0x0b0a // 道岔 T1821 GJ 输入继电器地址
+#define T1821FWJ          0x0d0a // 道岔 T1821 FWJ 输入继电器地址
+
+#define T1823          0x000b // 区段 T1823 地址
+#define T1823ADDR      0x000b // 区段 T1823 地址
+#define T1823BTN       0x0b30 // 区段 T1823 按钮号
+#define T1823BYTE      0x0001 // 区段 T1823 字号
+#define T1823BIT       0x0006 // 区段 T1823 位号
+#define T1823STAID     0x0000 // 区段 T1823 对应的站号
+#define T1823GJ          0x0b0b // 道岔 T1823 GJ 输入继电器地址
+#define T1823FWJ          0x0d0b // 道岔 T1823 FWJ 输入继电器地址
+
+#define T1901          0x000c // 区段 T1901 地址
+#define T1901ADDR      0x000c // 区段 T1901 地址
+#define T1901BTN       0x0c30 // 区段 T1901 按钮号
+#define T1901BYTE      0x0001 // 区段 T1901 字号
+#define T1901BIT       0x0008 // 区段 T1901 位号
+#define T1901STAID     0x0000 // 区段 T1901 对应的站号
+#define T1901GJ          0x0b0c // 道岔 T1901 GJ 输入继电器地址
+#define T1901FWJ          0x0d0c // 道岔 T1901 FWJ 输入继电器地址
+
+#define T1903          0x000d // 区段 T1903 地址
+#define T1903ADDR      0x000d // 区段 T1903 地址
+#define T1903BTN       0x0d30 // 区段 T1903 按钮号
+#define T1903BYTE      0x0001 // 区段 T1903 字号
+#define T1903BIT       0x000a // 区段 T1903 位号
+#define T1903STAID     0x0000 // 区段 T1903 对应的站号
+#define T1903GJ          0x0b0d // 道岔 T1903 GJ 输入继电器地址
+#define T1903FWJ          0x0d0d // 道岔 T1903 FWJ 输入继电器地址
+
+#define T1905          0x000e // 区段 T1905 地址
+#define T1905ADDR      0x000e // 区段 T1905 地址
+#define T1905BTN       0x0e30 // 区段 T1905 按钮号
+#define T1905BYTE      0x0001 // 区段 T1905 字号
+#define T1905BIT       0x000c // 区段 T1905 位号
+#define T1905STAID     0x0000 // 区段 T1905 对应的站号
+#define T1905GJ          0x0b0e // 道岔 T1905 GJ 输入继电器地址
+#define T1905FWJ          0x0d0e // 道岔 T1905 FWJ 输入继电器地址
+
+#define T1802          0x000f // 区段 T1802 地址
+#define T1802ADDR      0x000f // 区段 T1802 地址
+#define T1802BTN       0x0f30 // 区段 T1802 按钮号
+#define T1802BYTE      0x0001 // 区段 T1802 字号
+#define T1802BIT       0x000e // 区段 T1802 位号
+#define T1802STAID     0x0000 // 区段 T1802 对应的站号
+#define T1802GJ          0x0c00 // 道岔 T1802 GJ 输入继电器地址
+#define T1802FWJ          0x0e00 // 道岔 T1802 FWJ 输入继电器地址
+
+#define T1804          0x0010 // 区段 T1804 地址
+#define T1804ADDR      0x0010 // 区段 T1804 地址
+#define T1804BTN       0x0031 // 区段 T1804 按钮号
+#define T1804BYTE      0x0002 // 区段 T1804 字号
+#define T1804BIT       0x0000 // 区段 T1804 位号
+#define T1804STAID     0x0000 // 区段 T1804 对应的站号
+#define T1804GJ          0x0c01 // 道岔 T1804 GJ 输入继电器地址
+#define T1804FWJ          0x0e01 // 道岔 T1804 FWJ 输入继电器地址
+
+#define T1806          0x0011 // 区段 T1806 地址
+#define T1806ADDR      0x0011 // 区段 T1806 地址
+#define T1806BTN       0x0131 // 区段 T1806 按钮号
+#define T1806BYTE      0x0002 // 区段 T1806 字号
+#define T1806BIT       0x0002 // 区段 T1806 位号
+#define T1806STAID     0x0000 // 区段 T1806 对应的站号
+#define T1806GJ          0x0c02 // 道岔 T1806 GJ 输入继电器地址
+#define T1806FWJ          0x0e02 // 道岔 T1806 FWJ 输入继电器地址
+
+#define T1808          0x0012 // 区段 T1808 地址
+#define T1808ADDR      0x0012 // 区段 T1808 地址
+#define T1808BTN       0x0231 // 区段 T1808 按钮号
+#define T1808BYTE      0x0002 // 区段 T1808 字号
+#define T1808BIT       0x0004 // 区段 T1808 位号
+#define T1808STAID     0x0000 // 区段 T1808 对应的站号
+#define T1808GJ          0x0c03 // 道岔 T1808 GJ 输入继电器地址
+#define T1808FWJ          0x0e03 // 道岔 T1808 FWJ 输入继电器地址
+
+#define T1810          0x0013 // 区段 T1810 地址
+#define T1810ADDR      0x0013 // 区段 T1810 地址
+#define T1810BTN       0x0331 // 区段 T1810 按钮号
+#define T1810BYTE      0x0002 // 区段 T1810 字号
+#define T1810BIT       0x0006 // 区段 T1810 位号
+#define T1810STAID     0x0000 // 区段 T1810 对应的站号
+#define T1810GJ          0x0c04 // 道岔 T1810 GJ 输入继电器地址
+#define T1810FWJ          0x0e04 // 道岔 T1810 FWJ 输入继电器地址
+
+#define T1812          0x0014 // 区段 T1812 地址
+#define T1812ADDR      0x0014 // 区段 T1812 地址
+#define T1812BTN       0x0431 // 区段 T1812 按钮号
+#define T1812BYTE      0x0002 // 区段 T1812 字号
+#define T1812BIT       0x0008 // 区段 T1812 位号
+#define T1812STAID     0x0000 // 区段 T1812 对应的站号
+#define T1812GJ          0x0c05 // 道岔 T1812 GJ 输入继电器地址
+#define T1812FWJ          0x0e05 // 道岔 T1812 FWJ 输入继电器地址
+
+#define T1814          0x0015 // 区段 T1814 地址
+#define T1814ADDR      0x0015 // 区段 T1814 地址
+#define T1814BTN       0x0531 // 区段 T1814 按钮号
+#define T1814BYTE      0x0002 // 区段 T1814 字号
+#define T1814BIT       0x000a // 区段 T1814 位号
+#define T1814STAID     0x0000 // 区段 T1814 对应的站号
+#define T1814GJ          0x0c06 // 道岔 T1814 GJ 输入继电器地址
+#define T1814FWJ          0x0e06 // 道岔 T1814 FWJ 输入继电器地址
+
+#define T1816          0x0016 // 区段 T1816 地址
+#define T1816ADDR      0x0016 // 区段 T1816 地址
+#define T1816BTN       0x0631 // 区段 T1816 按钮号
+#define T1816BYTE      0x0002 // 区段 T1816 字号
+#define T1816BIT       0x000c // 区段 T1816 位号
+#define T1816STAID     0x0000 // 区段 T1816 对应的站号
+#define T1816GJ          0x0c07 // 道岔 T1816 GJ 输入继电器地址
+#define T1816FWJ          0x0e07 // 道岔 T1816 FWJ 输入继电器地址
+
+#define T1818          0x0017 // 区段 T1818 地址
+#define T1818ADDR      0x0017 // 区段 T1818 地址
+#define T1818BTN       0x0731 // 区段 T1818 按钮号
+#define T1818BYTE      0x0002 // 区段 T1818 字号
+#define T1818BIT       0x000e // 区段 T1818 位号
+#define T1818STAID     0x0000 // 区段 T1818 对应的站号
+#define T1818GJ          0x0c08 // 道岔 T1818 GJ 输入继电器地址
+#define T1818FWJ          0x0e08 // 道岔 T1818 FWJ 输入继电器地址
+
+#define T1820          0x0018 // 区段 T1820 地址
+#define T1820ADDR      0x0018 // 区段 T1820 地址
+#define T1820BTN       0x0831 // 区段 T1820 按钮号
+#define T1820BYTE      0x0003 // 区段 T1820 字号
+#define T1820BIT       0x0000 // 区段 T1820 位号
+#define T1820STAID     0x0000 // 区段 T1820 对应的站号
+#define T1820GJ          0x0c09 // 道岔 T1820 GJ 输入继电器地址
+#define T1820FWJ          0x0e09 // 道岔 T1820 FWJ 输入继电器地址
+
+#define T1902          0x0019 // 区段 T1902 地址
+#define T1902ADDR      0x0019 // 区段 T1902 地址
+#define T1902BTN       0x0931 // 区段 T1902 按钮号
+#define T1902BYTE      0x0003 // 区段 T1902 字号
+#define T1902BIT       0x0002 // 区段 T1902 位号
+#define T1902STAID     0x0000 // 区段 T1902 对应的站号
+#define T1902GJ          0x0c0a // 道岔 T1902 GJ 输入继电器地址
+#define T1902FWJ          0x0e0a // 道岔 T1902 FWJ 输入继电器地址
+
+#define T1904          0x001a // 区段 T1904 地址
+#define T1904ADDR      0x001a // 区段 T1904 地址
+#define T1904BTN       0x0a31 // 区段 T1904 按钮号
+#define T1904BYTE      0x0003 // 区段 T1904 字号
+#define T1904BIT       0x0004 // 区段 T1904 位号
+#define T1904STAID     0x0000 // 区段 T1904 对应的站号
+#define T1904GJ          0x0c0b // 道岔 T1904 GJ 输入继电器地址
+#define T1904FWJ          0x0e0b // 道岔 T1904 FWJ 输入继电器地址
+
+#define T1906          0x001b // 区段 T1906 地址
+#define T1906ADDR      0x001b // 区段 T1906 地址
+#define T1906BTN       0x0b31 // 区段 T1906 按钮号
+#define T1906BYTE      0x0003 // 区段 T1906 字号
+#define T1906BIT       0x0006 // 区段 T1906 位号
+#define T1906STAID     0x0000 // 区段 T1906 对应的站号
+#define T1906GJ          0x0c0c // 道岔 T1906 GJ 输入继电器地址
+#define T1906FWJ          0x0e0c // 道岔 T1906 FWJ 输入继电器地址
+
+#define D5GF          0x001c // 区段 D5GF 地址
+#define D5GFADDR      0x001c // 区段 D5GF 地址
+#define D5GFBTN       0x0c31 // 区段 D5GF 按钮号
+#define D5GFBYTE      0x0003 // 区段 D5GF 字号
+#define D5GFBIT       0x0008 // 区段 D5GF 位号
+#define D5GFSTAID     0x0000 // 区段 D5GF 对应的站号
+#define D5GFGJ_DEFAULT  0xffff // 道岔 D5GF GJ 输入继电器地址
+#define D5GFFWJ_DEFAULT  0xffff // 道岔 D5GF FWJ 输入继电器地址
+
+#define D7GF          0x001d // 区段 D7GF 地址
+#define D7GFADDR      0x001d // 区段 D7GF 地址
+#define D7GFBTN       0x0d31 // 区段 D7GF 按钮号
+#define D7GFBYTE      0x0003 // 区段 D7GF 字号
+#define D7GFBIT       0x000a // 区段 D7GF 位号
+#define D7GFSTAID     0x0000 // 区段 D7GF 对应的站号
+#define D7GFGJ_DEFAULT  0xffff // 道岔 D7GF GJ 输入继电器地址
+#define D7GFFWJ_DEFAULT  0xffff // 道岔 D7GF FWJ 输入继电器地址
+
+#define T2001F          0x001e // 区段 T2001F 地址
+#define T2001FADDR      0x001e // 区段 T2001F 地址
+#define T2001FBTN       0x0e31 // 区段 T2001F 按钮号
+#define T2001FBYTE      0x0003 // 区段 T2001F 字号
+#define T2001FBIT       0x000c // 区段 T2001F 位号
+#define T2001FSTAID     0x0000 // 区段 T2001F 对应的站号
+#define T2001FGJ_DEFAULT  0xffff // 道岔 T2001F GJ 输入继电器地址
+#define T2001FFWJ_DEFAULT  0xffff // 道岔 T2001F FWJ 输入继电器地址
+
+#define T2002F          0x001f // 区段 T2002F 地址
+#define T2002FADDR      0x001f // 区段 T2002F 地址
+#define T2002FBTN       0x0f31 // 区段 T2002F 按钮号
+#define T2002FBYTE      0x0003 // 区段 T2002F 字号
+#define T2002FBIT       0x000e // 区段 T2002F 位号
+#define T2002FSTAID     0x0000 // 区段 T2002F 对应的站号
+#define T2002FGJ_DEFAULT  0xffff // 道岔 T2002F GJ 输入继电器地址
+#define T2002FFWJ_DEFAULT  0xffff // 道岔 T2002F FWJ 输入继电器地址
+
+#define T2003F          0x0020 // 区段 T2003F 地址
+#define T2003FADDR      0x0020 // 区段 T2003F 地址
+#define T2003FBTN       0x0032 // 区段 T2003F 按钮号
+#define T2003FBYTE      0x0004 // 区段 T2003F 字号
+#define T2003FBIT       0x0000 // 区段 T2003F 位号
+#define T2003FSTAID     0x0000 // 区段 T2003F 对应的站号
+#define T2003FGJ_DEFAULT  0xffff // 道岔 T2003F GJ 输入继电器地址
+#define T2003FFWJ_DEFAULT  0xffff // 道岔 T2003F FWJ 输入继电器地址
+
+#define T2004F          0x0021 // 区段 T2004F 地址
+#define T2004FADDR      0x0021 // 区段 T2004F 地址
+#define T2004FBTN       0x0132 // 区段 T2004F 按钮号
+#define T2004FBYTE      0x0004 // 区段 T2004F 字号
+#define T2004FBIT       0x0002 // 区段 T2004F 位号
+#define T2004FSTAID     0x0000 // 区段 T2004F 对应的站号
+#define T2004FGJ_DEFAULT  0xffff // 道岔 T2004F GJ 输入继电器地址
+#define T2004FFWJ_DEFAULT  0xffff // 道岔 T2004F FWJ 输入继电器地址
+
+#define T2006F          0x0022 // 区段 T2006F 地址
+#define T2006FADDR      0x0022 // 区段 T2006F 地址
+#define T2006FBTN       0x0232 // 区段 T2006F 按钮号
+#define T2006FBYTE      0x0004 // 区段 T2006F 字号
+#define T2006FBIT       0x0004 // 区段 T2006F 位号
+#define T2006FSTAID     0x0000 // 区段 T2006F 对应的站号
+#define T2006FGJ_DEFAULT  0xffff // 道岔 T2006F GJ 输入继电器地址
+#define T2006FFWJ_DEFAULT  0xffff // 道岔 T2006F FWJ 输入继电器地址
+
+#define T2102F          0x0023 // 区段 T2102F 地址
+#define T2102FADDR      0x0023 // 区段 T2102F 地址
+#define T2102FBTN       0x0332 // 区段 T2102F 按钮号
+#define T2102FBYTE      0x0004 // 区段 T2102F 字号
+#define T2102FBIT       0x0006 // 区段 T2102F 位号
+#define T2102FSTAID     0x0000 // 区段 T2102F 对应的站号
+#define T2102FGJ_DEFAULT  0xffff // 道岔 T2102F GJ 输入继电器地址
+#define T2102FFWJ_DEFAULT  0xffff // 道岔 T2102F FWJ 输入继电器地址
+
+
+/**零散输入设备“输入项”配置宏【根据站场不同而不同】**/
+#define PSD1801-MGJ          0x0000 // 零散输入设备 PSD1801-MGJ 地址
+#define PSD1801-MGJADDR      0x0000 // 零散输入设备 PSD1801-MGJ 地址
+#define PSD1801-MGJBTN       0x0050 // 零散输入设备 PSD1801-MGJ 按钮号
+#define PSD1801-MGJBYTE      0x0000 // 零散输入设备 PSD1801-MGJ 字号
+#define PSD1801-MGJBIT       0x0000 // 零散输入设备 PSD1801-MGJ 位号
+#define PSD1801-MGJSTAID     0x0000 // 零散输入设备 PSD1801-MGJ 对应的站号
+#define PSD1801-MGJDevJ          0x0f00 // 零散输入设备 PSD1801-MGJ DevJ 输入继电器地址
+
+#define PSD1801-MPLJ          0x0001 // 零散输入设备 PSD1801-MPLJ 地址
+#define PSD1801-MPLJADDR      0x0001 // 零散输入设备 PSD1801-MPLJ 地址
+#define PSD1801-MPLJBTN       0x0150 // 零散输入设备 PSD1801-MPLJ 按钮号
+#define PSD1801-MPLJBYTE      0x0000 // 零散输入设备 PSD1801-MPLJ 字号
+#define PSD1801-MPLJBIT       0x0002 // 零散输入设备 PSD1801-MPLJ 位号
+#define PSD1801-MPLJSTAID     0x0000 // 零散输入设备 PSD1801-MPLJ 对应的站号
+#define PSD1801-MPLJDevJ          0x0f01 // 零散输入设备 PSD1801-MPLJ DevJ 输入继电器地址
+
+#define PSD1801-KMJ          0x0002 // 零散输入设备 PSD1801-KMJ 地址
+#define PSD1801-KMJADDR      0x0002 // 零散输入设备 PSD1801-KMJ 地址
+#define PSD1801-KMJBTN       0x0250 // 零散输入设备 PSD1801-KMJ 按钮号
+#define PSD1801-KMJBYTE      0x0000 // 零散输入设备 PSD1801-KMJ 字号
+#define PSD1801-KMJBIT       0x0004 // 零散输入设备 PSD1801-KMJ 位号
+#define PSD1801-KMJSTAID     0x0000 // 零散输入设备 PSD1801-KMJ 对应的站号
+#define PSD1801-KMJDevJ          0x0f02 // 零散输入设备 PSD1801-KMJ DevJ 输入继电器地址
+
+#define PSD1801-GMJ          0x0003 // 零散输入设备 PSD1801-GMJ 地址
+#define PSD1801-GMJADDR      0x0003 // 零散输入设备 PSD1801-GMJ 地址
+#define PSD1801-GMJBTN       0x0350 // 零散输入设备 PSD1801-GMJ 按钮号
+#define PSD1801-GMJBYTE      0x0000 // 零散输入设备 PSD1801-GMJ 字号
+#define PSD1801-GMJBIT       0x0006 // 零散输入设备 PSD1801-GMJ 位号
+#define PSD1801-GMJSTAID     0x0000 // 零散输入设备 PSD1801-GMJ 对应的站号
+#define PSD1801-GMJDevJ          0x0f03 // 零散输入设备 PSD1801-GMJ DevJ 输入继电器地址
+
+#define PSD1802-MGJ          0x0004 // 零散输入设备 PSD1802-MGJ 地址
+#define PSD1802-MGJADDR      0x0004 // 零散输入设备 PSD1802-MGJ 地址
+#define PSD1802-MGJBTN       0x0450 // 零散输入设备 PSD1802-MGJ 按钮号
+#define PSD1802-MGJBYTE      0x0000 // 零散输入设备 PSD1802-MGJ 字号
+#define PSD1802-MGJBIT       0x0008 // 零散输入设备 PSD1802-MGJ 位号
+#define PSD1802-MGJSTAID     0x0000 // 零散输入设备 PSD1802-MGJ 对应的站号
+#define PSD1802-MGJDevJ          0x0f04 // 零散输入设备 PSD1802-MGJ DevJ 输入继电器地址
+
+#define PSD1802-MPLJ          0x0005 // 零散输入设备 PSD1802-MPLJ 地址
+#define PSD1802-MPLJADDR      0x0005 // 零散输入设备 PSD1802-MPLJ 地址
+#define PSD1802-MPLJBTN       0x0550 // 零散输入设备 PSD1802-MPLJ 按钮号
+#define PSD1802-MPLJBYTE      0x0000 // 零散输入设备 PSD1802-MPLJ 字号
+#define PSD1802-MPLJBIT       0x000a // 零散输入设备 PSD1802-MPLJ 位号
+#define PSD1802-MPLJSTAID     0x0000 // 零散输入设备 PSD1802-MPLJ 对应的站号
+#define PSD1802-MPLJDevJ          0x0f05 // 零散输入设备 PSD1802-MPLJ DevJ 输入继电器地址
+
+#define PSD1802-KMJ          0x0006 // 零散输入设备 PSD1802-KMJ 地址
+#define PSD1802-KMJADDR      0x0006 // 零散输入设备 PSD1802-KMJ 地址
+#define PSD1802-KMJBTN       0x0650 // 零散输入设备 PSD1802-KMJ 按钮号
+#define PSD1802-KMJBYTE      0x0000 // 零散输入设备 PSD1802-KMJ 字号
+#define PSD1802-KMJBIT       0x000c // 零散输入设备 PSD1802-KMJ 位号
+#define PSD1802-KMJSTAID     0x0000 // 零散输入设备 PSD1802-KMJ 对应的站号
+#define PSD1802-KMJDevJ          0x0f06 // 零散输入设备 PSD1802-KMJ DevJ 输入继电器地址
+
+#define PSD1802-GMJ          0x0007 // 零散输入设备 PSD1802-GMJ 地址
+#define PSD1802-GMJADDR      0x0007 // 零散输入设备 PSD1802-GMJ 地址
+#define PSD1802-GMJBTN       0x0750 // 零散输入设备 PSD1802-GMJ 按钮号
+#define PSD1802-GMJBYTE      0x0000 // 零散输入设备 PSD1802-GMJ 字号
+#define PSD1802-GMJBIT       0x000e // 零散输入设备 PSD1802-GMJ 位号
+#define PSD1802-GMJSTAID     0x0000 // 零散输入设备 PSD1802-GMJ 对应的站号
+#define PSD1802-GMJDevJ          0x0f07 // 零散输入设备 PSD1802-GMJ DevJ 输入继电器地址
+
+#define PSD1901-MGJ          0x0008 // 零散输入设备 PSD1901-MGJ 地址
+#define PSD1901-MGJADDR      0x0008 // 零散输入设备 PSD1901-MGJ 地址
+#define PSD1901-MGJBTN       0x0850 // 零散输入设备 PSD1901-MGJ 按钮号
+#define PSD1901-MGJBYTE      0x0001 // 零散输入设备 PSD1901-MGJ 字号
+#define PSD1901-MGJBIT       0x0000 // 零散输入设备 PSD1901-MGJ 位号
+#define PSD1901-MGJSTAID     0x0000 // 零散输入设备 PSD1901-MGJ 对应的站号
+#define PSD1901-MGJDevJ          0x0f08 // 零散输入设备 PSD1901-MGJ DevJ 输入继电器地址
+
+#define PSD1901-MPLJ          0x0009 // 零散输入设备 PSD1901-MPLJ 地址
+#define PSD1901-MPLJADDR      0x0009 // 零散输入设备 PSD1901-MPLJ 地址
+#define PSD1901-MPLJBTN       0x0950 // 零散输入设备 PSD1901-MPLJ 按钮号
+#define PSD1901-MPLJBYTE      0x0001 // 零散输入设备 PSD1901-MPLJ 字号
+#define PSD1901-MPLJBIT       0x0002 // 零散输入设备 PSD1901-MPLJ 位号
+#define PSD1901-MPLJSTAID     0x0000 // 零散输入设备 PSD1901-MPLJ 对应的站号
+#define PSD1901-MPLJDevJ          0x0f09 // 零散输入设备 PSD1901-MPLJ DevJ 输入继电器地址
+
+#define PSD1901-KMJ          0x000a // 零散输入设备 PSD1901-KMJ 地址
+#define PSD1901-KMJADDR      0x000a // 零散输入设备 PSD1901-KMJ 地址
+#define PSD1901-KMJBTN       0x0a50 // 零散输入设备 PSD1901-KMJ 按钮号
+#define PSD1901-KMJBYTE      0x0001 // 零散输入设备 PSD1901-KMJ 字号
+#define PSD1901-KMJBIT       0x0004 // 零散输入设备 PSD1901-KMJ 位号
+#define PSD1901-KMJSTAID     0x0000 // 零散输入设备 PSD1901-KMJ 对应的站号
+#define PSD1901-KMJDevJ          0x0f0a // 零散输入设备 PSD1901-KMJ DevJ 输入继电器地址
+
+#define PSD1901-GMJ          0x000b // 零散输入设备 PSD1901-GMJ 地址
+#define PSD1901-GMJADDR      0x000b // 零散输入设备 PSD1901-GMJ 地址
+#define PSD1901-GMJBTN       0x0b50 // 零散输入设备 PSD1901-GMJ 按钮号
+#define PSD1901-GMJBYTE      0x0001 // 零散输入设备 PSD1901-GMJ 字号
+#define PSD1901-GMJBIT       0x0006 // 零散输入设备 PSD1901-GMJ 位号
+#define PSD1901-GMJSTAID     0x0000 // 零散输入设备 PSD1901-GMJ 对应的站号
+#define PSD1901-GMJDevJ          0x0f0b // 零散输入设备 PSD1901-GMJ DevJ 输入继电器地址
+
+#define PSD1902-MGJ          0x000c // 零散输入设备 PSD1902-MGJ 地址
+#define PSD1902-MGJADDR      0x000c // 零散输入设备 PSD1902-MGJ 地址
+#define PSD1902-MGJBTN       0x0c50 // 零散输入设备 PSD1902-MGJ 按钮号
+#define PSD1902-MGJBYTE      0x0001 // 零散输入设备 PSD1902-MGJ 字号
+#define PSD1902-MGJBIT       0x0008 // 零散输入设备 PSD1902-MGJ 位号
+#define PSD1902-MGJSTAID     0x0000 // 零散输入设备 PSD1902-MGJ 对应的站号
+#define PSD1902-MGJDevJ          0x0f0c // 零散输入设备 PSD1902-MGJ DevJ 输入继电器地址
+
+#define PSD1902-MPLJ          0x000d // 零散输入设备 PSD1902-MPLJ 地址
+#define PSD1902-MPLJADDR      0x000d // 零散输入设备 PSD1902-MPLJ 地址
+#define PSD1902-MPLJBTN       0x0d50 // 零散输入设备 PSD1902-MPLJ 按钮号
+#define PSD1902-MPLJBYTE      0x0001 // 零散输入设备 PSD1902-MPLJ 字号
+#define PSD1902-MPLJBIT       0x000a // 零散输入设备 PSD1902-MPLJ 位号
+#define PSD1902-MPLJSTAID     0x0000 // 零散输入设备 PSD1902-MPLJ 对应的站号
+#define PSD1902-MPLJDevJ          0x0f0d // 零散输入设备 PSD1902-MPLJ DevJ 输入继电器地址
+
+#define PSD1902-KMJ          0x000e // 零散输入设备 PSD1902-KMJ 地址
+#define PSD1902-KMJADDR      0x000e // 零散输入设备 PSD1902-KMJ 地址
+#define PSD1902-KMJBTN       0x0e50 // 零散输入设备 PSD1902-KMJ 按钮号
+#define PSD1902-KMJBYTE      0x0001 // 零散输入设备 PSD1902-KMJ 字号
+#define PSD1902-KMJBIT       0x000c // 零散输入设备 PSD1902-KMJ 位号
+#define PSD1902-KMJSTAID     0x0000 // 零散输入设备 PSD1902-KMJ 对应的站号
+#define PSD1902-KMJDevJ          0x0f0e // 零散输入设备 PSD1902-KMJ DevJ 输入继电器地址
+
+#define PSD1902-GMJ          0x000f // 零散输入设备 PSD1902-GMJ 地址
+#define PSD1902-GMJADDR      0x000f // 零散输入设备 PSD1902-GMJ 地址
+#define PSD1902-GMJBTN       0x0f50 // 零散输入设备 PSD1902-GMJ 按钮号
+#define PSD1902-GMJBYTE      0x0001 // 零散输入设备 PSD1902-GMJ 字号
+#define PSD1902-GMJBIT       0x000e // 零散输入设备 PSD1902-GMJ 位号
+#define PSD1902-GMJSTAID     0x0000 // 零散输入设备 PSD1902-GMJ 对应的站号
+#define PSD1902-GMJDevJ          0x0f0f // 零散输入设备 PSD1902-GMJ DevJ 输入继电器地址
+
+#define ESB1801/3-ESBJ          0x0010 // 零散输入设备 ESB1801/3-ESBJ 地址
+#define ESB1801/3-ESBJADDR      0x0010 // 零散输入设备 ESB1801/3-ESBJ 地址
+#define ESB1801/3-ESBJBTN       0x0051 // 零散输入设备 ESB1801/3-ESBJ 按钮号
+#define ESB1801/3-ESBJBYTE      0x0002 // 零散输入设备 ESB1801/3-ESBJ 字号
+#define ESB1801/3-ESBJBIT       0x0000 // 零散输入设备 ESB1801/3-ESBJ 位号
+#define ESB1801/3-ESBJSTAID     0x0000 // 零散输入设备 ESB1801/3-ESBJ 对应的站号
+#define ESB1801/3-ESBJDevJ          0x1000 // 零散输入设备 ESB1801/3-ESBJ DevJ 输入继电器地址
+
+#define ESB1802/4-ESBJ          0x0011 // 零散输入设备 ESB1802/4-ESBJ 地址
+#define ESB1802/4-ESBJADDR      0x0011 // 零散输入设备 ESB1802/4-ESBJ 地址
+#define ESB1802/4-ESBJBTN       0x0151 // 零散输入设备 ESB1802/4-ESBJ 按钮号
+#define ESB1802/4-ESBJBYTE      0x0002 // 零散输入设备 ESB1802/4-ESBJ 字号
+#define ESB1802/4-ESBJBIT       0x0002 // 零散输入设备 ESB1802/4-ESBJ 位号
+#define ESB1802/4-ESBJSTAID     0x0000 // 零散输入设备 ESB1802/4-ESBJ 对应的站号
+#define ESB1802/4-ESBJDevJ          0x1001 // 零散输入设备 ESB1802/4-ESBJ DevJ 输入继电器地址
+
+#define ESB1901/3-ESBJ          0x0012 // 零散输入设备 ESB1901/3-ESBJ 地址
+#define ESB1901/3-ESBJADDR      0x0012 // 零散输入设备 ESB1901/3-ESBJ 地址
+#define ESB1901/3-ESBJBTN       0x0251 // 零散输入设备 ESB1901/3-ESBJ 按钮号
+#define ESB1901/3-ESBJBYTE      0x0002 // 零散输入设备 ESB1901/3-ESBJ 字号
+#define ESB1901/3-ESBJBIT       0x0004 // 零散输入设备 ESB1901/3-ESBJ 位号
+#define ESB1901/3-ESBJSTAID     0x0000 // 零散输入设备 ESB1901/3-ESBJ 对应的站号
+#define ESB1901/3-ESBJDevJ          0x1002 // 零散输入设备 ESB1901/3-ESBJ DevJ 输入继电器地址
+
+#define ESB1902/4-ESBJ          0x0013 // 零散输入设备 ESB1902/4-ESBJ 地址
+#define ESB1902/4-ESBJADDR      0x0013 // 零散输入设备 ESB1902/4-ESBJ 地址
+#define ESB1902/4-ESBJBTN       0x0351 // 零散输入设备 ESB1902/4-ESBJ 按钮号
+#define ESB1902/4-ESBJBYTE      0x0002 // 零散输入设备 ESB1902/4-ESBJ 字号
+#define ESB1902/4-ESBJBIT       0x0006 // 零散输入设备 ESB1902/4-ESBJ 位号
+#define ESB1902/4-ESBJSTAID     0x0000 // 零散输入设备 ESB1902/4-ESBJ 对应的站号
+#define ESB1902/4-ESBJDevJ          0x1003 // 零散输入设备 ESB1902/4-ESBJ DevJ 输入继电器地址
+
+#define DRB1801-DRBJ          0x0014 // 零散输入设备 DRB1801-DRBJ 地址
+#define DRB1801-DRBJADDR      0x0014 // 零散输入设备 DRB1801-DRBJ 地址
+#define DRB1801-DRBJBTN       0x0451 // 零散输入设备 DRB1801-DRBJ 按钮号
+#define DRB1801-DRBJBYTE      0x0002 // 零散输入设备 DRB1801-DRBJ 字号
+#define DRB1801-DRBJBIT       0x0008 // 零散输入设备 DRB1801-DRBJ 位号
+#define DRB1801-DRBJSTAID     0x0000 // 零散输入设备 DRB1801-DRBJ 对应的站号
+#define DRB1801-DRBJDevJ          0x1004 // 零散输入设备 DRB1801-DRBJ DevJ 输入继电器地址
+
+#define DRB1801-WDJ          0x0015 // 零散输入设备 DRB1801-WDJ 地址
+#define DRB1801-WDJADDR      0x0015 // 零散输入设备 DRB1801-WDJ 地址
+#define DRB1801-WDJBTN       0x0551 // 零散输入设备 DRB1801-WDJ 按钮号
+#define DRB1801-WDJBYTE      0x0002 // 零散输入设备 DRB1801-WDJ 字号
+#define DRB1801-WDJBIT       0x000a // 零散输入设备 DRB1801-WDJ 位号
+#define DRB1801-WDJSTAID     0x0000 // 零散输入设备 DRB1801-WDJ 对应的站号
+#define DRB1801-WDJDevJ          0x1006 // 零散输入设备 DRB1801-WDJ DevJ 输入继电器地址
+
+#define DRB1801-SDJ          0x0016 // 零散输入设备 DRB1801-SDJ 地址
+#define DRB1801-SDJADDR      0x0016 // 零散输入设备 DRB1801-SDJ 地址
+#define DRB1801-SDJBTN       0x0651 // 零散输入设备 DRB1801-SDJ 按钮号
+#define DRB1801-SDJBYTE      0x0002 // 零散输入设备 DRB1801-SDJ 字号
+#define DRB1801-SDJBIT       0x000c // 零散输入设备 DRB1801-SDJ 位号
+#define DRB1801-SDJSTAID     0x0000 // 零散输入设备 DRB1801-SDJ 对应的站号
+#define DRB1801-SDJDevJ          0x1005 // 零散输入设备 DRB1801-SDJ DevJ 输入继电器地址
+
+#define BJZ-DY1J          0x0017 // 零散输入设备 BJZ-DY1J 地址
+#define BJZ-DY1JADDR      0x0017 // 零散输入设备 BJZ-DY1J 地址
+#define BJZ-DY1JBTN       0x0751 // 零散输入设备 BJZ-DY1J 按钮号
+#define BJZ-DY1JBYTE      0x0002 // 零散输入设备 BJZ-DY1J 字号
+#define BJZ-DY1JBIT       0x000e // 零散输入设备 BJZ-DY1J 位号
+#define BJZ-DY1JSTAID     0x0000 // 零散输入设备 BJZ-DY1J 对应的站号
+#define BJZ-DY1JDevJ          0x1007 // 零散输入设备 BJZ-DY1J DevJ 输入继电器地址
+
+#define BJZ-DY2J          0x0018 // 零散输入设备 BJZ-DY2J 地址
+#define BJZ-DY2JADDR      0x0018 // 零散输入设备 BJZ-DY2J 地址
+#define BJZ-DY2JBTN       0x0851 // 零散输入设备 BJZ-DY2J 按钮号
+#define BJZ-DY2JBYTE      0x0003 // 零散输入设备 BJZ-DY2J 字号
+#define BJZ-DY2JBIT       0x0000 // 零散输入设备 BJZ-DY2J 位号
+#define BJZ-DY2JSTAID     0x0000 // 零散输入设备 BJZ-DY2J 对应的站号
+#define BJZ-DY2JDevJ          0x1008 // 零散输入设备 BJZ-DY2J DevJ 输入继电器地址
+
+#define BJZ-DYBJ          0x0019 // 零散输入设备 BJZ-DYBJ 地址
+#define BJZ-DYBJADDR      0x0019 // 零散输入设备 BJZ-DYBJ 地址
+#define BJZ-DYBJBTN       0x0951 // 零散输入设备 BJZ-DYBJ 按钮号
+#define BJZ-DYBJBYTE      0x0003 // 零散输入设备 BJZ-DYBJ 字号
+#define BJZ-DYBJBIT       0x0002 // 零散输入设备 BJZ-DYBJ 位号
+#define BJZ-DYBJSTAID     0x0000 // 零散输入设备 BJZ-DYBJ 对应的站号
+#define BJZ-DYBJDevJ          0x1009 // 零散输入设备 BJZ-DYBJ DevJ 输入继电器地址
+
+#define BJZ-DSBJ          0x001a // 零散输入设备 BJZ-DSBJ 地址
+#define BJZ-DSBJADDR      0x001a // 零散输入设备 BJZ-DSBJ 地址
+#define BJZ-DSBJBTN       0x0a51 // 零散输入设备 BJZ-DSBJ 按钮号
+#define BJZ-DSBJBYTE      0x0003 // 零散输入设备 BJZ-DSBJ 字号
+#define BJZ-DSBJBIT       0x0004 // 零散输入设备 BJZ-DSBJ 位号
+#define BJZ-DSBJSTAID     0x0000 // 零散输入设备 BJZ-DSBJ 对应的站号
+#define BJZ-DSBJDevJ          0x100a // 零散输入设备 BJZ-DSBJ DevJ 输入继电器地址
+
+#define BJZ-RSBJ          0x001b // 零散输入设备 BJZ-RSBJ 地址
+#define BJZ-RSBJADDR      0x001b // 零散输入设备 BJZ-RSBJ 地址
+#define BJZ-RSBJBTN       0x0b51 // 零散输入设备 BJZ-RSBJ 按钮号
+#define BJZ-RSBJBYTE      0x0003 // 零散输入设备 BJZ-RSBJ 字号
+#define BJZ-RSBJBIT       0x0006 // 零散输入设备 BJZ-RSBJ 位号
+#define BJZ-RSBJSTAID     0x0000 // 零散输入设备 BJZ-RSBJ 对应的站号
+#define BJZ-RSBJDevJ          0x100b // 零散输入设备 BJZ-RSBJ DevJ 输入继电器地址
+
+#define PSD2001-MGJ          0x001c // 零散输入设备 PSD2001-MGJ 地址
+#define PSD2001-MGJADDR      0x001c // 零散输入设备 PSD2001-MGJ 地址
+#define PSD2001-MGJBTN       0x0c51 // 零散输入设备 PSD2001-MGJ 按钮号
+#define PSD2001-MGJBYTE      0x0003 // 零散输入设备 PSD2001-MGJ 字号
+#define PSD2001-MGJBIT       0x0008 // 零散输入设备 PSD2001-MGJ 位号
+#define PSD2001-MGJSTAID     0x0000 // 零散输入设备 PSD2001-MGJ 对应的站号
+#define PSD2001-MGJDevJ_DEFAULT  0xffff // 零散输入设备 PSD2001-MGJ DevJ 输入继电器地址
+
+#define PSD2001-MPLJ          0x001d // 零散输入设备 PSD2001-MPLJ 地址
+#define PSD2001-MPLJADDR      0x001d // 零散输入设备 PSD2001-MPLJ 地址
+#define PSD2001-MPLJBTN       0x0d51 // 零散输入设备 PSD2001-MPLJ 按钮号
+#define PSD2001-MPLJBYTE      0x0003 // 零散输入设备 PSD2001-MPLJ 字号
+#define PSD2001-MPLJBIT       0x000a // 零散输入设备 PSD2001-MPLJ 位号
+#define PSD2001-MPLJSTAID     0x0000 // 零散输入设备 PSD2001-MPLJ 对应的站号
+#define PSD2001-MPLJDevJ_DEFAULT  0xffff // 零散输入设备 PSD2001-MPLJ DevJ 输入继电器地址
+
+#define PSD2001-KMJ          0x001e // 零散输入设备 PSD2001-KMJ 地址
+#define PSD2001-KMJADDR      0x001e // 零散输入设备 PSD2001-KMJ 地址
+#define PSD2001-KMJBTN       0x0e51 // 零散输入设备 PSD2001-KMJ 按钮号
+#define PSD2001-KMJBYTE      0x0003 // 零散输入设备 PSD2001-KMJ 字号
+#define PSD2001-KMJBIT       0x000c // 零散输入设备 PSD2001-KMJ 位号
+#define PSD2001-KMJSTAID     0x0000 // 零散输入设备 PSD2001-KMJ 对应的站号
+#define PSD2001-KMJDevJ_DEFAULT  0xffff // 零散输入设备 PSD2001-KMJ DevJ 输入继电器地址
+
+#define PSD2001-GMJ          0x001f // 零散输入设备 PSD2001-GMJ 地址
+#define PSD2001-GMJADDR      0x001f // 零散输入设备 PSD2001-GMJ 地址
+#define PSD2001-GMJBTN       0x0f51 // 零散输入设备 PSD2001-GMJ 按钮号
+#define PSD2001-GMJBYTE      0x0003 // 零散输入设备 PSD2001-GMJ 字号
+#define PSD2001-GMJBIT       0x000e // 零散输入设备 PSD2001-GMJ 位号
+#define PSD2001-GMJSTAID     0x0000 // 零散输入设备 PSD2001-GMJ 对应的站号
+#define PSD2001-GMJDevJ_DEFAULT  0xffff // 零散输入设备 PSD2001-GMJ DevJ 输入继电器地址
+
+#define PSD2002-MGJ          0x0020 // 零散输入设备 PSD2002-MGJ 地址
+#define PSD2002-MGJADDR      0x0020 // 零散输入设备 PSD2002-MGJ 地址
+#define PSD2002-MGJBTN       0x0052 // 零散输入设备 PSD2002-MGJ 按钮号
+#define PSD2002-MGJBYTE      0x0004 // 零散输入设备 PSD2002-MGJ 字号
+#define PSD2002-MGJBIT       0x0000 // 零散输入设备 PSD2002-MGJ 位号
+#define PSD2002-MGJSTAID     0x0000 // 零散输入设备 PSD2002-MGJ 对应的站号
+#define PSD2002-MGJDevJ_DEFAULT  0xffff // 零散输入设备 PSD2002-MGJ DevJ 输入继电器地址
+
+#define PSD2002-MPLJ          0x0021 // 零散输入设备 PSD2002-MPLJ 地址
+#define PSD2002-MPLJADDR      0x0021 // 零散输入设备 PSD2002-MPLJ 地址
+#define PSD2002-MPLJBTN       0x0152 // 零散输入设备 PSD2002-MPLJ 按钮号
+#define PSD2002-MPLJBYTE      0x0004 // 零散输入设备 PSD2002-MPLJ 字号
+#define PSD2002-MPLJBIT       0x0002 // 零散输入设备 PSD2002-MPLJ 位号
+#define PSD2002-MPLJSTAID     0x0000 // 零散输入设备 PSD2002-MPLJ 对应的站号
+#define PSD2002-MPLJDevJ_DEFAULT  0xffff // 零散输入设备 PSD2002-MPLJ DevJ 输入继电器地址
+
+#define PSD2002-KMJ          0x0022 // 零散输入设备 PSD2002-KMJ 地址
+#define PSD2002-KMJADDR      0x0022 // 零散输入设备 PSD2002-KMJ 地址
+#define PSD2002-KMJBTN       0x0252 // 零散输入设备 PSD2002-KMJ 按钮号
+#define PSD2002-KMJBYTE      0x0004 // 零散输入设备 PSD2002-KMJ 字号
+#define PSD2002-KMJBIT       0x0004 // 零散输入设备 PSD2002-KMJ 位号
+#define PSD2002-KMJSTAID     0x0000 // 零散输入设备 PSD2002-KMJ 对应的站号
+#define PSD2002-KMJDevJ_DEFAULT  0xffff // 零散输入设备 PSD2002-KMJ DevJ 输入继电器地址
+
+#define PSD2002-GMJ          0x0023 // 零散输入设备 PSD2002-GMJ 地址
+#define PSD2002-GMJADDR      0x0023 // 零散输入设备 PSD2002-GMJ 地址
+#define PSD2002-GMJBTN       0x0352 // 零散输入设备 PSD2002-GMJ 按钮号
+#define PSD2002-GMJBYTE      0x0004 // 零散输入设备 PSD2002-GMJ 字号
+#define PSD2002-GMJBIT       0x0006 // 零散输入设备 PSD2002-GMJ 位号
+#define PSD2002-GMJSTAID     0x0000 // 零散输入设备 PSD2002-GMJ 对应的站号
+#define PSD2002-GMJDevJ_DEFAULT  0xffff // 零散输入设备 PSD2002-GMJ DevJ 输入继电器地址
+
+#define ESB2001/3-ESBJ          0x0024 // 零散输入设备 ESB2001/3-ESBJ 地址
+#define ESB2001/3-ESBJADDR      0x0024 // 零散输入设备 ESB2001/3-ESBJ 地址
+#define ESB2001/3-ESBJBTN       0x0452 // 零散输入设备 ESB2001/3-ESBJ 按钮号
+#define ESB2001/3-ESBJBYTE      0x0004 // 零散输入设备 ESB2001/3-ESBJ 字号
+#define ESB2001/3-ESBJBIT       0x0008 // 零散输入设备 ESB2001/3-ESBJ 位号
+#define ESB2001/3-ESBJSTAID     0x0000 // 零散输入设备 ESB2001/3-ESBJ 对应的站号
+#define ESB2001/3-ESBJDevJ_DEFAULT  0xffff // 零散输入设备 ESB2001/3-ESBJ DevJ 输入继电器地址
+
+#define ESB2002/4-ESBJ          0x0025 // 零散输入设备 ESB2002/4-ESBJ 地址
+#define ESB2002/4-ESBJADDR      0x0025 // 零散输入设备 ESB2002/4-ESBJ 地址
+#define ESB2002/4-ESBJBTN       0x0552 // 零散输入设备 ESB2002/4-ESBJ 按钮号
+#define ESB2002/4-ESBJBYTE      0x0004 // 零散输入设备 ESB2002/4-ESBJ 字号
+#define ESB2002/4-ESBJBIT       0x000a // 零散输入设备 ESB2002/4-ESBJ 位号
+#define ESB2002/4-ESBJSTAID     0x0000 // 零散输入设备 ESB2002/4-ESBJ 对应的站号
+#define ESB2002/4-ESBJDevJ_DEFAULT  0xffff // 零散输入设备 ESB2002/4-ESBJ DevJ 输入继电器地址
+
+#define ZCINT1801          0x0026 // 零散输入设备 ZCINT1801 地址
+#define ZCINT1801ADDR      0x0026 // 零散输入设备 ZCINT1801 地址
+#define ZCINT1801BTN       0x0652 // 零散输入设备 ZCINT1801 按钮号
+#define ZCINT1801BYTE      0x0004 // 零散输入设备 ZCINT1801 字号
+#define ZCINT1801BIT       0x000c // 零散输入设备 ZCINT1801 位号
+#define ZCINT1801STAID     0x0000 // 零散输入设备 ZCINT1801 对应的站号
+#define ZCINT1801DevJ_DEFAULT  0xffff // 零散输入设备 ZCINT1801 DevJ 输入继电器地址
+
+#define ZCINT1802          0x0027 // 零散输入设备 ZCINT1802 地址
+#define ZCINT1802ADDR      0x0027 // 零散输入设备 ZCINT1802 地址
+#define ZCINT1802BTN       0x0752 // 零散输入设备 ZCINT1802 按钮号
+#define ZCINT1802BYTE      0x0004 // 零散输入设备 ZCINT1802 字号
+#define ZCINT1802BIT       0x000e // 零散输入设备 ZCINT1802 位号
+#define ZCINT1802STAID     0x0000 // 零散输入设备 ZCINT1802 对应的站号
+#define ZCINT1802DevJ_DEFAULT  0xffff // 零散输入设备 ZCINT1802 DevJ 输入继电器地址
+
+#define ZCINT1905          0x0028 // 零散输入设备 ZCINT1905 地址
+#define ZCINT1905ADDR      0x0028 // 零散输入设备 ZCINT1905 地址
+#define ZCINT1905BTN       0x0852 // 零散输入设备 ZCINT1905 按钮号
+#define ZCINT1905BYTE      0x0005 // 零散输入设备 ZCINT1905 字号
+#define ZCINT1905BIT       0x0000 // 零散输入设备 ZCINT1905 位号
+#define ZCINT1905STAID     0x0000 // 零散输入设备 ZCINT1905 对应的站号
+#define ZCINT1905DevJ_DEFAULT  0xffff // 零散输入设备 ZCINT1905 DevJ 输入继电器地址
+
+#define ZCINT1906          0x0029 // 零散输入设备 ZCINT1906 地址
+#define ZCINT1906ADDR      0x0029 // 零散输入设备 ZCINT1906 地址
+#define ZCINT1906BTN       0x0952 // 零散输入设备 ZCINT1906 按钮号
+#define ZCINT1906BYTE      0x0005 // 零散输入设备 ZCINT1906 字号
+#define ZCINT1906BIT       0x0002 // 零散输入设备 ZCINT1906 位号
+#define ZCINT1906STAID     0x0000 // 零散输入设备 ZCINT1906 对应的站号
+#define ZCINT1906DevJ_DEFAULT  0xffff // 零散输入设备 ZCINT1906 DevJ 输入继电器地址
+
+#define ZCINXR-XCD          0x002a // 零散输入设备 ZCINXR-XCD 地址
+#define ZCINXR-XCDADDR      0x002a // 零散输入设备 ZCINXR-XCD 地址
+#define ZCINXR-XCDBTN       0x0a52 // 零散输入设备 ZCINXR-XCD 按钮号
+#define ZCINXR-XCDBYTE      0x0005 // 零散输入设备 ZCINXR-XCD 字号
+#define ZCINXR-XCDBIT       0x0004 // 零散输入设备 ZCINXR-XCD 位号
+#define ZCINXR-XCDSTAID     0x0000 // 零散输入设备 ZCINXR-XCD 对应的站号
+#define ZCINXR-XCDDevJ_DEFAULT  0xffff // 零散输入设备 ZCINXR-XCD DevJ 输入继电器地址
+
+#define ZCINXC-XCD          0x002b // 零散输入设备 ZCINXC-XCD 地址
+#define ZCINXC-XCDADDR      0x002b // 零散输入设备 ZCINXC-XCD 地址
+#define ZCINXC-XCDBTN       0x0b52 // 零散输入设备 ZCINXC-XCD 按钮号
+#define ZCINXC-XCDBYTE      0x0005 // 零散输入设备 ZCINXC-XCD 字号
+#define ZCINXC-XCDBIT       0x0006 // 零散输入设备 ZCINXC-XCD 位号
+#define ZCINXC-XCDSTAID     0x0000 // 零散输入设备 ZCINXC-XCD 对应的站号
+#define ZCINXC-XCDDevJ_DEFAULT  0xffff // 零散输入设备 ZCINXC-XCD DevJ 输入继电器地址
+
+#define ZCINX2001          0x002c // 零散输入设备 ZCINX2001 地址
+#define ZCINX2001ADDR      0x002c // 零散输入设备 ZCINX2001 地址
+#define ZCINX2001BTN       0x0c52 // 零散输入设备 ZCINX2001 按钮号
+#define ZCINX2001BYTE      0x0005 // 零散输入设备 ZCINX2001 字号
+#define ZCINX2001BIT       0x0008 // 零散输入设备 ZCINX2001 位号
+#define ZCINX2001STAID     0x0000 // 零散输入设备 ZCINX2001 对应的站号
+#define ZCINX2001DevJ_DEFAULT  0xffff // 零散输入设备 ZCINX2001 DevJ 输入继电器地址
+
+#define ZCINS2002          0x002d // 零散输入设备 ZCINS2002 地址
+#define ZCINS2002ADDR      0x002d // 零散输入设备 ZCINS2002 地址
+#define ZCINS2002BTN       0x0d52 // 零散输入设备 ZCINS2002 按钮号
+#define ZCINS2002BYTE      0x0005 // 零散输入设备 ZCINS2002 字号
+#define ZCINS2002BIT       0x000a // 零散输入设备 ZCINS2002 位号
+#define ZCINS2002STAID     0x0000 // 零散输入设备 ZCINS2002 对应的站号
+#define ZCINS2002DevJ_DEFAULT  0xffff // 零散输入设备 ZCINS2002 DevJ 输入继电器地址
+
+
+/**信号机“输出项”配置宏【根据站场不同而不同】**/
+#define X1801OUTLXJ          0x0401 // 信号机 X1801 OUTLXJ 输出继电器地址
+#define X1801OUTZXJ_DEFAULT  0xff07 // 信号机 X1801 OUTZXJ 输出继电器地址
+#define X1801OUTDXJ_DEFAULT  0xff07 // 信号机 X1801 OUTDXJ 输出继电器地址
+#define X1801OUTTXJ_DEFAULT  0xff07 // 信号机 X1801 OUTTXJ 输出继电器地址
+#define X1801OUTLUXJ_DEFAULT  0xff07 // 信号机 X1801 OUTLUXJ 输出继电器地址
+#define X1801OUTYXJ_DEFAULT  0xff07 // 信号机 X1801 OUTYXJ 输出继电器地址
+#define X1801OUTDDJ          0x0400 // 信号机 X1801 OUTDDJ 输出继电器地址
+#define X1801OUTSGJ_DEFAULT  0xff07 // 信号机 X1801 OUTSGJ 输出继电器地址
+#define X1801OUTAFJ_DEFAULT  0xff07 // 信号机 X1801 OUTAFJ 输出继电器地址
+#define X1801OUTBFJ_DEFAULT  0xff07 // 信号机 X1801 OUTBFJ 输出继电器地址
+#define X1801OUTCFJ_DEFAULT  0xff07 // 信号机 X1801 OUTCFJ 输出继电器地址
+
+#define X1803OUTLXJ          0x0403 // 信号机 X1803 OUTLXJ 输出继电器地址
+#define X1803OUTZXJ_DEFAULT  0xff07 // 信号机 X1803 OUTZXJ 输出继电器地址
+#define X1803OUTDXJ_DEFAULT  0xff07 // 信号机 X1803 OUTDXJ 输出继电器地址
+#define X1803OUTTXJ_DEFAULT  0xff07 // 信号机 X1803 OUTTXJ 输出继电器地址
+#define X1803OUTLUXJ_DEFAULT  0xff07 // 信号机 X1803 OUTLUXJ 输出继电器地址
+#define X1803OUTYXJ_DEFAULT  0xff07 // 信号机 X1803 OUTYXJ 输出继电器地址
+#define X1803OUTDDJ          0x0402 // 信号机 X1803 OUTDDJ 输出继电器地址
+#define X1803OUTSGJ_DEFAULT  0xff07 // 信号机 X1803 OUTSGJ 输出继电器地址
+#define X1803OUTAFJ_DEFAULT  0xff07 // 信号机 X1803 OUTAFJ 输出继电器地址
+#define X1803OUTBFJ_DEFAULT  0xff07 // 信号机 X1803 OUTBFJ 输出继电器地址
+#define X1803OUTCFJ_DEFAULT  0xff07 // 信号机 X1803 OUTCFJ 输出继电器地址
+
+#define X1817OUTLXJ          0x0405 // 信号机 X1817 OUTLXJ 输出继电器地址
+#define X1817OUTZXJ_DEFAULT  0xff07 // 信号机 X1817 OUTZXJ 输出继电器地址
+#define X1817OUTDXJ_DEFAULT  0xff07 // 信号机 X1817 OUTDXJ 输出继电器地址
+#define X1817OUTTXJ_DEFAULT  0xff07 // 信号机 X1817 OUTTXJ 输出继电器地址
+#define X1817OUTLUXJ_DEFAULT  0xff07 // 信号机 X1817 OUTLUXJ 输出继电器地址
+#define X1817OUTYXJ_DEFAULT  0xff07 // 信号机 X1817 OUTYXJ 输出继电器地址
+#define X1817OUTDDJ          0x0404 // 信号机 X1817 OUTDDJ 输出继电器地址
+#define X1817OUTSGJ_DEFAULT  0xff07 // 信号机 X1817 OUTSGJ 输出继电器地址
+#define X1817OUTAFJ_DEFAULT  0xff07 // 信号机 X1817 OUTAFJ 输出继电器地址
+#define X1817OUTBFJ_DEFAULT  0xff07 // 信号机 X1817 OUTBFJ 输出继电器地址
+#define X1817OUTCFJ_DEFAULT  0xff07 // 信号机 X1817 OUTCFJ 输出继电器地址
+
+#define X1901OUTLXJ          0x0407 // 信号机 X1901 OUTLXJ 输出继电器地址
+#define X1901OUTZXJ_DEFAULT  0xff07 // 信号机 X1901 OUTZXJ 输出继电器地址
+#define X1901OUTDXJ_DEFAULT  0xff07 // 信号机 X1901 OUTDXJ 输出继电器地址
+#define X1901OUTTXJ_DEFAULT  0xff07 // 信号机 X1901 OUTTXJ 输出继电器地址
+#define X1901OUTLUXJ_DEFAULT  0xff07 // 信号机 X1901 OUTLUXJ 输出继电器地址
+#define X1901OUTYXJ_DEFAULT  0xff07 // 信号机 X1901 OUTYXJ 输出继电器地址
+#define X1901OUTDDJ          0x0406 // 信号机 X1901 OUTDDJ 输出继电器地址
+#define X1901OUTSGJ_DEFAULT  0xff07 // 信号机 X1901 OUTSGJ 输出继电器地址
+#define X1901OUTAFJ_DEFAULT  0xff07 // 信号机 X1901 OUTAFJ 输出继电器地址
+#define X1901OUTBFJ_DEFAULT  0xff07 // 信号机 X1901 OUTBFJ 输出继电器地址
+#define X1901OUTCFJ_DEFAULT  0xff07 // 信号机 X1901 OUTCFJ 输出继电器地址
+
+#define S1802OUTLXJ          0x0409 // 信号机 S1802 OUTLXJ 输出继电器地址
+#define S1802OUTZXJ_DEFAULT  0xff07 // 信号机 S1802 OUTZXJ 输出继电器地址
+#define S1802OUTDXJ_DEFAULT  0xff07 // 信号机 S1802 OUTDXJ 输出继电器地址
+#define S1802OUTTXJ_DEFAULT  0xff07 // 信号机 S1802 OUTTXJ 输出继电器地址
+#define S1802OUTLUXJ_DEFAULT  0xff07 // 信号机 S1802 OUTLUXJ 输出继电器地址
+#define S1802OUTYXJ_DEFAULT  0xff07 // 信号机 S1802 OUTYXJ 输出继电器地址
+#define S1802OUTDDJ          0x0408 // 信号机 S1802 OUTDDJ 输出继电器地址
+#define S1802OUTSGJ_DEFAULT  0xff07 // 信号机 S1802 OUTSGJ 输出继电器地址
+#define S1802OUTAFJ_DEFAULT  0xff07 // 信号机 S1802 OUTAFJ 输出继电器地址
+#define S1802OUTBFJ_DEFAULT  0xff07 // 信号机 S1802 OUTBFJ 输出继电器地址
+#define S1802OUTCFJ_DEFAULT  0xff07 // 信号机 S1802 OUTCFJ 输出继电器地址
+
+#define S1804OUTLXJ          0x040b // 信号机 S1804 OUTLXJ 输出继电器地址
+#define S1804OUTZXJ_DEFAULT  0xff07 // 信号机 S1804 OUTZXJ 输出继电器地址
+#define S1804OUTDXJ_DEFAULT  0xff07 // 信号机 S1804 OUTDXJ 输出继电器地址
+#define S1804OUTTXJ_DEFAULT  0xff07 // 信号机 S1804 OUTTXJ 输出继电器地址
+#define S1804OUTLUXJ_DEFAULT  0xff07 // 信号机 S1804 OUTLUXJ 输出继电器地址
+#define S1804OUTYXJ_DEFAULT  0xff07 // 信号机 S1804 OUTYXJ 输出继电器地址
+#define S1804OUTDDJ          0x040a // 信号机 S1804 OUTDDJ 输出继电器地址
+#define S1804OUTSGJ_DEFAULT  0xff07 // 信号机 S1804 OUTSGJ 输出继电器地址
+#define S1804OUTAFJ_DEFAULT  0xff07 // 信号机 S1804 OUTAFJ 输出继电器地址
+#define S1804OUTBFJ_DEFAULT  0xff07 // 信号机 S1804 OUTBFJ 输出继电器地址
+#define S1804OUTCFJ_DEFAULT  0xff07 // 信号机 S1804 OUTCFJ 输出继电器地址
+
+#define S1902OUTLXJ          0x040d // 信号机 S1902 OUTLXJ 输出继电器地址
+#define S1902OUTZXJ_DEFAULT  0xff07 // 信号机 S1902 OUTZXJ 输出继电器地址
+#define S1902OUTDXJ_DEFAULT  0xff07 // 信号机 S1902 OUTDXJ 输出继电器地址
+#define S1902OUTTXJ_DEFAULT  0xff07 // 信号机 S1902 OUTTXJ 输出继电器地址
+#define S1902OUTLUXJ_DEFAULT  0xff07 // 信号机 S1902 OUTLUXJ 输出继电器地址
+#define S1902OUTYXJ_DEFAULT  0xff07 // 信号机 S1902 OUTYXJ 输出继电器地址
+#define S1902OUTDDJ          0x040c // 信号机 S1902 OUTDDJ 输出继电器地址
+#define S1902OUTSGJ_DEFAULT  0xff07 // 信号机 S1902 OUTSGJ 输出继电器地址
+#define S1902OUTAFJ_DEFAULT  0xff07 // 信号机 S1902 OUTAFJ 输出继电器地址
+#define S1902OUTBFJ_DEFAULT  0xff07 // 信号机 S1902 OUTBFJ 输出继电器地址
+#define S1902OUTCFJ_DEFAULT  0xff07 // 信号机 S1902 OUTCFJ 输出继电器地址
+
+#define S1904OUTLXJ          0x040f // 信号机 S1904 OUTLXJ 输出继电器地址
+#define S1904OUTZXJ_DEFAULT  0xff07 // 信号机 S1904 OUTZXJ 输出继电器地址
+#define S1904OUTDXJ_DEFAULT  0xff07 // 信号机 S1904 OUTDXJ 输出继电器地址
+#define S1904OUTTXJ_DEFAULT  0xff07 // 信号机 S1904 OUTTXJ 输出继电器地址
+#define S1904OUTLUXJ_DEFAULT  0xff07 // 信号机 S1904 OUTLUXJ 输出继电器地址
+#define S1904OUTYXJ_DEFAULT  0xff07 // 信号机 S1904 OUTYXJ 输出继电器地址
+#define S1904OUTDDJ          0x040e // 信号机 S1904 OUTDDJ 输出继电器地址
+#define S1904OUTSGJ_DEFAULT  0xff07 // 信号机 S1904 OUTSGJ 输出继电器地址
+#define S1904OUTAFJ_DEFAULT  0xff07 // 信号机 S1904 OUTAFJ 输出继电器地址
+#define S1904OUTBFJ_DEFAULT  0xff07 // 信号机 S1904 OUTBFJ 输出继电器地址
+#define S1904OUTCFJ_DEFAULT  0xff07 // 信号机 S1904 OUTCFJ 输出继电器地址
+
+#define X1807OUTLXJ          0x0501 // 信号机 X1807 OUTLXJ 输出继电器地址
+#define X1807OUTZXJ_DEFAULT  0xff07 // 信号机 X1807 OUTZXJ 输出继电器地址
+#define X1807OUTDXJ_DEFAULT  0xff07 // 信号机 X1807 OUTDXJ 输出继电器地址
+#define X1807OUTTXJ_DEFAULT  0xff07 // 信号机 X1807 OUTTXJ 输出继电器地址
+#define X1807OUTLUXJ_DEFAULT  0xff07 // 信号机 X1807 OUTLUXJ 输出继电器地址
+#define X1807OUTYXJ          0x0502 // 信号机 X1807 OUTYXJ 输出继电器地址
+#define X1807OUTDDJ          0x0500 // 信号机 X1807 OUTDDJ 输出继电器地址
+#define X1807OUTSGJ_DEFAULT  0xff07 // 信号机 X1807 OUTSGJ 输出继电器地址
+#define X1807OUTAFJ_DEFAULT  0xff07 // 信号机 X1807 OUTAFJ 输出继电器地址
+#define X1807OUTBFJ_DEFAULT  0xff07 // 信号机 X1807 OUTBFJ 输出继电器地址
+#define X1807OUTCFJ_DEFAULT  0xff07 // 信号机 X1807 OUTCFJ 输出继电器地址
+
+#define S1808OUTLXJ          0x0504 // 信号机 S1808 OUTLXJ 输出继电器地址
+#define S1808OUTZXJ_DEFAULT  0xff07 // 信号机 S1808 OUTZXJ 输出继电器地址
+#define S1808OUTDXJ_DEFAULT  0xff07 // 信号机 S1808 OUTDXJ 输出继电器地址
+#define S1808OUTTXJ_DEFAULT  0xff07 // 信号机 S1808 OUTTXJ 输出继电器地址
+#define S1808OUTLUXJ_DEFAULT  0xff07 // 信号机 S1808 OUTLUXJ 输出继电器地址
+#define S1808OUTYXJ          0x0505 // 信号机 S1808 OUTYXJ 输出继电器地址
+#define S1808OUTDDJ          0x0503 // 信号机 S1808 OUTDDJ 输出继电器地址
+#define S1808OUTSGJ_DEFAULT  0xff07 // 信号机 S1808 OUTSGJ 输出继电器地址
+#define S1808OUTAFJ_DEFAULT  0xff07 // 信号机 S1808 OUTAFJ 输出继电器地址
+#define S1808OUTBFJ_DEFAULT  0xff07 // 信号机 S1808 OUTBFJ 输出继电器地址
+#define S1808OUTCFJ_DEFAULT  0xff07 // 信号机 S1808 OUTCFJ 输出继电器地址
+
+#define X1809OUTLXJ          0x0601 // 信号机 X1809 OUTLXJ 输出继电器地址
+#define X1809OUTZXJ_DEFAULT  0xff07 // 信号机 X1809 OUTZXJ 输出继电器地址
+#define X1809OUTDXJ_DEFAULT  0xff07 // 信号机 X1809 OUTDXJ 输出继电器地址
+#define X1809OUTTXJ_DEFAULT  0xff07 // 信号机 X1809 OUTTXJ 输出继电器地址
+#define X1809OUTLUXJ_DEFAULT  0xff07 // 信号机 X1809 OUTLUXJ 输出继电器地址
+#define X1809OUTYXJ          0x0602 // 信号机 X1809 OUTYXJ 输出继电器地址
+#define X1809OUTDDJ          0x0600 // 信号机 X1809 OUTDDJ 输出继电器地址
+#define X1809OUTSGJ_DEFAULT  0xff07 // 信号机 X1809 OUTSGJ 输出继电器地址
+#define X1809OUTAFJ_DEFAULT  0xff07 // 信号机 X1809 OUTAFJ 输出继电器地址
+#define X1809OUTBFJ_DEFAULT  0xff07 // 信号机 X1809 OUTBFJ 输出继电器地址
+#define X1809OUTCFJ_DEFAULT  0xff07 // 信号机 X1809 OUTCFJ 输出继电器地址
+
+#define X1813OUTLXJ          0x0604 // 信号机 X1813 OUTLXJ 输出继电器地址
+#define X1813OUTZXJ_DEFAULT  0xff07 // 信号机 X1813 OUTZXJ 输出继电器地址
+#define X1813OUTDXJ_DEFAULT  0xff07 // 信号机 X1813 OUTDXJ 输出继电器地址
+#define X1813OUTTXJ_DEFAULT  0xff07 // 信号机 X1813 OUTTXJ 输出继电器地址
+#define X1813OUTLUXJ_DEFAULT  0xff07 // 信号机 X1813 OUTLUXJ 输出继电器地址
+#define X1813OUTYXJ          0x0605 // 信号机 X1813 OUTYXJ 输出继电器地址
+#define X1813OUTDDJ          0x0603 // 信号机 X1813 OUTDDJ 输出继电器地址
+#define X1813OUTSGJ_DEFAULT  0xff07 // 信号机 X1813 OUTSGJ 输出继电器地址
+#define X1813OUTAFJ_DEFAULT  0xff07 // 信号机 X1813 OUTAFJ 输出继电器地址
+#define X1813OUTBFJ_DEFAULT  0xff07 // 信号机 X1813 OUTBFJ 输出继电器地址
+#define X1813OUTCFJ_DEFAULT  0xff07 // 信号机 X1813 OUTCFJ 输出继电器地址
+
+#define S1810OUTLXJ          0x0607 // 信号机 S1810 OUTLXJ 输出继电器地址
+#define S1810OUTZXJ_DEFAULT  0xff07 // 信号机 S1810 OUTZXJ 输出继电器地址
+#define S1810OUTDXJ_DEFAULT  0xff07 // 信号机 S1810 OUTDXJ 输出继电器地址
+#define S1810OUTTXJ_DEFAULT  0xff07 // 信号机 S1810 OUTTXJ 输出继电器地址
+#define S1810OUTLUXJ_DEFAULT  0xff07 // 信号机 S1810 OUTLUXJ 输出继电器地址
+#define S1810OUTYXJ          0x0608 // 信号机 S1810 OUTYXJ 输出继电器地址
+#define S1810OUTDDJ          0x0606 // 信号机 S1810 OUTDDJ 输出继电器地址
+#define S1810OUTSGJ_DEFAULT  0xff07 // 信号机 S1810 OUTSGJ 输出继电器地址
+#define S1810OUTAFJ_DEFAULT  0xff07 // 信号机 S1810 OUTAFJ 输出继电器地址
+#define S1810OUTBFJ_DEFAULT  0xff07 // 信号机 S1810 OUTBFJ 输出继电器地址
+#define S1810OUTCFJ_DEFAULT  0xff07 // 信号机 S1810 OUTCFJ 输出继电器地址
+
+#define S1816OUTLXJ          0x060a // 信号机 S1816 OUTLXJ 输出继电器地址
+#define S1816OUTZXJ_DEFAULT  0xff07 // 信号机 S1816 OUTZXJ 输出继电器地址
+#define S1816OUTDXJ_DEFAULT  0xff07 // 信号机 S1816 OUTDXJ 输出继电器地址
+#define S1816OUTTXJ_DEFAULT  0xff07 // 信号机 S1816 OUTTXJ 输出继电器地址
+#define S1816OUTLUXJ_DEFAULT  0xff07 // 信号机 S1816 OUTLUXJ 输出继电器地址
+#define S1816OUTYXJ          0x060b // 信号机 S1816 OUTYXJ 输出继电器地址
+#define S1816OUTDDJ          0x0609 // 信号机 S1816 OUTDDJ 输出继电器地址
+#define S1816OUTSGJ_DEFAULT  0xff07 // 信号机 S1816 OUTSGJ 输出继电器地址
+#define S1816OUTAFJ_DEFAULT  0xff07 // 信号机 S1816 OUTAFJ 输出继电器地址
+#define S1816OUTBFJ_DEFAULT  0xff07 // 信号机 S1816 OUTBFJ 输出继电器地址
+#define S1816OUTCFJ_DEFAULT  0xff07 // 信号机 S1816 OUTCFJ 输出继电器地址
+
+#define X1811OUTLXJ          0x0701 // 信号机 X1811 OUTLXJ 输出继电器地址
+#define X1811OUTZXJ          0x0702 // 信号机 X1811 OUTZXJ 输出继电器地址
+#define X1811OUTDXJ_DEFAULT  0xff07 // 信号机 X1811 OUTDXJ 输出继电器地址
+#define X1811OUTTXJ_DEFAULT  0xff07 // 信号机 X1811 OUTTXJ 输出继电器地址
+#define X1811OUTLUXJ_DEFAULT  0xff07 // 信号机 X1811 OUTLUXJ 输出继电器地址
+#define X1811OUTYXJ          0x0703 // 信号机 X1811 OUTYXJ 输出继电器地址
+#define X1811OUTDDJ          0x0700 // 信号机 X1811 OUTDDJ 输出继电器地址
+#define X1811OUTSGJ_DEFAULT  0xff07 // 信号机 X1811 OUTSGJ 输出继电器地址
+#define X1811OUTAFJ_DEFAULT  0xff07 // 信号机 X1811 OUTAFJ 输出继电器地址
+#define X1811OUTBFJ_DEFAULT  0xff07 // 信号机 X1811 OUTBFJ 输出继电器地址
+#define X1811OUTCFJ_DEFAULT  0xff07 // 信号机 X1811 OUTCFJ 输出继电器地址
+
+#define X1815OUTLXJ          0x0705 // 信号机 X1815 OUTLXJ 输出继电器地址
+#define X1815OUTZXJ          0x0706 // 信号机 X1815 OUTZXJ 输出继电器地址
+#define X1815OUTDXJ_DEFAULT  0xff07 // 信号机 X1815 OUTDXJ 输出继电器地址
+#define X1815OUTTXJ_DEFAULT  0xff07 // 信号机 X1815 OUTTXJ 输出继电器地址
+#define X1815OUTLUXJ_DEFAULT  0xff07 // 信号机 X1815 OUTLUXJ 输出继电器地址
+#define X1815OUTYXJ          0x0707 // 信号机 X1815 OUTYXJ 输出继电器地址
+#define X1815OUTDDJ          0x0704 // 信号机 X1815 OUTDDJ 输出继电器地址
+#define X1815OUTSGJ_DEFAULT  0xff07 // 信号机 X1815 OUTSGJ 输出继电器地址
+#define X1815OUTAFJ_DEFAULT  0xff07 // 信号机 X1815 OUTAFJ 输出继电器地址
+#define X1815OUTBFJ_DEFAULT  0xff07 // 信号机 X1815 OUTBFJ 输出继电器地址
+#define X1815OUTCFJ_DEFAULT  0xff07 // 信号机 X1815 OUTCFJ 输出继电器地址
+
+#define S1812OUTLXJ          0x0801 // 信号机 S1812 OUTLXJ 输出继电器地址
+#define S1812OUTZXJ          0x0802 // 信号机 S1812 OUTZXJ 输出继电器地址
+#define S1812OUTDXJ_DEFAULT  0xff07 // 信号机 S1812 OUTDXJ 输出继电器地址
+#define S1812OUTTXJ_DEFAULT  0xff07 // 信号机 S1812 OUTTXJ 输出继电器地址
+#define S1812OUTLUXJ_DEFAULT  0xff07 // 信号机 S1812 OUTLUXJ 输出继电器地址
+#define S1812OUTYXJ          0x0803 // 信号机 S1812 OUTYXJ 输出继电器地址
+#define S1812OUTDDJ          0x0800 // 信号机 S1812 OUTDDJ 输出继电器地址
+#define S1812OUTSGJ_DEFAULT  0xff07 // 信号机 S1812 OUTSGJ 输出继电器地址
+#define S1812OUTAFJ_DEFAULT  0xff07 // 信号机 S1812 OUTAFJ 输出继电器地址
+#define S1812OUTBFJ_DEFAULT  0xff07 // 信号机 S1812 OUTBFJ 输出继电器地址
+#define S1812OUTCFJ_DEFAULT  0xff07 // 信号机 S1812 OUTCFJ 输出继电器地址
+
+#define S1814OUTLXJ          0x0805 // 信号机 S1814 OUTLXJ 输出继电器地址
+#define S1814OUTZXJ          0x0806 // 信号机 S1814 OUTZXJ 输出继电器地址
+#define S1814OUTDXJ_DEFAULT  0xff07 // 信号机 S1814 OUTDXJ 输出继电器地址
+#define S1814OUTTXJ_DEFAULT  0xff07 // 信号机 S1814 OUTTXJ 输出继电器地址
+#define S1814OUTLUXJ_DEFAULT  0xff07 // 信号机 S1814 OUTLUXJ 输出继电器地址
+#define S1814OUTYXJ          0x0807 // 信号机 S1814 OUTYXJ 输出继电器地址
+#define S1814OUTDDJ          0x0804 // 信号机 S1814 OUTDDJ 输出继电器地址
+#define S1814OUTSGJ_DEFAULT  0xff07 // 信号机 S1814 OUTSGJ 输出继电器地址
+#define S1814OUTAFJ_DEFAULT  0xff07 // 信号机 S1814 OUTAFJ 输出继电器地址
+#define S1814OUTBFJ_DEFAULT  0xff07 // 信号机 S1814 OUTBFJ 输出继电器地址
+#define S1814OUTCFJ_DEFAULT  0xff07 // 信号机 S1814 OUTCFJ 输出继电器地址
+
+#define XR-XCDFOUTLXJ_DEFAULT  0xff07 // 信号机 XR-XCDF OUTLXJ 输出继电器地址
+#define XR-XCDFOUTZXJ_DEFAULT  0xff07 // 信号机 XR-XCDF OUTZXJ 输出继电器地址
+#define XR-XCDFOUTDXJ_DEFAULT  0xff07 // 信号机 XR-XCDF OUTDXJ 输出继电器地址
+#define XR-XCDFOUTTXJ_DEFAULT  0xff07 // 信号机 XR-XCDF OUTTXJ 输出继电器地址
+#define XR-XCDFOUTLUXJ_DEFAULT  0xff07 // 信号机 XR-XCDF OUTLUXJ 输出继电器地址
+#define XR-XCDFOUTYXJ_DEFAULT  0xff07 // 信号机 XR-XCDF OUTYXJ 输出继电器地址
+#define XR-XCDFOUTDDJ_DEFAULT  0xff07 // 信号机 XR-XCDF OUTDDJ 输出继电器地址
+#define XR-XCDFOUTSGJ_DEFAULT  0xff07 // 信号机 XR-XCDF OUTSGJ 输出继电器地址
+#define XR-XCDFOUTAFJ_DEFAULT  0xff07 // 信号机 XR-XCDF OUTAFJ 输出继电器地址
+#define XR-XCDFOUTBFJ_DEFAULT  0xff07 // 信号机 XR-XCDF OUTBFJ 输出继电器地址
+#define XR-XCDFOUTCFJ_DEFAULT  0xff07 // 信号机 XR-XCDF OUTCFJ 输出继电器地址
+
+#define XC-XCDFOUTLXJ_DEFAULT  0xff07 // 信号机 XC-XCDF OUTLXJ 输出继电器地址
+#define XC-XCDFOUTZXJ_DEFAULT  0xff07 // 信号机 XC-XCDF OUTZXJ 输出继电器地址
+#define XC-XCDFOUTDXJ_DEFAULT  0xff07 // 信号机 XC-XCDF OUTDXJ 输出继电器地址
+#define XC-XCDFOUTTXJ_DEFAULT  0xff07 // 信号机 XC-XCDF OUTTXJ 输出继电器地址
+#define XC-XCDFOUTLUXJ_DEFAULT  0xff07 // 信号机 XC-XCDF OUTLUXJ 输出继电器地址
+#define XC-XCDFOUTYXJ_DEFAULT  0xff07 // 信号机 XC-XCDF OUTYXJ 输出继电器地址
+#define XC-XCDFOUTDDJ_DEFAULT  0xff07 // 信号机 XC-XCDF OUTDDJ 输出继电器地址
+#define XC-XCDFOUTSGJ_DEFAULT  0xff07 // 信号机 XC-XCDF OUTSGJ 输出继电器地址
+#define XC-XCDFOUTAFJ_DEFAULT  0xff07 // 信号机 XC-XCDF OUTAFJ 输出继电器地址
+#define XC-XCDFOUTBFJ_DEFAULT  0xff07 // 信号机 XC-XCDF OUTBFJ 输出继电器地址
+#define XC-XCDFOUTCFJ_DEFAULT  0xff07 // 信号机 XC-XCDF OUTCFJ 输出继电器地址
+
+#define X2001FOUTLXJ_DEFAULT  0xff07 // 信号机 X2001F OUTLXJ 输出继电器地址
+#define X2001FOUTZXJ_DEFAULT  0xff07 // 信号机 X2001F OUTZXJ 输出继电器地址
+#define X2001FOUTDXJ_DEFAULT  0xff07 // 信号机 X2001F OUTDXJ 输出继电器地址
+#define X2001FOUTTXJ_DEFAULT  0xff07 // 信号机 X2001F OUTTXJ 输出继电器地址
+#define X2001FOUTLUXJ_DEFAULT  0xff07 // 信号机 X2001F OUTLUXJ 输出继电器地址
+#define X2001FOUTYXJ_DEFAULT  0xff07 // 信号机 X2001F OUTYXJ 输出继电器地址
+#define X2001FOUTDDJ_DEFAULT  0xff07 // 信号机 X2001F OUTDDJ 输出继电器地址
+#define X2001FOUTSGJ_DEFAULT  0xff07 // 信号机 X2001F OUTSGJ 输出继电器地址
+#define X2001FOUTAFJ_DEFAULT  0xff07 // 信号机 X2001F OUTAFJ 输出继电器地址
+#define X2001FOUTBFJ_DEFAULT  0xff07 // 信号机 X2001F OUTBFJ 输出继电器地址
+#define X2001FOUTCFJ_DEFAULT  0xff07 // 信号机 X2001F OUTCFJ 输出继电器地址
+
+#define X2003FOUTLXJ_DEFAULT  0xff07 // 信号机 X2003F OUTLXJ 输出继电器地址
+#define X2003FOUTZXJ_DEFAULT  0xff07 // 信号机 X2003F OUTZXJ 输出继电器地址
+#define X2003FOUTDXJ_DEFAULT  0xff07 // 信号机 X2003F OUTDXJ 输出继电器地址
+#define X2003FOUTTXJ_DEFAULT  0xff07 // 信号机 X2003F OUTTXJ 输出继电器地址
+#define X2003FOUTLUXJ_DEFAULT  0xff07 // 信号机 X2003F OUTLUXJ 输出继电器地址
+#define X2003FOUTYXJ_DEFAULT  0xff07 // 信号机 X2003F OUTYXJ 输出继电器地址
+#define X2003FOUTDDJ_DEFAULT  0xff07 // 信号机 X2003F OUTDDJ 输出继电器地址
+#define X2003FOUTSGJ_DEFAULT  0xff07 // 信号机 X2003F OUTSGJ 输出继电器地址
+#define X2003FOUTAFJ_DEFAULT  0xff07 // 信号机 X2003F OUTAFJ 输出继电器地址
+#define X2003FOUTBFJ_DEFAULT  0xff07 // 信号机 X2003F OUTBFJ 输出继电器地址
+#define X2003FOUTCFJ_DEFAULT  0xff07 // 信号机 X2003F OUTCFJ 输出继电器地址
+
+#define S2002FOUTLXJ_DEFAULT  0xff07 // 信号机 S2002F OUTLXJ 输出继电器地址
+#define S2002FOUTZXJ_DEFAULT  0xff07 // 信号机 S2002F OUTZXJ 输出继电器地址
+#define S2002FOUTDXJ_DEFAULT  0xff07 // 信号机 S2002F OUTDXJ 输出继电器地址
+#define S2002FOUTTXJ_DEFAULT  0xff07 // 信号机 S2002F OUTTXJ 输出继电器地址
+#define S2002FOUTLUXJ_DEFAULT  0xff07 // 信号机 S2002F OUTLUXJ 输出继电器地址
+#define S2002FOUTYXJ_DEFAULT  0xff07 // 信号机 S2002F OUTYXJ 输出继电器地址
+#define S2002FOUTDDJ_DEFAULT  0xff07 // 信号机 S2002F OUTDDJ 输出继电器地址
+#define S2002FOUTSGJ_DEFAULT  0xff07 // 信号机 S2002F OUTSGJ 输出继电器地址
+#define S2002FOUTAFJ_DEFAULT  0xff07 // 信号机 S2002F OUTAFJ 输出继电器地址
+#define S2002FOUTBFJ_DEFAULT  0xff07 // 信号机 S2002F OUTBFJ 输出继电器地址
+#define S2002FOUTCFJ_DEFAULT  0xff07 // 信号机 S2002F OUTCFJ 输出继电器地址
+
+
+/**道岔设备“输出项”配置宏【根据站场不同而不同】**/
+#define P1801DCJ          0x0100 // 道岔 P1801 DCJ 输出继电器地址
+#define P1801FCJ          0x0101 // 道岔 P1801 FCJ 输出继电器地址
+#define P1801SJ          0x0300 // 道岔 P1801 SJ 输出继电器地址
+
+#define P1803DCJ          0x0102 // 道岔 P1803 DCJ 输出继电器地址
+#define P1803FCJ          0x0103 // 道岔 P1803 FCJ 输出继电器地址
+#define P1803SJ          0x0301 // 道岔 P1803 SJ 输出继电器地址
+
+#define P1805DCJ          0x0104 // 道岔 P1805 DCJ 输出继电器地址
+#define P1805FCJ          0x0105 // 道岔 P1805 FCJ 输出继电器地址
+#define P1805SJ          0x0302 // 道岔 P1805 SJ 输出继电器地址
+
+#define P1807DCJ          0x0106 // 道岔 P1807 DCJ 输出继电器地址
+#define P1807FCJ          0x0107 // 道岔 P1807 FCJ 输出继电器地址
+#define P1807SJ          0x0303 // 道岔 P1807 SJ 输出继电器地址
+
+#define P1802DCJ          0x0200 // 道岔 P1802 DCJ 输出继电器地址
+#define P1802FCJ          0x0201 // 道岔 P1802 FCJ 输出继电器地址
+#define P1802SJ          0x0304 // 道岔 P1802 SJ 输出继电器地址
+
+#define P1804DCJ          0x0202 // 道岔 P1804 DCJ 输出继电器地址
+#define P1804FCJ          0x0203 // 道岔 P1804 FCJ 输出继电器地址
+#define P1804SJ          0x0305 // 道岔 P1804 SJ 输出继电器地址
+
+#define P1806DCJ          0x0204 // 道岔 P1806 DCJ 输出继电器地址
+#define P1806FCJ          0x0205 // 道岔 P1806 FCJ 输出继电器地址
+#define P1806SJ          0x0306 // 道岔 P1806 SJ 输出继电器地址
+
+#define P1808DCJ          0x0206 // 道岔 P1808 DCJ 输出继电器地址
+#define P1808FCJ          0x0207 // 道岔 P1808 FCJ 输出继电器地址
+#define P1808SJ          0x0307 // 道岔 P1808 SJ 输出继电器地址
+
+
+/**区段设备“输出项”配置宏【根据站场不同而不同】**/
+#define T1801OUTGJ          0x0900 // 区段 T1801 OUTGJ 输出继电器地址
+
+#define T1803OUTGJ          0x0901 // 区段 T1803 OUTGJ 输出继电器地址
+
+#define T1805OUTGJ          0x0902 // 区段 T1805 OUTGJ 输出继电器地址
+
+#define T1807OUTGJ          0x0903 // 区段 T1807 OUTGJ 输出继电器地址
+
+#define T1809OUTGJ          0x0904 // 区段 T1809 OUTGJ 输出继电器地址
+
+#define T1811OUTGJ          0x0905 // 区段 T1811 OUTGJ 输出继电器地址
+
+#define T1813OUTGJ          0x0906 // 区段 T1813 OUTGJ 输出继电器地址
+
+#define T1815OUTGJ          0x0907 // 区段 T1815 OUTGJ 输出继电器地址
+
+#define T1817OUTGJ          0x0908 // 区段 T1817 OUTGJ 输出继电器地址
+
+#define T1819OUTGJ          0x0909 // 区段 T1819 OUTGJ 输出继电器地址
+
+#define T1821OUTGJ          0x090a // 区段 T1821 OUTGJ 输出继电器地址
+
+#define T1823OUTGJ          0x090b // 区段 T1823 OUTGJ 输出继电器地址
+
+#define T1901OUTGJ          0x090c // 区段 T1901 OUTGJ 输出继电器地址
+
+#define T1903OUTGJ          0x090d // 区段 T1903 OUTGJ 输出继电器地址
+
+#define T1905OUTGJ          0x090e // 区段 T1905 OUTGJ 输出继电器地址
+
+#define T1802OUTGJ          0x0a00 // 区段 T1802 OUTGJ 输出继电器地址
+
+#define T1804OUTGJ          0x0a01 // 区段 T1804 OUTGJ 输出继电器地址
+
+#define T1806OUTGJ          0x0a02 // 区段 T1806 OUTGJ 输出继电器地址
+
+#define T1808OUTGJ          0x0a03 // 区段 T1808 OUTGJ 输出继电器地址
+
+#define T1810OUTGJ          0x0a04 // 区段 T1810 OUTGJ 输出继电器地址
+
+#define T1812OUTGJ          0x0a05 // 区段 T1812 OUTGJ 输出继电器地址
+
+#define T1814OUTGJ          0x0a06 // 区段 T1814 OUTGJ 输出继电器地址
+
+#define T1816OUTGJ          0x0a07 // 区段 T1816 OUTGJ 输出继电器地址
+
+#define T1818OUTGJ          0x0a08 // 区段 T1818 OUTGJ 输出继电器地址
+
+#define T1820OUTGJ          0x0a09 // 区段 T1820 OUTGJ 输出继电器地址
+
+#define T1902OUTGJ          0x0a0a // 区段 T1902 OUTGJ 输出继电器地址
+
+#define T1904OUTGJ          0x0a0b // 区段 T1904 OUTGJ 输出继电器地址
+
+#define T1906OUTGJ          0x0a0c // 区段 T1906 OUTGJ 输出继电器地址
+
+#define D5GFOUTGJ_DEFAULT  0xff07 // 区段 D5GF OUTGJ 输出继电器地址
+
+#define D7GFOUTGJ_DEFAULT  0xff07 // 区段 D7GF OUTGJ 输出继电器地址
+
+#define T2001FOUTGJ_DEFAULT  0xff07 // 区段 T2001F OUTGJ 输出继电器地址
+
+#define T2002FOUTGJ_DEFAULT  0xff07 // 区段 T2002F OUTGJ 输出继电器地址
+
+#define T2003FOUTGJ_DEFAULT  0xff07 // 区段 T2003F OUTGJ 输出继电器地址
+
+#define T2004FOUTGJ_DEFAULT  0xff07 // 区段 T2004F OUTGJ 输出继电器地址
+
+#define T2006FOUTGJ_DEFAULT  0xff07 // 区段 T2006F OUTGJ 输出继电器地址
+
+
+/**零散输出设备“输出项”配置宏【根据站场不同而不同】**/
+ // 零散输出设备 JZ-FWJ 地址0x0000
+ // 零散输出设备 JZ-FWJ 地址0x0000
+ // 零散输出设备 JZ-FWJ 设备类型(默认)0x0000
+ // 零散输出设备 JZ-FWJ 按钮号0x0030
+#define JZ-FWJOUTDevJ          0x0a0d // 零散输出设备 JZ-FWJ OUTDevJ 输出继电器地址
+
+ // 零散输出设备 PSD1801-KMJ 地址0x0001
+ // 零散输出设备 PSD1801-KMJ 地址0x0001
+ // 零散输出设备 PSD1801-KMJ 设备类型(默认)0x0000
+ // 零散输出设备 PSD1801-KMJ 按钮号0x0130
+#define PSD1801-KMJOUTDevJ          0x0b00 // 零散输出设备 PSD1801-KMJ OUTDevJ 输出继电器地址
+
+ // 零散输出设备 PSD1801-GMJ 地址0x0002
+ // 零散输出设备 PSD1801-GMJ 地址0x0002
+ // 零散输出设备 PSD1801-GMJ 设备类型(默认)0x0000
+ // 零散输出设备 PSD1801-GMJ 按钮号0x0230
+#define PSD1801-GMJOUTDevJ          0x0b01 // 零散输出设备 PSD1801-GMJ OUTDevJ 输出继电器地址
+
+ // 零散输出设备 PSD1802-KMJ 地址0x0003
+ // 零散输出设备 PSD1802-KMJ 地址0x0003
+ // 零散输出设备 PSD1802-KMJ 设备类型(默认)0x0000
+ // 零散输出设备 PSD1802-KMJ 按钮号0x0330
+#define PSD1802-KMJOUTDevJ          0x0b02 // 零散输出设备 PSD1802-KMJ OUTDevJ 输出继电器地址
+
+ // 零散输出设备 PSD1802-GMJ 地址0x0004
+ // 零散输出设备 PSD1802-GMJ 地址0x0004
+ // 零散输出设备 PSD1802-GMJ 设备类型(默认)0x0000
+ // 零散输出设备 PSD1802-GMJ 按钮号0x0430
+#define PSD1802-GMJOUTDevJ          0x0b03 // 零散输出设备 PSD1802-GMJ OUTDevJ 输出继电器地址
+
+ // 零散输出设备 PSD1901-KMJ 地址0x0005
+ // 零散输出设备 PSD1901-KMJ 地址0x0005
+ // 零散输出设备 PSD1901-KMJ 设备类型(默认)0x0000
+ // 零散输出设备 PSD1901-KMJ 按钮号0x0530
+#define PSD1901-KMJOUTDevJ          0x0b04 // 零散输出设备 PSD1901-KMJ OUTDevJ 输出继电器地址
+
+ // 零散输出设备 PSD1901-GMJ 地址0x0006
+ // 零散输出设备 PSD1901-GMJ 地址0x0006
+ // 零散输出设备 PSD1901-GMJ 设备类型(默认)0x0000
+ // 零散输出设备 PSD1901-GMJ 按钮号0x0630
+#define PSD1901-GMJOUTDevJ          0x0b05 // 零散输出设备 PSD1901-GMJ OUTDevJ 输出继电器地址
+
+ // 零散输出设备 PSD1902-KMJ 地址0x0007
+ // 零散输出设备 PSD1902-KMJ 地址0x0007
+ // 零散输出设备 PSD1902-KMJ 设备类型(默认)0x0000
+ // 零散输出设备 PSD1902-KMJ 按钮号0x0730
+#define PSD1902-KMJOUTDevJ          0x0b06 // 零散输出设备 PSD1902-KMJ OUTDevJ 输出继电器地址
+
+ // 零散输出设备 PSD1902-GMJ 地址0x0008
+ // 零散输出设备 PSD1902-GMJ 地址0x0008
+ // 零散输出设备 PSD1902-GMJ 设备类型(默认)0x0000
+ // 零散输出设备 PSD1902-GMJ 按钮号0x0830
+#define PSD1902-GMJOUTDevJ          0x0b07 // 零散输出设备 PSD1902-GMJ OUTDevJ 输出继电器地址
+
+ // 零散输出设备 DRB1801-WDJ 地址0x0009
+ // 零散输出设备 DRB1801-WDJ 地址0x0009
+ // 零散输出设备 DRB1801-WDJ 设备类型(默认)0x0000
+ // 零散输出设备 DRB1801-WDJ 按钮号0x0930
+#define DRB1801-WDJOUTDevJ          0x0b09 // 零散输出设备 DRB1801-WDJ OUTDevJ 输出继电器地址
+
+ // 零散输出设备 DRB1801-SDJ 地址0x000a
+ // 零散输出设备 DRB1801-SDJ 地址0x000a
+ // 零散输出设备 DRB1801-SDJ 设备类型(默认)0x0000
+ // 零散输出设备 DRB1801-SDJ 按钮号0x0a30
+#define DRB1801-SDJOUTDevJ          0x0b08 // 零散输出设备 DRB1801-SDJ OUTDevJ 输出继电器地址
+
+ // 零散输出设备 PSD2001-KMJ 地址0x000b
+ // 零散输出设备 PSD2001-KMJ 地址0x000b
+ // 零散输出设备 PSD2001-KMJ 设备类型(默认)0x0000
+ // 零散输出设备 PSD2001-KMJ 按钮号0x0b30
+#define PSD2001-KMJOUTDevJ_DEFAULT  0xff07 // 零散输出设备 PSD2001-KMJ OUTDevJ 输出继电器地址
+
+ // 零散输出设备 PSD2001-GMJ 地址0x000c
+ // 零散输出设备 PSD2001-GMJ 地址0x000c
+ // 零散输出设备 PSD2001-GMJ 设备类型(默认)0x0000
+ // 零散输出设备 PSD2001-GMJ 按钮号0x0c30
+#define PSD2001-GMJOUTDevJ_DEFAULT  0xff07 // 零散输出设备 PSD2001-GMJ OUTDevJ 输出继电器地址
+
+ // 零散输出设备 PSD2002-KMJ 地址0x000d
+ // 零散输出设备 PSD2002-KMJ 地址0x000d
+ // 零散输出设备 PSD2002-KMJ 设备类型(默认)0x0000
+ // 零散输出设备 PSD2002-KMJ 按钮号0x0d30
+#define PSD2002-KMJOUTDevJ_DEFAULT  0xff07 // 零散输出设备 PSD2002-KMJ OUTDevJ 输出继电器地址
+
+ // 零散输出设备 PSD2002-GMJ 地址0x000e
+ // 零散输出设备 PSD2002-GMJ 地址0x000e
+ // 零散输出设备 PSD2002-GMJ 设备类型(默认)0x0000
+ // 零散输出设备 PSD2002-GMJ 按钮号0x0e30
+#define PSD2002-GMJOUTDevJ_DEFAULT  0xff07 // 零散输出设备 PSD2002-GMJ OUTDevJ 输出继电器地址
+
+ // 零散输出设备 ZCT1801 地址0x000f
+ // 零散输出设备 ZCT1801 地址0x000f
+ // 零散输出设备 ZCT1801 设备类型(默认)0x0000
+ // 零散输出设备 ZCT1801 按钮号0x0f30
+#define ZCT1801OUTDevJ_DEFAULT  0xff07 // 零散输出设备 ZCT1801 OUTDevJ 输出继电器地址
+
+ // 零散输出设备 ZCT1802 地址0x0010
+ // 零散输出设备 ZCT1802 地址0x0010
+ // 零散输出设备 ZCT1802 设备类型(默认)0x0000
+ // 零散输出设备 ZCT1802 按钮号0x0031
+#define ZCT1802OUTDevJ_DEFAULT  0xff07 // 零散输出设备 ZCT1802 OUTDevJ 输出继电器地址
+
+ // 零散输出设备 ZCT1905 地址0x0011
+ // 零散输出设备 ZCT1905 地址0x0011
+ // 零散输出设备 ZCT1905 设备类型(默认)0x0000
+ // 零散输出设备 ZCT1905 按钮号0x0131
+#define ZCT1905OUTDevJ_DEFAULT  0xff07 // 零散输出设备 ZCT1905 OUTDevJ 输出继电器地址
+
+ // 零散输出设备 ZCT1906 地址0x0012
+ // 零散输出设备 ZCT1906 地址0x0012
+ // 零散输出设备 ZCT1906 设备类型(默认)0x0000
+ // 零散输出设备 ZCT1906 按钮号0x0231
+#define ZCT1906OUTDevJ_DEFAULT  0xff07 // 零散输出设备 ZCT1906 OUTDevJ 输出继电器地址
+
+
+/**逻辑区段表“设备索引”配置宏【根据站场不同而不同】**/
+#define T1801A 0 // 逻辑区段地址
+#define T1801AADDR 0 // 逻辑区段地址
+#define T1802A 1 // 逻辑区段地址
+#define T1802AADDR 1 // 逻辑区段地址
+#define T1803A 2 // 逻辑区段地址
+#define T1803AADDR 2 // 逻辑区段地址
+#define T1804A 3 // 逻辑区段地址
+#define T1804AADDR 3 // 逻辑区段地址
+#define T1805A 4 // 逻辑区段地址
+#define T1805AADDR 4 // 逻辑区段地址
+#define T1805B 5 // 逻辑区段地址
+#define T1805BADDR 5 // 逻辑区段地址
+#define T1805C 6 // 逻辑区段地址
+#define T1805CADDR 6 // 逻辑区段地址
+#define T1806A 7 // 逻辑区段地址
+#define T1806AADDR 7 // 逻辑区段地址
+#define T1806B 8 // 逻辑区段地址
+#define T1806BADDR 8 // 逻辑区段地址
+#define T1806C 9 // 逻辑区段地址
+#define T1806CADDR 9 // 逻辑区段地址
+#define T1807A 10 // 逻辑区段地址
+#define T1807AADDR 10 // 逻辑区段地址
+#define T1807B 11 // 逻辑区段地址
+#define T1807BADDR 11 // 逻辑区段地址
+#define T1807C 12 // 逻辑区段地址
+#define T1807CADDR 12 // 逻辑区段地址
+#define T1808A 13 // 逻辑区段地址
+#define T1808AADDR 13 // 逻辑区段地址
+#define T1808B 14 // 逻辑区段地址
+#define T1808BADDR 14 // 逻辑区段地址
+#define T1808C 15 // 逻辑区段地址
+#define T1808CADDR 15 // 逻辑区段地址
+#define T1809A 16 // 逻辑区段地址
+#define T1809AADDR 16 // 逻辑区段地址
+#define T1810A 17 // 逻辑区段地址
+#define T1810AADDR 17 // 逻辑区段地址
+#define T1811A 18 // 逻辑区段地址
+#define T1811AADDR 18 // 逻辑区段地址
+#define T1812A 19 // 逻辑区段地址
+#define T1812AADDR 19 // 逻辑区段地址
+#define T1813A 20 // 逻辑区段地址
+#define T1813AADDR 20 // 逻辑区段地址
+#define T1813B 21 // 逻辑区段地址
+#define T1813BADDR 21 // 逻辑区段地址
+#define T1813C 22 // 逻辑区段地址
+#define T1813CADDR 22 // 逻辑区段地址
+#define T1814A 23 // 逻辑区段地址
+#define T1814AADDR 23 // 逻辑区段地址
+#define T1814B 24 // 逻辑区段地址
+#define T1814BADDR 24 // 逻辑区段地址
+#define T1814C 25 // 逻辑区段地址
+#define T1814CADDR 25 // 逻辑区段地址
+#define T1815A 26 // 逻辑区段地址
+#define T1815AADDR 26 // 逻辑区段地址
+#define T1815B 27 // 逻辑区段地址
+#define T1815BADDR 27 // 逻辑区段地址
+#define T1816A 28 // 逻辑区段地址
+#define T1816AADDR 28 // 逻辑区段地址
+#define T1816B 29 // 逻辑区段地址
+#define T1816BADDR 29 // 逻辑区段地址
+#define T1817A 30 // 逻辑区段地址
+#define T1817AADDR 30 // 逻辑区段地址
+#define T1818A 31 // 逻辑区段地址
+#define T1818AADDR 31 // 逻辑区段地址
+#define T1819A 32 // 逻辑区段地址
+#define T1819AADDR 32 // 逻辑区段地址
+#define T1819B 33 // 逻辑区段地址
+#define T1819BADDR 33 // 逻辑区段地址
+#define T1820A 34 // 逻辑区段地址
+#define T1820AADDR 34 // 逻辑区段地址
+#define T1820B 35 // 逻辑区段地址
+#define T1820BADDR 35 // 逻辑区段地址
+#define T1821A 36 // 逻辑区段地址
+#define T1821AADDR 36 // 逻辑区段地址
+#define T1823A 37 // 逻辑区段地址
+#define T1823AADDR 37 // 逻辑区段地址
+#define T1823B 38 // 逻辑区段地址
+#define T1823BADDR 38 // 逻辑区段地址
+#define T1823C 39 // 逻辑区段地址
+#define T1823CADDR 39 // 逻辑区段地址
+#define T1901A 40 // 逻辑区段地址
+#define T1901AADDR 40 // 逻辑区段地址
+#define T1902A 41 // 逻辑区段地址
+#define T1902AADDR 41 // 逻辑区段地址
+#define T1902B 42 // 逻辑区段地址
+#define T1902BADDR 42 // 逻辑区段地址
+#define T1902C 43 // 逻辑区段地址
+#define T1902CADDR 43 // 逻辑区段地址
+#define T1902D 44 // 逻辑区段地址
+#define T1902DADDR 44 // 逻辑区段地址
+#define T1903A 45 // 逻辑区段地址
+#define T1903AADDR 45 // 逻辑区段地址
+#define T1904A 46 // 逻辑区段地址
+#define T1904AADDR 46 // 逻辑区段地址
+#define T1905A 47 // 逻辑区段地址
+#define T1905AADDR 47 // 逻辑区段地址
+#define T1905B 48 // 逻辑区段地址
+#define T1905BADDR 48 // 逻辑区段地址
+#define T1905C 49 // 逻辑区段地址
+#define T1905CADDR 49 // 逻辑区段地址
+#define T1906A 50 // 逻辑区段地址
+#define T1906AADDR 50 // 逻辑区段地址
+#define D5GFA 51 // 逻辑区段地址
+#define D5GFAADDR 51 // 逻辑区段地址
+#define D7GFA 52 // 逻辑区段地址
+#define D7GFAADDR 52 // 逻辑区段地址
+#define T2001FA 53 // 逻辑区段地址
+#define T2001FAADDR 53 // 逻辑区段地址
+#define T2002FA 54 // 逻辑区段地址
+#define T2002FAADDR 54 // 逻辑区段地址
+#define T2002FB 55 // 逻辑区段地址
+#define T2002FBADDR 55 // 逻辑区段地址
+#define T2002FC 56 // 逻辑区段地址
+#define T2002FCADDR 56 // 逻辑区段地址
+#define T2003FA 57 // 逻辑区段地址
+#define T2003FAADDR 57 // 逻辑区段地址
+#define T2004FA 58 // 逻辑区段地址
+#define T2004FAADDR 58 // 逻辑区段地址
+#define T2006FA 59 // 逻辑区段地址
+#define T2006FAADDR 59 // 逻辑区段地址
+#define T2102FA 60 // 逻辑区段地址
+#define T2102FAADDR 60 // 逻辑区段地址
+#define T2102FB 61 // 逻辑区段地址
+#define T2102FBADDR 61 // 逻辑区段地址
+#define T2102FC 62 // 逻辑区段地址
+#define T2102FCADDR 62 // 逻辑区段地址
+#define T2102FD 63 // 逻辑区段地址
+#define T2102FDADDR 63 // 逻辑区段地址
+#define T2102FE 64 // 逻辑区段地址
+#define T2102FEADDR 64 // 逻辑区段地址
+
+/**屏蔽门关联信息表“索引”配置宏【根据站场不同而不同】**/
+#define  PSD1801_0    0 // 屏蔽门关联信息表中数据单元索引
+#define  PSD1802_1    1 // 屏蔽门关联信息表中数据单元索引
+#define  PSD1901_2    2 // 屏蔽门关联信息表中数据单元索引
+#define  PSD1902_3    3 // 屏蔽门关联信息表中数据单元索引
+#define  PSD2001_4    4 // 屏蔽门关联信息表中数据单元索引
+#define  PSD2002_5    5 // 屏蔽门关联信息表中数据单元索引
+
+/**保护区段表“索引”配置宏【根据站场不同而不同】**/
+#define  XR-XCDF_OLP_0    0 // 保护区段表对应单元的索引
+#define  XC-XCDF_OLP_1    1 // 保护区段表对应单元的索引
+#define  X1801_OLP_2    2 // 保护区段表对应单元的索引
+#define  S1802_OLP_3    3 // 保护区段表对应单元的索引
+#define  X1811_OLP_4    4 // 保护区段表对应单元的索引
+#define  X1811_OLP_5    5 // 保护区段表对应单元的索引
+#define  X1811_OLP_6    6 // 保护区段表对应单元的索引
+#define  S1812_OLP_7    7 // 保护区段表对应单元的索引
+#define  S1812_OLP_8    8 // 保护区段表对应单元的索引
+#define  S1812_OLP_9    9 // 保护区段表对应单元的索引
+#define  X1813_OLP_10   10 // 保护区段表对应单元的索引
+#define  S1814_OLP_11   11 // 保护区段表对应单元的索引
+#define  S1814_OLP_12   12 // 保护区段表对应单元的索引
+#define  X1901_OLP_13   13 // 保护区段表对应单元的索引
+#define  S1902_OLP_14   14 // 保护区段表对应单元的索引
+#define  S2002F_OLP_15   15 // 保护区段表对应单元的索引

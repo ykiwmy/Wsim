@@ -104,6 +104,7 @@ CILKTestDoc::CILKTestDoc()
 , m_iManUpdateAswStat_(1)
 , m_nUpTime(0)
 , m_nDownTime(0)
+, m_IsCnctToWcuATP(0)
 {
 	/*netAddr_.localIP_MY_A = htonl(inet_addr("192.168.11.110"));
 	netAddr_.LocalATPServerIP_ = htonl(inet_addr("192.168.11.68"));
@@ -118,6 +119,7 @@ CILKTestDoc::CILKTestDoc()
 
 	m_p3MSock = new CIOSocket(this,2);
 	m_pZcSock_ = new CIOSocket(this, 3);
+	m_pWcuATPSock = new CIOSocket(this,2);
 }
 
 CILKTestDoc::~CILKTestDoc()
@@ -137,6 +139,9 @@ CILKTestDoc::~CILKTestDoc()
 
 	m_pZcSock_->Close();
 	delete m_pZcSock_;
+
+	m_pWcuATPSock->Close();
+	delete m_pWcuATPSock;
 	
 	for each (CADDevice* pDevice in vDevice_)
 	{
@@ -2627,6 +2632,19 @@ void CILKTestDoc::loadNetConfig(CString path)
 	m_nUpTime = GetPrivateProfileInt(L"仿真属性配置", L"继电器励磁时间", 2, FilePath);
 	m_nDownTime = GetPrivateProfileInt(L"仿真属性配置", L"继电器消磁时间", 2, FilePath);
 
+	/*WCU_ATP仿真IP设置*/
+	m_IsCnctToWcuATP = GetPrivateProfileInt(L"3号线WCU_ATP仿真通信网络设置", L"是否与WCU_ATP通信", 0, FilePath);
+	str = L"";
+	GetPrivateProfileString(L"3号线WCU_ATP仿真通信网络设置", L"本地IP", L"127.0.0.1", str.GetBuffer(20), 20, FilePath);
+	str.ReleaseBuffer();
+	netAddr_.localIP_WcuATP = str;
+	netAddr_.localPort_WcuATP = GetPrivateProfileInt(L"3号线WCU_ATP仿真通信网络设置", L"本地PORT", 82010, FilePath);
+	str = L"";
+	GetPrivateProfileString(L"3号线WCU_ATP仿真通信网络设置", L"对方IP", L"127.0.0.1", str.GetBuffer(20), 20, FilePath);
+	str.ReleaseBuffer();
+	netAddr_.remoteIP_WcuATP = str;
+	netAddr_.remotePort_WcuATP = GetPrivateProfileInt(L"3号线WCU_ATP仿真通信网络设置", L"对方PORT", 82011, FilePath);
+
 	/*ZC仿真IP设置*/
 	m_iIsCnctToSamZC = GetPrivateProfileInt(L"4号线ZC仿真通信网络设置", L"是否与ZC通信", 0, FilePath);
 	str = L"";
@@ -2670,6 +2688,12 @@ void CILKTestDoc::InitSocketByCfg()
 	if (m_isCnctToSAM>0)
 	{
 		m_p3MSock->InitSock(netAddr_.localIP_3M, netAddr_.localPort_3M, netAddr_.remoteIP_3M, netAddr_.remotePort_3M);
+	}
+
+	m_pWcuATPSock->Close();
+	if (m_IsCnctToWcuATP > 0)
+	{
+		m_pWcuATPSock->InitSock(netAddr_.localIP_WcuATP, netAddr_.localPort_WcuATP, netAddr_.remoteIP_WcuATP, netAddr_.remotePort_WcuATP);
 	}
 	
 	m_pZcSock_->Close();

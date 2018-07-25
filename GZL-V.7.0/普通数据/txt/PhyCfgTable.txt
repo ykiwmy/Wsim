@@ -1,0 +1,198 @@
+/**PhySection Number: 65 **/
+    D0000 = 0x0000 ; // T1801A (logicIndex)
+    D0001 = 0x0000 ; // T1801 (tvsIndex)
+
+    D0002 = 0x0001 ; // T1802A (logicIndex)
+    D0003 = 0x000F ; // T1802 (tvsIndex)
+
+    D0004 = 0x0002 ; // T1803A (logicIndex)
+    D0005 = 0x0001 ; // T1803 (tvsIndex)
+
+    D0006 = 0x0003 ; // T1804A (logicIndex)
+    D0007 = 0x0010 ; // T1804 (tvsIndex)
+
+    D0008 = 0x0004 ; // T1805A (logicIndex)
+    D0009 = 0x0002 ; // T1805 (tvsIndex)
+
+    D0010 = 0x0005 ; // T1805B (logicIndex)
+    D0011 = 0x0002 ; // T1805 (tvsIndex)
+
+    D0012 = 0x0006 ; // T1805C (logicIndex)
+    D0013 = 0x0002 ; // T1805 (tvsIndex)
+
+    D0014 = 0x0007 ; // T1806A (logicIndex)
+    D0015 = 0x0011 ; // T1806 (tvsIndex)
+
+    D0016 = 0x0008 ; // T1806B (logicIndex)
+    D0017 = 0x0011 ; // T1806 (tvsIndex)
+
+    D0018 = 0x0009 ; // T1806C (logicIndex)
+    D0019 = 0x0011 ; // T1806 (tvsIndex)
+
+    D0020 = 0x000A ; // T1807A (logicIndex)
+    D0021 = 0x0003 ; // T1807 (tvsIndex)
+
+    D0022 = 0x000B ; // T1807B (logicIndex)
+    D0023 = 0x0003 ; // T1807 (tvsIndex)
+
+    D0024 = 0x000C ; // T1807C (logicIndex)
+    D0025 = 0x0003 ; // T1807 (tvsIndex)
+
+    D0026 = 0x000D ; // T1808A (logicIndex)
+    D0027 = 0x0012 ; // T1808 (tvsIndex)
+
+    D0028 = 0x000E ; // T1808B (logicIndex)
+    D0029 = 0x0012 ; // T1808 (tvsIndex)
+
+    D0030 = 0x000F ; // T1808C (logicIndex)
+    D0031 = 0x0012 ; // T1808 (tvsIndex)
+
+    D0032 = 0x0010 ; // T1809A (logicIndex)
+    D0033 = 0x0004 ; // T1809 (tvsIndex)
+
+    D0034 = 0x0011 ; // T1810A (logicIndex)
+    D0035 = 0x0013 ; // T1810 (tvsIndex)
+
+    D0036 = 0x0012 ; // T1811A (logicIndex)
+    D0037 = 0x0005 ; // T1811 (tvsIndex)
+
+    D0038 = 0x0013 ; // T1812A (logicIndex)
+    D0039 = 0x0014 ; // T1812 (tvsIndex)
+
+    D0040 = 0x0014 ; // T1813A (logicIndex)
+    D0041 = 0x0006 ; // T1813 (tvsIndex)
+
+    D0042 = 0x0015 ; // T1813B (logicIndex)
+    D0043 = 0x0006 ; // T1813 (tvsIndex)
+
+    D0044 = 0x0016 ; // T1813C (logicIndex)
+    D0045 = 0x0006 ; // T1813 (tvsIndex)
+
+    D0046 = 0x0017 ; // T1814A (logicIndex)
+    D0047 = 0x0015 ; // T1814 (tvsIndex)
+
+    D0048 = 0x0018 ; // T1814B (logicIndex)
+    D0049 = 0x0015 ; // T1814 (tvsIndex)
+
+    D0050 = 0x0019 ; // T1814C (logicIndex)
+    D0051 = 0x0015 ; // T1814 (tvsIndex)
+
+    D0052 = 0x001A ; // T1815A (logicIndex)
+    D0053 = 0x0007 ; // T1815 (tvsIndex)
+
+    D0054 = 0x001B ; // T1815B (logicIndex)
+    D0055 = 0x0007 ; // T1815 (tvsIndex)
+
+    D0056 = 0x001C ; // T1816A (logicIndex)
+    D0057 = 0x0016 ; // T1816 (tvsIndex)
+
+    D0058 = 0x001D ; // T1816B (logicIndex)
+    D0059 = 0x0016 ; // T1816 (tvsIndex)
+
+    D0060 = 0x001E ; // T1817A (logicIndex)
+    D0061 = 0x0008 ; // T1817 (tvsIndex)
+
+    D0062 = 0x001F ; // T1818A (logicIndex)
+    D0063 = 0x0017 ; // T1818 (tvsIndex)
+
+    D0064 = 0x0020 ; // T1819A (logicIndex)
+    D0065 = 0x0009 ; // T1819 (tvsIndex)
+
+    D0066 = 0x0021 ; // T1819B (logicIndex)
+    D0067 = 0x0009 ; // T1819 (tvsIndex)
+
+    D0068 = 0x0022 ; // T1820A (logicIndex)
+    D0069 = 0x0018 ; // T1820 (tvsIndex)
+
+    D0070 = 0x0023 ; // T1820B (logicIndex)
+    D0071 = 0x0018 ; // T1820 (tvsIndex)
+
+    D0072 = 0x0024 ; // T1821A (logicIndex)
+    D0073 = 0x000A ; // T1821 (tvsIndex)
+
+    D0074 = 0x0025 ; // T1823A (logicIndex)
+    D0075 = 0x000B ; // T1823 (tvsIndex)
+
+    D0076 = 0x0026 ; // T1823B (logicIndex)
+    D0077 = 0x000B ; // T1823 (tvsIndex)
+
+    D0078 = 0x0027 ; // T1823C (logicIndex)
+    D0079 = 0x000B ; // T1823 (tvsIndex)
+
+    D0080 = 0x0028 ; // T1901A (logicIndex)
+    D0081 = 0x000C ; // T1901 (tvsIndex)
+
+    D0082 = 0x0029 ; // T1902A (logicIndex)
+    D0083 = 0x0019 ; // T1902 (tvsIndex)
+
+    D0084 = 0x002A ; // T1902B (logicIndex)
+    D0085 = 0x0019 ; // T1902 (tvsIndex)
+
+    D0086 = 0x002B ; // T1902C (logicIndex)
+    D0087 = 0x0019 ; // T1902 (tvsIndex)
+
+    D0088 = 0x002C ; // T1902D (logicIndex)
+    D0089 = 0x0019 ; // T1902 (tvsIndex)
+
+    D0090 = 0x002D ; // T1903A (logicIndex)
+    D0091 = 0x000D ; // T1903 (tvsIndex)
+
+    D0092 = 0x002E ; // T1904A (logicIndex)
+    D0093 = 0x001A ; // T1904 (tvsIndex)
+
+    D0094 = 0x002F ; // T1905A (logicIndex)
+    D0095 = 0x000E ; // T1905 (tvsIndex)
+
+    D0096 = 0x0030 ; // T1905B (logicIndex)
+    D0097 = 0x000E ; // T1905 (tvsIndex)
+
+    D0098 = 0x0031 ; // T1905C (logicIndex)
+    D0099 = 0x000E ; // T1905 (tvsIndex)
+
+    D0100 = 0x0032 ; // T1906A (logicIndex)
+    D0101 = 0x001B ; // T1906 (tvsIndex)
+
+    D0102 = 0x0033 ; // D5GFA (logicIndex)
+    D0103 = 0x001C ; // D5GF (tvsIndex)
+
+    D0104 = 0x0034 ; // D7GFA (logicIndex)
+    D0105 = 0x001D ; // D7GF (tvsIndex)
+
+    D0106 = 0x0035 ; // T2001FA (logicIndex)
+    D0107 = 0x001E ; // T2001F (tvsIndex)
+
+    D0108 = 0x0036 ; // T2002FA (logicIndex)
+    D0109 = 0x001F ; // T2002F (tvsIndex)
+
+    D0110 = 0x0037 ; // T2002FB (logicIndex)
+    D0111 = 0x001F ; // T2002F (tvsIndex)
+
+    D0112 = 0x0038 ; // T2002FC (logicIndex)
+    D0113 = 0x001F ; // T2002F (tvsIndex)
+
+    D0114 = 0x0039 ; // T2003FA (logicIndex)
+    D0115 = 0x0020 ; // T2003F (tvsIndex)
+
+    D0116 = 0x003A ; // T2004FA (logicIndex)
+    D0117 = 0x0021 ; // T2004F (tvsIndex)
+
+    D0118 = 0x003B ; // T2006FA (logicIndex)
+    D0119 = 0x0022 ; // T2006F (tvsIndex)
+
+    D0120 = 0x003C ; // T2102FA (logicIndex)
+    D0121 = 0x0023 ; // T2102F (tvsIndex)
+
+    D0122 = 0x003D ; // T2102FB (logicIndex)
+    D0123 = 0x0023 ; // T2102F (tvsIndex)
+
+    D0124 = 0x003E ; // T2102FC (logicIndex)
+    D0125 = 0x0023 ; // T2102F (tvsIndex)
+
+    D0126 = 0x003F ; // T2102FD (logicIndex)
+    D0127 = 0x0023 ; // T2102F (tvsIndex)
+
+    D0128 = 0x0040 ; // T2102FE (logicIndex)
+    D0129 = 0x0023 ; // T2102F (tvsIndex)
+
+    D0130 = 0xEEEE ; // (tabEnd)
+

@@ -1,0 +1,19 @@
+18
+X1807     2   0xffff    0xffff    X1813     0xffff    0xffff    S1814     
+X1809     1   0xffff    0xffff    X1813     
+X1811     5   0xffff    0xffff    X1805     0xffff    0xffff    X1803     0xffff    0xffff    X1807     0xffff    0xffff    S1804     0xffff    0xffff    S1808     
+X1813     1   0xffff    0xffff    X1817     
+X1815     3   0xffff    0xffff    X1811     0xffff    0xffff    S1812     0xffff    0xffff    S1814     
+X1817     1   0xffff    0xffff    X2001F    
+X1901     1   0xffff    0xffff    X1815     
+S1808     2   0xffff    0xffff    X1813     0xffff    0xffff    S1814     
+S1810     1   0xffff    0xffff    S1814     
+S1812     3   0xffff    0xffff    S1806     0xffff    0xffff    S1804     0xffff    0xffff    X1803     
+S1814     3   0xffff    0xffff    S1902     0xffff    0xffff    X1817     0xffff    0xffff    X1815     
+S1816     1   0xffff    0xffff    S1812     
+S1902     1   0xffff    0xffff    S2002F    
+S1904     1   0xffff    0xffff    S1816     
+X1801     1   0xffff    0xffff    X1807     
+X1803     1   0xffff    0xffff    XR-XCDF   
+S1802     1   0xffff    0xffff    S1808     
+S1804     1   0xffff    0xffff    XC-XCDF   

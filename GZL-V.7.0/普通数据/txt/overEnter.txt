@@ -1,0 +1,102 @@
+OverEnter number: 20
+    D0000 = 0x0000 ; // X1805 (signal)
+    D0001 = 0x0002 ; // ”“->◊Û (dir)
+    D0002 = 0x0005 ; // T1811 (apprSection)
+    D0003 = 0xFF07 ; // WJ (proSection)
+
+    D0004 = 0x0001 ; // S1806 (signal)
+    D0005 = 0x0002 ; // ”“->◊Û (dir)
+    D0006 = 0x0014 ; // T1812 (apprSection)
+    D0007 = 0xFF07 ; // WJ (proSection)
+
+    D0008 = 0x0002 ; // X1801 (signal)
+    D0009 = 0x0001 ; // ◊Û->”“ (dir)
+    D0010 = 0x0000 ; // T1801 (apprSection)
+    D0011 = 0x0001 ; // T1803 (proSection)
+
+    D0012 = 0x0003 ; // X1803 (signal)
+    D0013 = 0x0002 ; // ”“->◊Û (dir)
+    D0014 = 0x0004 ; // T1809 (apprSection)
+    D0015 = 0x0003 ; // T1807 (proSection)
+
+    D0016 = 0x0004 ; // X1817 (signal)
+    D0017 = 0x0001 ; // ◊Û->”“ (dir)
+    D0018 = 0x000A ; // T1821 (apprSection)
+    D0019 = 0x000B ; // T1823 (proSection)
+
+    D0020 = 0x0005 ; // X1901 (signal)
+    D0021 = 0x0002 ; // ”“->◊Û (dir)
+    D0022 = 0x000D ; // T1903 (apprSection)
+    D0023 = 0x000C ; // T1901 (proSection)
+
+    D0024 = 0x0006 ; // S1802 (signal)
+    D0025 = 0x0001 ; // ◊Û->”“ (dir)
+    D0026 = 0x000F ; // T1802 (apprSection)
+    D0027 = 0x0010 ; // T1804 (proSection)
+
+    D0028 = 0x0007 ; // S1804 (signal)
+    D0029 = 0x0002 ; // ”“->◊Û (dir)
+    D0030 = 0x0013 ; // T1810 (apprSection)
+    D0031 = 0x0012 ; // T1808 (proSection)
+
+    D0032 = 0x0008 ; // S1902 (signal)
+    D0033 = 0x0001 ; // ◊Û->”“ (dir)
+    D0034 = 0x001A ; // T1904 (apprSection)
+    D0035 = 0x001B ; // T1906 (proSection)
+
+    D0036 = 0x0009 ; // S1904 (signal)
+    D0037 = 0x0002 ; // ”“->◊Û (dir)
+    D0038 = 0x001F ; // T2002F (apprSection)
+    D0039 = 0x001B ; // T1906 (proSection)
+
+    D0040 = 0x000A ; // X1807 (signal)
+    D0041 = 0x0001 ; // ◊Û->”“ (dir)
+    D0042 = 0x0004 ; // T1809 (apprSection)
+    D0043 = 0x0006 ; // T1813 (proSection)
+
+    D0044 = 0x000B ; // S1808 (signal)
+    D0045 = 0x0001 ; // ◊Û->”“ (dir)
+    D0046 = 0x0013 ; // T1810 (apprSection)
+    D0047 = 0x0015 ; // T1814 (proSection)
+
+    D0048 = 0x000C ; // X1809 (signal)
+    D0049 = 0x0001 ; // ◊Û->”“ (dir)
+    D0050 = 0x0005 ; // T1811 (apprSection)
+    D0051 = 0x0007 ; // T1815 (proSection)
+
+    D0052 = 0x000D ; // X1813 (signal)
+    D0053 = 0x0001 ; // ◊Û->”“ (dir)
+    D0054 = 0x0008 ; // T1817 (apprSection)
+    D0055 = 0x0009 ; // T1819 (proSection)
+
+    D0056 = 0x000E ; // S1810 (signal)
+    D0057 = 0x0001 ; // ◊Û->”“ (dir)
+    D0058 = 0x0014 ; // T1812 (apprSection)
+    D0059 = 0x0016 ; // T1816 (proSection)
+
+    D0060 = 0x000F ; // S1816 (signal)
+    D0061 = 0x0002 ; // ”“->◊Û (dir)
+    D0062 = 0x0019 ; // T1902 (apprSection)
+    D0063 = 0x0018 ; // T1820 (proSection)
+
+    D0064 = 0x0010 ; // X1811 (signal)
+    D0065 = 0x0002 ; // ”“->◊Û (dir)
+    D0066 = 0x0008 ; // T1817 (apprSection)
+    D0067 = 0x0007 ; // T1815 (proSection)
+
+    D0068 = 0x0011 ; // X1815 (signal)
+    D0069 = 0x0002 ; // ”“->◊Û (dir)
+    D0070 = 0x000A ; // T1821 (apprSection)
+    D0071 = 0x0009 ; // T1819 (proSection)
+
+    D0072 = 0x0012 ; // S1812 (signal)
+    D0073 = 0x0002 ; // ”“->◊Û (dir)
+    D0074 = 0x0017 ; // T1818 (apprSection)
+    D0075 = 0x0016 ; // T1816 (proSection)
+
+    D0076 = 0x0013 ; // S1814 (signal)
+    D0077 = 0x0001 ; // ◊Û->”“ (dir)
+    D0078 = 0x0017 ; // T1818 (apprSection)
+    D0079 = 0x0018 ; // T1820 (proSection)
+
+    D0080 = 0xEEEE ; // (tabEnd)

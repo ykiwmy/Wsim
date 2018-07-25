@@ -1,0 +1,153 @@
+/**TrackSection Number: 30 **/
+    D0000 = 0x0000 ; // T1801 (direction) [default]
+    D0001 = 0x0000 ; // T1801 (tvsIndex)
+    D0002 = 0x0000 ; // T1801A (lSeq)
+    D0003 = 0x0000 ; // T1801A (rSeq)
+
+    D0004 = 0x0000 ; // T1803 (direction) [default]
+    D0005 = 0x0001 ; // T1803 (tvsIndex)
+    D0006 = 0x0002 ; // T1803A (lSeq)
+    D0007 = 0x0002 ; // T1803A (rSeq)
+
+    D0008 = 0x0000 ; // T1805 (direction) [default]
+    D0009 = 0x0002 ; // T1805 (tvsIndex)
+    D0010 = 0x0004 ; // T1805A (lSeq)
+    D0011 = 0x0006 ; // T1805C (rSeq)
+
+    D0012 = 0x0000 ; // T1807 (direction) [default]
+    D0013 = 0x0003 ; // T1807 (tvsIndex)
+    D0014 = 0x000A ; // T1807A (lSeq)
+    D0015 = 0x000C ; // T1807C (rSeq)
+
+    D0016 = 0x0000 ; // T1809 (direction) [default]
+    D0017 = 0x0004 ; // T1809 (tvsIndex)
+    D0018 = 0x0010 ; // T1809A (lSeq)
+    D0019 = 0x0010 ; // T1809A (rSeq)
+
+    D0020 = 0x0000 ; // T1811 (direction) [default]
+    D0021 = 0x0005 ; // T1811 (tvsIndex)
+    D0022 = 0x0012 ; // T1811A (lSeq)
+    D0023 = 0x0012 ; // T1811A (rSeq)
+
+    D0024 = 0x0000 ; // T1817 (direction) [default]
+    D0025 = 0x0008 ; // T1817 (tvsIndex)
+    D0026 = 0x001E ; // T1817A (lSeq)
+    D0027 = 0x001E ; // T1817A (rSeq)
+
+    D0028 = 0x0000 ; // T1821 (direction) [default]
+    D0029 = 0x000A ; // T1821 (tvsIndex)
+    D0030 = 0x0024 ; // T1821A (lSeq)
+    D0031 = 0x0024 ; // T1821A (rSeq)
+
+    D0032 = 0x0000 ; // T1823 (direction) [default]
+    D0033 = 0x000B ; // T1823 (tvsIndex)
+    D0034 = 0x0025 ; // T1823A (lSeq)
+    D0035 = 0x0027 ; // T1823C (rSeq)
+
+    D0036 = 0x0000 ; // T1901 (direction) [default]
+    D0037 = 0x000C ; // T1901 (tvsIndex)
+    D0038 = 0x0028 ; // T1901A (lSeq)
+    D0039 = 0x0028 ; // T1901A (rSeq)
+
+    D0040 = 0x0000 ; // T1903 (direction) [default]
+    D0041 = 0x000D ; // T1903 (tvsIndex)
+    D0042 = 0x002D ; // T1903A (lSeq)
+    D0043 = 0x002D ; // T1903A (rSeq)
+
+    D0044 = 0x0000 ; // T1905 (direction) [default]
+    D0045 = 0x000E ; // T1905 (tvsIndex)
+    D0046 = 0x002F ; // T1905A (lSeq)
+    D0047 = 0x0031 ; // T1905C (rSeq)
+
+    D0048 = 0x0000 ; // T1802 (direction) [default]
+    D0049 = 0x000F ; // T1802 (tvsIndex)
+    D0050 = 0x0001 ; // T1802A (lSeq)
+    D0051 = 0x0001 ; // T1802A (rSeq)
+
+    D0052 = 0x0000 ; // T1804 (direction) [default]
+    D0053 = 0x0010 ; // T1804 (tvsIndex)
+    D0054 = 0x0003 ; // T1804A (lSeq)
+    D0055 = 0x0003 ; // T1804A (rSeq)
+
+    D0056 = 0x0000 ; // T1806 (direction) [default]
+    D0057 = 0x0011 ; // T1806 (tvsIndex)
+    D0058 = 0x0007 ; // T1806A (lSeq)
+    D0059 = 0x0009 ; // T1806C (rSeq)
+
+    D0060 = 0x0000 ; // T1808 (direction) [default]
+    D0061 = 0x0012 ; // T1808 (tvsIndex)
+    D0062 = 0x000D ; // T1808A (lSeq)
+    D0063 = 0x000F ; // T1808C (rSeq)
+
+    D0064 = 0x0000 ; // T1810 (direction) [default]
+    D0065 = 0x0013 ; // T1810 (tvsIndex)
+    D0066 = 0x0011 ; // T1810A (lSeq)
+    D0067 = 0x0011 ; // T1810A (rSeq)
+
+    D0068 = 0x0000 ; // T1812 (direction) [default]
+    D0069 = 0x0014 ; // T1812 (tvsIndex)
+    D0070 = 0x0013 ; // T1812A (lSeq)
+    D0071 = 0x0013 ; // T1812A (rSeq)
+
+    D0072 = 0x0000 ; // T1818 (direction) [default]
+    D0073 = 0x0017 ; // T1818 (tvsIndex)
+    D0074 = 0x001F ; // T1818A (lSeq)
+    D0075 = 0x001F ; // T1818A (rSeq)
+
+    D0076 = 0x0000 ; // T1902 (direction) [default]
+    D0077 = 0x0019 ; // T1902 (tvsIndex)
+    D0078 = 0x0029 ; // T1902A (lSeq)
+    D0079 = 0x002C ; // T1902D (rSeq)
+
+    D0080 = 0x0000 ; // T1904 (direction) [default]
+    D0081 = 0x001A ; // T1904 (tvsIndex)
+    D0082 = 0x002E ; // T1904A (lSeq)
+    D0083 = 0x002E ; // T1904A (rSeq)
+
+    D0084 = 0x0000 ; // T1906 (direction) [default]
+    D0085 = 0x001B ; // T1906 (tvsIndex)
+    D0086 = 0x0032 ; // T1906A (lSeq)
+    D0087 = 0x0032 ; // T1906A (rSeq)
+
+    D0088 = 0x0000 ; // D5GF (direction) [default]
+    D0089 = 0x001C ; // D5GF (tvsIndex)
+    D0090 = 0x0033 ; // D5GFA (lSeq)
+    D0091 = 0x0033 ; // D5GFA (rSeq)
+
+    D0092 = 0x0000 ; // D7GF (direction) [default]
+    D0093 = 0x001D ; // D7GF (tvsIndex)
+    D0094 = 0x0034 ; // D7GFA (lSeq)
+    D0095 = 0x0034 ; // D7GFA (rSeq)
+
+    D0096 = 0x0000 ; // T2001F (direction) [default]
+    D0097 = 0x001E ; // T2001F (tvsIndex)
+    D0098 = 0x0035 ; // T2001FA (lSeq)
+    D0099 = 0x0035 ; // T2001FA (rSeq)
+
+    D0100 = 0x0000 ; // T2002F (direction) [default]
+    D0101 = 0x001F ; // T2002F (tvsIndex)
+    D0102 = 0x0036 ; // T2002FA (lSeq)
+    D0103 = 0x0038 ; // T2002FC (rSeq)
+
+    D0104 = 0x0000 ; // T2003F (direction) [default]
+    D0105 = 0x0020 ; // T2003F (tvsIndex)
+    D0106 = 0x0039 ; // T2003FA (lSeq)
+    D0107 = 0x0039 ; // T2003FA (rSeq)
+
+    D0108 = 0x0000 ; // T2004F (direction) [default]
+    D0109 = 0x0021 ; // T2004F (tvsIndex)
+    D0110 = 0x003A ; // T2004FA (lSeq)
+    D0111 = 0x003A ; // T2004FA (rSeq)
+
+    D0112 = 0x0000 ; // T2006F (direction) [default]
+    D0113 = 0x0022 ; // T2006F (tvsIndex)
+    D0114 = 0x003B ; // T2006FA (lSeq)
+    D0115 = 0x003B ; // T2006FA (rSeq)
+
+    D0116 = 0x0000 ; // T2102F (direction) [default]
+    D0117 = 0x0023 ; // T2102F (tvsIndex)
+    D0118 = 0x003C ; // T2102FA (lSeq)
+    D0119 = 0x0040 ; // T2102FE (rSeq)
+
+    D0120 = 0xEEEE ; // (tabEnd)
+

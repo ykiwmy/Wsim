@@ -199,13 +199,17 @@ void CADDevice::OnLButtonUp(UINT nFlags, CPoint point)
 
 void CADDevice::OnRButtonUp(UINT nFlags, CPoint point)
 {
-	for (size_t i = 0; i < vZcCommRelay_.size(); i++)
+	CILKTestDoc* pDoc = (CILKTestDoc*)dynamic_cast<CMainFrame*>(AfxGetMainWnd())->GetActiveDocument();
+	if (pDoc->m_iIsCnctToSamZC == 1)
 	{
-		pRMenu_->CheckMenuItem(ZC_COMM_MENU_0 + i, vZcCommRelay_[i]->isHigh() ? MF_CHECKED : MF_UNCHECKED);
-	}
+		for (size_t i = 0; i < vZcCommRelay_.size(); i++)
+		{
+			pRMenu_->CheckMenuItem(ZC_COMM_MENU_0 + i, vZcCommRelay_[i]->isHigh() ? MF_CHECKED : MF_UNCHECKED);
+		}
 
-	ClientToScreen(&point);
-	pRMenu_->TrackPopupMenu(TPM_LEFTALIGN | TPM_RIGHTBUTTON, point.x, point.y, this);
+		ClientToScreen(&point);
+		pRMenu_->TrackPopupMenu(TPM_LEFTALIGN | TPM_RIGHTBUTTON, point.x, point.y, this);
+	}
 }
 
 

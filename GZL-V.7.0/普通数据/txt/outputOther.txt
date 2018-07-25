@@ -1,0 +1,97 @@
+/**IOOtherTable Number: 19 **/
+    D0000 = 0x0000 ; // JZ-FWJ (address)
+    D0001 = 0x0000 ; // (type)
+    D0002 = 0x0030 ; // (btn)
+    D0003 = 0x0A0D ; // (devJ1)
+
+    D0004 = 0x0001 ; // PSD1801-KMJ (address)
+    D0005 = 0x0000 ; // (type)
+    D0006 = 0x0130 ; // (btn)
+    D0007 = 0x0B00 ; // (devJ1)
+
+    D0008 = 0x0002 ; // PSD1801-GMJ (address)
+    D0009 = 0x0000 ; // (type)
+    D0010 = 0x0230 ; // (btn)
+    D0011 = 0x0B01 ; // (devJ1)
+
+    D0012 = 0x0003 ; // PSD1802-KMJ (address)
+    D0013 = 0x0000 ; // (type)
+    D0014 = 0x0330 ; // (btn)
+    D0015 = 0x0B02 ; // (devJ1)
+
+    D0016 = 0x0004 ; // PSD1802-GMJ (address)
+    D0017 = 0x0000 ; // (type)
+    D0018 = 0x0430 ; // (btn)
+    D0019 = 0x0B03 ; // (devJ1)
+
+    D0020 = 0x0005 ; // PSD1901-KMJ (address)
+    D0021 = 0x0000 ; // (type)
+    D0022 = 0x0530 ; // (btn)
+    D0023 = 0x0B04 ; // (devJ1)
+
+    D0024 = 0x0006 ; // PSD1901-GMJ (address)
+    D0025 = 0x0000 ; // (type)
+    D0026 = 0x0630 ; // (btn)
+    D0027 = 0x0B05 ; // (devJ1)
+
+    D0028 = 0x0007 ; // PSD1902-KMJ (address)
+    D0029 = 0x0000 ; // (type)
+    D0030 = 0x0730 ; // (btn)
+    D0031 = 0x0B06 ; // (devJ1)
+
+    D0032 = 0x0008 ; // PSD1902-GMJ (address)
+    D0033 = 0x0000 ; // (type)
+    D0034 = 0x0830 ; // (btn)
+    D0035 = 0x0B07 ; // (devJ1)
+
+    D0036 = 0x0009 ; // DRB1801-WDJ (address)
+    D0037 = 0x0000 ; // (type)
+    D0038 = 0x0930 ; // (btn)
+    D0039 = 0x0B09 ; // (devJ1)
+
+    D0040 = 0x000A ; // DRB1801-SDJ (address)
+    D0041 = 0x0000 ; // (type)
+    D0042 = 0x0A30 ; // (btn)
+    D0043 = 0x0B08 ; // (devJ1)
+
+    D0044 = 0x000B ; // PSD2001-KMJ (address)
+    D0045 = 0x0000 ; // (type)
+    D0046 = 0x0B30 ; // (btn)
+    D0047 = 0xFF07 ; // (devJ1)
+
+    D0048 = 0x000C ; // PSD2001-GMJ (address)
+    D0049 = 0x0000 ; // (type)
+    D0050 = 0x0C30 ; // (btn)
+    D0051 = 0xFF07 ; // (devJ1)
+
+    D0052 = 0x000D ; // PSD2002-KMJ (address)
+    D0053 = 0x0000 ; // (type)
+    D0054 = 0x0D30 ; // (btn)
+    D0055 = 0xFF07 ; // (devJ1)
+
+    D0056 = 0x000E ; // PSD2002-GMJ (address)
+    D0057 = 0x0000 ; // (type)
+    D0058 = 0x0E30 ; // (btn)
+    D0059 = 0xFF07 ; // (devJ1)
+
+    D0060 = 0x000F ; // ZCT1801 (address)
+    D0061 = 0x0000 ; // (type)
+    D0062 = 0x0F30 ; // (btn)
+    D0063 = 0xFF07 ; // (devJ1)
+
+    D0064 = 0x0010 ; // ZCT1802 (address)
+    D0065 = 0x0000 ; // (type)
+    D0066 = 0x0031 ; // (btn)
+    D0067 = 0xFF07 ; // (devJ1)
+
+    D0068 = 0x0011 ; // ZCT1905 (address)
+    D0069 = 0x0000 ; // (type)
+    D0070 = 0x0131 ; // (btn)
+    D0071 = 0xFF07 ; // (devJ1)
+
+    D0072 = 0x0012 ; // ZCT1906 (address)
+    D0073 = 0x0000 ; // (type)
+    D0074 = 0x0231 ; // (btn)
+    D0075 = 0xFF07 ; // (devJ1)
+
+    D0076 = 0xEEEE ; // (tabEnd)

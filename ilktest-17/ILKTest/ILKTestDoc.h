@@ -89,6 +89,11 @@ struct NetAddress
 	CString remoteIP_ZC;
 	int localPort_ZC;
 	int remotePort_ZC;
+
+	CString localIP_WcuATP;
+	CString remoteIP_WcuATP;
+	int localPort_WcuATP;
+	int remotePort_WcuATP;
 };
 
 struct ElementCode
@@ -311,6 +316,7 @@ public:
 	CMySever m_tcpSevSock_;
 	CIOSocket*  m_p3MSock;
 	CIOSocket*  m_pZcSock_;
+	CIOSocket*  m_pWcuATPSock;
 protected:
 	DECLARE_MESSAGE_MAP()
 
@@ -539,4 +545,7 @@ public:
 	// 继电器消磁时间
 	int m_nDownTime;
 	int GetMultiByteLen(CString str);
+
+
+	int m_IsCnctToWcuATP;
 };

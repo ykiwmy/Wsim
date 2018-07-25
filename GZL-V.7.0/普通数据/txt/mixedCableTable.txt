@@ -1,0 +1,26 @@
+/**HXDataTable Number: 8 **/
+    D0000 = 0x0F02 ; // PSD1801-KMJ
+    D0001 = 0x0B00 ; // PSD1801-KMJ
+
+    D0002 = 0x0F03 ; // PSD1801-GMJ
+    D0003 = 0x0B01 ; // PSD1801-GMJ
+
+    D0004 = 0x0F06 ; // PSD1802-KMJ
+    D0005 = 0x0B02 ; // PSD1802-KMJ
+
+    D0006 = 0x0F07 ; // PSD1802-GMJ
+    D0007 = 0x0B03 ; // PSD1802-GMJ
+
+    D0008 = 0x0F0A ; // PSD1901-KMJ
+    D0009 = 0x0B04 ; // PSD1901-KMJ
+
+    D0010 = 0x0F0B ; // PSD1901-GMJ
+    D0011 = 0x0B05 ; // PSD1901-GMJ
+
+    D0012 = 0x0F0E ; // PSD1902-KMJ
+    D0013 = 0x0B06 ; // PSD1902-KMJ
+
+    D0014 = 0x0F0F ; // PSD1902-GMJ
+    D0015 = 0x0B07 ; // PSD1902-GMJ
+
+    D0016 = 0xEEEE ; // (tabEnd)
