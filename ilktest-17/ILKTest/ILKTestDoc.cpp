@@ -4708,3 +4708,80 @@ int CILKTestDoc::GetMultiByteLen(CString str)
 	str.ReleaseBuffer();
 	return len;
 }
+
+
+
+
+
+
+void CILKTestDoc::setWcuCommRelay()
+{
+	ElementCode devData;
+
+	for (int i = 0; i < vElements_.size(); i++)
+	{
+		devData = vElements_.at(i);
+		switch (devData.wcu_instance_kind_id)
+		{
+		case WCU_TYPE_SG: 
+			setWcuSg(devData);
+			break;
+		case WCU_TYPE_TS: 
+			break;
+		case WCU_TYPE_PT:
+			break;
+		case WCU_TYPE_CR: 
+			setLogicZcCommRelay(devData);
+			break;
+		case WCU_TYPE_BL:
+			break;
+		default:
+			break;
+		}
+	}
+}
+
+
+void CILKTestDoc::setWcuSg(ElementCode data)
+{
+	CString strName;
+	DeviceIO devIO;
+	ZCInputCfgData inputZcCfg[2];
+	int iFlag = 0, tempI = 0, tempJ = 0, ATIndex = 0, UTIndex = 0;
+
+	WCHAR* zcRelayType[] = {
+		L"AT占用", L"UT占用"
+	};
+
+	CString strLogicFlag[] = { L"A", L"B", L"C", _T("D") };
+
+	if ((data.devType != DEV_TYPE_SWIT_LOCK) || (m_isLogicSection != 1))
+	{
+		return;
+	}
+
+	for (tempI = 0; tempI < 4; tempI++)
+	{
+		if (RailSwitch* pSwitch = (RailSwitch*)findDevcieByAddr(data.devIndex, RUNTIME_CLASS(RailSwitch)))
+		{
+			devIO = findSwitLogicIndexBySwitIndex2LogicName(data.devIndex, tempI, strLogicFlag[tempJ], RUNTIME_CLASS(RailSwitch));
+			if (devIO.addr_ != 0xFFFF)
+			{
+				inputZcCfg[0] = getZCInputCfgUnitByIndex2Type(devIO.addr_, DEV_TYPE_LTE_ATOCP);
+				inputZcCfg[1] = getZCInputCfgUnitByIndex2Type(devIO.addr_, DEV_TYPE_LTE_UTOCP);
+
+				for (tempJ = 0; tempJ < 2 && inputZcCfg[tempJ].devIndex != 0xFFFF; tempJ++)
+				{
+					strName = pSwitch->logicDeviceIO_[tempI].getName() + L"-" + zcRelayType[tempJ];
+					CZcCommRelay* pZcCommRelay = new CZcCommRelay(pSwitch->data_.section_.getName(), T_ZC_SWIT, strName, TRUE, FALSE, pSwitch);
+					pZcCommRelay->boardID_[0] = boardZcCommID(inputZcCfg[tempJ].CodeSeqIndex);
+					pZcCommRelay->portID_[0] = portZcCommID(inputZcCfg[tempJ].CodeSeqIndex);
+					pZcCommRelay->codeSeqIndex[0] = inputZcCfg[tempJ].CodeSeqIndex;
+
+					pSwitch->vZcCommRelay_.push_back(pZcCommRelay);
+					vZcCommRelay_.push_back(pZcCommRelay);
+				}
+			}
+		}
+	}
+}

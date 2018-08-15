@@ -255,6 +255,18 @@ struct ADDR_UNIT_RT
 #define DEV_TYPE_ATBRT_STOPASK		0x001Au
 #define DEV_TYPE_OLP_STATE			0x001Bu
 #define MAX_CONNTIME_WITH_ZC		14
+
+
+#define WCU_TYPE_SG    28u
+#define WCU_TYPE_TS	   20u
+#define WCU_TYPE_PT    18u
+#define WCU_TYPE_CR    19u
+#define WCU_TYPE_BL    31u
+
+
+
+
+
 /*zc-ci mask end*/
 
 enum ZC_RELAY_TYPE
@@ -546,6 +558,10 @@ public:
 	int m_nDownTime;
 	int GetMultiByteLen(CString str);
 
+	void setWcuCommRelay();
 
-	int m_IsCnctToWcuATP;
+	void setWcuSg(ElementCode data);
+
+
+	int m_IsCnctToWcuATP;  //是否与WCU_ATP通信（配置文件配置项）
 };
