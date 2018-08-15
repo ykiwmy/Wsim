@@ -113,6 +113,8 @@ struct ElementCode
 	UINT16 inputaddr;
 	UINT16 outputaddr;
 };
+
+
 struct  StationDev
 {
 	CADDevice* pDev;//站台设备
@@ -319,7 +321,8 @@ public:
 	vector<CZcCommRelay*> vZcCommRelay_;
 	
 
-	vector<ElementCode>			vElements_;			// ATP接口元素信息表
+	vector<ElementCode>			vElements_;			//供TranSim使用
+	vector<ElementCode>			vEle_;			//供WCU_ATP仿真使用
 	vector<ToSimCfgData>			vToSimCfgData;			// ATP接口元素信息表-3M
 
 	NetAddress netAddr_;	// 通信地址和端口号

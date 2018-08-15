@@ -5,6 +5,7 @@ using namespace std;
 
 class Relay;
 class CZcCommRelay;
+class WcuComm;
 // CADGraphic
 #define RELAY_MENU_0 (WM_USER + 100)
 #define ZC_COMM_MENU_0 (RELAY_MENU_0 + 1000)
@@ -32,6 +33,7 @@ public:
 
 	vector<Relay*> vRelay_;
 	vector<CZcCommRelay*> vZcCommRelay_;
+	vector<WcuComm*> vWcuComm_;
 	CMenu* pMenu_;	// 弹出的继电器菜单
 	CMenu* pRMenu_;
 

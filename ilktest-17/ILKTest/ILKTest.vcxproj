@@ -154,6 +154,7 @@
     <ClInclude Include="TCPShowDlg.h" />
     <ClInclude Include="TCPSocket.h" />
     <ClInclude Include="SAMProcess.h" />
+    <ClInclude Include="WcuComm.h" />
     <ClInclude Include="ZcCommRelay.h" />
   </ItemGroup>
   <ItemGroup>
@@ -206,6 +207,7 @@
     <ClCompile Include="TCPShowDlg.cpp" />
     <ClCompile Include="TCPSocket.cpp" />
     <ClCompile Include="SAMProcess.cpp" />
+    <ClCompile Include="WcuComm.cpp" />
     <ClCompile Include="ZcCommRelay.cpp" />
   </ItemGroup>
   <ItemGroup>

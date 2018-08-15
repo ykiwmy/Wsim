@@ -29,7 +29,7 @@
 #include "SplitterFrame.h"
 #include <propkey.h>
 #include "SAMProcess.h"
-
+#include "WcuComm.h"
 #include <fstream>
 using namespace std;
 
@@ -233,6 +233,11 @@ void CILKTestDoc::Serialize(CArchive& ar)
 			checkZcConnHead(); 
 			setZcCommRelay();
 			OnAllLightOFF(); /*初始化为全场灭灯*/
+		}
+
+		if (m_IsCnctToWcuATP == 1)
+		{
+			setWcuCommRelay();
 		}
 		
 		loadPourRelay();
@@ -4714,6 +4719,7 @@ int CILKTestDoc::GetMultiByteLen(CString str)
 
 
 
+
 void CILKTestDoc::setWcuCommRelay()
 {
 	ElementCode devData;
@@ -4731,7 +4737,6 @@ void CILKTestDoc::setWcuCommRelay()
 		case WCU_TYPE_PT:
 			break;
 		case WCU_TYPE_CR: 
-			setLogicZcCommRelay(devData);
 			break;
 		case WCU_TYPE_BL:
 			break;
@@ -4749,39 +4754,16 @@ void CILKTestDoc::setWcuSg(ElementCode data)
 	ZCInputCfgData inputZcCfg[2];
 	int iFlag = 0, tempI = 0, tempJ = 0, ATIndex = 0, UTIndex = 0;
 
-	WCHAR* zcRelayType[] = {
-		L"AT占用", L"UT占用"
+	WCHAR* sgStatus[] = 
+	{
+		L"AT_Appro", L"UT_Appro", L"Train Stop", L"Stop Assure", L"WCU_ApproLock"
 	};
-
-	CString strLogicFlag[] = { L"A", L"B", L"C", _T("D") };
-
-	if ((data.devType != DEV_TYPE_SWIT_LOCK) || (m_isLogicSection != 1))
+	if (CADSignal* pSignal = (CADSignal*)findDevcieByAddr(data.ixl_Devaddr, RUNTIME_CLASS(CADSignal)))
 	{
-		return;
-	}
-
-	for (tempI = 0; tempI < 4; tempI++)
-	{
-		if (RailSwitch* pSwitch = (RailSwitch*)findDevcieByAddr(data.devIndex, RUNTIME_CLASS(RailSwitch)))
+		for (int i = 0; i < 5; i++)
 		{
-			devIO = findSwitLogicIndexBySwitIndex2LogicName(data.devIndex, tempI, strLogicFlag[tempJ], RUNTIME_CLASS(RailSwitch));
-			if (devIO.addr_ != 0xFFFF)
-			{
-				inputZcCfg[0] = getZCInputCfgUnitByIndex2Type(devIO.addr_, DEV_TYPE_LTE_ATOCP);
-				inputZcCfg[1] = getZCInputCfgUnitByIndex2Type(devIO.addr_, DEV_TYPE_LTE_UTOCP);
-
-				for (tempJ = 0; tempJ < 2 && inputZcCfg[tempJ].devIndex != 0xFFFF; tempJ++)
-				{
-					strName = pSwitch->logicDeviceIO_[tempI].getName() + L"-" + zcRelayType[tempJ];
-					CZcCommRelay* pZcCommRelay = new CZcCommRelay(pSwitch->data_.section_.getName(), T_ZC_SWIT, strName, TRUE, FALSE, pSwitch);
-					pZcCommRelay->boardID_[0] = boardZcCommID(inputZcCfg[tempJ].CodeSeqIndex);
-					pZcCommRelay->portID_[0] = portZcCommID(inputZcCfg[tempJ].CodeSeqIndex);
-					pZcCommRelay->codeSeqIndex[0] = inputZcCfg[tempJ].CodeSeqIndex;
-
-					pSwitch->vZcCommRelay_.push_back(pZcCommRelay);
-					vZcCommRelay_.push_back(pZcCommRelay);
-				}
-			}
+			WcuComm* pWcuComm = new WcuComm(pSignal->name_.text_, sgStatus[i], pSignal);
+			pSignal->vWcuComm_.push_back(pWcuComm);
 		}
 	}
 }
