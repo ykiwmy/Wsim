@@ -9,6 +9,7 @@ public:
 	WcuComm::WcuComm(CString deviceName,CString relayName, CADDevice* pDevice);
 	~WcuComm();
 
+public:
 	CString deviceName_;	// Éè±¸Ãû³Æ
 	CString name_;
 	CADDevice* pDevice_;

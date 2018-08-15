@@ -215,6 +215,7 @@ void CILKTestDoc::Serialize(CArchive& ar)
 		loadOutputRelay(strPath);	// 读取驱动继电器
 		loadElementData(strPath);
 		load3MData(strPath);
+		loadEle(strPath);
 		
 		if (m_isCnctToSAM>0)
 		{
@@ -438,7 +439,7 @@ void CILKTestDoc::loadElementData(CString strPath){
 	if (file.Open(inputFileName, CFile::modeRead | CFile::typeBinary))
 	{ //打开文件
 
-		if (m_isCnctToGalaxy <= 0)
+		if (m_isCnctToGalaxy <= 0 )
 		{
 			CString strErr(L"请核查配置文件<是否外接Galzxy>属性配置，或删除：");
 			strErr.Append(inputFileName);
@@ -4717,6 +4718,51 @@ int CILKTestDoc::GetMultiByteLen(CString str)
 
 
 
+void CILKTestDoc::loadEle(CString strPath) {
+	CString inputFileName = strPath + L"x86\\ATP\\ElementCode.le";
+	CFile file;
+	int dataSize = sizeof(ElementCode);
+	if (file.Open(inputFileName, CFile::modeRead | CFile::typeBinary))
+	{ //打开文件
+
+		if (m_IsCnctToWcuATP <= 0)
+		{
+			CString strErr(L"请核查配置文件<是否与WCU_ATP通信>属性配置，或删除：");
+			strErr.Append(inputFileName);
+			//AfxGetMainWnd()->SendMessage(WM_OUT_MESSAGE, 1, (LPARAM)&strErr);
+
+			AfxMessageBox(strErr);
+			file.Close();
+			return;
+		}
+
+		file.Read(&nElementTotal, 4);
+		ElementCode Element;
+		int c = 1;
+		for (int i = 0; i < nElementTotal; i++)
+		{
+			file.Read(&Element, dataSize);
+			vEle_.push_back(Element);
+		}
+		TRACE1("\n nElementTotal = %d\n", nElementTotal);
+		file.Close();
+	}
+	else
+	{
+		if (m_IsCnctToWcuATP > 0)
+		{
+			CString strErr(L"打开文件失败，请核查：\n");
+			strErr.Append(L"1、" + inputFileName);
+			AfxGetMainWnd()->SendMessage(WM_OUT_MESSAGE, 1, (LPARAM)&strErr);
+
+			AfxMessageBox(strErr + L"文件是否存在。\n2、配置文件<是否与WCU_ATP通信>属性配置");
+			exit(0);
+		}
+
+	}
+	int b = 1;
+}
+
 
 
 
@@ -4724,9 +4770,9 @@ void CILKTestDoc::setWcuCommRelay()
 {
 	ElementCode devData;
 
-	for (int i = 0; i < vElements_.size(); i++)
+	for (int i = 0; i < vEle_.size(); i++)
 	{
-		devData = vElements_.at(i);
+		devData = vEle_.at(i);
 		switch (devData.wcu_instance_kind_id)
 		{
 		case WCU_TYPE_SG: 

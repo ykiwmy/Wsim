@@ -9,6 +9,7 @@ class WcuComm;
 // CADGraphic
 #define RELAY_MENU_0 (WM_USER + 100)
 #define ZC_COMM_MENU_0 (RELAY_MENU_0 + 1000)
+#define WCU_COMM_MENU_0 (ZC_COMM_MENU_0 + 1000)
 
 class CADGraphic : public CWnd
 {

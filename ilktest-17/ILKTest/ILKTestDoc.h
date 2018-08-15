@@ -561,6 +561,8 @@ public:
 	int m_nDownTime;
 	int GetMultiByteLen(CString str);
 
+	void loadEle(CString strPath);
+
 	void setWcuCommRelay();
 
 	void setWcuSg(ElementCode data);

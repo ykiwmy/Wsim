@@ -7,6 +7,7 @@
 #include <math.h>
 #include "../Relay.h"
 #include "ZcCommRelay.h"
+#include "WcuComm.h"
 #include "CADDevice.h"
 #include "MainFrm.h"
 #include "ILKTestDoc.h"
@@ -58,6 +59,10 @@ void CADGraphic::loadMenu(void)
 	for (size_t i = 0; i < vZcCommRelay_.size(); i++)
 	{
 		pRMenu_->AppendMenuW(MF_STRING, ZC_COMM_MENU_0 + i, vZcCommRelay_[i]->name_);
+	}
+	for (size_t i = 0; i < vWcuComm_.size(); i++)
+	{
+		pRMenu_->AppendMenuW(MF_STRING, WCU_COMM_MENU_0 + i, vWcuComm_[i]->name_);
 	}
 }
 
