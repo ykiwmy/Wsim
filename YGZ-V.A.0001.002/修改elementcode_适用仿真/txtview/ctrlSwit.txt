@@ -1,0 +1,62 @@
+number : 
+    D0000 = 0x0000 ; // P1701 (SwitchAddr)
+    D0001 = 0x0023 ; // P1701 (SwitchBtn)
+    D0002 = 0x000C ; // TA1705 (SelfSection)
+    D0003 = 0xFF07 ; // WJ (RelSection)
+    D0004 = 0xFF07 ; // (other)
+
+    D0005 = 0x0001 ; // P1702 (SwitchAddr)
+    D0006 = 0x0123 ; // P1702 (SwitchBtn)
+    D0007 = 0x000F ; // TA1708 (SelfSection)
+    D0008 = 0xFF07 ; // WJ (RelSection)
+    D0009 = 0xFF07 ; // (other)
+
+    D0010 = 0x0002 ; // P1703 (SwitchAddr)
+    D0011 = 0x0223 ; // P1703 (SwitchBtn)
+    D0012 = 0x0014 ; // TA1713 (SelfSection)
+    D0013 = 0xFF07 ; // WJ (RelSection)
+    D0014 = 0xFF07 ; // (other)
+
+    D0015 = 0x0003 ; // P1704 (SwitchAddr)
+    D0016 = 0x0323 ; // P1704 (SwitchBtn)
+    D0017 = 0x0015 ; // TA1714 (SelfSection)
+    D0018 = 0xFF07 ; // WJ (RelSection)
+    D0019 = 0xFF07 ; // (other)
+
+    D0020 = 0x0004 ; // P1705 (SwitchAddr)
+    D0021 = 0x0423 ; // P1705 (SwitchBtn)
+    D0022 = 0x0014 ; // TA1713 (SelfSection)
+    D0023 = 0xFF07 ; // WJ (RelSection)
+    D0024 = 0xFF07 ; // (other)
+
+    D0025 = 0x0005 ; // P1706 (SwitchAddr)
+    D0026 = 0x0523 ; // P1706 (SwitchBtn)
+    D0027 = 0x0015 ; // TA1714 (SelfSection)
+    D0028 = 0xFF07 ; // WJ (RelSection)
+    D0029 = 0xFF07 ; // (other)
+
+    D0030 = 0x0006 ; // P1707 (SwitchAddr)
+    D0031 = 0x0623 ; // P1707 (SwitchBtn)
+    D0032 = 0x0018 ; // TA1717 (SelfSection)
+    D0033 = 0xFF07 ; // WJ (RelSection)
+    D0034 = 0xFF07 ; // (other)
+
+    D0035 = 0x0007 ; // P1708 (SwitchAddr)
+    D0036 = 0x0723 ; // P1708 (SwitchBtn)
+    D0037 = 0x0019 ; // TA1718 (SelfSection)
+    D0038 = 0xFF07 ; // WJ (RelSection)
+    D0039 = 0xFF07 ; // (other)
+
+    D0040 = 0x0008 ; // P1709 (SwitchAddr)
+    D0041 = 0x0823 ; // P1709 (SwitchBtn)
+    D0042 = 0x0010 ; // TA1709 (SelfSection)
+    D0043 = 0xFF07 ; // WJ (RelSection)
+    D0044 = 0xFF07 ; // (other)
+
+    D0045 = 0x0009 ; // P1710 (SwitchAddr)
+    D0046 = 0x0923 ; // P1710 (SwitchBtn)
+    D0047 = 0x0013 ; // TA1712 (SelfSection)
+    D0048 = 0xFF07 ; // WJ (RelSection)
+    D0049 = 0xFF07 ; // (other)
+
+    D0050 = 0xEEEE ; // (tabEnd)

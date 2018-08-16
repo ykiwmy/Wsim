@@ -1,0 +1,180 @@
+    D0 = 0x0810 ; // X1601 (startBtn)
+    D1 = 0x0001 ; //  LockStyle
+    D2 = 0x0000 ; //  tableID
+    D3 = 0x0000 ; //  offset
+    D4 = 0xffff ; // Rtend
+
+    D5 = 0x0910 ; // X1603 (startBtn)
+    D6 = 0x0001 ; //  LockStyle
+    D7 = 0x0000 ; //  tableID
+    D8 = 0x0023 ; //  offset
+    D9 = 0xffff ; // Rtend
+
+    D10 = 0x0c10 ; // X1701 (startBtn)
+    D11 = 0x0001 ; //  LockStyle
+    D12 = 0x0000 ; //  tableID
+    D13 = 0x004c ; //  offset
+    D14 = 0xffff ; // Rtend
+
+    D15 = 0x0211 ; // X1703 (startBtn)
+    D16 = 0x0001 ; //  LockStyle
+    D17 = 0x0000 ; //  tableID
+    D18 = 0x0075 ; //  offset
+    D19 = 0xffff ; // Rtend
+
+    D20 = 0x0211 ; // X1703 (startBtn)
+    D21 = 0x0001 ; //  LockStyle
+    D22 = 0x0000 ; //  tableID
+    D23 = 0x008d ; //  offset
+    D24 = 0xffff ; // Rtend
+
+    D25 = 0x0211 ; // X1703 (startBtn)
+    D26 = 0x0001 ; //  LockStyle
+    D27 = 0x0000 ; //  tableID
+    D28 = 0x00ab ; //  offset
+    D29 = 0xffff ; // Rtend
+
+    D30 = 0x0410 ; // X1705 (startBtn)
+    D31 = 0x0001 ; //  LockStyle
+    D32 = 0x0000 ; //  tableID
+    D33 = 0x00c3 ; //  offset
+    D34 = 0xffff ; // Rtend
+
+    D35 = 0x0010 ; // X1707 (startBtn)
+    D36 = 0x0001 ; //  LockStyle
+    D37 = 0x0000 ; //  tableID
+    D38 = 0x00db ; //  offset
+    D39 = 0xffff ; // Rtend
+
+    D40 = 0x0010 ; // X1707 (startBtn)
+    D41 = 0x0001 ; //  LockStyle
+    D42 = 0x0001 ; //  tableID
+    D43 = 0x0000 ; //  offset
+    D44 = 0xffff ; // Rtend
+
+    D45 = 0x0110 ; // X1709 (startBtn)
+    D46 = 0x0001 ; //  LockStyle
+    D47 = 0x0001 ; //  tableID
+    D48 = 0x0019 ; //  offset
+    D49 = 0xffff ; // Rtend
+
+    D50 = 0x0610 ; // X1711 (startBtn)
+    D51 = 0x0001 ; //  LockStyle
+    D52 = 0x0001 ; //  tableID
+    D53 = 0x0036 ; //  offset
+    D54 = 0xffff ; // Rtend
+
+    D55 = 0x0411 ; // X1713 (startBtn)
+    D56 = 0x0001 ; //  LockStyle
+    D57 = 0x0001 ; //  tableID
+    D58 = 0x0054 ; //  offset
+    D59 = 0xffff ; // Rtend
+
+    D60 = 0x0411 ; // X1713 (startBtn)
+    D61 = 0x0001 ; //  LockStyle
+    D62 = 0x0001 ; //  tableID
+    D63 = 0x0063 ; //  offset
+    D64 = 0xffff ; // Rtend
+
+    D65 = 0x0e10 ; // X1801 (startBtn)
+    D66 = 0x0001 ; //  LockStyle
+    D67 = 0x0001 ; //  tableID
+    D68 = 0x0075 ; //  offset
+    D69 = 0xffff ; // Rtend
+
+    D70 = 0x0011 ; // X1803 (startBtn)
+    D71 = 0x0001 ; //  LockStyle
+    D72 = 0x0001 ; //  tableID
+    D73 = 0x008d ; //  offset
+    D74 = 0xffff ; // Rtend
+
+    D75 = 0x0a10 ; // S1602 (startBtn)
+    D76 = 0x0001 ; //  LockStyle
+    D77 = 0x0001 ; //  tableID
+    D78 = 0x00a7 ; //  offset
+    D79 = 0xffff ; // Rtend
+
+    D80 = 0x0b10 ; // S1604 (startBtn)
+    D81 = 0x0001 ; //  LockStyle
+    D82 = 0x0001 ; //  tableID
+    D83 = 0x00d6 ; //  offset
+    D84 = 0xffff ; // Rtend
+
+    D85 = 0x0d10 ; // S1702 (startBtn)
+    D86 = 0x0001 ; //  LockStyle
+    D87 = 0x0002 ; //  tableID
+    D88 = 0x0000 ; //  offset
+    D89 = 0xffff ; // Rtend
+
+    D90 = 0x0311 ; // S1704 (startBtn)
+    D91 = 0x0001 ; //  LockStyle
+    D92 = 0x0002 ; //  tableID
+    D93 = 0x0029 ; //  offset
+    D94 = 0xffff ; // Rtend
+
+    D95 = 0x0311 ; // S1704 (startBtn)
+    D96 = 0x0001 ; //  LockStyle
+    D97 = 0x0002 ; //  tableID
+    D98 = 0x0041 ; //  offset
+    D99 = 0xffff ; // Rtend
+
+    D100 = 0x0311 ; // S1704 (startBtn)
+    D101 = 0x0001 ; //  LockStyle
+    D102 = 0x0002 ; //  tableID
+    D103 = 0x005f ; //  offset
+    D104 = 0xffff ; // Rtend
+
+    D105 = 0x0510 ; // S1706 (startBtn)
+    D106 = 0x0001 ; //  LockStyle
+    D107 = 0x0002 ; //  tableID
+    D108 = 0x0078 ; //  offset
+    D109 = 0xffff ; // Rtend
+
+    D110 = 0x0210 ; // S1708 (startBtn)
+    D111 = 0x0001 ; //  LockStyle
+    D112 = 0x0002 ; //  tableID
+    D113 = 0x0090 ; //  offset
+    D114 = 0xffff ; // Rtend
+
+    D115 = 0x0210 ; // S1708 (startBtn)
+    D116 = 0x0001 ; //  LockStyle
+    D117 = 0x0002 ; //  tableID
+    D118 = 0x00a9 ; //  offset
+    D119 = 0xffff ; // Rtend
+
+    D120 = 0x0310 ; // S1710 (startBtn)
+    D121 = 0x0001 ; //  LockStyle
+    D122 = 0x0002 ; //  tableID
+    D123 = 0x00c7 ; //  offset
+    D124 = 0xffff ; // Rtend
+
+    D125 = 0x0710 ; // S1712 (startBtn)
+    D126 = 0x0001 ; //  LockStyle
+    D127 = 0x0003 ; //  tableID
+    D128 = 0x0000 ; //  offset
+    D129 = 0xffff ; // Rtend
+
+    D130 = 0x0511 ; // S1714 (startBtn)
+    D131 = 0x0001 ; //  LockStyle
+    D132 = 0x0003 ; //  tableID
+    D133 = 0x001e ; //  offset
+    D134 = 0xffff ; // Rtend
+
+    D135 = 0x0511 ; // S1714 (startBtn)
+    D136 = 0x0001 ; //  LockStyle
+    D137 = 0x0003 ; //  tableID
+    D138 = 0x002d ; //  offset
+    D139 = 0xffff ; // Rtend
+
+    D140 = 0x0f10 ; // S1802 (startBtn)
+    D141 = 0x0001 ; //  LockStyle
+    D142 = 0x0003 ; //  tableID
+    D143 = 0x003e ; //  offset
+    D144 = 0xffff ; // Rtend
+
+    D145 = 0x0111 ; // S1804 (startBtn)
+    D146 = 0x0001 ; //  LockStyle
+    D147 = 0x0003 ; //  tableID
+    D148 = 0x0056 ; //  offset
+    D149 = 0xffff ; // Rtend
+

@@ -1,0 +1,64 @@
+FastRoute number: 9
+    D0 = 0x0810 ; // X1601
+    D1 = 0x0811 ; // X1501F
+    D2 = 0xfff0 ; // alter1 
+    D3 = 0xfff0 ; // alter2 
+    D4 = 0x0000 ; // rtIndex
+    D5 = 0xff07 ; // other  
+
+    D6 = 0x0c10 ; // X1701
+    D7 = 0x0810 ; // X1601
+    D8 = 0xfff0 ; // alter1 
+    D9 = 0xfff0 ; // alter2 
+    D10 = 0x0002 ; // rtIndex
+    D11 = 0xff07 ; // other  
+
+    D12 = 0x0410 ; // X1705
+    D13 = 0x0c10 ; // X1701
+    D14 = 0xfff0 ; // alter1 
+    D15 = 0xfff0 ; // alter2 
+    D16 = 0x0006 ; // rtIndex
+    D17 = 0xff07 ; // other  
+
+    D18 = 0x0411 ; // X1713
+    D19 = 0x0410 ; // X1705
+    D20 = 0xfff0 ; // alter1 
+    D21 = 0xfff0 ; // alter2 
+    D22 = 0x000b ; // rtIndex
+    D23 = 0xff07 ; // other  
+
+    D24 = 0x0e10 ; // X1801
+    D25 = 0x0411 ; // X1713
+    D26 = 0xfff0 ; // alter1 
+    D27 = 0xfff0 ; // alter2 
+    D28 = 0x000d ; // rtIndex
+    D29 = 0xff07 ; // other  
+
+    D30 = 0x0b10 ; // S1604
+    D31 = 0x0311 ; // S1704
+    D32 = 0xfff0 ; // alter1 
+    D33 = 0xfff0 ; // alter2 
+    D34 = 0x0010 ; // rtIndex
+    D35 = 0xff07 ; // other  
+
+    D36 = 0x0311 ; // S1704
+    D37 = 0x0710 ; // S1712
+    D38 = 0xfff0 ; // alter1 
+    D39 = 0xfff0 ; // alter2 
+    D40 = 0x0012 ; // rtIndex
+    D41 = 0xff07 ; // other  
+
+    D42 = 0x0710 ; // S1712
+    D43 = 0x0111 ; // S1804
+    D44 = 0xfff0 ; // alter1 
+    D45 = 0xfff0 ; // alter2 
+    D46 = 0x0019 ; // rtIndex
+    D47 = 0xff07 ; // other  
+
+    D48 = 0x0111 ; // S1804
+    D49 = 0x0c11 ; // S1902F
+    D50 = 0xfff0 ; // alter1 
+    D51 = 0xfff0 ; // alter2 
+    D52 = 0x001d ; // rtIndex
+    D53 = 0xff07 ; // other  
+

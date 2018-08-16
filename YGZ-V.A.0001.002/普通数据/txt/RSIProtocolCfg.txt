@@ -1,0 +1,10 @@
+/**Base RSSPI_Protocol Table Number : 2**/
+selfRsspID: 15363
+    D0000 = 0x0001 ; // (peerType) CI
+    D0001 = 0x000C ; // (VcpDevId)
+    D0002 = 0x3C02 ; // (Peer_RsspID)
+    D0003 = 0x0001 ; // (peerType) CI
+    D0004 = 0x000D ; // (VcpDevId)
+    D0005 = 0x3C04 ; // (Peer_RsspID)
+    D0006 = 0xEEEE ; // (TabEnd)
+

@@ -1,0 +1,50 @@
+/**HXDataTable Number: 16 **/
+    D0000 = 0x1002 ; // PSD1601-KMJ (in)
+    D0001 = 0x0C00 ; // PSD1601-KMJ (out)
+
+    D0002 = 0x1003 ; // PSD1601-GMJ (in)
+    D0003 = 0x0C01 ; // PSD1601-GMJ (out)
+
+    D0004 = 0x1006 ; // PSD1602-KMJ (in)
+    D0005 = 0x0C02 ; // PSD1602-KMJ (out)
+
+    D0006 = 0x1007 ; // PSD1602-GMJ (in)
+    D0007 = 0x0C03 ; // PSD1602-GMJ (out)
+
+    D0008 = 0x100A ; // PSD1701-KMJ (in)
+    D0009 = 0x0C04 ; // PSD1701-KMJ (out)
+
+    D0010 = 0x100B ; // PSD1701-GMJ (in)
+    D0011 = 0x0C05 ; // PSD1701-GMJ (out)
+
+    D0012 = 0x100E ; // PSD1702-KMJ (in)
+    D0013 = 0x0C06 ; // PSD1702-KMJ (out)
+
+    D0014 = 0x100F ; // PSD1702-GMJ (in)
+    D0015 = 0x0C07 ; // PSD1702-GMJ (out)
+
+    D0016 = 0x1102 ; // PSD1801-KMJ (in)
+    D0017 = 0x0C08 ; // PSD1801-KMJ (out)
+
+    D0018 = 0x1103 ; // PSD1801-GMJ (in)
+    D0019 = 0x0C09 ; // PSD1801-GMJ (out)
+
+    D0020 = 0x1106 ; // PSD1802-KMJ (in)
+    D0021 = 0x0C0A ; // PSD1802-KMJ (out)
+
+    D0022 = 0x1107 ; // PSD1802-GMJ (in)
+    D0023 = 0x0C0B ; // PSD1802-GMJ (out)
+
+    D0024 = 0x1302 ; // AFG1601_GYJ (in)
+    D0025 = 0x0C0C ; // AFG1601_GYJ (out)
+
+    D0026 = 0x1305 ; // AFG1602_GYJ (in)
+    D0027 = 0x0C0D ; // AFG1602_GYJ (out)
+
+    D0028 = 0x1308 ; // AFG1701_GYJ (in)
+    D0029 = 0x0C0E ; // AFG1701_GYJ (out)
+
+    D0030 = 0x130B ; // AFG1702_GYJ (in)
+    D0031 = 0x0C0F ; // AFG1702_GYJ (out)
+
+    D0032 = 0xEEEE ; // (tabEnd)

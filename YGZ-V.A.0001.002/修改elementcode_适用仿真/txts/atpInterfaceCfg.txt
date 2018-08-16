@@ -1,0 +1,3512 @@
+V.A.000.000.0.15
+/**CrossCodeTable Number : 1 **/
+    D0000 = 0x0000 ; // C1701
+    D0001 = 0x0002 ; // (AIndex)
+    D0002 = 0x0005 ; // (BIndex)
+    D0003 = 0x0004 ; // (CIndex)
+    D0004 = 0x0003 ; // (DIndex)
+    D0005 = 0x0014 ; // (SectIndex)
+
+    D0006 = 0xEEEE ; // (tabEnd)
+/**ElementCodeTable Number : 185 **/
+    D0000 = 0x0000 ; // (devId)
+    D0001 = 0x00C8 ; // weiche (kind_id)
+    D0002 = 0x00E6 ; // P1701 (kind_id)
+    D0003 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0004 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0005 = 0x00E6 ; // (ixl_instance_index)
+    D0006 = 0x0012 ; // (wcu_instance_kind_id)
+    D0007 = 0x00E6 ; // (wcu_instance_index)
+    D0008 = 0x0000 ; // (ixl_Devaddr)
+    D0009 = 0x0000 ; // (io_type)
+    D0010 = 0xFFFF ; // (inputaddr)
+    D0011 = 0xFFFF ; // (outputaddr)
+
+    D0012 = 0x0001 ; // (devId)
+    D0013 = 0x00C8 ; // weiche (kind_id)
+    D0014 = 0x00E7 ; // P1702 (kind_id)
+    D0015 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0016 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0017 = 0x00E7 ; // (ixl_instance_index)
+    D0018 = 0x0012 ; // (wcu_instance_kind_id)
+    D0019 = 0x00E7 ; // (wcu_instance_index)
+    D0020 = 0x0001 ; // (ixl_Devaddr)
+    D0021 = 0x0000 ; // (io_type)
+    D0022 = 0xFFFF ; // (inputaddr)
+    D0023 = 0xFFFF ; // (outputaddr)
+
+    D0024 = 0x0002 ; // (devId)
+    D0025 = 0x00C8 ; // weiche (kind_id)
+    D0026 = 0x00E1 ; // P1703 (kind_id)
+    D0027 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0028 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0029 = 0x00E1 ; // (ixl_instance_index)
+    D0030 = 0x0012 ; // (wcu_instance_kind_id)
+    D0031 = 0x00E1 ; // (wcu_instance_index)
+    D0032 = 0x0002 ; // (ixl_Devaddr)
+    D0033 = 0x0000 ; // (io_type)
+    D0034 = 0xFFFF ; // (inputaddr)
+    D0035 = 0xFFFF ; // (outputaddr)
+
+    D0036 = 0x0003 ; // (devId)
+    D0037 = 0x00C8 ; // weiche (kind_id)
+    D0038 = 0x00E5 ; // P1704 (kind_id)
+    D0039 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0040 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0041 = 0x00E5 ; // (ixl_instance_index)
+    D0042 = 0x0012 ; // (wcu_instance_kind_id)
+    D0043 = 0x00E5 ; // (wcu_instance_index)
+    D0044 = 0x0003 ; // (ixl_Devaddr)
+    D0045 = 0x0000 ; // (io_type)
+    D0046 = 0xFFFF ; // (inputaddr)
+    D0047 = 0xFFFF ; // (outputaddr)
+
+    D0048 = 0x0004 ; // (devId)
+    D0049 = 0x00C8 ; // weiche (kind_id)
+    D0050 = 0x00E0 ; // P1705 (kind_id)
+    D0051 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0052 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0053 = 0x00E0 ; // (ixl_instance_index)
+    D0054 = 0x0012 ; // (wcu_instance_kind_id)
+    D0055 = 0x00E0 ; // (wcu_instance_index)
+    D0056 = 0x0004 ; // (ixl_Devaddr)
+    D0057 = 0x0000 ; // (io_type)
+    D0058 = 0xFFFF ; // (inputaddr)
+    D0059 = 0xFFFF ; // (outputaddr)
+
+    D0060 = 0x0005 ; // (devId)
+    D0061 = 0x00C8 ; // weiche (kind_id)
+    D0062 = 0x00DF ; // P1706 (kind_id)
+    D0063 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0064 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0065 = 0x00DF ; // (ixl_instance_index)
+    D0066 = 0x0012 ; // (wcu_instance_kind_id)
+    D0067 = 0x00DF ; // (wcu_instance_index)
+    D0068 = 0x0005 ; // (ixl_Devaddr)
+    D0069 = 0x0000 ; // (io_type)
+    D0070 = 0xFFFF ; // (inputaddr)
+    D0071 = 0xFFFF ; // (outputaddr)
+
+    D0072 = 0x0006 ; // (devId)
+    D0073 = 0x00C8 ; // weiche (kind_id)
+    D0074 = 0x00F0 ; // P1707 (kind_id)
+    D0075 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0076 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0077 = 0x00F0 ; // (ixl_instance_index)
+    D0078 = 0x0012 ; // (wcu_instance_kind_id)
+    D0079 = 0x00F0 ; // (wcu_instance_index)
+    D0080 = 0x0006 ; // (ixl_Devaddr)
+    D0081 = 0x0000 ; // (io_type)
+    D0082 = 0xFFFF ; // (inputaddr)
+    D0083 = 0xFFFF ; // (outputaddr)
+
+    D0084 = 0x0007 ; // (devId)
+    D0085 = 0x00C8 ; // weiche (kind_id)
+    D0086 = 0x00F1 ; // P1708 (kind_id)
+    D0087 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0088 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0089 = 0x00F1 ; // (ixl_instance_index)
+    D0090 = 0x0012 ; // (wcu_instance_kind_id)
+    D0091 = 0x00F1 ; // (wcu_instance_index)
+    D0092 = 0x0007 ; // (ixl_Devaddr)
+    D0093 = 0x0000 ; // (io_type)
+    D0094 = 0xFFFF ; // (inputaddr)
+    D0095 = 0xFFFF ; // (outputaddr)
+
+    D0096 = 0x0008 ; // (devId)
+    D0097 = 0x00C8 ; // weiche (kind_id)
+    D0098 = 0x00F6 ; // P1709 (kind_id)
+    D0099 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0100 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0101 = 0x00F6 ; // (ixl_instance_index)
+    D0102 = 0x0012 ; // (wcu_instance_kind_id)
+    D0103 = 0x00F6 ; // (wcu_instance_index)
+    D0104 = 0x0008 ; // (ixl_Devaddr)
+    D0105 = 0x0000 ; // (io_type)
+    D0106 = 0xFFFF ; // (inputaddr)
+    D0107 = 0xFFFF ; // (outputaddr)
+
+    D0108 = 0x0009 ; // (devId)
+    D0109 = 0x00C8 ; // weiche (kind_id)
+    D0110 = 0x00F7 ; // P1710 (kind_id)
+    D0111 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0112 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0113 = 0x00F7 ; // (ixl_instance_index)
+    D0114 = 0x0012 ; // (wcu_instance_kind_id)
+    D0115 = 0x00F7 ; // (wcu_instance_index)
+    D0116 = 0x0009 ; // (ixl_Devaddr)
+    D0117 = 0x0000 ; // (io_type)
+    D0118 = 0xFFFF ; // (inputaddr)
+    D0119 = 0xFFFF ; // (outputaddr)
+
+    D0120 = 0x000A ; // (devId)
+    D0121 = 0x00C9 ; // signal (kind_id)
+    D0122 = 0x00EA ; // X1707 (kind_id)
+    D0123 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0124 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0125 = 0x00EA ; // (ixl_instance_index)
+    D0126 = 0x001C ; // (wcu_instance_kind_id)
+    D0127 = 0x00EA ; // (wcu_instance_index)
+    D0128 = 0x0000 ; // (ixl_Devaddr)
+    D0129 = 0x0000 ; // (io_type)
+    D0130 = 0xFFFF ; // (inputaddr)
+    D0131 = 0xFFFF ; // (outputaddr)
+
+    D0132 = 0x000B ; // (devId)
+    D0133 = 0x00C9 ; // signal (kind_id)
+    D0134 = 0x00EF ; // X1709 (kind_id)
+    D0135 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0136 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0137 = 0x00EF ; // (ixl_instance_index)
+    D0138 = 0x001C ; // (wcu_instance_kind_id)
+    D0139 = 0x00EF ; // (wcu_instance_index)
+    D0140 = 0x0001 ; // (ixl_Devaddr)
+    D0141 = 0x0000 ; // (io_type)
+    D0142 = 0xFFFF ; // (inputaddr)
+    D0143 = 0xFFFF ; // (outputaddr)
+
+    D0144 = 0x000C ; // (devId)
+    D0145 = 0x00C9 ; // signal (kind_id)
+    D0146 = 0x00EB ; // S1708 (kind_id)
+    D0147 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0148 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0149 = 0x00EB ; // (ixl_instance_index)
+    D0150 = 0x001C ; // (wcu_instance_kind_id)
+    D0151 = 0x00EB ; // (wcu_instance_index)
+    D0152 = 0x0002 ; // (ixl_Devaddr)
+    D0153 = 0x0000 ; // (io_type)
+    D0154 = 0xFFFF ; // (inputaddr)
+    D0155 = 0xFFFF ; // (outputaddr)
+
+    D0156 = 0x000D ; // (devId)
+    D0157 = 0x00C9 ; // signal (kind_id)
+    D0158 = 0x00EE ; // S1710 (kind_id)
+    D0159 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0160 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0161 = 0x00EE ; // (ixl_instance_index)
+    D0162 = 0x001C ; // (wcu_instance_kind_id)
+    D0163 = 0x00EE ; // (wcu_instance_index)
+    D0164 = 0x0003 ; // (ixl_Devaddr)
+    D0165 = 0x0000 ; // (io_type)
+    D0166 = 0xFFFF ; // (inputaddr)
+    D0167 = 0xFFFF ; // (outputaddr)
+
+    D0168 = 0x000E ; // (devId)
+    D0169 = 0x00C9 ; // signal (kind_id)
+    D0170 = 0x00E8 ; // X1705 (kind_id)
+    D0171 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0172 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0173 = 0x00E8 ; // (ixl_instance_index)
+    D0174 = 0x001C ; // (wcu_instance_kind_id)
+    D0175 = 0x00E8 ; // (wcu_instance_index)
+    D0176 = 0x0004 ; // (ixl_Devaddr)
+    D0177 = 0x0000 ; // (io_type)
+    D0178 = 0xFFFF ; // (inputaddr)
+    D0179 = 0xFFFF ; // (outputaddr)
+
+    D0180 = 0x000F ; // (devId)
+    D0181 = 0x00C9 ; // signal (kind_id)
+    D0182 = 0x00E9 ; // S1706 (kind_id)
+    D0183 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0184 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0185 = 0x00E9 ; // (ixl_instance_index)
+    D0186 = 0x001C ; // (wcu_instance_kind_id)
+    D0187 = 0x00E9 ; // (wcu_instance_index)
+    D0188 = 0x0005 ; // (ixl_Devaddr)
+    D0189 = 0x0000 ; // (io_type)
+    D0190 = 0xFFFF ; // (inputaddr)
+    D0191 = 0xFFFF ; // (outputaddr)
+
+    D0192 = 0x0010 ; // (devId)
+    D0193 = 0x00C9 ; // signal (kind_id)
+    D0194 = 0x00F5 ; // X1711 (kind_id)
+    D0195 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0196 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0197 = 0x00F5 ; // (ixl_instance_index)
+    D0198 = 0x001C ; // (wcu_instance_kind_id)
+    D0199 = 0x00F5 ; // (wcu_instance_index)
+    D0200 = 0x0006 ; // (ixl_Devaddr)
+    D0201 = 0x0000 ; // (io_type)
+    D0202 = 0xFFFF ; // (inputaddr)
+    D0203 = 0xFFFF ; // (outputaddr)
+
+    D0204 = 0x0011 ; // (devId)
+    D0205 = 0x00C9 ; // signal (kind_id)
+    D0206 = 0x00F4 ; // S1712 (kind_id)
+    D0207 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0208 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0209 = 0x00F4 ; // (ixl_instance_index)
+    D0210 = 0x001C ; // (wcu_instance_kind_id)
+    D0211 = 0x00F4 ; // (wcu_instance_index)
+    D0212 = 0x0007 ; // (ixl_Devaddr)
+    D0213 = 0x0000 ; // (io_type)
+    D0214 = 0xFFFF ; // (inputaddr)
+    D0215 = 0xFFFF ; // (outputaddr)
+
+    D0216 = 0x0012 ; // (devId)
+    D0217 = 0x00C9 ; // signal (kind_id)
+    D0218 = 0x00CD ; // X1601 (kind_id)
+    D0219 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0220 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0221 = 0x00CD ; // (ixl_instance_index)
+    D0222 = 0x001C ; // (wcu_instance_kind_id)
+    D0223 = 0x00CD ; // (wcu_instance_index)
+    D0224 = 0x0008 ; // (ixl_Devaddr)
+    D0225 = 0x0000 ; // (io_type)
+    D0226 = 0xFFFF ; // (inputaddr)
+    D0227 = 0xFFFF ; // (outputaddr)
+
+    D0228 = 0x0013 ; // (devId)
+    D0229 = 0x00C9 ; // signal (kind_id)
+    D0230 = 0x00D1 ; // X1603 (kind_id)
+    D0231 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0232 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0233 = 0x00D1 ; // (ixl_instance_index)
+    D0234 = 0x001C ; // (wcu_instance_kind_id)
+    D0235 = 0x00D1 ; // (wcu_instance_index)
+    D0236 = 0x0009 ; // (ixl_Devaddr)
+    D0237 = 0x0000 ; // (io_type)
+    D0238 = 0xFFFF ; // (inputaddr)
+    D0239 = 0xFFFF ; // (outputaddr)
+
+    D0240 = 0x0014 ; // (devId)
+    D0241 = 0x00C9 ; // signal (kind_id)
+    D0242 = 0x00CE ; // S1602 (kind_id)
+    D0243 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0244 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0245 = 0x00CE ; // (ixl_instance_index)
+    D0246 = 0x001C ; // (wcu_instance_kind_id)
+    D0247 = 0x00CE ; // (wcu_instance_index)
+    D0248 = 0x000A ; // (ixl_Devaddr)
+    D0249 = 0x0000 ; // (io_type)
+    D0250 = 0xFFFF ; // (inputaddr)
+    D0251 = 0xFFFF ; // (outputaddr)
+
+    D0252 = 0x0015 ; // (devId)
+    D0253 = 0x00C9 ; // signal (kind_id)
+    D0254 = 0x00D0 ; // S1604 (kind_id)
+    D0255 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0256 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0257 = 0x00D0 ; // (ixl_instance_index)
+    D0258 = 0x001C ; // (wcu_instance_kind_id)
+    D0259 = 0x00D0 ; // (wcu_instance_index)
+    D0260 = 0x000B ; // (ixl_Devaddr)
+    D0261 = 0x0000 ; // (io_type)
+    D0262 = 0xFFFF ; // (inputaddr)
+    D0263 = 0xFFFF ; // (outputaddr)
+
+    D0264 = 0x0016 ; // (devId)
+    D0265 = 0x00C9 ; // signal (kind_id)
+    D0266 = 0x00DA ; // X1701 (kind_id)
+    D0267 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0268 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0269 = 0x00DA ; // (ixl_instance_index)
+    D0270 = 0x001C ; // (wcu_instance_kind_id)
+    D0271 = 0x00DA ; // (wcu_instance_index)
+    D0272 = 0x000C ; // (ixl_Devaddr)
+    D0273 = 0x0000 ; // (io_type)
+    D0274 = 0xFFFF ; // (inputaddr)
+    D0275 = 0xFFFF ; // (outputaddr)
+
+    D0276 = 0x0017 ; // (devId)
+    D0277 = 0x00C9 ; // signal (kind_id)
+    D0278 = 0x00D9 ; // S1702 (kind_id)
+    D0279 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0280 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0281 = 0x00D9 ; // (ixl_instance_index)
+    D0282 = 0x001C ; // (wcu_instance_kind_id)
+    D0283 = 0x00D9 ; // (wcu_instance_index)
+    D0284 = 0x000D ; // (ixl_Devaddr)
+    D0285 = 0x0000 ; // (io_type)
+    D0286 = 0xFFFF ; // (inputaddr)
+    D0287 = 0xFFFF ; // (outputaddr)
+
+    D0288 = 0x0018 ; // (devId)
+    D0289 = 0x00C9 ; // signal (kind_id)
+    D0290 = 0x00FD ; // X1801 (kind_id)
+    D0291 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0292 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0293 = 0x00FD ; // (ixl_instance_index)
+    D0294 = 0x001C ; // (wcu_instance_kind_id)
+    D0295 = 0x00FD ; // (wcu_instance_index)
+    D0296 = 0x000E ; // (ixl_Devaddr)
+    D0297 = 0x0000 ; // (io_type)
+    D0298 = 0xFFFF ; // (inputaddr)
+    D0299 = 0xFFFF ; // (outputaddr)
+
+    D0300 = 0x0019 ; // (devId)
+    D0301 = 0x00C9 ; // signal (kind_id)
+    D0302 = 0x00FE ; // S1802 (kind_id)
+    D0303 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0304 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0305 = 0x00FE ; // (ixl_instance_index)
+    D0306 = 0x001C ; // (wcu_instance_kind_id)
+    D0307 = 0x00FE ; // (wcu_instance_index)
+    D0308 = 0x000F ; // (ixl_Devaddr)
+    D0309 = 0x0000 ; // (io_type)
+    D0310 = 0xFFFF ; // (inputaddr)
+    D0311 = 0xFFFF ; // (outputaddr)
+
+    D0312 = 0x001A ; // (devId)
+    D0313 = 0x00C9 ; // signal (kind_id)
+    D0314 = 0x0101 ; // X1803 (kind_id)
+    D0315 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0316 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0317 = 0x0101 ; // (ixl_instance_index)
+    D0318 = 0x001C ; // (wcu_instance_kind_id)
+    D0319 = 0x0101 ; // (wcu_instance_index)
+    D0320 = 0x0010 ; // (ixl_Devaddr)
+    D0321 = 0x0000 ; // (io_type)
+    D0322 = 0xFFFF ; // (inputaddr)
+    D0323 = 0xFFFF ; // (outputaddr)
+
+    D0324 = 0x001B ; // (devId)
+    D0325 = 0x00C9 ; // signal (kind_id)
+    D0326 = 0x0102 ; // S1804 (kind_id)
+    D0327 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0328 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0329 = 0x0102 ; // (ixl_instance_index)
+    D0330 = 0x001C ; // (wcu_instance_kind_id)
+    D0331 = 0x0102 ; // (wcu_instance_index)
+    D0332 = 0x0011 ; // (ixl_Devaddr)
+    D0333 = 0x0000 ; // (io_type)
+    D0334 = 0xFFFF ; // (inputaddr)
+    D0335 = 0xFFFF ; // (outputaddr)
+
+    D0336 = 0x001C ; // (devId)
+    D0337 = 0x00C9 ; // signal (kind_id)
+    D0338 = 0x00DB ; // X1703 (kind_id)
+    D0339 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0340 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0341 = 0x00DB ; // (ixl_instance_index)
+    D0342 = 0x001C ; // (wcu_instance_kind_id)
+    D0343 = 0x00DB ; // (wcu_instance_index)
+    D0344 = 0x0012 ; // (ixl_Devaddr)
+    D0345 = 0x0000 ; // (io_type)
+    D0346 = 0xFFFF ; // (inputaddr)
+    D0347 = 0xFFFF ; // (outputaddr)
+
+    D0348 = 0x001D ; // (devId)
+    D0349 = 0x00C9 ; // signal (kind_id)
+    D0350 = 0x00DC ; // S1704 (kind_id)
+    D0351 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0352 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0353 = 0x00DC ; // (ixl_instance_index)
+    D0354 = 0x001C ; // (wcu_instance_kind_id)
+    D0355 = 0x00DC ; // (wcu_instance_index)
+    D0356 = 0x0013 ; // (ixl_Devaddr)
+    D0357 = 0x0000 ; // (io_type)
+    D0358 = 0xFFFF ; // (inputaddr)
+    D0359 = 0xFFFF ; // (outputaddr)
+
+    D0360 = 0x001E ; // (devId)
+    D0361 = 0x00C9 ; // signal (kind_id)
+    D0362 = 0x00F8 ; // X1713 (kind_id)
+    D0363 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0364 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0365 = 0x00F8 ; // (ixl_instance_index)
+    D0366 = 0x001C ; // (wcu_instance_kind_id)
+    D0367 = 0x00F8 ; // (wcu_instance_index)
+    D0368 = 0x0014 ; // (ixl_Devaddr)
+    D0369 = 0x0000 ; // (io_type)
+    D0370 = 0xFFFF ; // (inputaddr)
+    D0371 = 0xFFFF ; // (outputaddr)
+
+    D0372 = 0x001F ; // (devId)
+    D0373 = 0x00C9 ; // signal (kind_id)
+    D0374 = 0x00F9 ; // S1714 (kind_id)
+    D0375 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0376 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0377 = 0x00F9 ; // (ixl_instance_index)
+    D0378 = 0x001C ; // (wcu_instance_kind_id)
+    D0379 = 0x00F9 ; // (wcu_instance_index)
+    D0380 = 0x0015 ; // (ixl_Devaddr)
+    D0381 = 0x0000 ; // (io_type)
+    D0382 = 0xFFFF ; // (inputaddr)
+    D0383 = 0xFFFF ; // (outputaddr)
+
+    D0384 = 0x0020 ; // (devId)
+    D0385 = 0x00CB ; // kreuz (kind_id)
+    D0386 = 0x3529 ; // C1701 (kind_id)
+    D0387 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0388 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0389 = 0x3529 ; // (ixl_instance_index)
+    D0390 = 0x0013 ; // (wcu_instance_kind_id)
+    D0391 = 0x3529 ; // (wcu_instance_index)
+    D0392 = 0x0000 ; // (ixl_Devaddr)
+    D0393 = 0x0000 ; // (io_type)
+    D0394 = 0xFFFF ; // (inputaddr)
+    D0395 = 0xFFFF ; // (outputaddr)
+
+    D0396 = 0x0021 ; // (devId)
+    D0397 = 0x00CF ; // gleis (kind_id)
+    D0398 = 0x00C9 ; // TA1601A (kind_id)
+    D0399 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0400 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0401 = 0x00C9 ; // (ixl_instance_index)
+    D0402 = 0x0014 ; // (wcu_instance_kind_id)
+    D0403 = 0x00C9 ; // (wcu_instance_index)
+    D0404 = 0x0000 ; // (ixl_Devaddr)
+    D0405 = 0x0000 ; // (io_type)
+    D0406 = 0xFFFF ; // (inputaddr)
+    D0407 = 0xFFFF ; // (outputaddr)
+
+    D0408 = 0x0022 ; // (devId)
+    D0409 = 0x00CF ; // gleis (kind_id)
+    D0410 = 0x00CB ; // TA1602A (kind_id)
+    D0411 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0412 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0413 = 0x00CB ; // (ixl_instance_index)
+    D0414 = 0x0014 ; // (wcu_instance_kind_id)
+    D0415 = 0x00CB ; // (wcu_instance_index)
+    D0416 = 0x0001 ; // (ixl_Devaddr)
+    D0417 = 0x0000 ; // (io_type)
+    D0418 = 0xFFFF ; // (inputaddr)
+    D0419 = 0xFFFF ; // (outputaddr)
+
+    D0420 = 0x0023 ; // (devId)
+    D0421 = 0x00CF ; // gleis (kind_id)
+    D0422 = 0x031C ; // TA1602B (kind_id)
+    D0423 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0424 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0425 = 0x031C ; // (ixl_instance_index)
+    D0426 = 0x0014 ; // (wcu_instance_kind_id)
+    D0427 = 0x031C ; // (wcu_instance_index)
+    D0428 = 0x0002 ; // (ixl_Devaddr)
+    D0429 = 0x0000 ; // (io_type)
+    D0430 = 0xFFFF ; // (inputaddr)
+    D0431 = 0xFFFF ; // (outputaddr)
+
+    D0432 = 0x0024 ; // (devId)
+    D0433 = 0x00CF ; // gleis (kind_id)
+    D0434 = 0x031D ; // TA1602C (kind_id)
+    D0435 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0436 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0437 = 0x031D ; // (ixl_instance_index)
+    D0438 = 0x0014 ; // (wcu_instance_kind_id)
+    D0439 = 0x031D ; // (wcu_instance_index)
+    D0440 = 0x0003 ; // (ixl_Devaddr)
+    D0441 = 0x0000 ; // (io_type)
+    D0442 = 0xFFFF ; // (inputaddr)
+    D0443 = 0xFFFF ; // (outputaddr)
+
+    D0444 = 0x0025 ; // (devId)
+    D0445 = 0x00CF ; // gleis (kind_id)
+    D0446 = 0x031E ; // TA1602D (kind_id)
+    D0447 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0448 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0449 = 0x031E ; // (ixl_instance_index)
+    D0450 = 0x0014 ; // (wcu_instance_kind_id)
+    D0451 = 0x031E ; // (wcu_instance_index)
+    D0452 = 0x0004 ; // (ixl_Devaddr)
+    D0453 = 0x0000 ; // (io_type)
+    D0454 = 0xFFFF ; // (inputaddr)
+    D0455 = 0xFFFF ; // (outputaddr)
+
+    D0456 = 0x0026 ; // (devId)
+    D0457 = 0x00CF ; // gleis (kind_id)
+    D0458 = 0x0480 ; // TA1603A (kind_id)
+    D0459 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0460 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0461 = 0x0480 ; // (ixl_instance_index)
+    D0462 = 0x0014 ; // (wcu_instance_kind_id)
+    D0463 = 0x0480 ; // (wcu_instance_index)
+    D0464 = 0x0005 ; // (ixl_Devaddr)
+    D0465 = 0x0000 ; // (io_type)
+    D0466 = 0xFFFF ; // (inputaddr)
+    D0467 = 0xFFFF ; // (outputaddr)
+
+    D0468 = 0x0027 ; // (devId)
+    D0469 = 0x00CF ; // gleis (kind_id)
+    D0470 = 0x00D2 ; // TA1603B (kind_id)
+    D0471 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0472 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0473 = 0x00D2 ; // (ixl_instance_index)
+    D0474 = 0x0014 ; // (wcu_instance_kind_id)
+    D0475 = 0x00D2 ; // (wcu_instance_index)
+    D0476 = 0x0006 ; // (ixl_Devaddr)
+    D0477 = 0x0000 ; // (io_type)
+    D0478 = 0xFFFF ; // (inputaddr)
+    D0479 = 0xFFFF ; // (outputaddr)
+
+    D0480 = 0x0028 ; // (devId)
+    D0481 = 0x00CF ; // gleis (kind_id)
+    D0482 = 0x0481 ; // TA1603C (kind_id)
+    D0483 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0484 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0485 = 0x0481 ; // (ixl_instance_index)
+    D0486 = 0x0014 ; // (wcu_instance_kind_id)
+    D0487 = 0x0481 ; // (wcu_instance_index)
+    D0488 = 0x0007 ; // (ixl_Devaddr)
+    D0489 = 0x0000 ; // (io_type)
+    D0490 = 0xFFFF ; // (inputaddr)
+    D0491 = 0xFFFF ; // (outputaddr)
+
+    D0492 = 0x0029 ; // (devId)
+    D0493 = 0x00CF ; // gleis (kind_id)
+    D0494 = 0x031F ; // TA1604A (kind_id)
+    D0495 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0496 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0497 = 0x031F ; // (ixl_instance_index)
+    D0498 = 0x0014 ; // (wcu_instance_kind_id)
+    D0499 = 0x031F ; // (wcu_instance_index)
+    D0500 = 0x0008 ; // (ixl_Devaddr)
+    D0501 = 0x0000 ; // (io_type)
+    D0502 = 0xFFFF ; // (inputaddr)
+    D0503 = 0xFFFF ; // (outputaddr)
+
+    D0504 = 0x002A ; // (devId)
+    D0505 = 0x00CF ; // gleis (kind_id)
+    D0506 = 0x0320 ; // TA1604B (kind_id)
+    D0507 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0508 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0509 = 0x0320 ; // (ixl_instance_index)
+    D0510 = 0x0014 ; // (wcu_instance_kind_id)
+    D0511 = 0x0320 ; // (wcu_instance_index)
+    D0512 = 0x0009 ; // (ixl_Devaddr)
+    D0513 = 0x0000 ; // (io_type)
+    D0514 = 0xFFFF ; // (inputaddr)
+    D0515 = 0xFFFF ; // (outputaddr)
+
+    D0516 = 0x002B ; // (devId)
+    D0517 = 0x00CF ; // gleis (kind_id)
+    D0518 = 0x0321 ; // TA1604C (kind_id)
+    D0519 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0520 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0521 = 0x0321 ; // (ixl_instance_index)
+    D0522 = 0x0014 ; // (wcu_instance_kind_id)
+    D0523 = 0x0321 ; // (wcu_instance_index)
+    D0524 = 0x000A ; // (ixl_Devaddr)
+    D0525 = 0x0000 ; // (io_type)
+    D0526 = 0xFFFF ; // (inputaddr)
+    D0527 = 0xFFFF ; // (outputaddr)
+
+    D0528 = 0x002C ; // (devId)
+    D0529 = 0x00CF ; // gleis (kind_id)
+    D0530 = 0x0322 ; // TA1604D (kind_id)
+    D0531 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0532 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0533 = 0x0322 ; // (ixl_instance_index)
+    D0534 = 0x0014 ; // (wcu_instance_kind_id)
+    D0535 = 0x0322 ; // (wcu_instance_index)
+    D0536 = 0x000B ; // (ixl_Devaddr)
+    D0537 = 0x0000 ; // (io_type)
+    D0538 = 0xFFFF ; // (inputaddr)
+    D0539 = 0xFFFF ; // (outputaddr)
+
+    D0540 = 0x002D ; // (devId)
+    D0541 = 0x00CF ; // gleis (kind_id)
+    D0542 = 0x032C ; // TA1605A (kind_id)
+    D0543 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0544 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0545 = 0x032C ; // (ixl_instance_index)
+    D0546 = 0x0014 ; // (wcu_instance_kind_id)
+    D0547 = 0x032C ; // (wcu_instance_index)
+    D0548 = 0x000C ; // (ixl_Devaddr)
+    D0549 = 0x0000 ; // (io_type)
+    D0550 = 0xFFFF ; // (inputaddr)
+    D0551 = 0xFFFF ; // (outputaddr)
+
+    D0552 = 0x002E ; // (devId)
+    D0553 = 0x00CF ; // gleis (kind_id)
+    D0554 = 0x032D ; // TA1605B (kind_id)
+    D0555 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0556 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0557 = 0x032D ; // (ixl_instance_index)
+    D0558 = 0x0014 ; // (wcu_instance_kind_id)
+    D0559 = 0x032D ; // (wcu_instance_index)
+    D0560 = 0x000D ; // (ixl_Devaddr)
+    D0561 = 0x0000 ; // (io_type)
+    D0562 = 0xFFFF ; // (inputaddr)
+    D0563 = 0xFFFF ; // (outputaddr)
+
+    D0564 = 0x002F ; // (devId)
+    D0565 = 0x00CF ; // gleis (kind_id)
+    D0566 = 0x032E ; // TA1605C (kind_id)
+    D0567 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0568 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0569 = 0x032E ; // (ixl_instance_index)
+    D0570 = 0x0014 ; // (wcu_instance_kind_id)
+    D0571 = 0x032E ; // (wcu_instance_index)
+    D0572 = 0x000E ; // (ixl_Devaddr)
+    D0573 = 0x0000 ; // (io_type)
+    D0574 = 0xFFFF ; // (inputaddr)
+    D0575 = 0xFFFF ; // (outputaddr)
+
+    D0576 = 0x0030 ; // (devId)
+    D0577 = 0x00CF ; // gleis (kind_id)
+    D0578 = 0x032F ; // TA1605D (kind_id)
+    D0579 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0580 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0581 = 0x032F ; // (ixl_instance_index)
+    D0582 = 0x0014 ; // (wcu_instance_kind_id)
+    D0583 = 0x032F ; // (wcu_instance_index)
+    D0584 = 0x000F ; // (ixl_Devaddr)
+    D0585 = 0x0000 ; // (io_type)
+    D0586 = 0xFFFF ; // (inputaddr)
+    D0587 = 0xFFFF ; // (outputaddr)
+
+    D0588 = 0x0031 ; // (devId)
+    D0589 = 0x00CF ; // gleis (kind_id)
+    D0590 = 0x0482 ; // TA1606A (kind_id)
+    D0591 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0592 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0593 = 0x0482 ; // (ixl_instance_index)
+    D0594 = 0x0014 ; // (wcu_instance_kind_id)
+    D0595 = 0x0482 ; // (wcu_instance_index)
+    D0596 = 0x0010 ; // (ixl_Devaddr)
+    D0597 = 0x0000 ; // (io_type)
+    D0598 = 0xFFFF ; // (inputaddr)
+    D0599 = 0xFFFF ; // (outputaddr)
+
+    D0600 = 0x0032 ; // (devId)
+    D0601 = 0x00CF ; // gleis (kind_id)
+    D0602 = 0x00CF ; // TA1606B (kind_id)
+    D0603 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0604 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0605 = 0x00CF ; // (ixl_instance_index)
+    D0606 = 0x0014 ; // (wcu_instance_kind_id)
+    D0607 = 0x00CF ; // (wcu_instance_index)
+    D0608 = 0x0011 ; // (ixl_Devaddr)
+    D0609 = 0x0000 ; // (io_type)
+    D0610 = 0xFFFF ; // (inputaddr)
+    D0611 = 0xFFFF ; // (outputaddr)
+
+    D0612 = 0x0033 ; // (devId)
+    D0613 = 0x00CF ; // gleis (kind_id)
+    D0614 = 0x0483 ; // TA1606C (kind_id)
+    D0615 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0616 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0617 = 0x0483 ; // (ixl_instance_index)
+    D0618 = 0x0014 ; // (wcu_instance_kind_id)
+    D0619 = 0x0483 ; // (wcu_instance_index)
+    D0620 = 0x0012 ; // (ixl_Devaddr)
+    D0621 = 0x0000 ; // (io_type)
+    D0622 = 0xFFFF ; // (inputaddr)
+    D0623 = 0xFFFF ; // (outputaddr)
+
+    D0624 = 0x0034 ; // (devId)
+    D0625 = 0x00CF ; // gleis (kind_id)
+    D0626 = 0x0330 ; // TA1607A (kind_id)
+    D0627 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0628 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0629 = 0x0330 ; // (ixl_instance_index)
+    D0630 = 0x0014 ; // (wcu_instance_kind_id)
+    D0631 = 0x0330 ; // (wcu_instance_index)
+    D0632 = 0x0013 ; // (ixl_Devaddr)
+    D0633 = 0x0000 ; // (io_type)
+    D0634 = 0xFFFF ; // (inputaddr)
+    D0635 = 0xFFFF ; // (outputaddr)
+
+    D0636 = 0x0035 ; // (devId)
+    D0637 = 0x00CF ; // gleis (kind_id)
+    D0638 = 0x0331 ; // TA1607B (kind_id)
+    D0639 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0640 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0641 = 0x0331 ; // (ixl_instance_index)
+    D0642 = 0x0014 ; // (wcu_instance_kind_id)
+    D0643 = 0x0331 ; // (wcu_instance_index)
+    D0644 = 0x0014 ; // (ixl_Devaddr)
+    D0645 = 0x0000 ; // (io_type)
+    D0646 = 0xFFFF ; // (inputaddr)
+    D0647 = 0xFFFF ; // (outputaddr)
+
+    D0648 = 0x0036 ; // (devId)
+    D0649 = 0x00CF ; // gleis (kind_id)
+    D0650 = 0x0332 ; // TA1607C (kind_id)
+    D0651 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0652 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0653 = 0x0332 ; // (ixl_instance_index)
+    D0654 = 0x0014 ; // (wcu_instance_kind_id)
+    D0655 = 0x0332 ; // (wcu_instance_index)
+    D0656 = 0x0015 ; // (ixl_Devaddr)
+    D0657 = 0x0000 ; // (io_type)
+    D0658 = 0xFFFF ; // (inputaddr)
+    D0659 = 0xFFFF ; // (outputaddr)
+
+    D0660 = 0x0037 ; // (devId)
+    D0661 = 0x00CF ; // gleis (kind_id)
+    D0662 = 0x00D4 ; // TA1607D (kind_id)
+    D0663 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0664 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0665 = 0x00D4 ; // (ixl_instance_index)
+    D0666 = 0x0014 ; // (wcu_instance_kind_id)
+    D0667 = 0x00D4 ; // (wcu_instance_index)
+    D0668 = 0x0016 ; // (ixl_Devaddr)
+    D0669 = 0x0000 ; // (io_type)
+    D0670 = 0xFFFF ; // (inputaddr)
+    D0671 = 0xFFFF ; // (outputaddr)
+
+    D0672 = 0x0038 ; // (devId)
+    D0673 = 0x00CF ; // gleis (kind_id)
+    D0674 = 0x00D6 ; // TA1608A (kind_id)
+    D0675 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0676 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0677 = 0x00D6 ; // (ixl_instance_index)
+    D0678 = 0x0014 ; // (wcu_instance_kind_id)
+    D0679 = 0x00D6 ; // (wcu_instance_index)
+    D0680 = 0x0017 ; // (ixl_Devaddr)
+    D0681 = 0x0000 ; // (io_type)
+    D0682 = 0xFFFF ; // (inputaddr)
+    D0683 = 0xFFFF ; // (outputaddr)
+
+    D0684 = 0x0039 ; // (devId)
+    D0685 = 0x00CF ; // gleis (kind_id)
+    D0686 = 0x00D5 ; // TA1701A (kind_id)
+    D0687 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0688 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0689 = 0x00D5 ; // (ixl_instance_index)
+    D0690 = 0x0014 ; // (wcu_instance_kind_id)
+    D0691 = 0x00D5 ; // (wcu_instance_index)
+    D0692 = 0x0018 ; // (ixl_Devaddr)
+    D0693 = 0x0000 ; // (io_type)
+    D0694 = 0xFFFF ; // (inputaddr)
+    D0695 = 0xFFFF ; // (outputaddr)
+
+    D0696 = 0x003A ; // (devId)
+    D0697 = 0x00CF ; // gleis (kind_id)
+    D0698 = 0x00D7 ; // TA1702A (kind_id)
+    D0699 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0700 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0701 = 0x00D7 ; // (ixl_instance_index)
+    D0702 = 0x0014 ; // (wcu_instance_kind_id)
+    D0703 = 0x00D7 ; // (wcu_instance_index)
+    D0704 = 0x0019 ; // (ixl_Devaddr)
+    D0705 = 0x0000 ; // (io_type)
+    D0706 = 0xFFFF ; // (inputaddr)
+    D0707 = 0xFFFF ; // (outputaddr)
+
+    D0708 = 0x003B ; // (devId)
+    D0709 = 0x00CF ; // gleis (kind_id)
+    D0710 = 0x0324 ; // TA1702B (kind_id)
+    D0711 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0712 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0713 = 0x0324 ; // (ixl_instance_index)
+    D0714 = 0x0014 ; // (wcu_instance_kind_id)
+    D0715 = 0x0324 ; // (wcu_instance_index)
+    D0716 = 0x001A ; // (ixl_Devaddr)
+    D0717 = 0x0000 ; // (io_type)
+    D0718 = 0xFFFF ; // (inputaddr)
+    D0719 = 0xFFFF ; // (outputaddr)
+
+    D0720 = 0x003C ; // (devId)
+    D0721 = 0x00CF ; // gleis (kind_id)
+    D0722 = 0x0325 ; // TA1702C (kind_id)
+    D0723 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0724 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0725 = 0x0325 ; // (ixl_instance_index)
+    D0726 = 0x0014 ; // (wcu_instance_kind_id)
+    D0727 = 0x0325 ; // (wcu_instance_index)
+    D0728 = 0x001B ; // (ixl_Devaddr)
+    D0729 = 0x0000 ; // (io_type)
+    D0730 = 0xFFFF ; // (inputaddr)
+    D0731 = 0xFFFF ; // (outputaddr)
+
+    D0732 = 0x003D ; // (devId)
+    D0733 = 0x00CF ; // gleis (kind_id)
+    D0734 = 0x0326 ; // TA1702D (kind_id)
+    D0735 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0736 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0737 = 0x0326 ; // (ixl_instance_index)
+    D0738 = 0x0014 ; // (wcu_instance_kind_id)
+    D0739 = 0x0326 ; // (wcu_instance_index)
+    D0740 = 0x001C ; // (ixl_Devaddr)
+    D0741 = 0x0000 ; // (io_type)
+    D0742 = 0xFFFF ; // (inputaddr)
+    D0743 = 0xFFFF ; // (outputaddr)
+
+    D0744 = 0x003E ; // (devId)
+    D0745 = 0x00CF ; // gleis (kind_id)
+    D0746 = 0x0333 ; // TA1703A (kind_id)
+    D0747 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0748 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0749 = 0x0333 ; // (ixl_instance_index)
+    D0750 = 0x0014 ; // (wcu_instance_kind_id)
+    D0751 = 0x0333 ; // (wcu_instance_index)
+    D0752 = 0x001D ; // (ixl_Devaddr)
+    D0753 = 0x0000 ; // (io_type)
+    D0754 = 0xFFFF ; // (inputaddr)
+    D0755 = 0xFFFF ; // (outputaddr)
+
+    D0756 = 0x003F ; // (devId)
+    D0757 = 0x00CF ; // gleis (kind_id)
+    D0758 = 0x00DE ; // TA1703B (kind_id)
+    D0759 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0760 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0761 = 0x00DE ; // (ixl_instance_index)
+    D0762 = 0x0014 ; // (wcu_instance_kind_id)
+    D0763 = 0x00DE ; // (wcu_instance_index)
+    D0764 = 0x001E ; // (ixl_Devaddr)
+    D0765 = 0x0000 ; // (io_type)
+    D0766 = 0xFFFF ; // (inputaddr)
+    D0767 = 0xFFFF ; // (outputaddr)
+
+    D0768 = 0x0040 ; // (devId)
+    D0769 = 0x00CF ; // gleis (kind_id)
+    D0770 = 0x0334 ; // TA1703C (kind_id)
+    D0771 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0772 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0773 = 0x0334 ; // (ixl_instance_index)
+    D0774 = 0x0014 ; // (wcu_instance_kind_id)
+    D0775 = 0x0334 ; // (wcu_instance_index)
+    D0776 = 0x001F ; // (ixl_Devaddr)
+    D0777 = 0x0000 ; // (io_type)
+    D0778 = 0xFFFF ; // (inputaddr)
+    D0779 = 0xFFFF ; // (outputaddr)
+
+    D0780 = 0x0041 ; // (devId)
+    D0781 = 0x00CF ; // gleis (kind_id)
+    D0782 = 0x0327 ; // TA1704A (kind_id)
+    D0783 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0784 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0785 = 0x0327 ; // (ixl_instance_index)
+    D0786 = 0x0014 ; // (wcu_instance_kind_id)
+    D0787 = 0x0327 ; // (wcu_instance_index)
+    D0788 = 0x0020 ; // (ixl_Devaddr)
+    D0789 = 0x0000 ; // (io_type)
+    D0790 = 0xFFFF ; // (inputaddr)
+    D0791 = 0xFFFF ; // (outputaddr)
+
+    D0792 = 0x0042 ; // (devId)
+    D0793 = 0x00CF ; // gleis (kind_id)
+    D0794 = 0x0328 ; // TA1704B (kind_id)
+    D0795 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0796 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0797 = 0x0328 ; // (ixl_instance_index)
+    D0798 = 0x0014 ; // (wcu_instance_kind_id)
+    D0799 = 0x0328 ; // (wcu_instance_index)
+    D0800 = 0x0021 ; // (ixl_Devaddr)
+    D0801 = 0x0000 ; // (io_type)
+    D0802 = 0xFFFF ; // (inputaddr)
+    D0803 = 0xFFFF ; // (outputaddr)
+
+    D0804 = 0x0043 ; // (devId)
+    D0805 = 0x00CF ; // gleis (kind_id)
+    D0806 = 0x0329 ; // TA1704C (kind_id)
+    D0807 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0808 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0809 = 0x0329 ; // (ixl_instance_index)
+    D0810 = 0x0014 ; // (wcu_instance_kind_id)
+    D0811 = 0x0329 ; // (wcu_instance_index)
+    D0812 = 0x0022 ; // (ixl_Devaddr)
+    D0813 = 0x0000 ; // (io_type)
+    D0814 = 0xFFFF ; // (inputaddr)
+    D0815 = 0xFFFF ; // (outputaddr)
+
+    D0816 = 0x0044 ; // (devId)
+    D0817 = 0x00CF ; // gleis (kind_id)
+    D0818 = 0x00D8 ; // TA1704D (kind_id)
+    D0819 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0820 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0821 = 0x00D8 ; // (ixl_instance_index)
+    D0822 = 0x0014 ; // (wcu_instance_kind_id)
+    D0823 = 0x00D8 ; // (wcu_instance_index)
+    D0824 = 0x0023 ; // (ixl_Devaddr)
+    D0825 = 0x0000 ; // (io_type)
+    D0826 = 0xFFFF ; // (inputaddr)
+    D0827 = 0xFFFF ; // (outputaddr)
+
+    D0828 = 0x0045 ; // (devId)
+    D0829 = 0x00CF ; // gleis (kind_id)
+    D0830 = 0x032A ; // TA1706A (kind_id)
+    D0831 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0832 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0833 = 0x032A ; // (ixl_instance_index)
+    D0834 = 0x0014 ; // (wcu_instance_kind_id)
+    D0835 = 0x032A ; // (wcu_instance_index)
+    D0836 = 0x0024 ; // (ixl_Devaddr)
+    D0837 = 0x0000 ; // (io_type)
+    D0838 = 0xFFFF ; // (inputaddr)
+    D0839 = 0xFFFF ; // (outputaddr)
+
+    D0840 = 0x0046 ; // (devId)
+    D0841 = 0x00CF ; // gleis (kind_id)
+    D0842 = 0x00DD ; // TA1706B (kind_id)
+    D0843 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0844 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0845 = 0x00DD ; // (ixl_instance_index)
+    D0846 = 0x0014 ; // (wcu_instance_kind_id)
+    D0847 = 0x00DD ; // (wcu_instance_index)
+    D0848 = 0x0025 ; // (ixl_Devaddr)
+    D0849 = 0x0000 ; // (io_type)
+    D0850 = 0xFFFF ; // (inputaddr)
+    D0851 = 0xFFFF ; // (outputaddr)
+
+    D0852 = 0x0047 ; // (devId)
+    D0853 = 0x00CF ; // gleis (kind_id)
+    D0854 = 0x032B ; // TA1706C (kind_id)
+    D0855 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0856 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0857 = 0x032B ; // (ixl_instance_index)
+    D0858 = 0x0014 ; // (wcu_instance_kind_id)
+    D0859 = 0x032B ; // (wcu_instance_index)
+    D0860 = 0x0026 ; // (ixl_Devaddr)
+    D0861 = 0x0000 ; // (io_type)
+    D0862 = 0xFFFF ; // (inputaddr)
+    D0863 = 0xFFFF ; // (outputaddr)
+
+    D0864 = 0x0048 ; // (devId)
+    D0865 = 0x00CF ; // gleis (kind_id)
+    D0866 = 0x00F2 ; // TA1707A (kind_id)
+    D0867 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0868 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0869 = 0x00F2 ; // (ixl_instance_index)
+    D0870 = 0x0014 ; // (wcu_instance_kind_id)
+    D0871 = 0x00F2 ; // (wcu_instance_index)
+    D0872 = 0x0027 ; // (ixl_Devaddr)
+    D0873 = 0x0000 ; // (io_type)
+    D0874 = 0xFFFF ; // (inputaddr)
+    D0875 = 0xFFFF ; // (outputaddr)
+
+    D0876 = 0x0049 ; // (devId)
+    D0877 = 0x00CF ; // gleis (kind_id)
+    D0878 = 0x0335 ; // TA1707B (kind_id)
+    D0879 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0880 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0881 = 0x0335 ; // (ixl_instance_index)
+    D0882 = 0x0014 ; // (wcu_instance_kind_id)
+    D0883 = 0x0335 ; // (wcu_instance_index)
+    D0884 = 0x0028 ; // (ixl_Devaddr)
+    D0885 = 0x0000 ; // (io_type)
+    D0886 = 0xFFFF ; // (inputaddr)
+    D0887 = 0xFFFF ; // (outputaddr)
+
+    D0888 = 0x004A ; // (devId)
+    D0889 = 0x00CF ; // gleis (kind_id)
+    D0890 = 0x00F3 ; // TA1710A (kind_id)
+    D0891 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0892 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0893 = 0x00F3 ; // (ixl_instance_index)
+    D0894 = 0x0014 ; // (wcu_instance_kind_id)
+    D0895 = 0x00F3 ; // (wcu_instance_index)
+    D0896 = 0x0029 ; // (ixl_Devaddr)
+    D0897 = 0x0000 ; // (io_type)
+    D0898 = 0xFFFF ; // (inputaddr)
+    D0899 = 0xFFFF ; // (outputaddr)
+
+    D0900 = 0x004B ; // (devId)
+    D0901 = 0x00CF ; // gleis (kind_id)
+    D0902 = 0x0337 ; // TA1710B (kind_id)
+    D0903 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0904 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0905 = 0x0337 ; // (ixl_instance_index)
+    D0906 = 0x0014 ; // (wcu_instance_kind_id)
+    D0907 = 0x0337 ; // (wcu_instance_index)
+    D0908 = 0x002A ; // (ixl_Devaddr)
+    D0909 = 0x0000 ; // (io_type)
+    D0910 = 0xFFFF ; // (inputaddr)
+    D0911 = 0xFFFF ; // (outputaddr)
+
+    D0912 = 0x004C ; // (devId)
+    D0913 = 0x00CF ; // gleis (kind_id)
+    D0914 = 0x00FB ; // TA1711A (kind_id)
+    D0915 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0916 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0917 = 0x00FB ; // (ixl_instance_index)
+    D0918 = 0x0014 ; // (wcu_instance_kind_id)
+    D0919 = 0x00FB ; // (wcu_instance_index)
+    D0920 = 0x002B ; // (ixl_Devaddr)
+    D0921 = 0x0000 ; // (io_type)
+    D0922 = 0xFFFF ; // (inputaddr)
+    D0923 = 0xFFFF ; // (outputaddr)
+
+    D0924 = 0x004D ; // (devId)
+    D0925 = 0x00CF ; // gleis (kind_id)
+    D0926 = 0x0338 ; // TA1711B (kind_id)
+    D0927 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0928 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0929 = 0x0338 ; // (ixl_instance_index)
+    D0930 = 0x0014 ; // (wcu_instance_kind_id)
+    D0931 = 0x0338 ; // (wcu_instance_index)
+    D0932 = 0x002C ; // (ixl_Devaddr)
+    D0933 = 0x0000 ; // (io_type)
+    D0934 = 0xFFFF ; // (inputaddr)
+    D0935 = 0xFFFF ; // (outputaddr)
+
+    D0936 = 0x004E ; // (devId)
+    D0937 = 0x00CF ; // gleis (kind_id)
+    D0938 = 0x0339 ; // TA1711C (kind_id)
+    D0939 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0940 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0941 = 0x0339 ; // (ixl_instance_index)
+    D0942 = 0x0014 ; // (wcu_instance_kind_id)
+    D0943 = 0x0339 ; // (wcu_instance_index)
+    D0944 = 0x002D ; // (ixl_Devaddr)
+    D0945 = 0x0000 ; // (io_type)
+    D0946 = 0xFFFF ; // (inputaddr)
+    D0947 = 0xFFFF ; // (outputaddr)
+
+    D0948 = 0x004F ; // (devId)
+    D0949 = 0x00CF ; // gleis (kind_id)
+    D0950 = 0x033A ; // TA1711D (kind_id)
+    D0951 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0952 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0953 = 0x033A ; // (ixl_instance_index)
+    D0954 = 0x0014 ; // (wcu_instance_kind_id)
+    D0955 = 0x033A ; // (wcu_instance_index)
+    D0956 = 0x002E ; // (ixl_Devaddr)
+    D0957 = 0x0000 ; // (io_type)
+    D0958 = 0xFFFF ; // (inputaddr)
+    D0959 = 0xFFFF ; // (outputaddr)
+
+    D0960 = 0x0050 ; // (devId)
+    D0961 = 0x00CF ; // gleis (kind_id)
+    D0962 = 0x033B ; // TA1711E (kind_id)
+    D0963 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0964 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0965 = 0x033B ; // (ixl_instance_index)
+    D0966 = 0x0014 ; // (wcu_instance_kind_id)
+    D0967 = 0x033B ; // (wcu_instance_index)
+    D0968 = 0x002F ; // (ixl_Devaddr)
+    D0969 = 0x0000 ; // (io_type)
+    D0970 = 0xFFFF ; // (inputaddr)
+    D0971 = 0xFFFF ; // (outputaddr)
+
+    D0972 = 0x0051 ; // (devId)
+    D0973 = 0x00CF ; // gleis (kind_id)
+    D0974 = 0x00ED ; // TA1715A (kind_id)
+    D0975 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0976 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0977 = 0x00ED ; // (ixl_instance_index)
+    D0978 = 0x0014 ; // (wcu_instance_kind_id)
+    D0979 = 0x00ED ; // (wcu_instance_index)
+    D0980 = 0x0030 ; // (ixl_Devaddr)
+    D0981 = 0x0000 ; // (io_type)
+    D0982 = 0xFFFF ; // (inputaddr)
+    D0983 = 0xFFFF ; // (outputaddr)
+
+    D0984 = 0x0052 ; // (devId)
+    D0985 = 0x00CF ; // gleis (kind_id)
+    D0986 = 0x00EC ; // TA1716A (kind_id)
+    D0987 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D0988 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D0989 = 0x00EC ; // (ixl_instance_index)
+    D0990 = 0x0014 ; // (wcu_instance_kind_id)
+    D0991 = 0x00EC ; // (wcu_instance_index)
+    D0992 = 0x0031 ; // (ixl_Devaddr)
+    D0993 = 0x0000 ; // (io_type)
+    D0994 = 0xFFFF ; // (inputaddr)
+    D0995 = 0xFFFF ; // (outputaddr)
+
+    D0996 = 0x0053 ; // (devId)
+    D0997 = 0x00CF ; // gleis (kind_id)
+    D0998 = 0x00FC ; // TA1801A (kind_id)
+    D0999 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1000 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1001 = 0x00FC ; // (ixl_instance_index)
+    D1002 = 0x0014 ; // (wcu_instance_kind_id)
+    D1003 = 0x00FC ; // (wcu_instance_index)
+    D1004 = 0x0032 ; // (ixl_Devaddr)
+    D1005 = 0x0000 ; // (io_type)
+    D1006 = 0xFFFF ; // (inputaddr)
+    D1007 = 0xFFFF ; // (outputaddr)
+
+    D1008 = 0x0054 ; // (devId)
+    D1009 = 0x00CF ; // gleis (kind_id)
+    D1010 = 0x00FA ; // TA1802A (kind_id)
+    D1011 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1012 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1013 = 0x00FA ; // (ixl_instance_index)
+    D1014 = 0x0014 ; // (wcu_instance_kind_id)
+    D1015 = 0x00FA ; // (wcu_instance_index)
+    D1016 = 0x0033 ; // (ixl_Devaddr)
+    D1017 = 0x0000 ; // (io_type)
+    D1018 = 0xFFFF ; // (inputaddr)
+    D1019 = 0xFFFF ; // (outputaddr)
+
+    D1020 = 0x0055 ; // (devId)
+    D1021 = 0x00CF ; // gleis (kind_id)
+    D1022 = 0x033E ; // TA1802B (kind_id)
+    D1023 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1024 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1025 = 0x033E ; // (ixl_instance_index)
+    D1026 = 0x0014 ; // (wcu_instance_kind_id)
+    D1027 = 0x033E ; // (wcu_instance_index)
+    D1028 = 0x0034 ; // (ixl_Devaddr)
+    D1029 = 0x0000 ; // (io_type)
+    D1030 = 0xFFFF ; // (inputaddr)
+    D1031 = 0xFFFF ; // (outputaddr)
+
+    D1032 = 0x0056 ; // (devId)
+    D1033 = 0x00CF ; // gleis (kind_id)
+    D1034 = 0x033F ; // TA1802C (kind_id)
+    D1035 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1036 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1037 = 0x033F ; // (ixl_instance_index)
+    D1038 = 0x0014 ; // (wcu_instance_kind_id)
+    D1039 = 0x033F ; // (wcu_instance_index)
+    D1040 = 0x0035 ; // (ixl_Devaddr)
+    D1041 = 0x0000 ; // (io_type)
+    D1042 = 0xFFFF ; // (inputaddr)
+    D1043 = 0xFFFF ; // (outputaddr)
+
+    D1044 = 0x0057 ; // (devId)
+    D1045 = 0x00CF ; // gleis (kind_id)
+    D1046 = 0x0340 ; // TA1802D (kind_id)
+    D1047 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1048 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1049 = 0x0340 ; // (ixl_instance_index)
+    D1050 = 0x0014 ; // (wcu_instance_kind_id)
+    D1051 = 0x0340 ; // (wcu_instance_index)
+    D1052 = 0x0036 ; // (ixl_Devaddr)
+    D1053 = 0x0000 ; // (io_type)
+    D1054 = 0xFFFF ; // (inputaddr)
+    D1055 = 0xFFFF ; // (outputaddr)
+
+    D1056 = 0x0058 ; // (devId)
+    D1057 = 0x00CF ; // gleis (kind_id)
+    D1058 = 0x0341 ; // TA1802E (kind_id)
+    D1059 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1060 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1061 = 0x0341 ; // (ixl_instance_index)
+    D1062 = 0x0014 ; // (wcu_instance_kind_id)
+    D1063 = 0x0341 ; // (wcu_instance_index)
+    D1064 = 0x0037 ; // (ixl_Devaddr)
+    D1065 = 0x0000 ; // (io_type)
+    D1066 = 0xFFFF ; // (inputaddr)
+    D1067 = 0xFFFF ; // (outputaddr)
+
+    D1068 = 0x0059 ; // (devId)
+    D1069 = 0x00CF ; // gleis (kind_id)
+    D1070 = 0x0342 ; // TA1802F (kind_id)
+    D1071 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1072 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1073 = 0x0342 ; // (ixl_instance_index)
+    D1074 = 0x0014 ; // (wcu_instance_kind_id)
+    D1075 = 0x0342 ; // (wcu_instance_index)
+    D1076 = 0x0038 ; // (ixl_Devaddr)
+    D1077 = 0x0000 ; // (io_type)
+    D1078 = 0xFFFF ; // (inputaddr)
+    D1079 = 0xFFFF ; // (outputaddr)
+
+    D1080 = 0x005A ; // (devId)
+    D1081 = 0x00CF ; // gleis (kind_id)
+    D1082 = 0x033C ; // TA1803A (kind_id)
+    D1083 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1084 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1085 = 0x033C ; // (ixl_instance_index)
+    D1086 = 0x0014 ; // (wcu_instance_kind_id)
+    D1087 = 0x033C ; // (wcu_instance_index)
+    D1088 = 0x0039 ; // (ixl_Devaddr)
+    D1089 = 0x0000 ; // (io_type)
+    D1090 = 0xFFFF ; // (inputaddr)
+    D1091 = 0xFFFF ; // (outputaddr)
+
+    D1092 = 0x005B ; // (devId)
+    D1093 = 0x00CF ; // gleis (kind_id)
+    D1094 = 0x0100 ; // TA1803B (kind_id)
+    D1095 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1096 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1097 = 0x0100 ; // (ixl_instance_index)
+    D1098 = 0x0014 ; // (wcu_instance_kind_id)
+    D1099 = 0x0100 ; // (wcu_instance_index)
+    D1100 = 0x003A ; // (ixl_Devaddr)
+    D1101 = 0x0000 ; // (io_type)
+    D1102 = 0xFFFF ; // (inputaddr)
+    D1103 = 0xFFFF ; // (outputaddr)
+
+    D1104 = 0x005C ; // (devId)
+    D1105 = 0x00CF ; // gleis (kind_id)
+    D1106 = 0x033D ; // TA1803C (kind_id)
+    D1107 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1108 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1109 = 0x033D ; // (ixl_instance_index)
+    D1110 = 0x0014 ; // (wcu_instance_kind_id)
+    D1111 = 0x033D ; // (wcu_instance_index)
+    D1112 = 0x003B ; // (ixl_Devaddr)
+    D1113 = 0x0000 ; // (io_type)
+    D1114 = 0xFFFF ; // (inputaddr)
+    D1115 = 0xFFFF ; // (outputaddr)
+
+    D1116 = 0x005D ; // (devId)
+    D1117 = 0x00CF ; // gleis (kind_id)
+    D1118 = 0x0343 ; // TA1804A (kind_id)
+    D1119 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1120 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1121 = 0x0343 ; // (ixl_instance_index)
+    D1122 = 0x0014 ; // (wcu_instance_kind_id)
+    D1123 = 0x0343 ; // (wcu_instance_index)
+    D1124 = 0x003C ; // (ixl_Devaddr)
+    D1125 = 0x0000 ; // (io_type)
+    D1126 = 0xFFFF ; // (inputaddr)
+    D1127 = 0xFFFF ; // (outputaddr)
+
+    D1128 = 0x005E ; // (devId)
+    D1129 = 0x00CF ; // gleis (kind_id)
+    D1130 = 0x00FF ; // TA1804B (kind_id)
+    D1131 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1132 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1133 = 0x00FF ; // (ixl_instance_index)
+    D1134 = 0x0014 ; // (wcu_instance_kind_id)
+    D1135 = 0x00FF ; // (wcu_instance_index)
+    D1136 = 0x003D ; // (ixl_Devaddr)
+    D1137 = 0x0000 ; // (io_type)
+    D1138 = 0xFFFF ; // (inputaddr)
+    D1139 = 0xFFFF ; // (outputaddr)
+
+    D1140 = 0x005F ; // (devId)
+    D1141 = 0x00CF ; // gleis (kind_id)
+    D1142 = 0x0344 ; // TA1804C (kind_id)
+    D1143 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1144 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1145 = 0x0344 ; // (ixl_instance_index)
+    D1146 = 0x0014 ; // (wcu_instance_kind_id)
+    D1147 = 0x0344 ; // (wcu_instance_index)
+    D1148 = 0x003E ; // (ixl_Devaddr)
+    D1149 = 0x0000 ; // (io_type)
+    D1150 = 0xFFFF ; // (inputaddr)
+    D1151 = 0xFFFF ; // (outputaddr)
+
+    D1152 = 0x0060 ; // (devId)
+    D1153 = 0x00CF ; // gleis (kind_id)
+    D1154 = 0x034B ; // TA1805A (kind_id)
+    D1155 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1156 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1157 = 0x034B ; // (ixl_instance_index)
+    D1158 = 0x0014 ; // (wcu_instance_kind_id)
+    D1159 = 0x034B ; // (wcu_instance_index)
+    D1160 = 0x003F ; // (ixl_Devaddr)
+    D1161 = 0x0000 ; // (io_type)
+    D1162 = 0xFFFF ; // (inputaddr)
+    D1163 = 0xFFFF ; // (outputaddr)
+
+    D1164 = 0x0061 ; // (devId)
+    D1165 = 0x00CF ; // gleis (kind_id)
+    D1166 = 0x034C ; // TA1805B (kind_id)
+    D1167 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1168 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1169 = 0x034C ; // (ixl_instance_index)
+    D1170 = 0x0014 ; // (wcu_instance_kind_id)
+    D1171 = 0x034C ; // (wcu_instance_index)
+    D1172 = 0x0040 ; // (ixl_Devaddr)
+    D1173 = 0x0000 ; // (io_type)
+    D1174 = 0xFFFF ; // (inputaddr)
+    D1175 = 0xFFFF ; // (outputaddr)
+
+    D1176 = 0x0062 ; // (devId)
+    D1177 = 0x00CF ; // gleis (kind_id)
+    D1178 = 0x034D ; // TA1805C (kind_id)
+    D1179 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1180 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1181 = 0x034D ; // (ixl_instance_index)
+    D1182 = 0x0014 ; // (wcu_instance_kind_id)
+    D1183 = 0x034D ; // (wcu_instance_index)
+    D1184 = 0x0041 ; // (ixl_Devaddr)
+    D1185 = 0x0000 ; // (io_type)
+    D1186 = 0xFFFF ; // (inputaddr)
+    D1187 = 0xFFFF ; // (outputaddr)
+
+    D1188 = 0x0063 ; // (devId)
+    D1189 = 0x00CF ; // gleis (kind_id)
+    D1190 = 0x034E ; // TA1805D (kind_id)
+    D1191 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1192 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1193 = 0x034E ; // (ixl_instance_index)
+    D1194 = 0x0014 ; // (wcu_instance_kind_id)
+    D1195 = 0x034E ; // (wcu_instance_index)
+    D1196 = 0x0042 ; // (ixl_Devaddr)
+    D1197 = 0x0000 ; // (io_type)
+    D1198 = 0xFFFF ; // (inputaddr)
+    D1199 = 0xFFFF ; // (outputaddr)
+
+    D1200 = 0x0064 ; // (devId)
+    D1201 = 0x00CF ; // gleis (kind_id)
+    D1202 = 0x034F ; // TA1805E (kind_id)
+    D1203 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1204 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1205 = 0x034F ; // (ixl_instance_index)
+    D1206 = 0x0014 ; // (wcu_instance_kind_id)
+    D1207 = 0x034F ; // (wcu_instance_index)
+    D1208 = 0x0043 ; // (ixl_Devaddr)
+    D1209 = 0x0000 ; // (io_type)
+    D1210 = 0xFFFF ; // (inputaddr)
+    D1211 = 0xFFFF ; // (outputaddr)
+
+    D1212 = 0x0065 ; // (devId)
+    D1213 = 0x00CF ; // gleis (kind_id)
+    D1214 = 0x0350 ; // TA1805F (kind_id)
+    D1215 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1216 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1217 = 0x0350 ; // (ixl_instance_index)
+    D1218 = 0x0014 ; // (wcu_instance_kind_id)
+    D1219 = 0x0350 ; // (wcu_instance_index)
+    D1220 = 0x0044 ; // (ixl_Devaddr)
+    D1221 = 0x0000 ; // (io_type)
+    D1222 = 0xFFFF ; // (inputaddr)
+    D1223 = 0xFFFF ; // (outputaddr)
+
+    D1224 = 0x0066 ; // (devId)
+    D1225 = 0x00CF ; // gleis (kind_id)
+    D1226 = 0x0106 ; // TA1806A (kind_id)
+    D1227 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1228 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1229 = 0x0106 ; // (ixl_instance_index)
+    D1230 = 0x0014 ; // (wcu_instance_kind_id)
+    D1231 = 0x0106 ; // (wcu_instance_index)
+    D1232 = 0x0045 ; // (ixl_Devaddr)
+    D1233 = 0x0000 ; // (io_type)
+    D1234 = 0xFFFF ; // (inputaddr)
+    D1235 = 0xFFFF ; // (outputaddr)
+
+    D1236 = 0x0067 ; // (devId)
+    D1237 = 0x00D5 ; // freimeldung (kind_id)
+    D1238 = 0x2348 ; // TA1601 (kind_id)
+    D1239 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1240 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1241 = 0x2348 ; // (ixl_instance_index)
+    D1242 = 0x001D ; // (wcu_instance_kind_id)
+    D1243 = 0x2348 ; // (wcu_instance_index)
+    D1244 = 0x0000 ; // (ixl_Devaddr)
+    D1245 = 0x0000 ; // (io_type)
+    D1246 = 0xFFFF ; // (inputaddr)
+    D1247 = 0xFFFF ; // (outputaddr)
+
+    D1248 = 0x0068 ; // (devId)
+    D1249 = 0x00D5 ; // freimeldung (kind_id)
+    D1250 = 0x2382 ; // TA1602 (kind_id)
+    D1251 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1252 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1253 = 0x2382 ; // (ixl_instance_index)
+    D1254 = 0x001D ; // (wcu_instance_kind_id)
+    D1255 = 0x2382 ; // (wcu_instance_index)
+    D1256 = 0x0001 ; // (ixl_Devaddr)
+    D1257 = 0x0000 ; // (io_type)
+    D1258 = 0xFFFF ; // (inputaddr)
+    D1259 = 0xFFFF ; // (outputaddr)
+
+    D1260 = 0x0069 ; // (devId)
+    D1261 = 0x00D5 ; // freimeldung (kind_id)
+    D1262 = 0x2385 ; // TA1603 (kind_id)
+    D1263 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1264 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1265 = 0x2385 ; // (ixl_instance_index)
+    D1266 = 0x001D ; // (wcu_instance_kind_id)
+    D1267 = 0x2385 ; // (wcu_instance_index)
+    D1268 = 0x0002 ; // (ixl_Devaddr)
+    D1269 = 0x0000 ; // (io_type)
+    D1270 = 0xFFFF ; // (inputaddr)
+    D1271 = 0xFFFF ; // (outputaddr)
+
+    D1272 = 0x006A ; // (devId)
+    D1273 = 0x00D5 ; // freimeldung (kind_id)
+    D1274 = 0x2342 ; // TA1604 (kind_id)
+    D1275 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1276 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1277 = 0x2342 ; // (ixl_instance_index)
+    D1278 = 0x001D ; // (wcu_instance_kind_id)
+    D1279 = 0x2342 ; // (wcu_instance_index)
+    D1280 = 0x0003 ; // (ixl_Devaddr)
+    D1281 = 0x0000 ; // (io_type)
+    D1282 = 0xFFFF ; // (inputaddr)
+    D1283 = 0xFFFF ; // (outputaddr)
+
+    D1284 = 0x006B ; // (devId)
+    D1285 = 0x00D5 ; // freimeldung (kind_id)
+    D1286 = 0x2339 ; // TA1605 (kind_id)
+    D1287 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1288 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1289 = 0x2339 ; // (ixl_instance_index)
+    D1290 = 0x001D ; // (wcu_instance_kind_id)
+    D1291 = 0x2339 ; // (wcu_instance_index)
+    D1292 = 0x0004 ; // (ixl_Devaddr)
+    D1293 = 0x0000 ; // (io_type)
+    D1294 = 0xFFFF ; // (inputaddr)
+    D1295 = 0xFFFF ; // (outputaddr)
+
+    D1296 = 0x006C ; // (devId)
+    D1297 = 0x00D5 ; // freimeldung (kind_id)
+    D1298 = 0x2379 ; // TA1606 (kind_id)
+    D1299 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1300 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1301 = 0x2379 ; // (ixl_instance_index)
+    D1302 = 0x001D ; // (wcu_instance_kind_id)
+    D1303 = 0x2379 ; // (wcu_instance_index)
+    D1304 = 0x0005 ; // (ixl_Devaddr)
+    D1305 = 0x0000 ; // (io_type)
+    D1306 = 0xFFFF ; // (inputaddr)
+    D1307 = 0xFFFF ; // (outputaddr)
+
+    D1308 = 0x006D ; // (devId)
+    D1309 = 0x00D5 ; // freimeldung (kind_id)
+    D1310 = 0x235F ; // TA1607 (kind_id)
+    D1311 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1312 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1313 = 0x235F ; // (ixl_instance_index)
+    D1314 = 0x001D ; // (wcu_instance_kind_id)
+    D1315 = 0x235F ; // (wcu_instance_index)
+    D1316 = 0x0006 ; // (ixl_Devaddr)
+    D1317 = 0x0000 ; // (io_type)
+    D1318 = 0xFFFF ; // (inputaddr)
+    D1319 = 0xFFFF ; // (outputaddr)
+
+    D1320 = 0x006E ; // (devId)
+    D1321 = 0x00D5 ; // freimeldung (kind_id)
+    D1322 = 0x23A1 ; // TA1608 (kind_id)
+    D1323 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1324 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1325 = 0x23A1 ; // (ixl_instance_index)
+    D1326 = 0x001D ; // (wcu_instance_kind_id)
+    D1327 = 0x23A1 ; // (wcu_instance_index)
+    D1328 = 0x0007 ; // (ixl_Devaddr)
+    D1329 = 0x0000 ; // (io_type)
+    D1330 = 0xFFFF ; // (inputaddr)
+    D1331 = 0xFFFF ; // (outputaddr)
+
+    D1332 = 0x006F ; // (devId)
+    D1333 = 0x00D5 ; // freimeldung (kind_id)
+    D1334 = 0x2397 ; // TA1701 (kind_id)
+    D1335 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1336 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1337 = 0x2397 ; // (ixl_instance_index)
+    D1338 = 0x001D ; // (wcu_instance_kind_id)
+    D1339 = 0x2397 ; // (wcu_instance_index)
+    D1340 = 0x0008 ; // (ixl_Devaddr)
+    D1341 = 0x0000 ; // (io_type)
+    D1342 = 0xFFFF ; // (inputaddr)
+    D1343 = 0xFFFF ; // (outputaddr)
+
+    D1344 = 0x0070 ; // (devId)
+    D1345 = 0x00D5 ; // freimeldung (kind_id)
+    D1346 = 0x2316 ; // TA1702 (kind_id)
+    D1347 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1348 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1349 = 0x2316 ; // (ixl_instance_index)
+    D1350 = 0x001D ; // (wcu_instance_kind_id)
+    D1351 = 0x2316 ; // (wcu_instance_index)
+    D1352 = 0x0009 ; // (ixl_Devaddr)
+    D1353 = 0x0000 ; // (io_type)
+    D1354 = 0xFFFF ; // (inputaddr)
+    D1355 = 0xFFFF ; // (outputaddr)
+
+    D1356 = 0x0071 ; // (devId)
+    D1357 = 0x00D5 ; // freimeldung (kind_id)
+    D1358 = 0x233F ; // TA1703 (kind_id)
+    D1359 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1360 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1361 = 0x233F ; // (ixl_instance_index)
+    D1362 = 0x001D ; // (wcu_instance_kind_id)
+    D1363 = 0x233F ; // (wcu_instance_index)
+    D1364 = 0x000A ; // (ixl_Devaddr)
+    D1365 = 0x0000 ; // (io_type)
+    D1366 = 0xFFFF ; // (inputaddr)
+    D1367 = 0xFFFF ; // (outputaddr)
+
+    D1368 = 0x0072 ; // (devId)
+    D1369 = 0x00D5 ; // freimeldung (kind_id)
+    D1370 = 0x239C ; // TA1704 (kind_id)
+    D1371 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1372 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1373 = 0x239C ; // (ixl_instance_index)
+    D1374 = 0x001D ; // (wcu_instance_kind_id)
+    D1375 = 0x239C ; // (wcu_instance_index)
+    D1376 = 0x000B ; // (ixl_Devaddr)
+    D1377 = 0x0000 ; // (io_type)
+    D1378 = 0xFFFF ; // (inputaddr)
+    D1379 = 0xFFFF ; // (outputaddr)
+
+    D1380 = 0x0073 ; // (devId)
+    D1381 = 0x00D5 ; // freimeldung (kind_id)
+    D1382 = 0x238E ; // TA1705 (kind_id)
+    D1383 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1384 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1385 = 0x238E ; // (ixl_instance_index)
+    D1386 = 0x001D ; // (wcu_instance_kind_id)
+    D1387 = 0x238E ; // (wcu_instance_index)
+    D1388 = 0x000C ; // (ixl_Devaddr)
+    D1389 = 0x0000 ; // (io_type)
+    D1390 = 0xFFFF ; // (inputaddr)
+    D1391 = 0xFFFF ; // (outputaddr)
+
+    D1392 = 0x0074 ; // (devId)
+    D1393 = 0x00D5 ; // freimeldung (kind_id)
+    D1394 = 0x2320 ; // TA1706 (kind_id)
+    D1395 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1396 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1397 = 0x2320 ; // (ixl_instance_index)
+    D1398 = 0x001D ; // (wcu_instance_kind_id)
+    D1399 = 0x2320 ; // (wcu_instance_index)
+    D1400 = 0x000D ; // (ixl_Devaddr)
+    D1401 = 0x0000 ; // (io_type)
+    D1402 = 0xFFFF ; // (inputaddr)
+    D1403 = 0xFFFF ; // (outputaddr)
+
+    D1404 = 0x0075 ; // (devId)
+    D1405 = 0x00D5 ; // freimeldung (kind_id)
+    D1406 = 0x23B8 ; // TA1707 (kind_id)
+    D1407 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1408 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1409 = 0x23B8 ; // (ixl_instance_index)
+    D1410 = 0x001D ; // (wcu_instance_kind_id)
+    D1411 = 0x23B8 ; // (wcu_instance_index)
+    D1412 = 0x000E ; // (ixl_Devaddr)
+    D1413 = 0x0000 ; // (io_type)
+    D1414 = 0xFFFF ; // (inputaddr)
+    D1415 = 0xFFFF ; // (outputaddr)
+
+    D1416 = 0x0076 ; // (devId)
+    D1417 = 0x00D5 ; // freimeldung (kind_id)
+    D1418 = 0x23C6 ; // TA1708 (kind_id)
+    D1419 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1420 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1421 = 0x23C6 ; // (ixl_instance_index)
+    D1422 = 0x001D ; // (wcu_instance_kind_id)
+    D1423 = 0x23C6 ; // (wcu_instance_index)
+    D1424 = 0x000F ; // (ixl_Devaddr)
+    D1425 = 0x0000 ; // (io_type)
+    D1426 = 0xFFFF ; // (inputaddr)
+    D1427 = 0xFFFF ; // (outputaddr)
+
+    D1428 = 0x0077 ; // (devId)
+    D1429 = 0x00D5 ; // freimeldung (kind_id)
+    D1430 = 0x2366 ; // TA1709 (kind_id)
+    D1431 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1432 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1433 = 0x2366 ; // (ixl_instance_index)
+    D1434 = 0x001D ; // (wcu_instance_kind_id)
+    D1435 = 0x2366 ; // (wcu_instance_index)
+    D1436 = 0x0010 ; // (ixl_Devaddr)
+    D1437 = 0x0000 ; // (io_type)
+    D1438 = 0xFFFF ; // (inputaddr)
+    D1439 = 0xFFFF ; // (outputaddr)
+
+    D1440 = 0x0078 ; // (devId)
+    D1441 = 0x00D5 ; // freimeldung (kind_id)
+    D1442 = 0x2313 ; // TA1710 (kind_id)
+    D1443 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1444 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1445 = 0x2313 ; // (ixl_instance_index)
+    D1446 = 0x001D ; // (wcu_instance_kind_id)
+    D1447 = 0x2313 ; // (wcu_instance_index)
+    D1448 = 0x0011 ; // (ixl_Devaddr)
+    D1449 = 0x0000 ; // (io_type)
+    D1450 = 0xFFFF ; // (inputaddr)
+    D1451 = 0xFFFF ; // (outputaddr)
+
+    D1452 = 0x0079 ; // (devId)
+    D1453 = 0x00D5 ; // freimeldung (kind_id)
+    D1454 = 0x2345 ; // TA1711 (kind_id)
+    D1455 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1456 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1457 = 0x2345 ; // (ixl_instance_index)
+    D1458 = 0x001D ; // (wcu_instance_kind_id)
+    D1459 = 0x2345 ; // (wcu_instance_index)
+    D1460 = 0x0012 ; // (ixl_Devaddr)
+    D1461 = 0x0000 ; // (io_type)
+    D1462 = 0xFFFF ; // (inputaddr)
+    D1463 = 0xFFFF ; // (outputaddr)
+
+    D1464 = 0x007A ; // (devId)
+    D1465 = 0x00D5 ; // freimeldung (kind_id)
+    D1466 = 0x2363 ; // TA1712 (kind_id)
+    D1467 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1468 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1469 = 0x2363 ; // (ixl_instance_index)
+    D1470 = 0x001D ; // (wcu_instance_kind_id)
+    D1471 = 0x2363 ; // (wcu_instance_index)
+    D1472 = 0x0013 ; // (ixl_Devaddr)
+    D1473 = 0x0000 ; // (io_type)
+    D1474 = 0xFFFF ; // (inputaddr)
+    D1475 = 0xFFFF ; // (outputaddr)
+
+    D1476 = 0x007B ; // (devId)
+    D1477 = 0x00D5 ; // freimeldung (kind_id)
+    D1478 = 0x2331 ; // TA1713 (kind_id)
+    D1479 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1480 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1481 = 0x2331 ; // (ixl_instance_index)
+    D1482 = 0x001D ; // (wcu_instance_kind_id)
+    D1483 = 0x2331 ; // (wcu_instance_index)
+    D1484 = 0x0014 ; // (ixl_Devaddr)
+    D1485 = 0x0000 ; // (io_type)
+    D1486 = 0xFFFF ; // (inputaddr)
+    D1487 = 0xFFFF ; // (outputaddr)
+
+    D1488 = 0x007C ; // (devId)
+    D1489 = 0x00D5 ; // freimeldung (kind_id)
+    D1490 = 0x2334 ; // TA1714 (kind_id)
+    D1491 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1492 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1493 = 0x2334 ; // (ixl_instance_index)
+    D1494 = 0x001D ; // (wcu_instance_kind_id)
+    D1495 = 0x2334 ; // (wcu_instance_index)
+    D1496 = 0x0015 ; // (ixl_Devaddr)
+    D1497 = 0x0000 ; // (io_type)
+    D1498 = 0xFFFF ; // (inputaddr)
+    D1499 = 0xFFFF ; // (outputaddr)
+
+    D1500 = 0x007D ; // (devId)
+    D1501 = 0x00D5 ; // freimeldung (kind_id)
+    D1502 = 0x2354 ; // TA1715 (kind_id)
+    D1503 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1504 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1505 = 0x2354 ; // (ixl_instance_index)
+    D1506 = 0x001D ; // (wcu_instance_kind_id)
+    D1507 = 0x2354 ; // (wcu_instance_index)
+    D1508 = 0x0016 ; // (ixl_Devaddr)
+    D1509 = 0x0000 ; // (io_type)
+    D1510 = 0xFFFF ; // (inputaddr)
+    D1511 = 0xFFFF ; // (outputaddr)
+
+    D1512 = 0x007E ; // (devId)
+    D1513 = 0x00D5 ; // freimeldung (kind_id)
+    D1514 = 0x2369 ; // TA1716 (kind_id)
+    D1515 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1516 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1517 = 0x2369 ; // (ixl_instance_index)
+    D1518 = 0x001D ; // (wcu_instance_kind_id)
+    D1519 = 0x2369 ; // (wcu_instance_index)
+    D1520 = 0x0017 ; // (ixl_Devaddr)
+    D1521 = 0x0000 ; // (io_type)
+    D1522 = 0xFFFF ; // (inputaddr)
+    D1523 = 0xFFFF ; // (outputaddr)
+
+    D1524 = 0x007F ; // (devId)
+    D1525 = 0x00D5 ; // freimeldung (kind_id)
+    D1526 = 0x23A9 ; // TA1717 (kind_id)
+    D1527 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1528 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1529 = 0x23A9 ; // (ixl_instance_index)
+    D1530 = 0x001D ; // (wcu_instance_kind_id)
+    D1531 = 0x23A9 ; // (wcu_instance_index)
+    D1532 = 0x0018 ; // (ixl_Devaddr)
+    D1533 = 0x0000 ; // (io_type)
+    D1534 = 0xFFFF ; // (inputaddr)
+    D1535 = 0xFFFF ; // (outputaddr)
+
+    D1536 = 0x0080 ; // (devId)
+    D1537 = 0x00D5 ; // freimeldung (kind_id)
+    D1538 = 0x237C ; // TA1718 (kind_id)
+    D1539 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1540 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1541 = 0x237C ; // (ixl_instance_index)
+    D1542 = 0x001D ; // (wcu_instance_kind_id)
+    D1543 = 0x237C ; // (wcu_instance_index)
+    D1544 = 0x0019 ; // (ixl_Devaddr)
+    D1545 = 0x0000 ; // (io_type)
+    D1546 = 0xFFFF ; // (inputaddr)
+    D1547 = 0xFFFF ; // (outputaddr)
+
+    D1548 = 0x0081 ; // (devId)
+    D1549 = 0x00D5 ; // freimeldung (kind_id)
+    D1550 = 0x23A6 ; // TA1801 (kind_id)
+    D1551 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1552 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1553 = 0x23A6 ; // (ixl_instance_index)
+    D1554 = 0x001D ; // (wcu_instance_kind_id)
+    D1555 = 0x23A6 ; // (wcu_instance_index)
+    D1556 = 0x001A ; // (ixl_Devaddr)
+    D1557 = 0x0000 ; // (io_type)
+    D1558 = 0xFFFF ; // (inputaddr)
+    D1559 = 0xFFFF ; // (outputaddr)
+
+    D1560 = 0x0082 ; // (devId)
+    D1561 = 0x00D5 ; // freimeldung (kind_id)
+    D1562 = 0x2312 ; // TA1802 (kind_id)
+    D1563 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1564 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1565 = 0x2312 ; // (ixl_instance_index)
+    D1566 = 0x001D ; // (wcu_instance_kind_id)
+    D1567 = 0x2312 ; // (wcu_instance_index)
+    D1568 = 0x001B ; // (ixl_Devaddr)
+    D1569 = 0x0000 ; // (io_type)
+    D1570 = 0xFFFF ; // (inputaddr)
+    D1571 = 0xFFFF ; // (outputaddr)
+
+    D1572 = 0x0083 ; // (devId)
+    D1573 = 0x00D5 ; // freimeldung (kind_id)
+    D1574 = 0x2374 ; // TA1803 (kind_id)
+    D1575 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1576 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1577 = 0x2374 ; // (ixl_instance_index)
+    D1578 = 0x001D ; // (wcu_instance_kind_id)
+    D1579 = 0x2374 ; // (wcu_instance_index)
+    D1580 = 0x001C ; // (ixl_Devaddr)
+    D1581 = 0x0000 ; // (io_type)
+    D1582 = 0xFFFF ; // (inputaddr)
+    D1583 = 0xFFFF ; // (outputaddr)
+
+    D1584 = 0x0084 ; // (devId)
+    D1585 = 0x00D5 ; // freimeldung (kind_id)
+    D1586 = 0x23B5 ; // TA1804 (kind_id)
+    D1587 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1588 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1589 = 0x23B5 ; // (ixl_instance_index)
+    D1590 = 0x001D ; // (wcu_instance_kind_id)
+    D1591 = 0x23B5 ; // (wcu_instance_index)
+    D1592 = 0x001D ; // (ixl_Devaddr)
+    D1593 = 0x0000 ; // (io_type)
+    D1594 = 0xFFFF ; // (inputaddr)
+    D1595 = 0xFFFF ; // (outputaddr)
+
+    D1596 = 0x0085 ; // (devId)
+    D1597 = 0x00D5 ; // freimeldung (kind_id)
+    D1598 = 0x2358 ; // TA1805 (kind_id)
+    D1599 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1600 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1601 = 0x2358 ; // (ixl_instance_index)
+    D1602 = 0x001D ; // (wcu_instance_kind_id)
+    D1603 = 0x2358 ; // (wcu_instance_index)
+    D1604 = 0x001E ; // (ixl_Devaddr)
+    D1605 = 0x0000 ; // (io_type)
+    D1606 = 0xFFFF ; // (inputaddr)
+    D1607 = 0xFFFF ; // (outputaddr)
+
+    D1608 = 0x0086 ; // (devId)
+    D1609 = 0x00D5 ; // freimeldung (kind_id)
+    D1610 = 0x232D ; // TA1806 (kind_id)
+    D1611 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1612 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1613 = 0x232D ; // (ixl_instance_index)
+    D1614 = 0x001D ; // (wcu_instance_kind_id)
+    D1615 = 0x232D ; // (wcu_instance_index)
+    D1616 = 0x001F ; // (ixl_Devaddr)
+    D1617 = 0x0000 ; // (io_type)
+    D1618 = 0xFFFF ; // (inputaddr)
+    D1619 = 0xFFFF ; // (outputaddr)
+
+    D1620 = 0x0119 ; // (devId)
+    D1621 = 0x0083 ; // Initial_element (kind_id)
+    D1622 = 0x0ABC ; // IE_EMP1601_EMP1603 (kind_id)
+    D1623 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1624 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1625 = 0x0ABC ; // (ixl_instance_index)
+    D1626 = 0x001F ; // (wcu_instance_kind_id)
+    D1627 = 0x0ABC ; // (wcu_instance_index)
+    D1628 = 0x0000 ; // (ixl_Devaddr)
+    D1629 = 0x0001 ; // (io_type)
+    D1630 = 0x0018 ; // (inputaddr)
+    D1631 = 0xFFFF ; // (outputaddr)
+
+    D1632 = 0x011A ; // (devId)
+    D1633 = 0x0083 ; // Initial_element (kind_id)
+    D1634 = 0x0ABF ; // IE_EMP1602_EMP1604 (kind_id)
+    D1635 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1636 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1637 = 0x0ABF ; // (ixl_instance_index)
+    D1638 = 0x001F ; // (wcu_instance_kind_id)
+    D1639 = 0x0ABF ; // (wcu_instance_index)
+    D1640 = 0x0001 ; // (ixl_Devaddr)
+    D1641 = 0x0001 ; // (io_type)
+    D1642 = 0x0019 ; // (inputaddr)
+    D1643 = 0xFFFF ; // (outputaddr)
+
+    D1644 = 0x011B ; // (devId)
+    D1645 = 0x0083 ; // Initial_element (kind_id)
+    D1646 = 0x0AC2 ; // IE_EMP1701_EMP1703 (kind_id)
+    D1647 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1648 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1649 = 0x0AC2 ; // (ixl_instance_index)
+    D1650 = 0x001F ; // (wcu_instance_kind_id)
+    D1651 = 0x0AC2 ; // (wcu_instance_index)
+    D1652 = 0x0002 ; // (ixl_Devaddr)
+    D1653 = 0x0001 ; // (io_type)
+    D1654 = 0x001A ; // (inputaddr)
+    D1655 = 0xFFFF ; // (outputaddr)
+
+    D1656 = 0x011C ; // (devId)
+    D1657 = 0x0083 ; // Initial_element (kind_id)
+    D1658 = 0x0AC5 ; // IE_EMP1702_EMP1704 (kind_id)
+    D1659 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1660 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1661 = 0x0AC5 ; // (ixl_instance_index)
+    D1662 = 0x001F ; // (wcu_instance_kind_id)
+    D1663 = 0x0AC5 ; // (wcu_instance_index)
+    D1664 = 0x0003 ; // (ixl_Devaddr)
+    D1665 = 0x0001 ; // (io_type)
+    D1666 = 0x001B ; // (inputaddr)
+    D1667 = 0xFFFF ; // (outputaddr)
+
+    D1668 = 0x011D ; // (devId)
+    D1669 = 0x0083 ; // Initial_element (kind_id)
+    D1670 = 0x0AC8 ; // IE_EMP1801_EMP1803 (kind_id)
+    D1671 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1672 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1673 = 0x0AC8 ; // (ixl_instance_index)
+    D1674 = 0x001F ; // (wcu_instance_kind_id)
+    D1675 = 0x0AC8 ; // (wcu_instance_index)
+    D1676 = 0x0004 ; // (ixl_Devaddr)
+    D1677 = 0x0001 ; // (io_type)
+    D1678 = 0x001C ; // (inputaddr)
+    D1679 = 0xFFFF ; // (outputaddr)
+
+    D1680 = 0x011E ; // (devId)
+    D1681 = 0x0083 ; // Initial_element (kind_id)
+    D1682 = 0x0ACB ; // IE_EMP1802_EMP1804 (kind_id)
+    D1683 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1684 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1685 = 0x0ACB ; // (ixl_instance_index)
+    D1686 = 0x001F ; // (wcu_instance_kind_id)
+    D1687 = 0x0ACB ; // (wcu_instance_index)
+    D1688 = 0x0005 ; // (ixl_Devaddr)
+    D1689 = 0x0001 ; // (io_type)
+    D1690 = 0x001D ; // (inputaddr)
+    D1691 = 0xFFFF ; // (outputaddr)
+
+    D1692 = 0x012F ; // (devId)
+    D1693 = 0x0083 ; // Initial_element (kind_id)
+    D1694 = 0x1A8D ; // IE_PSD1601_closed_and_locked (kind_id)
+    D1695 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1696 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1697 = 0x1A8D ; // (ixl_instance_index)
+    D1698 = 0x001F ; // (wcu_instance_kind_id)
+    D1699 = 0x1A8D ; // (wcu_instance_index)
+    D1700 = 0x0006 ; // (ixl_Devaddr)
+    D1701 = 0x0001 ; // (io_type)
+    D1702 = 0x0000 ; // (inputaddr)
+    D1703 = 0xFFFF ; // (outputaddr)
+
+    D1704 = 0x0130 ; // (devId)
+    D1705 = 0x0083 ; // Initial_element (kind_id)
+    D1706 = 0x1A8F ; // IE_PSD1601_override_admissible (kind_id)
+    D1707 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1708 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1709 = 0x1A8F ; // (ixl_instance_index)
+    D1710 = 0x001F ; // (wcu_instance_kind_id)
+    D1711 = 0x1A8F ; // (wcu_instance_index)
+    D1712 = 0x0007 ; // (ixl_Devaddr)
+    D1713 = 0x0001 ; // (io_type)
+    D1714 = 0x0001 ; // (inputaddr)
+    D1715 = 0xFFFF ; // (outputaddr)
+
+    D1716 = 0x0131 ; // (devId)
+    D1717 = 0x0083 ; // Initial_element (kind_id)
+    D1718 = 0x1A91 ; // IE_PSD1601_close (kind_id)
+    D1719 = 0xFFFF ; // (instance_kind_id_to_wcu)
+    D1720 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1721 = 0x1A91 ; // (ixl_instance_index)
+    D1722 = 0x001F ; // (wcu_instance_kind_id)
+    D1723 = 0x1A91 ; // (wcu_instance_index)
+    D1724 = 0x0008 ; // (ixl_Devaddr)
+    D1725 = 0x0002 ; // (io_type)
+    D1726 = 0x0003 ; // (inputaddr)
+    D1727 = 0x0002 ; // (outputaddr)
+
+    D1728 = 0x0132 ; // (devId)
+    D1729 = 0x0083 ; // Initial_element (kind_id)
+    D1730 = 0x1A92 ; // IE_PSD1601_open1 (kind_id)
+    D1731 = 0xFFFF ; // (instance_kind_id_to_wcu)
+    D1732 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1733 = 0x1A92 ; // (ixl_instance_index)
+    D1734 = 0x001F ; // (wcu_instance_kind_id)
+    D1735 = 0x1A92 ; // (wcu_instance_index)
+    D1736 = 0x0009 ; // (ixl_Devaddr)
+    D1737 = 0x0002 ; // (io_type)
+    D1738 = 0x0002 ; // (inputaddr)
+    D1739 = 0x0001 ; // (outputaddr)
+
+    D1740 = 0x0133 ; // (devId)
+    D1741 = 0x0083 ; // Initial_element (kind_id)
+    D1742 = 0x1A9E ; // IE_PSD1602_closed_and_locked (kind_id)
+    D1743 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1744 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1745 = 0x1A9E ; // (ixl_instance_index)
+    D1746 = 0x001F ; // (wcu_instance_kind_id)
+    D1747 = 0x1A9E ; // (wcu_instance_index)
+    D1748 = 0x000A ; // (ixl_Devaddr)
+    D1749 = 0x0001 ; // (io_type)
+    D1750 = 0x0004 ; // (inputaddr)
+    D1751 = 0xFFFF ; // (outputaddr)
+
+    D1752 = 0x0134 ; // (devId)
+    D1753 = 0x0083 ; // Initial_element (kind_id)
+    D1754 = 0x1AA0 ; // IE_PSD1602_override_admissible (kind_id)
+    D1755 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1756 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1757 = 0x1AA0 ; // (ixl_instance_index)
+    D1758 = 0x001F ; // (wcu_instance_kind_id)
+    D1759 = 0x1AA0 ; // (wcu_instance_index)
+    D1760 = 0x000B ; // (ixl_Devaddr)
+    D1761 = 0x0001 ; // (io_type)
+    D1762 = 0x0005 ; // (inputaddr)
+    D1763 = 0xFFFF ; // (outputaddr)
+
+    D1764 = 0x0135 ; // (devId)
+    D1765 = 0x0083 ; // Initial_element (kind_id)
+    D1766 = 0x1AA2 ; // IE_PSD1602_close (kind_id)
+    D1767 = 0xFFFF ; // (instance_kind_id_to_wcu)
+    D1768 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1769 = 0x1AA2 ; // (ixl_instance_index)
+    D1770 = 0x001F ; // (wcu_instance_kind_id)
+    D1771 = 0x1AA2 ; // (wcu_instance_index)
+    D1772 = 0x000C ; // (ixl_Devaddr)
+    D1773 = 0x0002 ; // (io_type)
+    D1774 = 0x0007 ; // (inputaddr)
+    D1775 = 0x0004 ; // (outputaddr)
+
+    D1776 = 0x0136 ; // (devId)
+    D1777 = 0x0083 ; // Initial_element (kind_id)
+    D1778 = 0x1AA3 ; // IE_PSD1602_open1 (kind_id)
+    D1779 = 0xFFFF ; // (instance_kind_id_to_wcu)
+    D1780 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1781 = 0x1AA3 ; // (ixl_instance_index)
+    D1782 = 0x001F ; // (wcu_instance_kind_id)
+    D1783 = 0x1AA3 ; // (wcu_instance_index)
+    D1784 = 0x000D ; // (ixl_Devaddr)
+    D1785 = 0x0002 ; // (io_type)
+    D1786 = 0x0006 ; // (inputaddr)
+    D1787 = 0x0003 ; // (outputaddr)
+
+    D1788 = 0x0137 ; // (devId)
+    D1789 = 0x0083 ; // Initial_element (kind_id)
+    D1790 = 0x1AAF ; // IE_PSD1701_closed_and_locked (kind_id)
+    D1791 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1792 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1793 = 0x1AAF ; // (ixl_instance_index)
+    D1794 = 0x001F ; // (wcu_instance_kind_id)
+    D1795 = 0x1AAF ; // (wcu_instance_index)
+    D1796 = 0x000E ; // (ixl_Devaddr)
+    D1797 = 0x0001 ; // (io_type)
+    D1798 = 0x0008 ; // (inputaddr)
+    D1799 = 0xFFFF ; // (outputaddr)
+
+    D1800 = 0x0138 ; // (devId)
+    D1801 = 0x0083 ; // Initial_element (kind_id)
+    D1802 = 0x1AB1 ; // IE_PSD1701_override_admissible (kind_id)
+    D1803 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1804 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1805 = 0x1AB1 ; // (ixl_instance_index)
+    D1806 = 0x001F ; // (wcu_instance_kind_id)
+    D1807 = 0x1AB1 ; // (wcu_instance_index)
+    D1808 = 0x000F ; // (ixl_Devaddr)
+    D1809 = 0x0001 ; // (io_type)
+    D1810 = 0x0009 ; // (inputaddr)
+    D1811 = 0xFFFF ; // (outputaddr)
+
+    D1812 = 0x0139 ; // (devId)
+    D1813 = 0x0083 ; // Initial_element (kind_id)
+    D1814 = 0x1AB3 ; // IE_PSD1701_close (kind_id)
+    D1815 = 0xFFFF ; // (instance_kind_id_to_wcu)
+    D1816 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1817 = 0x1AB3 ; // (ixl_instance_index)
+    D1818 = 0x001F ; // (wcu_instance_kind_id)
+    D1819 = 0x1AB3 ; // (wcu_instance_index)
+    D1820 = 0x0010 ; // (ixl_Devaddr)
+    D1821 = 0x0002 ; // (io_type)
+    D1822 = 0x000B ; // (inputaddr)
+    D1823 = 0x0006 ; // (outputaddr)
+
+    D1824 = 0x013A ; // (devId)
+    D1825 = 0x0083 ; // Initial_element (kind_id)
+    D1826 = 0x1AB4 ; // IE_PSD1701_open1 (kind_id)
+    D1827 = 0xFFFF ; // (instance_kind_id_to_wcu)
+    D1828 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1829 = 0x1AB4 ; // (ixl_instance_index)
+    D1830 = 0x001F ; // (wcu_instance_kind_id)
+    D1831 = 0x1AB4 ; // (wcu_instance_index)
+    D1832 = 0x0011 ; // (ixl_Devaddr)
+    D1833 = 0x0002 ; // (io_type)
+    D1834 = 0x000A ; // (inputaddr)
+    D1835 = 0x0005 ; // (outputaddr)
+
+    D1836 = 0x013B ; // (devId)
+    D1837 = 0x0083 ; // Initial_element (kind_id)
+    D1838 = 0x1AC0 ; // IE_PSD1702_closed_and_locked (kind_id)
+    D1839 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1840 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1841 = 0x1AC0 ; // (ixl_instance_index)
+    D1842 = 0x001F ; // (wcu_instance_kind_id)
+    D1843 = 0x1AC0 ; // (wcu_instance_index)
+    D1844 = 0x0012 ; // (ixl_Devaddr)
+    D1845 = 0x0001 ; // (io_type)
+    D1846 = 0x000C ; // (inputaddr)
+    D1847 = 0xFFFF ; // (outputaddr)
+
+    D1848 = 0x013C ; // (devId)
+    D1849 = 0x0083 ; // Initial_element (kind_id)
+    D1850 = 0x1AC2 ; // IE_PSD1702_override_admissible (kind_id)
+    D1851 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1852 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1853 = 0x1AC2 ; // (ixl_instance_index)
+    D1854 = 0x001F ; // (wcu_instance_kind_id)
+    D1855 = 0x1AC2 ; // (wcu_instance_index)
+    D1856 = 0x0013 ; // (ixl_Devaddr)
+    D1857 = 0x0001 ; // (io_type)
+    D1858 = 0x000D ; // (inputaddr)
+    D1859 = 0xFFFF ; // (outputaddr)
+
+    D1860 = 0x013D ; // (devId)
+    D1861 = 0x0083 ; // Initial_element (kind_id)
+    D1862 = 0x1AC4 ; // IE_PSD1702_close (kind_id)
+    D1863 = 0xFFFF ; // (instance_kind_id_to_wcu)
+    D1864 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1865 = 0x1AC4 ; // (ixl_instance_index)
+    D1866 = 0x001F ; // (wcu_instance_kind_id)
+    D1867 = 0x1AC4 ; // (wcu_instance_index)
+    D1868 = 0x0014 ; // (ixl_Devaddr)
+    D1869 = 0x0002 ; // (io_type)
+    D1870 = 0x000F ; // (inputaddr)
+    D1871 = 0x0008 ; // (outputaddr)
+
+    D1872 = 0x013E ; // (devId)
+    D1873 = 0x0083 ; // Initial_element (kind_id)
+    D1874 = 0x1AC5 ; // IE_PSD1702_open1 (kind_id)
+    D1875 = 0xFFFF ; // (instance_kind_id_to_wcu)
+    D1876 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1877 = 0x1AC5 ; // (ixl_instance_index)
+    D1878 = 0x001F ; // (wcu_instance_kind_id)
+    D1879 = 0x1AC5 ; // (wcu_instance_index)
+    D1880 = 0x0015 ; // (ixl_Devaddr)
+    D1881 = 0x0002 ; // (io_type)
+    D1882 = 0x000E ; // (inputaddr)
+    D1883 = 0x0007 ; // (outputaddr)
+
+    D1884 = 0x013F ; // (devId)
+    D1885 = 0x0083 ; // Initial_element (kind_id)
+    D1886 = 0x1AD1 ; // IE_PSD1801_closed_and_locked (kind_id)
+    D1887 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1888 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1889 = 0x1AD1 ; // (ixl_instance_index)
+    D1890 = 0x001F ; // (wcu_instance_kind_id)
+    D1891 = 0x1AD1 ; // (wcu_instance_index)
+    D1892 = 0x0016 ; // (ixl_Devaddr)
+    D1893 = 0x0001 ; // (io_type)
+    D1894 = 0x0010 ; // (inputaddr)
+    D1895 = 0xFFFF ; // (outputaddr)
+
+    D1896 = 0x0140 ; // (devId)
+    D1897 = 0x0083 ; // Initial_element (kind_id)
+    D1898 = 0x1AD3 ; // IE_PSD1801_override_admissible (kind_id)
+    D1899 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1900 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1901 = 0x1AD3 ; // (ixl_instance_index)
+    D1902 = 0x001F ; // (wcu_instance_kind_id)
+    D1903 = 0x1AD3 ; // (wcu_instance_index)
+    D1904 = 0x0017 ; // (ixl_Devaddr)
+    D1905 = 0x0001 ; // (io_type)
+    D1906 = 0x0011 ; // (inputaddr)
+    D1907 = 0xFFFF ; // (outputaddr)
+
+    D1908 = 0x0141 ; // (devId)
+    D1909 = 0x0083 ; // Initial_element (kind_id)
+    D1910 = 0x1AD5 ; // IE_PSD1801_close (kind_id)
+    D1911 = 0xFFFF ; // (instance_kind_id_to_wcu)
+    D1912 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1913 = 0x1AD5 ; // (ixl_instance_index)
+    D1914 = 0x001F ; // (wcu_instance_kind_id)
+    D1915 = 0x1AD5 ; // (wcu_instance_index)
+    D1916 = 0x0018 ; // (ixl_Devaddr)
+    D1917 = 0x0002 ; // (io_type)
+    D1918 = 0x0013 ; // (inputaddr)
+    D1919 = 0x000A ; // (outputaddr)
+
+    D1920 = 0x0142 ; // (devId)
+    D1921 = 0x0083 ; // Initial_element (kind_id)
+    D1922 = 0x1AE2 ; // IE_PSD1802_closed_and_locked (kind_id)
+    D1923 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1924 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1925 = 0x1AE2 ; // (ixl_instance_index)
+    D1926 = 0x001F ; // (wcu_instance_kind_id)
+    D1927 = 0x1AE2 ; // (wcu_instance_index)
+    D1928 = 0x0019 ; // (ixl_Devaddr)
+    D1929 = 0x0001 ; // (io_type)
+    D1930 = 0x0014 ; // (inputaddr)
+    D1931 = 0xFFFF ; // (outputaddr)
+
+    D1932 = 0x0143 ; // (devId)
+    D1933 = 0x0083 ; // Initial_element (kind_id)
+    D1934 = 0x1AE4 ; // IE_PSD1802_override_admissible (kind_id)
+    D1935 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1936 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1937 = 0x1AE4 ; // (ixl_instance_index)
+    D1938 = 0x001F ; // (wcu_instance_kind_id)
+    D1939 = 0x1AE4 ; // (wcu_instance_index)
+    D1940 = 0x001A ; // (ixl_Devaddr)
+    D1941 = 0x0001 ; // (io_type)
+    D1942 = 0x0015 ; // (inputaddr)
+    D1943 = 0xFFFF ; // (outputaddr)
+
+    D1944 = 0x0144 ; // (devId)
+    D1945 = 0x0083 ; // Initial_element (kind_id)
+    D1946 = 0x1AE6 ; // IE_PSD1802_close (kind_id)
+    D1947 = 0xFFFF ; // (instance_kind_id_to_wcu)
+    D1948 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1949 = 0x1AE6 ; // (ixl_instance_index)
+    D1950 = 0x001F ; // (wcu_instance_kind_id)
+    D1951 = 0x1AE6 ; // (wcu_instance_index)
+    D1952 = 0x001B ; // (ixl_Devaddr)
+    D1953 = 0x0002 ; // (io_type)
+    D1954 = 0x0017 ; // (inputaddr)
+    D1955 = 0x000C ; // (outputaddr)
+
+    D1956 = 0x0145 ; // (devId)
+    D1957 = 0x0083 ; // Initial_element (kind_id)
+    D1958 = 0x1AE7 ; // IE_PSD1802_open1 (kind_id)
+    D1959 = 0xFFFF ; // (instance_kind_id_to_wcu)
+    D1960 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D1961 = 0x1AE7 ; // (ixl_instance_index)
+    D1962 = 0x001F ; // (wcu_instance_kind_id)
+    D1963 = 0x1AE7 ; // (wcu_instance_index)
+    D1964 = 0x001C ; // (ixl_Devaddr)
+    D1965 = 0x0002 ; // (io_type)
+    D1966 = 0x0016 ; // (inputaddr)
+    D1967 = 0x000B ; // (outputaddr)
+
+    D1968 = 0x0146 ; // (devId)
+    D1969 = 0x0083 ; // Initial_element (kind_id)
+    D1970 = 0x35E7 ; // IE_EMP_FG1601 (kind_id)
+    D1971 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1972 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1973 = 0x35E7 ; // (ixl_instance_index)
+    D1974 = 0x001F ; // (wcu_instance_kind_id)
+    D1975 = 0x35E7 ; // (wcu_instance_index)
+    D1976 = 0x001D ; // (ixl_Devaddr)
+    D1977 = 0x0001 ; // (io_type)
+    D1978 = 0x001E ; // (inputaddr)
+    D1979 = 0xFFFF ; // (outputaddr)
+
+    D1980 = 0x0147 ; // (devId)
+    D1981 = 0x0083 ; // Initial_element (kind_id)
+    D1982 = 0x35EA ; // IE_EMP_FG1602 (kind_id)
+    D1983 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1984 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1985 = 0x35EA ; // (ixl_instance_index)
+    D1986 = 0x001F ; // (wcu_instance_kind_id)
+    D1987 = 0x35EA ; // (wcu_instance_index)
+    D1988 = 0x001E ; // (ixl_Devaddr)
+    D1989 = 0x0001 ; // (io_type)
+    D1990 = 0x0021 ; // (inputaddr)
+    D1991 = 0xFFFF ; // (outputaddr)
+
+    D1992 = 0x0148 ; // (devId)
+    D1993 = 0x0083 ; // Initial_element (kind_id)
+    D1994 = 0x35ED ; // IE_EMP_FG1701 (kind_id)
+    D1995 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D1996 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D1997 = 0x35ED ; // (ixl_instance_index)
+    D1998 = 0x001F ; // (wcu_instance_kind_id)
+    D1999 = 0x35ED ; // (wcu_instance_index)
+    D2000 = 0x001F ; // (ixl_Devaddr)
+    D2001 = 0x0001 ; // (io_type)
+    D2002 = 0x0024 ; // (inputaddr)
+    D2003 = 0xFFFF ; // (outputaddr)
+
+    D2004 = 0x0149 ; // (devId)
+    D2005 = 0x0083 ; // Initial_element (kind_id)
+    D2006 = 0x35F0 ; // IE_EMP_FG1702 (kind_id)
+    D2007 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2008 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2009 = 0x35F0 ; // (ixl_instance_index)
+    D2010 = 0x001F ; // (wcu_instance_kind_id)
+    D2011 = 0x35F0 ; // (wcu_instance_index)
+    D2012 = 0x0020 ; // (ixl_Devaddr)
+    D2013 = 0x0001 ; // (io_type)
+    D2014 = 0x0027 ; // (inputaddr)
+    D2015 = 0xFFFF ; // (outputaddr)
+
+    D2016 = 0x014A ; // (devId)
+    D2017 = 0x0083 ; // Initial_element (kind_id)
+    D2018 = 0x36D7 ; // IE_PSD1801_open1 (kind_id)
+    D2019 = 0xFFFF ; // (instance_kind_id_to_wcu)
+    D2020 = 0x00DB ; // (instance_kind_id_from_wcu)
+    D2021 = 0x36D7 ; // (ixl_instance_index)
+    D2022 = 0x001F ; // (wcu_instance_kind_id)
+    D2023 = 0x36D7 ; // (wcu_instance_index)
+    D2024 = 0x0021 ; // (ixl_Devaddr)
+    D2025 = 0x0002 ; // (io_type)
+    D2026 = 0x0012 ; // (inputaddr)
+    D2027 = 0x0009 ; // (outputaddr)
+
+    D2028 = 0x0119 ; // (devId)
+    D2029 = 0x639E ; // element (kind_id)
+    D2030 = 0x35AC ; // IE_EMP1601_EMP1603 (kind_id)
+    D2031 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2032 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2033 = 0x35AC ; // (ixl_instance_index)
+    D2034 = 0x001F ; // (wcu_instance_kind_id)
+    D2035 = 0x35AC ; // (wcu_instance_index)
+    D2036 = 0x0018 ; // (ixl_Devaddr)
+    D2037 = 0x0001 ; // (io_type)
+    D2038 = 0x0018 ; // (inputaddr)
+    D2039 = 0xFFFF ; // (outputaddr)
+
+    D2040 = 0x011A ; // (devId)
+    D2041 = 0x639E ; // element (kind_id)
+    D2042 = 0x35AF ; // IE_EMP1602_EMP1604 (kind_id)
+    D2043 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2044 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2045 = 0x35AF ; // (ixl_instance_index)
+    D2046 = 0x001F ; // (wcu_instance_kind_id)
+    D2047 = 0x35AF ; // (wcu_instance_index)
+    D2048 = 0x0019 ; // (ixl_Devaddr)
+    D2049 = 0x0001 ; // (io_type)
+    D2050 = 0x0019 ; // (inputaddr)
+    D2051 = 0xFFFF ; // (outputaddr)
+
+    D2052 = 0x011B ; // (devId)
+    D2053 = 0x639E ; // element (kind_id)
+    D2054 = 0x35B2 ; // IE_EMP1701_EMP1703 (kind_id)
+    D2055 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2056 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2057 = 0x35B2 ; // (ixl_instance_index)
+    D2058 = 0x001F ; // (wcu_instance_kind_id)
+    D2059 = 0x35B2 ; // (wcu_instance_index)
+    D2060 = 0x001A ; // (ixl_Devaddr)
+    D2061 = 0x0001 ; // (io_type)
+    D2062 = 0x001A ; // (inputaddr)
+    D2063 = 0xFFFF ; // (outputaddr)
+
+    D2064 = 0x011C ; // (devId)
+    D2065 = 0x639E ; // element (kind_id)
+    D2066 = 0x35B5 ; // IE_EMP1702_EMP1704 (kind_id)
+    D2067 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2068 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2069 = 0x35B5 ; // (ixl_instance_index)
+    D2070 = 0x001F ; // (wcu_instance_kind_id)
+    D2071 = 0x35B5 ; // (wcu_instance_index)
+    D2072 = 0x001B ; // (ixl_Devaddr)
+    D2073 = 0x0001 ; // (io_type)
+    D2074 = 0x001B ; // (inputaddr)
+    D2075 = 0xFFFF ; // (outputaddr)
+
+    D2076 = 0x011D ; // (devId)
+    D2077 = 0x639E ; // element (kind_id)
+    D2078 = 0x35B8 ; // IE_EMP1801_EMP1803 (kind_id)
+    D2079 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2080 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2081 = 0x35B8 ; // (ixl_instance_index)
+    D2082 = 0x001F ; // (wcu_instance_kind_id)
+    D2083 = 0x35B8 ; // (wcu_instance_index)
+    D2084 = 0x001C ; // (ixl_Devaddr)
+    D2085 = 0x0001 ; // (io_type)
+    D2086 = 0x001C ; // (inputaddr)
+    D2087 = 0xFFFF ; // (outputaddr)
+
+    D2088 = 0x011E ; // (devId)
+    D2089 = 0x639E ; // element (kind_id)
+    D2090 = 0x35BB ; // IE_EMP1802_EMP1804 (kind_id)
+    D2091 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2092 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2093 = 0x35BB ; // (ixl_instance_index)
+    D2094 = 0x001F ; // (wcu_instance_kind_id)
+    D2095 = 0x35BB ; // (wcu_instance_index)
+    D2096 = 0x001D ; // (ixl_Devaddr)
+    D2097 = 0x0001 ; // (io_type)
+    D2098 = 0x001D ; // (inputaddr)
+    D2099 = 0xFFFF ; // (outputaddr)
+
+    D2100 = 0x012F ; // (devId)
+    D2101 = 0x639D ; // element (kind_id)
+    D2102 = 0x1A8C ; // IE_PSD1601_closed_and_locked (kind_id)
+    D2103 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2104 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2105 = 0x1A8C ; // (ixl_instance_index)
+    D2106 = 0x001F ; // (wcu_instance_kind_id)
+    D2107 = 0x1A8C ; // (wcu_instance_index)
+    D2108 = 0x0000 ; // (ixl_Devaddr)
+    D2109 = 0x0001 ; // (io_type)
+    D2110 = 0x0000 ; // (inputaddr)
+    D2111 = 0xFFFF ; // (outputaddr)
+
+    D2112 = 0x0133 ; // (devId)
+    D2113 = 0x639D ; // element (kind_id)
+    D2114 = 0x1A9D ; // IE_PSD1602_closed_and_locked (kind_id)
+    D2115 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2116 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2117 = 0x1A9D ; // (ixl_instance_index)
+    D2118 = 0x001F ; // (wcu_instance_kind_id)
+    D2119 = 0x1A9D ; // (wcu_instance_index)
+    D2120 = 0x0004 ; // (ixl_Devaddr)
+    D2121 = 0x0001 ; // (io_type)
+    D2122 = 0x0004 ; // (inputaddr)
+    D2123 = 0xFFFF ; // (outputaddr)
+
+    D2124 = 0x0137 ; // (devId)
+    D2125 = 0x639D ; // element (kind_id)
+    D2126 = 0x1AAE ; // IE_PSD1701_closed_and_locked (kind_id)
+    D2127 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2128 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2129 = 0x1AAE ; // (ixl_instance_index)
+    D2130 = 0x001F ; // (wcu_instance_kind_id)
+    D2131 = 0x1AAE ; // (wcu_instance_index)
+    D2132 = 0x0008 ; // (ixl_Devaddr)
+    D2133 = 0x0001 ; // (io_type)
+    D2134 = 0x0008 ; // (inputaddr)
+    D2135 = 0xFFFF ; // (outputaddr)
+
+    D2136 = 0x013B ; // (devId)
+    D2137 = 0x639D ; // element (kind_id)
+    D2138 = 0x1ABF ; // IE_PSD1702_closed_and_locked (kind_id)
+    D2139 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2140 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2141 = 0x1ABF ; // (ixl_instance_index)
+    D2142 = 0x001F ; // (wcu_instance_kind_id)
+    D2143 = 0x1ABF ; // (wcu_instance_index)
+    D2144 = 0x000C ; // (ixl_Devaddr)
+    D2145 = 0x0001 ; // (io_type)
+    D2146 = 0x000C ; // (inputaddr)
+    D2147 = 0xFFFF ; // (outputaddr)
+
+    D2148 = 0x013F ; // (devId)
+    D2149 = 0x639D ; // element (kind_id)
+    D2150 = 0x1AD0 ; // IE_PSD1801_closed_and_locked (kind_id)
+    D2151 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2152 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2153 = 0x1AD0 ; // (ixl_instance_index)
+    D2154 = 0x001F ; // (wcu_instance_kind_id)
+    D2155 = 0x1AD0 ; // (wcu_instance_index)
+    D2156 = 0x0010 ; // (ixl_Devaddr)
+    D2157 = 0x0001 ; // (io_type)
+    D2158 = 0x0010 ; // (inputaddr)
+    D2159 = 0xFFFF ; // (outputaddr)
+
+    D2160 = 0x0142 ; // (devId)
+    D2161 = 0x639D ; // element (kind_id)
+    D2162 = 0x1AE1 ; // IE_PSD1802_closed_and_locked (kind_id)
+    D2163 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2164 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2165 = 0x1AE1 ; // (ixl_instance_index)
+    D2166 = 0x001F ; // (wcu_instance_kind_id)
+    D2167 = 0x1AE1 ; // (wcu_instance_index)
+    D2168 = 0x0014 ; // (ixl_Devaddr)
+    D2169 = 0x0001 ; // (io_type)
+    D2170 = 0x0014 ; // (inputaddr)
+    D2171 = 0xFFFF ; // (outputaddr)
+
+    D2172 = 0x0146 ; // (devId)
+    D2173 = 0x639E ; // element (kind_id)
+    D2174 = 0x35E5 ; // IE_EMP_FG1601 (kind_id)
+    D2175 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2176 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2177 = 0x35E5 ; // (ixl_instance_index)
+    D2178 = 0x001F ; // (wcu_instance_kind_id)
+    D2179 = 0x35E5 ; // (wcu_instance_index)
+    D2180 = 0x001E ; // (ixl_Devaddr)
+    D2181 = 0x0001 ; // (io_type)
+    D2182 = 0x001E ; // (inputaddr)
+    D2183 = 0xFFFF ; // (outputaddr)
+
+    D2184 = 0x0147 ; // (devId)
+    D2185 = 0x639E ; // element (kind_id)
+    D2186 = 0x35E8 ; // IE_EMP_FG1602 (kind_id)
+    D2187 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2188 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2189 = 0x35E8 ; // (ixl_instance_index)
+    D2190 = 0x001F ; // (wcu_instance_kind_id)
+    D2191 = 0x35E8 ; // (wcu_instance_index)
+    D2192 = 0x0021 ; // (ixl_Devaddr)
+    D2193 = 0x0001 ; // (io_type)
+    D2194 = 0x0021 ; // (inputaddr)
+    D2195 = 0xFFFF ; // (outputaddr)
+
+    D2196 = 0x0148 ; // (devId)
+    D2197 = 0x639E ; // element (kind_id)
+    D2198 = 0x35EB ; // IE_EMP_FG1701 (kind_id)
+    D2199 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2200 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2201 = 0x35EB ; // (ixl_instance_index)
+    D2202 = 0x001F ; // (wcu_instance_kind_id)
+    D2203 = 0x35EB ; // (wcu_instance_index)
+    D2204 = 0x0024 ; // (ixl_Devaddr)
+    D2205 = 0x0001 ; // (io_type)
+    D2206 = 0x0024 ; // (inputaddr)
+    D2207 = 0xFFFF ; // (outputaddr)
+
+    D2208 = 0x0149 ; // (devId)
+    D2209 = 0x639E ; // element (kind_id)
+    D2210 = 0x35EE ; // IE_EMP_FG1702 (kind_id)
+    D2211 = 0x00E1 ; // (instance_kind_id_to_wcu)
+    D2212 = 0xFFFF ; // (instance_kind_id_from_wcu)
+    D2213 = 0x35EE ; // (ixl_instance_index)
+    D2214 = 0x001F ; // (wcu_instance_kind_id)
+    D2215 = 0x35EE ; // (wcu_instance_index)
+    D2216 = 0x0027 ; // (ixl_Devaddr)
+    D2217 = 0x0001 ; // (io_type)
+    D2218 = 0x0027 ; // (inputaddr)
+    D2219 = 0xFFFF ; // (outputaddr)
+
+    D2220 = 0xEEEE ; // (tabEnd)
+/**PhySectionTable Number : 43 **/
+    D0000 = 0x0000 ; // TA1601
+    D0001 = 0x0000 ; // (start)
+    D0002 = 0x0000 ; // (end)
+
+    D0003 = 0x0001 ; // TA1602
+    D0004 = 0x0001 ; // (start)
+    D0005 = 0x0004 ; // (end)
+
+    D0006 = 0x0002 ; // TA1603
+    D0007 = 0x0005 ; // (start)
+    D0008 = 0x0007 ; // (end)
+
+    D0009 = 0x0003 ; // TA1604
+    D0010 = 0x0008 ; // (start)
+    D0011 = 0x000B ; // (end)
+
+    D0012 = 0x0004 ; // TA1605
+    D0013 = 0x000C ; // (start)
+    D0014 = 0x000F ; // (end)
+
+    D0015 = 0x0005 ; // TA1606
+    D0016 = 0x0010 ; // (start)
+    D0017 = 0x0012 ; // (end)
+
+    D0018 = 0x0006 ; // TA1607
+    D0019 = 0x0013 ; // (start)
+    D0020 = 0x0016 ; // (end)
+
+    D0021 = 0x0007 ; // TA1608
+    D0022 = 0x0017 ; // (start)
+    D0023 = 0x0017 ; // (end)
+
+    D0024 = 0x0008 ; // TA1701
+    D0025 = 0x0018 ; // (start)
+    D0026 = 0x0018 ; // (end)
+
+    D0027 = 0x0009 ; // TA1702
+    D0028 = 0x0019 ; // (start)
+    D0029 = 0x001C ; // (end)
+
+    D0030 = 0x000A ; // TA1703
+    D0031 = 0x001D ; // (start)
+    D0032 = 0x001F ; // (end)
+
+    D0033 = 0x000B ; // TA1704
+    D0034 = 0x0020 ; // (start)
+    D0035 = 0x0023 ; // (end)
+
+    D0036 = 0x000D ; // TA1706
+    D0037 = 0x0024 ; // (start)
+    D0038 = 0x0026 ; // (end)
+
+    D0039 = 0x000E ; // TA1707
+    D0040 = 0x0027 ; // (start)
+    D0041 = 0x0028 ; // (end)
+
+    D0042 = 0x0011 ; // TA1710
+    D0043 = 0x0029 ; // (start)
+    D0044 = 0x002A ; // (end)
+
+    D0045 = 0x0012 ; // TA1711
+    D0046 = 0x002B ; // (start)
+    D0047 = 0x002F ; // (end)
+
+    D0048 = 0x0016 ; // TA1715
+    D0049 = 0x0030 ; // (start)
+    D0050 = 0x0030 ; // (end)
+
+    D0051 = 0x0017 ; // TA1716
+    D0052 = 0x0031 ; // (start)
+    D0053 = 0x0031 ; // (end)
+
+    D0054 = 0x001A ; // TA1801
+    D0055 = 0x0032 ; // (start)
+    D0056 = 0x0032 ; // (end)
+
+    D0057 = 0x001B ; // TA1802
+    D0058 = 0x0033 ; // (start)
+    D0059 = 0x0038 ; // (end)
+
+    D0060 = 0x001C ; // TA1803
+    D0061 = 0x0039 ; // (start)
+    D0062 = 0x003B ; // (end)
+
+    D0063 = 0x001D ; // TA1804
+    D0064 = 0x003C ; // (start)
+    D0065 = 0x003E ; // (end)
+
+    D0066 = 0x001E ; // TA1805
+    D0067 = 0x003F ; // (start)
+    D0068 = 0x0044 ; // (end)
+
+    D0069 = 0x001F ; // TA1806
+    D0070 = 0x0045 ; // (start)
+    D0071 = 0x0045 ; // (end)
+
+    D0072 = 0x0031 ; // TA1411F
+    D0073 = 0x0046 ; // (start)
+    D0074 = 0x0046 ; // (end)
+
+    D0075 = 0x0020 ; // TA1412F
+    D0076 = 0x0047 ; // (start)
+    D0077 = 0x0047 ; // (end)
+
+    D0078 = 0x0030 ; // TA1413F
+    D0079 = 0x0048 ; // (start)
+    D0080 = 0x004D ; // (end)
+
+    D0081 = 0x0021 ; // TA1414F
+    D0082 = 0x004E ; // (start)
+    D0083 = 0x0053 ; // (end)
+
+    D0084 = 0x002F ; // TA1501F
+    D0085 = 0x0054 ; // (start)
+    D0086 = 0x0059 ; // (end)
+
+    D0087 = 0x0022 ; // TA1502F
+    D0088 = 0x005A ; // (start)
+    D0089 = 0x005F ; // (end)
+
+    D0090 = 0x0023 ; // TA1503F
+    D0091 = 0x0060 ; // (start)
+    D0092 = 0x0060 ; // (end)
+
+    D0093 = 0x0024 ; // TA1504F
+    D0094 = 0x0061 ; // (start)
+    D0095 = 0x0063 ; // (end)
+
+    D0096 = 0x0025 ; // TA1505F
+    D0097 = 0x0064 ; // (start)
+    D0098 = 0x0066 ; // (end)
+
+    D0099 = 0x0026 ; // TA1506F
+    D0100 = 0x0067 ; // (start)
+    D0101 = 0x0067 ; // (end)
+
+    D0102 = 0x0027 ; // TA1507F
+    D0103 = 0x0068 ; // (start)
+    D0104 = 0x006B ; // (end)
+
+    D0105 = 0x0028 ; // TA1509F
+    D0106 = 0x006C ; // (start)
+    D0107 = 0x006F ; // (end)
+
+    D0108 = 0x0029 ; // TA1901F
+    D0109 = 0x0070 ; // (start)
+    D0110 = 0x0070 ; // (end)
+
+    D0111 = 0x002A ; // TA1902F
+    D0112 = 0x0071 ; // (start)
+    D0113 = 0x0074 ; // (end)
+
+    D0114 = 0x002B ; // TA1903F
+    D0115 = 0x0075 ; // (start)
+    D0116 = 0x0075 ; // (end)
+
+    D0117 = 0x002C ; // TA1904F
+    D0118 = 0x0076 ; // (start)
+    D0119 = 0x0079 ; // (end)
+
+    D0120 = 0x002D ; // TA1905F
+    D0121 = 0x007A ; // (start)
+    D0122 = 0x007A ; // (end)
+
+    D0123 = 0x002E ; // TA1906F
+    D0124 = 0x007B ; // (start)
+    D0125 = 0x007B ; // (end)
+
+    D0126 = 0x0032 ; // TA1907F
+    D0127 = 0x007C ; // (start)
+    D0128 = 0x007C ; // (end)
+
+    D0129 = 0xEEEE ; // (tabEnd)
+/**SwitCodeTable Number : 10 **/
+    D0000 = 0x0000 ; // P1701
+    D0001 = 0x0003 ; // (type)
+    D0002 = 0x00D5 ; // (akind)
+    D0003 = 0x000A ; // (aindex)
+    D0004 = 0x00C8 ; // (bkind)
+    D0005 = 0x0002 ; // (bindex)
+    D0006 = 0x00D5 ; // (ckind)
+    D0007 = 0x000E ; // (cindex)
+
+    D0008 = 0x0001 ; // P1702
+    D0009 = 0x0002 ; // (type)
+    D0010 = 0x00D5 ; // (akind)
+    D0011 = 0x000D ; // (aindex)
+    D0012 = 0x00D5 ; // (bkind)
+    D0013 = 0x0011 ; // (bindex)
+    D0014 = 0x00C8 ; // (ckind)
+    D0015 = 0x0003 ; // (cindex)
+
+    D0016 = 0x0002 ; // P1703
+    D0017 = 0x0003 ; // (type)
+    D0018 = 0x00C8 ; // (akind)
+    D0019 = 0x0000 ; // (aindex)
+    D0020 = 0x00C8 ; // (bkind)
+    D0021 = 0x0005 ; // (bindex)
+    D0022 = 0x00C8 ; // (ckind)
+    D0023 = 0x0004 ; // (cindex)
+
+    D0024 = 0x0003 ; // P1704
+    D0025 = 0x0002 ; // (type)
+    D0026 = 0x00C8 ; // (akind)
+    D0027 = 0x0001 ; // (aindex)
+    D0028 = 0x00C8 ; // (bkind)
+    D0029 = 0x0005 ; // (bindex)
+    D0030 = 0x00C8 ; // (ckind)
+    D0031 = 0x0004 ; // (cindex)
+
+    D0032 = 0x0004 ; // P1705
+    D0033 = 0x0001 ; // (type)
+    D0034 = 0x00D5 ; // (akind)
+    D0035 = 0x0016 ; // (aindex)
+    D0036 = 0x00C8 ; // (bkind)
+    D0037 = 0x0002 ; // (bindex)
+    D0038 = 0x00C8 ; // (ckind)
+    D0039 = 0x0003 ; // (cindex)
+
+    D0040 = 0x0005 ; // P1706
+    D0041 = 0x0000 ; // (type)
+    D0042 = 0x00D5 ; // (akind)
+    D0043 = 0x0017 ; // (aindex)
+    D0044 = 0x00C8 ; // (bkind)
+    D0045 = 0x0002 ; // (bindex)
+    D0046 = 0x00C8 ; // (ckind)
+    D0047 = 0x0003 ; // (cindex)
+
+    D0048 = 0x0006 ; // P1707
+    D0049 = 0x0002 ; // (type)
+    D0050 = 0x00D5 ; // (akind)
+    D0051 = 0x0016 ; // (aindex)
+    D0052 = 0xFFFF ; // (bkind)
+    D0053 = 0xFFFF ; // (bindex)
+    D0054 = 0x00C8 ; // (ckind)
+    D0055 = 0x0008 ; // (cindex)
+
+    D0056 = 0x0007 ; // P1708
+    D0057 = 0x0003 ; // (type)
+    D0058 = 0x00D5 ; // (akind)
+    D0059 = 0x0017 ; // (aindex)
+    D0060 = 0x00C8 ; // (bkind)
+    D0061 = 0x0009 ; // (bindex)
+    D0062 = 0xFFFF ; // (ckind)
+    D0063 = 0xFFFF ; // (cindex)
+
+    D0064 = 0x0008 ; // P1709
+    D0065 = 0x0001 ; // (type)
+    D0066 = 0x00D5 ; // (akind)
+    D0067 = 0x0012 ; // (aindex)
+    D0068 = 0x00D5 ; // (bkind)
+    D0069 = 0x000E ; // (bindex)
+    D0070 = 0x00C8 ; // (ckind)
+    D0071 = 0x0006 ; // (cindex)
+
+    D0072 = 0x0009 ; // P1710
+    D0073 = 0x0000 ; // (type)
+    D0074 = 0x00D5 ; // (akind)
+    D0075 = 0x001B ; // (aindex)
+    D0076 = 0x00C8 ; // (bkind)
+    D0077 = 0x0007 ; // (bindex)
+    D0078 = 0x00D5 ; // (ckind)
+    D0079 = 0x0011 ; // (cindex)
+
+    D0080 = 0xEEEE ; // (tabEnd)
+/**SwitSectionTable Number : 8 **/
+    D0000 = 0x0000 ; // TA1705
+    D0001 = 0x000C ; // TA1705
+    D0002 = 0x00C8 ; // (atype)
+    D0003 = 0x0000 ; // (aindex)
+    D0004 = 0x0000 ; // (btype)
+    D0005 = 0xFFFF ; // (bindex)
+    D0006 = 0x0000 ; // (ctype)
+    D0007 = 0xFFFF ; // (cindex)
+
+    D0008 = 0x0001 ; // TA1708
+    D0009 = 0x000F ; // TA1708
+    D0010 = 0x00C8 ; // (atype)
+    D0011 = 0x0001 ; // (aindex)
+    D0012 = 0x0000 ; // (btype)
+    D0013 = 0xFFFF ; // (bindex)
+    D0014 = 0x0000 ; // (ctype)
+    D0015 = 0xFFFF ; // (cindex)
+
+    D0016 = 0x0002 ; // TA1713
+    D0017 = 0x0014 ; // TA1713
+    D0018 = 0x00C8 ; // (atype)
+    D0019 = 0x0002 ; // (aindex)
+    D0020 = 0x00C8 ; // (btype)
+    D0021 = 0x0004 ; // (bindex)
+    D0022 = 0x00CB ; // (ctype)
+    D0023 = 0x0000 ; // (cindex)
+
+    D0024 = 0x0003 ; // TA1714
+    D0025 = 0x0015 ; // TA1714
+    D0026 = 0x00C8 ; // (atype)
+    D0027 = 0x0003 ; // (aindex)
+    D0028 = 0x00C8 ; // (btype)
+    D0029 = 0x0005 ; // (bindex)
+    D0030 = 0x0000 ; // (ctype)
+    D0031 = 0x0000 ; // (cindex)
+
+    D0032 = 0x0004 ; // TA1709
+    D0033 = 0x0010 ; // TA1709
+    D0034 = 0x00C8 ; // (atype)
+    D0035 = 0x0008 ; // (aindex)
+    D0036 = 0x0000 ; // (btype)
+    D0037 = 0xFFFF ; // (bindex)
+    D0038 = 0x0000 ; // (ctype)
+    D0039 = 0xFFFF ; // (cindex)
+
+    D0040 = 0x0005 ; // TA1712
+    D0041 = 0x0013 ; // TA1712
+    D0042 = 0x00C8 ; // (atype)
+    D0043 = 0x0009 ; // (aindex)
+    D0044 = 0x0000 ; // (btype)
+    D0045 = 0xFFFF ; // (bindex)
+    D0046 = 0x0000 ; // (ctype)
+    D0047 = 0xFFFF ; // (cindex)
+
+    D0048 = 0x0006 ; // TA1717
+    D0049 = 0x0018 ; // TA1717
+    D0050 = 0x00C8 ; // (atype)
+    D0051 = 0x0006 ; // (aindex)
+    D0052 = 0x0000 ; // (btype)
+    D0053 = 0xFFFF ; // (bindex)
+    D0054 = 0x0000 ; // (ctype)
+    D0055 = 0xFFFF ; // (cindex)
+
+    D0056 = 0x0007 ; // TA1718
+    D0057 = 0x0019 ; // TA1718
+    D0058 = 0x00C8 ; // (atype)
+    D0059 = 0x0007 ; // (aindex)
+    D0060 = 0x0000 ; // (btype)
+    D0061 = 0xFFFF ; // (bindex)
+    D0062 = 0x0000 ; // (ctype)
+    D0063 = 0xFFFF ; // (cindex)
+
+    D0064 = 0xEEEE ; // (tabEnd)
+/**TrackSectionCodeTable Number : 125 **/
+    D0000 = 0x0000 ; // TA1601A
+    D0001 = 0x00CF ; // (type)
+    D0002 = 0x0000 ; // (index)
+    D0003 = 0x0000 ; // TA1601
+    D0004 = 0x0000 ; // (dir)
+
+    D0005 = 0x0001 ; // TA1602A
+    D0006 = 0x00CF ; // (type)
+    D0007 = 0x0000 ; // (index)
+    D0008 = 0x0001 ; // TA1602
+    D0009 = 0x0000 ; // (dir)
+
+    D0010 = 0x0002 ; // TA1602B
+    D0011 = 0x00CF ; // (type)
+    D0012 = 0x0000 ; // (index)
+    D0013 = 0x0001 ; // TA1602
+    D0014 = 0x0000 ; // (dir)
+
+    D0015 = 0x0003 ; // TA1602C
+    D0016 = 0x00CF ; // (type)
+    D0017 = 0x0000 ; // (index)
+    D0018 = 0x0001 ; // TA1602
+    D0019 = 0x0000 ; // (dir)
+
+    D0020 = 0x0004 ; // TA1602D
+    D0021 = 0x00CF ; // (type)
+    D0022 = 0x0000 ; // (index)
+    D0023 = 0x0001 ; // TA1602
+    D0024 = 0x0000 ; // (dir)
+
+    D0025 = 0x0005 ; // TA1603A
+    D0026 = 0x00CF ; // (type)
+    D0027 = 0x0000 ; // (index)
+    D0028 = 0x0002 ; // TA1603
+    D0029 = 0x0000 ; // (dir)
+
+    D0030 = 0x0006 ; // TA1603B
+    D0031 = 0x00CF ; // (type)
+    D0032 = 0x0000 ; // (index)
+    D0033 = 0x0002 ; // TA1603
+    D0034 = 0x0000 ; // (dir)
+
+    D0035 = 0x0007 ; // TA1603C
+    D0036 = 0x00CF ; // (type)
+    D0037 = 0x0000 ; // (index)
+    D0038 = 0x0002 ; // TA1603
+    D0039 = 0x0000 ; // (dir)
+
+    D0040 = 0x0008 ; // TA1604A
+    D0041 = 0x00CF ; // (type)
+    D0042 = 0x0000 ; // (index)
+    D0043 = 0x0003 ; // TA1604
+    D0044 = 0x0000 ; // (dir)
+
+    D0045 = 0x0009 ; // TA1604B
+    D0046 = 0x00CF ; // (type)
+    D0047 = 0x0000 ; // (index)
+    D0048 = 0x0003 ; // TA1604
+    D0049 = 0x0000 ; // (dir)
+
+    D0050 = 0x000A ; // TA1604C
+    D0051 = 0x00CF ; // (type)
+    D0052 = 0x0000 ; // (index)
+    D0053 = 0x0003 ; // TA1604
+    D0054 = 0x0000 ; // (dir)
+
+    D0055 = 0x000B ; // TA1604D
+    D0056 = 0x00CF ; // (type)
+    D0057 = 0x0000 ; // (index)
+    D0058 = 0x0003 ; // TA1604
+    D0059 = 0x0000 ; // (dir)
+
+    D0060 = 0x000C ; // TA1605A
+    D0061 = 0x00CF ; // (type)
+    D0062 = 0x0000 ; // (index)
+    D0063 = 0x0004 ; // TA1605
+    D0064 = 0x0000 ; // (dir)
+
+    D0065 = 0x000D ; // TA1605B
+    D0066 = 0x00CF ; // (type)
+    D0067 = 0x0000 ; // (index)
+    D0068 = 0x0004 ; // TA1605
+    D0069 = 0x0000 ; // (dir)
+
+    D0070 = 0x000E ; // TA1605C
+    D0071 = 0x00CF ; // (type)
+    D0072 = 0x0000 ; // (index)
+    D0073 = 0x0004 ; // TA1605
+    D0074 = 0x0000 ; // (dir)
+
+    D0075 = 0x000F ; // TA1605D
+    D0076 = 0x00CF ; // (type)
+    D0077 = 0x0000 ; // (index)
+    D0078 = 0x0004 ; // TA1605
+    D0079 = 0x0000 ; // (dir)
+
+    D0080 = 0x0010 ; // TA1606A
+    D0081 = 0x00CF ; // (type)
+    D0082 = 0x0000 ; // (index)
+    D0083 = 0x0005 ; // TA1606
+    D0084 = 0x0000 ; // (dir)
+
+    D0085 = 0x0011 ; // TA1606B
+    D0086 = 0x00CF ; // (type)
+    D0087 = 0x0000 ; // (index)
+    D0088 = 0x0005 ; // TA1606
+    D0089 = 0x0000 ; // (dir)
+
+    D0090 = 0x0012 ; // TA1606C
+    D0091 = 0x00CF ; // (type)
+    D0092 = 0x0000 ; // (index)
+    D0093 = 0x0005 ; // TA1606
+    D0094 = 0x0000 ; // (dir)
+
+    D0095 = 0x0013 ; // TA1607A
+    D0096 = 0x00CF ; // (type)
+    D0097 = 0x0000 ; // (index)
+    D0098 = 0x0006 ; // TA1607
+    D0099 = 0x0000 ; // (dir)
+
+    D0100 = 0x0014 ; // TA1607B
+    D0101 = 0x00CF ; // (type)
+    D0102 = 0x0000 ; // (index)
+    D0103 = 0x0006 ; // TA1607
+    D0104 = 0x0000 ; // (dir)
+
+    D0105 = 0x0015 ; // TA1607C
+    D0106 = 0x00CF ; // (type)
+    D0107 = 0x0000 ; // (index)
+    D0108 = 0x0006 ; // TA1607
+    D0109 = 0x0000 ; // (dir)
+
+    D0110 = 0x0016 ; // TA1607D
+    D0111 = 0x00CF ; // (type)
+    D0112 = 0x0000 ; // (index)
+    D0113 = 0x0006 ; // TA1607
+    D0114 = 0x0000 ; // (dir)
+
+    D0115 = 0x0017 ; // TA1608A
+    D0116 = 0x00CF ; // (type)
+    D0117 = 0x0000 ; // (index)
+    D0118 = 0x0007 ; // TA1608
+    D0119 = 0x0000 ; // (dir)
+
+    D0120 = 0x0018 ; // TA1701A
+    D0121 = 0x00CF ; // (type)
+    D0122 = 0x0000 ; // (index)
+    D0123 = 0x0008 ; // TA1701
+    D0124 = 0x0000 ; // (dir)
+
+    D0125 = 0x0019 ; // TA1702A
+    D0126 = 0x00CF ; // (type)
+    D0127 = 0x0000 ; // (index)
+    D0128 = 0x0009 ; // TA1702
+    D0129 = 0x0000 ; // (dir)
+
+    D0130 = 0x001A ; // TA1702B
+    D0131 = 0x00CF ; // (type)
+    D0132 = 0x0000 ; // (index)
+    D0133 = 0x0009 ; // TA1702
+    D0134 = 0x0000 ; // (dir)
+
+    D0135 = 0x001B ; // TA1702C
+    D0136 = 0x00CF ; // (type)
+    D0137 = 0x0000 ; // (index)
+    D0138 = 0x0009 ; // TA1702
+    D0139 = 0x0000 ; // (dir)
+
+    D0140 = 0x001C ; // TA1702D
+    D0141 = 0x00CF ; // (type)
+    D0142 = 0x0000 ; // (index)
+    D0143 = 0x0009 ; // TA1702
+    D0144 = 0x0000 ; // (dir)
+
+    D0145 = 0x001D ; // TA1703A
+    D0146 = 0x00CF ; // (type)
+    D0147 = 0x0000 ; // (index)
+    D0148 = 0x000A ; // TA1703
+    D0149 = 0x0000 ; // (dir)
+
+    D0150 = 0x001E ; // TA1703B
+    D0151 = 0x00CF ; // (type)
+    D0152 = 0x0000 ; // (index)
+    D0153 = 0x000A ; // TA1703
+    D0154 = 0x0000 ; // (dir)
+
+    D0155 = 0x001F ; // TA1703C
+    D0156 = 0x00CF ; // (type)
+    D0157 = 0x0000 ; // (index)
+    D0158 = 0x000A ; // TA1703
+    D0159 = 0x0000 ; // (dir)
+
+    D0160 = 0x0020 ; // TA1704A
+    D0161 = 0x00CF ; // (type)
+    D0162 = 0x0000 ; // (index)
+    D0163 = 0x000B ; // TA1704
+    D0164 = 0x0000 ; // (dir)
+
+    D0165 = 0x0021 ; // TA1704B
+    D0166 = 0x00CF ; // (type)
+    D0167 = 0x0000 ; // (index)
+    D0168 = 0x000B ; // TA1704
+    D0169 = 0x0000 ; // (dir)
+
+    D0170 = 0x0022 ; // TA1704C
+    D0171 = 0x00CF ; // (type)
+    D0172 = 0x0000 ; // (index)
+    D0173 = 0x000B ; // TA1704
+    D0174 = 0x0000 ; // (dir)
+
+    D0175 = 0x0023 ; // TA1704D
+    D0176 = 0x00CF ; // (type)
+    D0177 = 0x0000 ; // (index)
+    D0178 = 0x000B ; // TA1704
+    D0179 = 0x0000 ; // (dir)
+
+    D0180 = 0x0024 ; // TA1706A
+    D0181 = 0x00CF ; // (type)
+    D0182 = 0x0000 ; // (index)
+    D0183 = 0x000D ; // TA1706
+    D0184 = 0x0000 ; // (dir)
+
+    D0185 = 0x0025 ; // TA1706B
+    D0186 = 0x00CF ; // (type)
+    D0187 = 0x0000 ; // (index)
+    D0188 = 0x000D ; // TA1706
+    D0189 = 0x0000 ; // (dir)
+
+    D0190 = 0x0026 ; // TA1706C
+    D0191 = 0x00CF ; // (type)
+    D0192 = 0x0000 ; // (index)
+    D0193 = 0x000D ; // TA1706
+    D0194 = 0x0000 ; // (dir)
+
+    D0195 = 0x0027 ; // TA1707A
+    D0196 = 0x00CF ; // (type)
+    D0197 = 0x0000 ; // (index)
+    D0198 = 0x000E ; // TA1707
+    D0199 = 0x0000 ; // (dir)
+
+    D0200 = 0x0028 ; // TA1707B
+    D0201 = 0x00CF ; // (type)
+    D0202 = 0x0000 ; // (index)
+    D0203 = 0x000E ; // TA1707
+    D0204 = 0x0000 ; // (dir)
+
+    D0205 = 0x0029 ; // TA1710A
+    D0206 = 0x00CF ; // (type)
+    D0207 = 0x0000 ; // (index)
+    D0208 = 0x0011 ; // TA1710
+    D0209 = 0x0000 ; // (dir)
+
+    D0210 = 0x002A ; // TA1710B
+    D0211 = 0x00CF ; // (type)
+    D0212 = 0x0000 ; // (index)
+    D0213 = 0x0011 ; // TA1710
+    D0214 = 0x0000 ; // (dir)
+
+    D0215 = 0x002B ; // TA1711A
+    D0216 = 0x00CF ; // (type)
+    D0217 = 0x0000 ; // (index)
+    D0218 = 0x0012 ; // TA1711
+    D0219 = 0x0000 ; // (dir)
+
+    D0220 = 0x002C ; // TA1711B
+    D0221 = 0x00CF ; // (type)
+    D0222 = 0x0000 ; // (index)
+    D0223 = 0x0012 ; // TA1711
+    D0224 = 0x0000 ; // (dir)
+
+    D0225 = 0x002D ; // TA1711C
+    D0226 = 0x00CF ; // (type)
+    D0227 = 0x0000 ; // (index)
+    D0228 = 0x0012 ; // TA1711
+    D0229 = 0x0000 ; // (dir)
+
+    D0230 = 0x002E ; // TA1711D
+    D0231 = 0x00CF ; // (type)
+    D0232 = 0x0000 ; // (index)
+    D0233 = 0x0012 ; // TA1711
+    D0234 = 0x0000 ; // (dir)
+
+    D0235 = 0x002F ; // TA1711E
+    D0236 = 0x00CF ; // (type)
+    D0237 = 0x0000 ; // (index)
+    D0238 = 0x0012 ; // TA1711
+    D0239 = 0x0000 ; // (dir)
+
+    D0240 = 0x0030 ; // TA1715A
+    D0241 = 0x00CF ; // (type)
+    D0242 = 0x0000 ; // (index)
+    D0243 = 0x0016 ; // TA1715
+    D0244 = 0x0000 ; // (dir)
+
+    D0245 = 0x0031 ; // TA1716A
+    D0246 = 0x00CF ; // (type)
+    D0247 = 0x0000 ; // (index)
+    D0248 = 0x0017 ; // TA1716
+    D0249 = 0x0000 ; // (dir)
+
+    D0250 = 0x0032 ; // TA1801A
+    D0251 = 0x00CF ; // (type)
+    D0252 = 0x0000 ; // (index)
+    D0253 = 0x001A ; // TA1801
+    D0254 = 0x0000 ; // (dir)
+
+    D0255 = 0x0033 ; // TA1802A
+    D0256 = 0x00CF ; // (type)
+    D0257 = 0x0000 ; // (index)
+    D0258 = 0x001B ; // TA1802
+    D0259 = 0x0000 ; // (dir)
+
+    D0260 = 0x0034 ; // TA1802B
+    D0261 = 0x00CF ; // (type)
+    D0262 = 0x0000 ; // (index)
+    D0263 = 0x001B ; // TA1802
+    D0264 = 0x0000 ; // (dir)
+
+    D0265 = 0x0035 ; // TA1802C
+    D0266 = 0x00CF ; // (type)
+    D0267 = 0x0000 ; // (index)
+    D0268 = 0x001B ; // TA1802
+    D0269 = 0x0000 ; // (dir)
+
+    D0270 = 0x0036 ; // TA1802D
+    D0271 = 0x00CF ; // (type)
+    D0272 = 0x0000 ; // (index)
+    D0273 = 0x001B ; // TA1802
+    D0274 = 0x0000 ; // (dir)
+
+    D0275 = 0x0037 ; // TA1802E
+    D0276 = 0x00CF ; // (type)
+    D0277 = 0x0000 ; // (index)
+    D0278 = 0x001B ; // TA1802
+    D0279 = 0x0000 ; // (dir)
+
+    D0280 = 0x0038 ; // TA1802F
+    D0281 = 0x00CF ; // (type)
+    D0282 = 0x0000 ; // (index)
+    D0283 = 0x001B ; // TA1802
+    D0284 = 0x0000 ; // (dir)
+
+    D0285 = 0x0039 ; // TA1803A
+    D0286 = 0x00CF ; // (type)
+    D0287 = 0x0000 ; // (index)
+    D0288 = 0x001C ; // TA1803
+    D0289 = 0x0000 ; // (dir)
+
+    D0290 = 0x003A ; // TA1803B
+    D0291 = 0x00CF ; // (type)
+    D0292 = 0x0000 ; // (index)
+    D0293 = 0x001C ; // TA1803
+    D0294 = 0x0000 ; // (dir)
+
+    D0295 = 0x003B ; // TA1803C
+    D0296 = 0x00CF ; // (type)
+    D0297 = 0x0000 ; // (index)
+    D0298 = 0x001C ; // TA1803
+    D0299 = 0x0000 ; // (dir)
+
+    D0300 = 0x003C ; // TA1804A
+    D0301 = 0x00CF ; // (type)
+    D0302 = 0x0000 ; // (index)
+    D0303 = 0x001D ; // TA1804
+    D0304 = 0x0000 ; // (dir)
+
+    D0305 = 0x003D ; // TA1804B
+    D0306 = 0x00CF ; // (type)
+    D0307 = 0x0000 ; // (index)
+    D0308 = 0x001D ; // TA1804
+    D0309 = 0x0000 ; // (dir)
+
+    D0310 = 0x003E ; // TA1804C
+    D0311 = 0x00CF ; // (type)
+    D0312 = 0x0000 ; // (index)
+    D0313 = 0x001D ; // TA1804
+    D0314 = 0x0000 ; // (dir)
+
+    D0315 = 0x003F ; // TA1805A
+    D0316 = 0x00CF ; // (type)
+    D0317 = 0x0000 ; // (index)
+    D0318 = 0x001E ; // TA1805
+    D0319 = 0x0000 ; // (dir)
+
+    D0320 = 0x0040 ; // TA1805B
+    D0321 = 0x00CF ; // (type)
+    D0322 = 0x0000 ; // (index)
+    D0323 = 0x001E ; // TA1805
+    D0324 = 0x0000 ; // (dir)
+
+    D0325 = 0x0041 ; // TA1805C
+    D0326 = 0x00CF ; // (type)
+    D0327 = 0x0000 ; // (index)
+    D0328 = 0x001E ; // TA1805
+    D0329 = 0x0000 ; // (dir)
+
+    D0330 = 0x0042 ; // TA1805D
+    D0331 = 0x00CF ; // (type)
+    D0332 = 0x0000 ; // (index)
+    D0333 = 0x001E ; // TA1805
+    D0334 = 0x0000 ; // (dir)
+
+    D0335 = 0x0043 ; // TA1805E
+    D0336 = 0x00CF ; // (type)
+    D0337 = 0x0000 ; // (index)
+    D0338 = 0x001E ; // TA1805
+    D0339 = 0x0000 ; // (dir)
+
+    D0340 = 0x0044 ; // TA1805F
+    D0341 = 0x00CF ; // (type)
+    D0342 = 0x0000 ; // (index)
+    D0343 = 0x001E ; // TA1805
+    D0344 = 0x0000 ; // (dir)
+
+    D0345 = 0x0045 ; // TA1806A
+    D0346 = 0x00CF ; // (type)
+    D0347 = 0x0000 ; // (index)
+    D0348 = 0x001F ; // TA1806
+    D0349 = 0x0000 ; // (dir)
+
+    D0350 = 0x0046 ; // TA1411FA
+    D0351 = 0x00CF ; // (type)
+    D0352 = 0x0000 ; // (index)
+    D0353 = 0x0031 ; // TA1411F
+    D0354 = 0x0000 ; // (dir)
+
+    D0355 = 0x0047 ; // TA1412FA
+    D0356 = 0x00CF ; // (type)
+    D0357 = 0x0000 ; // (index)
+    D0358 = 0x0020 ; // TA1412F
+    D0359 = 0x0000 ; // (dir)
+
+    D0360 = 0x0048 ; // TA1413FA
+    D0361 = 0x00CF ; // (type)
+    D0362 = 0x0000 ; // (index)
+    D0363 = 0x0030 ; // TA1413F
+    D0364 = 0x0000 ; // (dir)
+
+    D0365 = 0x0049 ; // TA1413FB
+    D0366 = 0x00CF ; // (type)
+    D0367 = 0x0000 ; // (index)
+    D0368 = 0x0030 ; // TA1413F
+    D0369 = 0x0000 ; // (dir)
+
+    D0370 = 0x004A ; // TA1413FC
+    D0371 = 0x00CF ; // (type)
+    D0372 = 0x0000 ; // (index)
+    D0373 = 0x0030 ; // TA1413F
+    D0374 = 0x0000 ; // (dir)
+
+    D0375 = 0x004B ; // TA1413FD
+    D0376 = 0x00CF ; // (type)
+    D0377 = 0x0000 ; // (index)
+    D0378 = 0x0030 ; // TA1413F
+    D0379 = 0x0000 ; // (dir)
+
+    D0380 = 0x004C ; // TA1413FE
+    D0381 = 0x00CF ; // (type)
+    D0382 = 0x0000 ; // (index)
+    D0383 = 0x0030 ; // TA1413F
+    D0384 = 0x0000 ; // (dir)
+
+    D0385 = 0x004D ; // TA1413FF
+    D0386 = 0x00CF ; // (type)
+    D0387 = 0x0000 ; // (index)
+    D0388 = 0x0030 ; // TA1413F
+    D0389 = 0x0000 ; // (dir)
+
+    D0390 = 0x004E ; // TA1414FA
+    D0391 = 0x00CF ; // (type)
+    D0392 = 0x0000 ; // (index)
+    D0393 = 0x0021 ; // TA1414F
+    D0394 = 0x0000 ; // (dir)
+
+    D0395 = 0x004F ; // TA1414FB
+    D0396 = 0x00CF ; // (type)
+    D0397 = 0x0000 ; // (index)
+    D0398 = 0x0021 ; // TA1414F
+    D0399 = 0x0000 ; // (dir)
+
+    D0400 = 0x0050 ; // TA1414FC
+    D0401 = 0x00CF ; // (type)
+    D0402 = 0x0000 ; // (index)
+    D0403 = 0x0021 ; // TA1414F
+    D0404 = 0x0000 ; // (dir)
+
+    D0405 = 0x0051 ; // TA1414FD
+    D0406 = 0x00CF ; // (type)
+    D0407 = 0x0000 ; // (index)
+    D0408 = 0x0021 ; // TA1414F
+    D0409 = 0x0000 ; // (dir)
+
+    D0410 = 0x0052 ; // TA1414FE
+    D0411 = 0x00CF ; // (type)
+    D0412 = 0x0000 ; // (index)
+    D0413 = 0x0021 ; // TA1414F
+    D0414 = 0x0000 ; // (dir)
+
+    D0415 = 0x0053 ; // TA1414FF
+    D0416 = 0x00CF ; // (type)
+    D0417 = 0x0000 ; // (index)
+    D0418 = 0x0021 ; // TA1414F
+    D0419 = 0x0000 ; // (dir)
+
+    D0420 = 0x0054 ; // TA1501FA
+    D0421 = 0x00CF ; // (type)
+    D0422 = 0x0000 ; // (index)
+    D0423 = 0x002F ; // TA1501F
+    D0424 = 0x0000 ; // (dir)
+
+    D0425 = 0x0055 ; // TA1501FB
+    D0426 = 0x00CF ; // (type)
+    D0427 = 0x0000 ; // (index)
+    D0428 = 0x002F ; // TA1501F
+    D0429 = 0x0000 ; // (dir)
+
+    D0430 = 0x0056 ; // TA1501FC
+    D0431 = 0x00CF ; // (type)
+    D0432 = 0x0000 ; // (index)
+    D0433 = 0x002F ; // TA1501F
+    D0434 = 0x0000 ; // (dir)
+
+    D0435 = 0x0057 ; // TA1501FD
+    D0436 = 0x00CF ; // (type)
+    D0437 = 0x0000 ; // (index)
+    D0438 = 0x002F ; // TA1501F
+    D0439 = 0x0000 ; // (dir)
+
+    D0440 = 0x0058 ; // TA1501FE
+    D0441 = 0x00CF ; // (type)
+    D0442 = 0x0000 ; // (index)
+    D0443 = 0x002F ; // TA1501F
+    D0444 = 0x0000 ; // (dir)
+
+    D0445 = 0x0059 ; // TA1501FF
+    D0446 = 0x00CF ; // (type)
+    D0447 = 0x0000 ; // (index)
+    D0448 = 0x002F ; // TA1501F
+    D0449 = 0x0000 ; // (dir)
+
+    D0450 = 0x005A ; // TA1502FA
+    D0451 = 0x00CF ; // (type)
+    D0452 = 0x0000 ; // (index)
+    D0453 = 0x0022 ; // TA1502F
+    D0454 = 0x0000 ; // (dir)
+
+    D0455 = 0x005B ; // TA1502FB
+    D0456 = 0x00CF ; // (type)
+    D0457 = 0x0000 ; // (index)
+    D0458 = 0x0022 ; // TA1502F
+    D0459 = 0x0000 ; // (dir)
+
+    D0460 = 0x005C ; // TA1502FC
+    D0461 = 0x00CF ; // (type)
+    D0462 = 0x0000 ; // (index)
+    D0463 = 0x0022 ; // TA1502F
+    D0464 = 0x0000 ; // (dir)
+
+    D0465 = 0x005D ; // TA1502FD
+    D0466 = 0x00CF ; // (type)
+    D0467 = 0x0000 ; // (index)
+    D0468 = 0x0022 ; // TA1502F
+    D0469 = 0x0000 ; // (dir)
+
+    D0470 = 0x005E ; // TA1502FE
+    D0471 = 0x00CF ; // (type)
+    D0472 = 0x0000 ; // (index)
+    D0473 = 0x0022 ; // TA1502F
+    D0474 = 0x0000 ; // (dir)
+
+    D0475 = 0x005F ; // TA1502FF
+    D0476 = 0x00CF ; // (type)
+    D0477 = 0x0000 ; // (index)
+    D0478 = 0x0022 ; // TA1502F
+    D0479 = 0x0000 ; // (dir)
+
+    D0480 = 0x0060 ; // TA1503FA
+    D0481 = 0x00CF ; // (type)
+    D0482 = 0x0000 ; // (index)
+    D0483 = 0x0023 ; // TA1503F
+    D0484 = 0x0000 ; // (dir)
+
+    D0485 = 0x0061 ; // TA1504FA
+    D0486 = 0x00CF ; // (type)
+    D0487 = 0x0000 ; // (index)
+    D0488 = 0x0024 ; // TA1504F
+    D0489 = 0x0000 ; // (dir)
+
+    D0490 = 0x0062 ; // TA1504FB
+    D0491 = 0x00CF ; // (type)
+    D0492 = 0x0000 ; // (index)
+    D0493 = 0x0024 ; // TA1504F
+    D0494 = 0x0000 ; // (dir)
+
+    D0495 = 0x0063 ; // TA1504FC
+    D0496 = 0x00CF ; // (type)
+    D0497 = 0x0000 ; // (index)
+    D0498 = 0x0024 ; // TA1504F
+    D0499 = 0x0000 ; // (dir)
+
+    D0500 = 0x0064 ; // TA1505FA
+    D0501 = 0x00CF ; // (type)
+    D0502 = 0x0000 ; // (index)
+    D0503 = 0x0025 ; // TA1505F
+    D0504 = 0x0000 ; // (dir)
+
+    D0505 = 0x0065 ; // TA1505FB
+    D0506 = 0x00CF ; // (type)
+    D0507 = 0x0000 ; // (index)
+    D0508 = 0x0025 ; // TA1505F
+    D0509 = 0x0000 ; // (dir)
+
+    D0510 = 0x0066 ; // TA1505FC
+    D0511 = 0x00CF ; // (type)
+    D0512 = 0x0000 ; // (index)
+    D0513 = 0x0025 ; // TA1505F
+    D0514 = 0x0000 ; // (dir)
+
+    D0515 = 0x0067 ; // TA1506FA
+    D0516 = 0x00CF ; // (type)
+    D0517 = 0x0000 ; // (index)
+    D0518 = 0x0026 ; // TA1506F
+    D0519 = 0x0000 ; // (dir)
+
+    D0520 = 0x0068 ; // TA1507FA
+    D0521 = 0x00CF ; // (type)
+    D0522 = 0x0000 ; // (index)
+    D0523 = 0x0027 ; // TA1507F
+    D0524 = 0x0000 ; // (dir)
+
+    D0525 = 0x0069 ; // TA1507FB
+    D0526 = 0x00CF ; // (type)
+    D0527 = 0x0000 ; // (index)
+    D0528 = 0x0027 ; // TA1507F
+    D0529 = 0x0000 ; // (dir)
+
+    D0530 = 0x006A ; // TA1507FC
+    D0531 = 0x00CF ; // (type)
+    D0532 = 0x0000 ; // (index)
+    D0533 = 0x0027 ; // TA1507F
+    D0534 = 0x0000 ; // (dir)
+
+    D0535 = 0x006B ; // TA1507FD
+    D0536 = 0x00CF ; // (type)
+    D0537 = 0x0000 ; // (index)
+    D0538 = 0x0027 ; // TA1507F
+    D0539 = 0x0000 ; // (dir)
+
+    D0540 = 0x006C ; // TA1509FA
+    D0541 = 0x00CF ; // (type)
+    D0542 = 0x0000 ; // (index)
+    D0543 = 0x0028 ; // TA1509F
+    D0544 = 0x0000 ; // (dir)
+
+    D0545 = 0x006D ; // TA1509FB
+    D0546 = 0x00CF ; // (type)
+    D0547 = 0x0000 ; // (index)
+    D0548 = 0x0028 ; // TA1509F
+    D0549 = 0x0000 ; // (dir)
+
+    D0550 = 0x006E ; // TA1509FC
+    D0551 = 0x00CF ; // (type)
+    D0552 = 0x0000 ; // (index)
+    D0553 = 0x0028 ; // TA1509F
+    D0554 = 0x0000 ; // (dir)
+
+    D0555 = 0x006F ; // TA1509FD
+    D0556 = 0x00CF ; // (type)
+    D0557 = 0x0000 ; // (index)
+    D0558 = 0x0028 ; // TA1509F
+    D0559 = 0x0000 ; // (dir)
+
+    D0560 = 0x0070 ; // TA1901FA
+    D0561 = 0x00CF ; // (type)
+    D0562 = 0x0000 ; // (index)
+    D0563 = 0x0029 ; // TA1901F
+    D0564 = 0x0000 ; // (dir)
+
+    D0565 = 0x0071 ; // TA1902FA
+    D0566 = 0x00CF ; // (type)
+    D0567 = 0x0000 ; // (index)
+    D0568 = 0x002A ; // TA1902F
+    D0569 = 0x0000 ; // (dir)
+
+    D0570 = 0x0072 ; // TA1902FB
+    D0571 = 0x00CF ; // (type)
+    D0572 = 0x0000 ; // (index)
+    D0573 = 0x002A ; // TA1902F
+    D0574 = 0x0000 ; // (dir)
+
+    D0575 = 0x0073 ; // TA1902FC
+    D0576 = 0x00CF ; // (type)
+    D0577 = 0x0000 ; // (index)
+    D0578 = 0x002A ; // TA1902F
+    D0579 = 0x0000 ; // (dir)
+
+    D0580 = 0x0074 ; // TA1902FD
+    D0581 = 0x00CF ; // (type)
+    D0582 = 0x0000 ; // (index)
+    D0583 = 0x002A ; // TA1902F
+    D0584 = 0x0000 ; // (dir)
+
+    D0585 = 0x0075 ; // TA1903FA
+    D0586 = 0x00CF ; // (type)
+    D0587 = 0x0000 ; // (index)
+    D0588 = 0x002B ; // TA1903F
+    D0589 = 0x0000 ; // (dir)
+
+    D0590 = 0x0076 ; // TA1904FA
+    D0591 = 0x00CF ; // (type)
+    D0592 = 0x0000 ; // (index)
+    D0593 = 0x002C ; // TA1904F
+    D0594 = 0x0000 ; // (dir)
+
+    D0595 = 0x0077 ; // TA1904FB
+    D0596 = 0x00CF ; // (type)
+    D0597 = 0x0000 ; // (index)
+    D0598 = 0x002C ; // TA1904F
+    D0599 = 0x0000 ; // (dir)
+
+    D0600 = 0x0078 ; // TA1904FC
+    D0601 = 0x00CF ; // (type)
+    D0602 = 0x0000 ; // (index)
+    D0603 = 0x002C ; // TA1904F
+    D0604 = 0x0000 ; // (dir)
+
+    D0605 = 0x0079 ; // TA1904FD
+    D0606 = 0x00CF ; // (type)
+    D0607 = 0x0000 ; // (index)
+    D0608 = 0x002C ; // TA1904F
+    D0609 = 0x0000 ; // (dir)
+
+    D0610 = 0x007A ; // TA1905FA
+    D0611 = 0x00CF ; // (type)
+    D0612 = 0x0000 ; // (index)
+    D0613 = 0x002D ; // TA1905F
+    D0614 = 0x0000 ; // (dir)
+
+    D0615 = 0x007B ; // TA1906FA
+    D0616 = 0x00CF ; // (type)
+    D0617 = 0x0000 ; // (index)
+    D0618 = 0x002E ; // TA1906F
+    D0619 = 0x0000 ; // (dir)
+
+    D0620 = 0x007C ; // TA1907FA
+    D0621 = 0x00CF ; // (type)
+    D0622 = 0x0000 ; // (index)
+    D0623 = 0x0032 ; // TA1907F
+    D0624 = 0x0000 ; // (dir)
+
+    D0625 = 0xEEEE ; // (tabEnd)
+/**AutoZoneSignalTable Number: 0 **/
+/**AutoZoneSwitchTable Number: 0 **/
+/**AutoZoneSectionTable Number: 0 **/

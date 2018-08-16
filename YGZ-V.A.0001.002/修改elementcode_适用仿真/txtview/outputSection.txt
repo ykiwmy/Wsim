@@ -1,0 +1,237 @@
+IONumber: 47
+    D0000 = 0x0000 ; // TA1601 (address)
+    D0001 = 0x0000 ; // (type)
+    D0002 = 0x0030 ; // (btn)
+    D0003 = 0x0A00 ; // (devJ1)
+
+    D0004 = 0x0001 ; // TA1602 (address)
+    D0005 = 0x0000 ; // (type)
+    D0006 = 0x0130 ; // (btn)
+    D0007 = 0x0B00 ; // (devJ1)
+
+    D0008 = 0x0002 ; // TA1603 (address)
+    D0009 = 0x0000 ; // (type)
+    D0010 = 0x0230 ; // (btn)
+    D0011 = 0x0A01 ; // (devJ1)
+
+    D0012 = 0x0003 ; // TA1604 (address)
+    D0013 = 0x0000 ; // (type)
+    D0014 = 0x0330 ; // (btn)
+    D0015 = 0x0B01 ; // (devJ1)
+
+    D0016 = 0x0004 ; // TA1605 (address)
+    D0017 = 0x0000 ; // (type)
+    D0018 = 0x0430 ; // (btn)
+    D0019 = 0x0A02 ; // (devJ1)
+
+    D0020 = 0x0005 ; // TA1606 (address)
+    D0021 = 0x0000 ; // (type)
+    D0022 = 0x0530 ; // (btn)
+    D0023 = 0x0B02 ; // (devJ1)
+
+    D0024 = 0x0006 ; // TA1607 (address)
+    D0025 = 0x0000 ; // (type)
+    D0026 = 0x0630 ; // (btn)
+    D0027 = 0x0A03 ; // (devJ1)
+
+    D0028 = 0x0007 ; // TA1608 (address)
+    D0029 = 0x0000 ; // (type)
+    D0030 = 0x0730 ; // (btn)
+    D0031 = 0x0B03 ; // (devJ1)
+
+    D0032 = 0x0008 ; // TA1701 (address)
+    D0033 = 0x0000 ; // (type)
+    D0034 = 0x0830 ; // (btn)
+    D0035 = 0x0A04 ; // (devJ1)
+
+    D0036 = 0x0009 ; // TA1702 (address)
+    D0037 = 0x0000 ; // (type)
+    D0038 = 0x0930 ; // (btn)
+    D0039 = 0x0B04 ; // (devJ1)
+
+    D0040 = 0x000A ; // TA1703 (address)
+    D0041 = 0x0000 ; // (type)
+    D0042 = 0x0A30 ; // (btn)
+    D0043 = 0x0A05 ; // (devJ1)
+
+    D0044 = 0x000B ; // TA1704 (address)
+    D0045 = 0x0000 ; // (type)
+    D0046 = 0x0B30 ; // (btn)
+    D0047 = 0x0B05 ; // (devJ1)
+
+    D0048 = 0x000C ; // TA1705 (address)
+    D0049 = 0x0001 ; // (type)
+    D0050 = 0x0C30 ; // (btn)
+    D0051 = 0x0A06 ; // (devJ1)
+
+    D0052 = 0x000D ; // TA1706 (address)
+    D0053 = 0x0000 ; // (type)
+    D0054 = 0x0D30 ; // (btn)
+    D0055 = 0x0B06 ; // (devJ1)
+
+    D0056 = 0x000E ; // TA1707 (address)
+    D0057 = 0x0000 ; // (type)
+    D0058 = 0x0E30 ; // (btn)
+    D0059 = 0x0A07 ; // (devJ1)
+
+    D0060 = 0x000F ; // TA1708 (address)
+    D0061 = 0x0001 ; // (type)
+    D0062 = 0x0F30 ; // (btn)
+    D0063 = 0x0B07 ; // (devJ1)
+
+    D0064 = 0x0010 ; // TA1709 (address)
+    D0065 = 0x0001 ; // (type)
+    D0066 = 0x0031 ; // (btn)
+    D0067 = 0x0A08 ; // (devJ1)
+
+    D0068 = 0x0011 ; // TA1710 (address)
+    D0069 = 0x0000 ; // (type)
+    D0070 = 0x0131 ; // (btn)
+    D0071 = 0x0B08 ; // (devJ1)
+
+    D0072 = 0x0012 ; // TA1711 (address)
+    D0073 = 0x0000 ; // (type)
+    D0074 = 0x0231 ; // (btn)
+    D0075 = 0x0A09 ; // (devJ1)
+
+    D0076 = 0x0013 ; // TA1712 (address)
+    D0077 = 0x0001 ; // (type)
+    D0078 = 0x0331 ; // (btn)
+    D0079 = 0x0B09 ; // (devJ1)
+
+    D0080 = 0x0014 ; // TA1713 (address)
+    D0081 = 0x0001 ; // (type)
+    D0082 = 0x0431 ; // (btn)
+    D0083 = 0x0A0A ; // (devJ1)
+
+    D0084 = 0x0015 ; // TA1714 (address)
+    D0085 = 0x0001 ; // (type)
+    D0086 = 0x0531 ; // (btn)
+    D0087 = 0x0B0A ; // (devJ1)
+
+    D0088 = 0x0016 ; // TA1715 (address)
+    D0089 = 0x0000 ; // (type)
+    D0090 = 0x0631 ; // (btn)
+    D0091 = 0x0A0B ; // (devJ1)
+
+    D0092 = 0x0017 ; // TA1716 (address)
+    D0093 = 0x0000 ; // (type)
+    D0094 = 0x0731 ; // (btn)
+    D0095 = 0x0B0B ; // (devJ1)
+
+    D0096 = 0x0018 ; // TA1717 (address)
+    D0097 = 0x0001 ; // (type)
+    D0098 = 0x0831 ; // (btn)
+    D0099 = 0x0A0C ; // (devJ1)
+
+    D0100 = 0x0019 ; // TA1718 (address)
+    D0101 = 0x0001 ; // (type)
+    D0102 = 0x0931 ; // (btn)
+    D0103 = 0x0B0C ; // (devJ1)
+
+    D0104 = 0x001A ; // TA1801 (address)
+    D0105 = 0x0000 ; // (type)
+    D0106 = 0x0A31 ; // (btn)
+    D0107 = 0x0A0D ; // (devJ1)
+
+    D0108 = 0x001B ; // TA1802 (address)
+    D0109 = 0x0000 ; // (type)
+    D0110 = 0x0B31 ; // (btn)
+    D0111 = 0x0B0D ; // (devJ1)
+
+    D0112 = 0x001C ; // TA1803 (address)
+    D0113 = 0x0000 ; // (type)
+    D0114 = 0x0C31 ; // (btn)
+    D0115 = 0x0A0E ; // (devJ1)
+
+    D0116 = 0x001D ; // TA1804 (address)
+    D0117 = 0x0000 ; // (type)
+    D0118 = 0x0D31 ; // (btn)
+    D0119 = 0x0B0E ; // (devJ1)
+
+    D0120 = 0x001E ; // TA1805 (address)
+    D0121 = 0x0000 ; // (type)
+    D0122 = 0x0E31 ; // (btn)
+    D0123 = 0x0A0F ; // (devJ1)
+
+    D0124 = 0x001F ; // TA1806 (address)
+    D0125 = 0x0000 ; // (type)
+    D0126 = 0x0F31 ; // (btn)
+    D0127 = 0x0B0F ; // (devJ1)
+
+    D0128 = 0x0020 ; // TA1412F (address)
+    D0129 = 0x0001 ; // (type)
+    D0130 = 0x0032 ; // (btn)
+    D0131 = 0xFF07 ; // (devJ1)
+
+    D0132 = 0x0021 ; // TA1414F (address)
+    D0133 = 0x0000 ; // (type)
+    D0134 = 0x0132 ; // (btn)
+    D0135 = 0xFF07 ; // (devJ1)
+
+    D0136 = 0x0022 ; // TA1502F (address)
+    D0137 = 0x0000 ; // (type)
+    D0138 = 0x0232 ; // (btn)
+    D0139 = 0xFF07 ; // (devJ1)
+
+    D0140 = 0x0023 ; // TA1503F (address)
+    D0141 = 0x0000 ; // (type)
+    D0142 = 0x0332 ; // (btn)
+    D0143 = 0xFF07 ; // (devJ1)
+
+    D0144 = 0x0024 ; // TA1504F (address)
+    D0145 = 0x0000 ; // (type)
+    D0146 = 0x0432 ; // (btn)
+    D0147 = 0xFF07 ; // (devJ1)
+
+    D0148 = 0x0025 ; // TA1505F (address)
+    D0149 = 0x0000 ; // (type)
+    D0150 = 0x0532 ; // (btn)
+    D0151 = 0xFF07 ; // (devJ1)
+
+    D0152 = 0x0026 ; // TA1506F (address)
+    D0153 = 0x0000 ; // (type)
+    D0154 = 0x0632 ; // (btn)
+    D0155 = 0xFF07 ; // (devJ1)
+
+    D0156 = 0x0027 ; // TA1507F (address)
+    D0157 = 0x0000 ; // (type)
+    D0158 = 0x0732 ; // (btn)
+    D0159 = 0xFF07 ; // (devJ1)
+
+    D0160 = 0x0028 ; // TA1509F (address)
+    D0161 = 0x0000 ; // (type)
+    D0162 = 0x0832 ; // (btn)
+    D0163 = 0xFF07 ; // (devJ1)
+
+    D0164 = 0x0029 ; // TA1901F (address)
+    D0165 = 0x0000 ; // (type)
+    D0166 = 0x0932 ; // (btn)
+    D0167 = 0xFF07 ; // (devJ1)
+
+    D0168 = 0x002A ; // TA1902F (address)
+    D0169 = 0x0000 ; // (type)
+    D0170 = 0x0A32 ; // (btn)
+    D0171 = 0xFF07 ; // (devJ1)
+
+    D0172 = 0x002B ; // TA1903F (address)
+    D0173 = 0x0000 ; // (type)
+    D0174 = 0x0B32 ; // (btn)
+    D0175 = 0xFF07 ; // (devJ1)
+
+    D0176 = 0x002C ; // TA1904F (address)
+    D0177 = 0x0000 ; // (type)
+    D0178 = 0x0C32 ; // (btn)
+    D0179 = 0xFF07 ; // (devJ1)
+
+    D0180 = 0x002D ; // TA1905F (address)
+    D0181 = 0x0001 ; // (type)
+    D0182 = 0x0D32 ; // (btn)
+    D0183 = 0xFF07 ; // (devJ1)
+
+    D0184 = 0x002E ; // TA1906F (address)
+    D0185 = 0x0001 ; // (type)
+    D0186 = 0x0E32 ; // (btn)
+    D0187 = 0xFF07 ; // (devJ1)
+
+    D0188 = 0xEEEE ; // (tabEnd)

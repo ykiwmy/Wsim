@@ -1,0 +1,289 @@
+FlankUnitNumber: 16
+Fls_W2501_L
+    D0 = 0x0000 // W2501 Index
+    D1 = 0x0000 // W2501 type
+    D2 = 0x0002 // W2501 position
+    D3 = 0x0000 // W2501 direction
+    D4 = 0x0001 // W2502 Index
+    D5 = 0x0000 // W2502 type
+    D6 = 0x0003 // W2502 position
+    D7 = 0x0000 // W2502 direction
+    D8 = 0xff07 // WJ Index
+    D9 = 0x0003 // WJ type
+    D10 = 0x0000 // WJ position
+    D11 = 0x0000 // WJ direction
+    D12 = 0xff07 // WJ Index
+    D13 = 0x0003 // WJ type
+    D14 = 0x0000 // WJ position
+    D15 = 0x0000 // WJ direction
+
+Fls_W2501_R
+    D16 = 0x0000 // W2501 Index
+    D17 = 0x0000 // W2501 type
+    D18 = 0x0003 // W2501 position
+    D19 = 0x0000 // W2501 direction
+    D20 = 0xff07 // WJ Index
+    D21 = 0x0003 // WJ type
+    D22 = 0x0000 // WJ position
+    D23 = 0x0000 // WJ direction
+    D24 = 0x000d // S2403 Index
+    D25 = 0x0001 // S2403 type
+    D26 = 0x0000 // S2403 position
+    D27 = 0x0000 // S2403 direction
+    D28 = 0xff07 // WJ Index
+    D29 = 0x0003 // WJ type
+    D30 = 0x0000 // WJ position
+    D31 = 0x0000 // WJ direction
+
+Fls_W2502_L
+    D32 = 0x0001 // W2502 Index
+    D33 = 0x0000 // W2502 type
+    D34 = 0x0002 // W2502 position
+    D35 = 0x0000 // W2502 direction
+    D36 = 0x0000 // W2501 Index
+    D37 = 0x0000 // W2501 type
+    D38 = 0x0003 // W2501 position
+    D39 = 0x0000 // W2501 direction
+    D40 = 0xff07 // WJ Index
+    D41 = 0x0003 // WJ type
+    D42 = 0x0000 // WJ position
+    D43 = 0x0000 // WJ direction
+    D44 = 0xff07 // WJ Index
+    D45 = 0x0003 // WJ type
+    D46 = 0x0000 // WJ position
+    D47 = 0x0000 // WJ direction
+
+Fls_W2502_R
+    D48 = 0x0001 // W2502 Index
+    D49 = 0x0000 // W2502 type
+    D50 = 0x0003 // W2502 position
+    D51 = 0x0000 // W2502 direction
+    D52 = 0xff07 // WJ Index
+    D53 = 0x0003 // WJ type
+    D54 = 0x0000 // WJ position
+    D55 = 0x0000 // WJ direction
+    D56 = 0x000f // X2506 Index
+    D57 = 0x0001 // X2506 type
+    D58 = 0x0000 // X2506 position
+    D59 = 0x0000 // X2506 direction
+    D60 = 0xff07 // WJ Index
+    D61 = 0x0003 // WJ type
+    D62 = 0x0000 // WJ position
+    D63 = 0x0000 // WJ direction
+
+Fls_W2503_L
+    D64 = 0x0002 // W2503 Index
+    D65 = 0x0000 // W2503 type
+    D66 = 0x0002 // W2503 position
+    D67 = 0x0000 // W2503 direction
+    D68 = 0xff07 // WJ Index
+    D69 = 0x0003 // WJ type
+    D70 = 0x0000 // WJ position
+    D71 = 0x0000 // WJ direction
+    D72 = 0x000e // X2505 Index
+    D73 = 0x0001 // X2505 type
+    D74 = 0x0000 // X2505 position
+    D75 = 0x0000 // X2505 direction
+    D76 = 0xff07 // WJ Index
+    D77 = 0x0003 // WJ type
+    D78 = 0x0000 // WJ position
+    D79 = 0x0000 // WJ direction
+
+Fls_W2503_R
+    D80 = 0x0002 // W2503 Index
+    D81 = 0x0000 // W2503 type
+    D82 = 0x0003 // W2503 position
+    D83 = 0x0000 // W2503 direction
+    D84 = 0x0007 // W2508 Index
+    D85 = 0x0000 // W2508 type
+    D86 = 0x0002 // W2508 position
+    D87 = 0x0000 // W2508 direction
+    D88 = 0x000b // X2509 Index
+    D89 = 0x0001 // X2509 type
+    D90 = 0x0000 // X2509 position
+    D91 = 0x0000 // X2509 direction
+    D92 = 0xff07 // WJ Index
+    D93 = 0x0003 // WJ type
+    D94 = 0x0000 // WJ position
+    D95 = 0x0000 // WJ direction
+
+Fls_W2504_L
+    D96 = 0x0003 // W2504 Index
+    D97 = 0x0000 // W2504 type
+    D98 = 0x0002 // W2504 position
+    D99 = 0x0000 // W2504 direction
+    D100 = 0x0006 // W2507 Index
+    D101 = 0x0000 // W2507 type
+    D102 = 0x0003 // W2507 position
+    D103 = 0x0000 // W2507 direction
+    D104 = 0x000c // X2514 Index
+    D105 = 0x0001 // X2514 type
+    D106 = 0x0000 // X2514 position
+    D107 = 0x0000 // X2514 direction
+    D108 = 0xff07 // WJ Index
+    D109 = 0x0003 // WJ type
+    D110 = 0x0000 // WJ position
+    D111 = 0x0000 // WJ direction
+
+Fls_W2504_R
+    D112 = 0x0003 // W2504 Index
+    D113 = 0x0000 // W2504 type
+    D114 = 0x0003 // W2504 position
+    D115 = 0x0000 // W2504 direction
+    D116 = 0xff07 // WJ Index
+    D117 = 0x0003 // WJ type
+    D118 = 0x0000 // WJ position
+    D119 = 0x0000 // WJ direction
+    D120 = 0x0010 // X2510 Index
+    D121 = 0x0001 // X2510 type
+    D122 = 0x0000 // X2510 position
+    D123 = 0x0000 // X2510 direction
+    D124 = 0xff07 // WJ Index
+    D125 = 0x0003 // WJ type
+    D126 = 0x0000 // WJ position
+    D127 = 0x0000 // WJ direction
+
+Fls_W2505_L
+    D128 = 0x0004 // W2505 Index
+    D129 = 0x0000 // W2505 type
+    D130 = 0x0002 // W2505 position
+    D131 = 0x0000 // W2505 direction
+    D132 = 0xff07 // WJ Index
+    D133 = 0x0003 // WJ type
+    D134 = 0x0000 // WJ position
+    D135 = 0x0000 // WJ direction
+    D136 = 0x000b // X2509 Index
+    D137 = 0x0001 // X2509 type
+    D138 = 0x0000 // X2509 position
+    D139 = 0x0000 // X2509 direction
+    D140 = 0xff07 // WJ Index
+    D141 = 0x0003 // WJ type
+    D142 = 0x0000 // WJ position
+    D143 = 0x0000 // WJ direction
+
+Fls_W2505_R
+    D144 = 0x0004 // W2505 Index
+    D145 = 0x0000 // W2505 type
+    D146 = 0x0003 // W2505 position
+    D147 = 0x0000 // W2505 direction
+    D148 = 0x0007 // W2508 Index
+    D149 = 0x0000 // W2508 type
+    D150 = 0x0002 // W2508 position
+    D151 = 0x0000 // W2508 direction
+    D152 = 0xff07 // WJ Index
+    D153 = 0x0003 // WJ type
+    D154 = 0x0000 // WJ position
+    D155 = 0x0000 // WJ direction
+    D156 = 0xff07 // WJ Index
+    D157 = 0x0003 // WJ type
+    D158 = 0x0000 // WJ position
+    D159 = 0x0000 // WJ direction
+
+Fls_W2506_L
+    D160 = 0x0005 // W2506 Index
+    D161 = 0x0000 // W2506 type
+    D162 = 0x0002 // W2506 position
+    D163 = 0x0000 // W2506 direction
+    D164 = 0x0006 // W2507 Index
+    D165 = 0x0000 // W2507 type
+    D166 = 0x0003 // W2507 position
+    D167 = 0x0000 // W2507 direction
+    D168 = 0xff07 // WJ Index
+    D169 = 0x0003 // WJ type
+    D170 = 0x0000 // WJ position
+    D171 = 0x0000 // WJ direction
+    D172 = 0xff07 // WJ Index
+    D173 = 0x0003 // WJ type
+    D174 = 0x0000 // WJ position
+    D175 = 0x0000 // WJ direction
+
+Fls_W2506_R
+    D176 = 0x0005 // W2506 Index
+    D177 = 0x0000 // W2506 type
+    D178 = 0x0003 // W2506 position
+    D179 = 0x0000 // W2506 direction
+    D180 = 0xff07 // WJ Index
+    D181 = 0x0003 // WJ type
+    D182 = 0x0000 // WJ position
+    D183 = 0x0000 // WJ direction
+    D184 = 0x000c // X2514 Index
+    D185 = 0x0001 // X2514 type
+    D186 = 0x0000 // X2514 position
+    D187 = 0x0000 // X2514 direction
+    D188 = 0xff07 // WJ Index
+    D189 = 0x0003 // WJ type
+    D190 = 0x0000 // WJ position
+    D191 = 0x0000 // WJ direction
+
+Fls_W2507_L
+    D192 = 0x0006 // W2507 Index
+    D193 = 0x0000 // W2507 type
+    D194 = 0x0002 // W2507 position
+    D195 = 0x0000 // W2507 direction
+    D196 = 0x0005 // W2506 Index
+    D197 = 0x0000 // W2506 type
+    D198 = 0x0003 // W2506 position
+    D199 = 0x0000 // W2506 direction
+    D200 = 0xff07 // WJ Index
+    D201 = 0x0003 // WJ type
+    D202 = 0x0000 // WJ position
+    D203 = 0x0000 // WJ direction
+    D204 = 0xff07 // WJ Index
+    D205 = 0x0003 // WJ type
+    D206 = 0x0000 // WJ position
+    D207 = 0x0000 // WJ direction
+
+Fls_W2507_R
+    D208 = 0x0006 // W2507 Index
+    D209 = 0x0000 // W2507 type
+    D210 = 0x0003 // W2507 position
+    D211 = 0x0000 // W2507 direction
+    D212 = 0xff07 // WJ Index
+    D213 = 0x0003 // WJ type
+    D214 = 0x0000 // WJ position
+    D215 = 0x0000 // WJ direction
+    D216 = 0x0012 // S2503 Index
+    D217 = 0x0001 // S2503 type
+    D218 = 0x0000 // S2503 position
+    D219 = 0x0000 // S2503 direction
+    D220 = 0x0002 // W2503 Index
+    D221 = 0x0000 // W2503 type
+    D222 = 0x0003 // W2503 position
+    D223 = 0x0000 // W2503 direction
+
+Fls_W2508_L
+    D224 = 0x0007 // W2508 Index
+    D225 = 0x0000 // W2508 type
+    D226 = 0x0002 // W2508 position
+    D227 = 0x0000 // W2508 direction
+    D228 = 0xff07 // WJ Index
+    D229 = 0x0003 // WJ type
+    D230 = 0x0000 // WJ position
+    D231 = 0x0000 // WJ direction
+    D232 = 0x0014 // S2508 Index
+    D233 = 0x0001 // S2508 type
+    D234 = 0x0000 // S2508 position
+    D235 = 0x0000 // S2508 direction
+    D236 = 0x0003 // W2504 Index
+    D237 = 0x0000 // W2504 type
+    D238 = 0x0002 // W2504 position
+    D239 = 0x0000 // W2504 direction
+
+Fls_W2508_R
+    D240 = 0x0007 // W2508 Index
+    D241 = 0x0000 // W2508 type
+    D242 = 0x0003 // W2508 position
+    D243 = 0x0000 // W2508 direction
+    D244 = 0x0004 // W2505 Index
+    D245 = 0x0000 // W2505 type
+    D246 = 0x0002 // W2505 position
+    D247 = 0x0000 // W2505 direction
+    D248 = 0xff07 // WJ Index
+    D249 = 0x0003 // WJ type
+    D250 = 0x0000 // WJ position
+    D251 = 0x0000 // WJ direction
+    D252 = 0xff07 // WJ Index
+    D253 = 0x0003 // WJ type
+    D254 = 0x0000 // WJ position
+    D255 = 0x0000 // WJ direction
+

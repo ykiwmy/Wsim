@@ -1,0 +1,127 @@
+IO Other Number: 25
+    D0000 = 0x0000 ; // JZ-FWYJ (address)
+    D0001 = 0x0000 ; // (type)
+    D0002 = 0x0030 ; // (btn)
+    D0003 = 0x0908 ; // (devJ1)
+
+    D0004 = 0x0001 ; // PSD1601-KMJ (address)
+    D0005 = 0x0000 ; // (type)
+    D0006 = 0x0130 ; // (btn)
+    D0007 = 0x0C00 ; // (devJ1)
+
+    D0008 = 0x0002 ; // PSD1601-GMJ (address)
+    D0009 = 0x0000 ; // (type)
+    D0010 = 0x0230 ; // (btn)
+    D0011 = 0x0C01 ; // (devJ1)
+
+    D0012 = 0x0003 ; // PSD1602-KMJ (address)
+    D0013 = 0x0000 ; // (type)
+    D0014 = 0x0330 ; // (btn)
+    D0015 = 0x0C02 ; // (devJ1)
+
+    D0016 = 0x0004 ; // PSD1602-GMJ (address)
+    D0017 = 0x0000 ; // (type)
+    D0018 = 0x0430 ; // (btn)
+    D0019 = 0x0C03 ; // (devJ1)
+
+    D0020 = 0x0005 ; // PSD1701-KMJ (address)
+    D0021 = 0x0000 ; // (type)
+    D0022 = 0x0530 ; // (btn)
+    D0023 = 0x0C04 ; // (devJ1)
+
+    D0024 = 0x0006 ; // PSD1701-GMJ (address)
+    D0025 = 0x0000 ; // (type)
+    D0026 = 0x0630 ; // (btn)
+    D0027 = 0x0C05 ; // (devJ1)
+
+    D0028 = 0x0007 ; // PSD1702-KMJ (address)
+    D0029 = 0x0000 ; // (type)
+    D0030 = 0x0730 ; // (btn)
+    D0031 = 0x0C06 ; // (devJ1)
+
+    D0032 = 0x0008 ; // PSD1702-GMJ (address)
+    D0033 = 0x0000 ; // (type)
+    D0034 = 0x0830 ; // (btn)
+    D0035 = 0x0C07 ; // (devJ1)
+
+    D0036 = 0x0009 ; // PSD1801-KMJ (address)
+    D0037 = 0x0000 ; // (type)
+    D0038 = 0x0930 ; // (btn)
+    D0039 = 0x0C08 ; // (devJ1)
+
+    D0040 = 0x000A ; // PSD1801-GMJ (address)
+    D0041 = 0x0000 ; // (type)
+    D0042 = 0x0A30 ; // (btn)
+    D0043 = 0x0C09 ; // (devJ1)
+
+    D0044 = 0x000B ; // PSD1802-KMJ (address)
+    D0045 = 0x0000 ; // (type)
+    D0046 = 0x0B30 ; // (btn)
+    D0047 = 0x0C0A ; // (devJ1)
+
+    D0048 = 0x000C ; // PSD1802-GMJ (address)
+    D0049 = 0x0000 ; // (type)
+    D0050 = 0x0C30 ; // (btn)
+    D0051 = 0x0C0B ; // (devJ1)
+
+    D0052 = 0x000D ; // AFG1601_GYJ (address)
+    D0053 = 0x0000 ; // (type)
+    D0054 = 0x0D30 ; // (btn)
+    D0055 = 0x0C0C ; // (devJ1)
+
+    D0056 = 0x000E ; // AFG1602_GYJ (address)
+    D0057 = 0x0000 ; // (type)
+    D0058 = 0x0E30 ; // (btn)
+    D0059 = 0x0C0D ; // (devJ1)
+
+    D0060 = 0x000F ; // AFG1701_GYJ (address)
+    D0061 = 0x0000 ; // (type)
+    D0062 = 0x0F30 ; // (btn)
+    D0063 = 0x0C0E ; // (devJ1)
+
+    D0064 = 0x0010 ; // AFG1702_GYJ (address)
+    D0065 = 0x0000 ; // (type)
+    D0066 = 0x0031 ; // (btn)
+    D0067 = 0x0C0F ; // (devJ1)
+
+    D0068 = 0x0011 ; // PSD1501-KMJ (address)
+    D0069 = 0x0000 ; // (type)
+    D0070 = 0x0131 ; // (btn)
+    D0071 = 0xFF07 ; // (devJ1)
+
+    D0072 = 0x0012 ; // PSD1501-GMJ (address)
+    D0073 = 0x0000 ; // (type)
+    D0074 = 0x0231 ; // (btn)
+    D0075 = 0xFF07 ; // (devJ1)
+
+    D0076 = 0x0013 ; // PSD1502-KMJ (address)
+    D0077 = 0x0000 ; // (type)
+    D0078 = 0x0331 ; // (btn)
+    D0079 = 0xFF07 ; // (devJ1)
+
+    D0080 = 0x0014 ; // PSD1502-GMJ (address)
+    D0081 = 0x0000 ; // (type)
+    D0082 = 0x0431 ; // (btn)
+    D0083 = 0xFF07 ; // (devJ1)
+
+    D0084 = 0x0015 ; // ZCTA1601 (address)
+    D0085 = 0x0000 ; // (type)
+    D0086 = 0x0531 ; // (btn)
+    D0087 = 0xFF07 ; // (devJ1)
+
+    D0088 = 0x0016 ; // ZCTA1602 (address)
+    D0089 = 0x0000 ; // (type)
+    D0090 = 0x0631 ; // (btn)
+    D0091 = 0xFF07 ; // (devJ1)
+
+    D0092 = 0x0017 ; // ZCTA1805 (address)
+    D0093 = 0x0000 ; // (type)
+    D0094 = 0x0731 ; // (btn)
+    D0095 = 0xFF07 ; // (devJ1)
+
+    D0096 = 0x0018 ; // ZCTA1806 (address)
+    D0097 = 0x0000 ; // (type)
+    D0098 = 0x0831 ; // (btn)
+    D0099 = 0xFF07 ; // (devJ1)
+
+    D0100 = 0xEEEE ; // (tabEnd)

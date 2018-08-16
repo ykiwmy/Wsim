@@ -1,0 +1,9 @@
+YardProtocolNum: 2
+selfRsspID: 15363
+	D0000 = 0x0015 ; // (VcpDevId)
+	D0001 = 0x3C02 ; // (Peer_RsspID)
+
+	D0002 = 0x0018 ; // (VcpDevId)
+	D0003 = 0x3C04 ; // (Peer_RsspID)
+
+	D0004 = 0xEEEE ; // (TabEnd)
